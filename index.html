@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Title</title>
+    <meta name="description" content="Website Description">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&family=Noto+Serif+Bengali:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="topbar-logo">বাংলা<span> শর্ট নোট </span></div>
+        <div class="topbar-actions" style="display: flex; gap: 10px;">
+            <a target="_blank" href="https://docs.google.com/document/d/1FwVn9TMgkARUrM5x58BS0dEFGcTkUdjjBkhB99IaHkQ/edit?usp=sharing" class="pdf-btn" id="pdfBtn">📄 Download PDF</a>
+            <button class="theme-btn" id="themeBtn">🌙 Dark Mode</button>
+        </div>
+    </header>
+    <div class="progress-bar">
+        <div class="progress-fill" id="progress"></div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- LAYOUT -->
+    <div class="layout">
+
+        <!-- SIDEBAR TOC -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">Table of Contents</div>
+            <div id="toc-container"></div>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main" id="main-content">
+            <!-- HERO -->
+            <div class="hero" id="hero" style="display: none;">
+                <div class="hero-badge" id="hero-badge"></div>
+                <h1 id="hero-title"></h1>
+                <p id="hero-desc"></p>
+                <div class="hero-stats" id="hero-stats"></div>
+            </div>
+
+            <!-- 👨‍💻 Profile Card -->
+            <div class="profile-card">
+                <div class="profile-img-box">
+                    <!-- আপনার ছবির লিংক 'src' এ দিন -->
+                    <img src="./bisnu.webp"
+                   alt="Profile" class="profile-img" id="profileImg">
+                </div>
+                <div class="profile-info">
+                    <!-- আপনার নাম ও স্কিল আপডেট করুন -->
+                    <h2 class="profile-name">বিষ্ণু কুন্ডু</h2>
+                    <div class="profile-title">ওয়েব-ডেভলপার</div>
+                    <div class="profile-links">
+                        <!-- আপনার ফেসবুক ও ওয়েবসাইটের আসল লিংক 'href' এ দিন -->
+                        <a href="https://facebook.com/freelancerbisnu" target="_blank" class="profile-btn fb-btn">
+                            📘 Facebook
+                        </a>
+                        <a href="https://bisnukundu.netlify.app/" target="_blank" class="profile-btn web-btn">
+                            🌐 Portfolio Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dynamic-content"></div>
+
+            <!-- FOOTER / SIGNATURE -->
+            <footer class="footer">
+                <div class="signature-card">
+                    <div class="sig-avatar">
+                        <a href="https://bisnukundu.netlify.app/">
+                            <img class="sig-avatar" src="https://avatars.githubusercontent.com/u/48401689?v=4"
+                                alt="bisnukundu_image">
+                        </a>
+                    </div>
+                    <div class="sig-info">
+                        <div class="sig-name">বিষ্ণু কুন্ডু</div>
+                        <div class="sig-role">🌐 ওয়েব-ডেভলপার </div>
+                        <div class="sig-desc">এসএসসি পরীক্ষার্থীদের জন্য বাংলা প্রথম পত্রের একটি পরিপূর্ণ নোটস ও
+                            গাইডলাইন।</div>
+                        <div class="sig-badges">
+                            <span class="sig-badge">SSC-1651</span>
+                            <span class="sig-badge">গদ্য</span>
+                            <span class="sig-badge">কবিতা</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    © 2026 বাংলা নোট | Designed &amp; Developed by <strong><a
+                            href="https://bisnukundu.netlify.app/">Bishnu Kundu</a></strong> | সকল
+                    শিক্ষার্থীর জন্য শুভকামনা 🎓
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Back to top -->
+    <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
