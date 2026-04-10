@@ -35,11 +35,64 @@ window.addEventListener('scroll', () => {
     document.getElementById('backTop').classList.toggle('show', h.scrollTop > 400);
 });
 
-// Fetch and render JSON data
-fetch('bangla_note.json')
-    .then(res => res.json())
-    .then(data => renderData(data))
-    .catch(err => console.error("Error loading JSON: ", err));
+// Global observers reference to clean up when changing subjects
+let activeSectionObserver = null;
+let activeCardObserver = null;
+
+// Handle subject selection
+const subjectSelect = document.getElementById('subjectSelect');
+subjectSelect.addEventListener('change', (e) => {
+    loadSubject(e.target.value);
+});
+
+// Load default subject initially
+loadSubject(subjectSelect.value);
+
+function loadSubject(url) {
+    // Clear old contents
+    document.getElementById('toc-container').innerHTML = '';
+    document.getElementById('dynamic-content').innerHTML = '';
+    
+    // Clean up old observers
+    if (activeSectionObserver) activeSectionObserver.disconnect();
+    if (activeCardObserver) activeCardObserver.disconnect();
+    
+    fetch(url)
+        .then(res => res.json())
+        .then(data => renderData(normalizeData(data, url)))
+        .catch(err => {
+            console.error("Error loading JSON: ", err);
+            document.getElementById('dynamic-content').innerHTML = '<p style="text-align:center; padding: 40px; color: var(--text3);">ডাটা লোড করতে সমস্যা হয়েছে বা ডাটা পাওয়া যায়নি।</p>';
+        });
+}
+
+// Convert db/vugol.json custom schema to standardized layout
+function normalizeData(data, url) {
+    if (data.contents) return data; // Already valid Bangla schema
+    
+    // Convert Vugol schema
+    if (data.units) {
+        return {
+            course: {
+                code: "Geography / ভূগোল",
+                title: "ভূগোল ও পরিবেশ",
+                exam_type: "এসএসসি শর্ট নোট",
+                total_marks: "100"
+            },
+            contents: {
+                "chapters": data.units.map(u => ({
+                    id: u.id,
+                    title: u.title,
+                    summary: u.summary,
+                    mcq: u.mcq,
+                    creative: u.creative,
+                    genre: "অধ্যায়"
+                }))
+            }
+        };
+    }
+    return data;
+}
 
 function renderData(data) {
     // Render Hero
@@ -53,7 +106,7 @@ function renderData(data) {
             distributionText = Object.values(data.course.distribution).join(', ');
         }
 
-        document.getElementById('hero-desc').innerText = distributionText || 'এসএসসি পরীক্ষার্থীদের জন্য বাংলা প্রথম পত্রের একটি পরিপূর্ণ নোটস ও গাইডলাইন।';
+        document.getElementById('hero-desc').innerText = distributionText || 'এসএসসি পরীক্ষার্থীদের জন্য একটি পরিপূর্ণ বিষয়ভিত্তিক নোটস ও গাইডলাইন।';
 
         let statsHtml = '';
         if (data.course.total_marks) {
@@ -70,7 +123,8 @@ function renderData(data) {
         poetry: { title: "কবিতা (Poetry)", icon: "🌿", colorClass: "green" },
         novel: { title: "উপন্যাস (Novel)", icon: "📙", colorClass: "red" },
         drama: { title: "নাটক (Drama)", icon: "🎭", colorClass: "orange" },
-        creative: { title: "সৃজনশীল (Creative)", icon: "🎨", colorClass: "blue" }
+        creative: { title: "সৃজনশীল (Creative)", icon: "🎨", colorClass: "blue" },
+        chapters: { title: "অধ্যায় (Chapters)", icon: "🌍", colorClass: "green" }
     };
 
     let globalItemIndex = 0;
@@ -160,9 +214,9 @@ function renderData(data) {
             card.innerHTML = `
             <div class="card-header ${meta.colorClass}">
               <div class="card-num">${displayNum}</div>
-              <div>
+              <div style="flex:1;">
                 <div class="card-title">${item.title}</div>
-                <div class="card-author">${item.author || ''}</div>
+                ${item.author ? `<div class="card-author">${item.author}</div>` : ''}
               </div>
               <div class="card-type-badge">${item.genre || meta.title}</div>
             </div>
@@ -190,7 +244,7 @@ function initDynamicInteractions() {
     const sections = document.querySelectorAll('[id]');
     const tocLinks = document.querySelectorAll('.toc-link');
 
-    const observer = new IntersectionObserver((entries) => {
+    activeSectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const id = entry.target.id;
@@ -202,7 +256,7 @@ function initDynamicInteractions() {
         });
     }, { rootMargin: '-20% 0px -70% 0px' });
 
-    sections.forEach(s => observer.observe(s));
+    sections.forEach(s => activeSectionObserver.observe(s));
 
     tocLinks.forEach(l => l.addEventListener('click', () => {
         document.getElementById('sidebar').classList.remove('open');
@@ -210,14 +264,14 @@ function initDynamicInteractions() {
     }));
 
     const cards = document.querySelectorAll('.card');
-    const cardObserver = new IntersectionObserver((entries) => {
+    activeCardObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry, i) => {
             if (entry.isIntersecting) {
                 setTimeout(() => entry.target.classList.add('visible'), 50);
-                cardObserver.unobserve(entry.target);
+                activeCardObserver.unobserve(entry.target);
             }
         });
     }, { threshold: 0.08 });
 
-    cards.forEach(c => cardObserver.observe(c));
+    cards.forEach(c => activeCardObserver.observe(c));
 }
