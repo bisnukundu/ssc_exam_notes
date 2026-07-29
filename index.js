@@ -94,14 +94,21 @@ function loadBooks() {
                 
                 // We use dynamic style for background if gradient is provided
                 const bgStyle = book.gradient ? `background: ${book.gradient};` : '';
+                const bookIcon = book.icon ? `<div class="book-icon">${book.icon}</div>` : '';
                 
                 card.innerHTML = `
                     <div class="book-cover" style="${bgStyle}">
+                         <div class="book-spine"></div>
+                         ${bookIcon}
                          <div class="book-title-overlay">${book.short_title}</div>
+                         <div class="book-pages-edge"></div>
                     </div>
                     <div class="book-info">
                         <h3>${book.title}</h3>
-                        <button class="read-btn">📖 পড়ুন</button>
+                        <button class="read-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px; margin-top: -2px;"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                            পড়ুন
+                        </button>
                     </div>
                 `;
                 booksGrid.appendChild(card);

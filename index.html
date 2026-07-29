@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>এসএসসি বাংলা শর্ট নোট - বিষ্ণু কুন্ডু | SSC Bangla Short Notes</title>
-    <meta name="description" content="এসএসসি (SSC) পরীক্ষার্থীদের জন্য বাংলা ১ম পত্র শর্ট নোটস। গল্প, কবিতা এবং উপন্যাসের সারসংক্ষেপ, গুরুত্বপূর্ণ বহুনির্বাচনি (MCQ) এবং সৃজনশীল প্রশ্নোত্তর। তৈরি করেছেন: বিষ্ণু কুন্ডু (Bisnu Kundu)।">
+    <meta name="description"
+        content="এসএসসি (SSC) পরীক্ষার্থীদের জন্য বাংলা ১ম পত্র শর্ট নোটস। গল্প, কবিতা এবং উপন্যাসের সারসংক্ষেপ, গুরুত্বপূর্ণ বহুনির্বাচনি (MCQ) এবং সৃজনশীল প্রশ্নোত্তর। তৈরি করেছেন: বিষ্ণু কুন্ডু (Bisnu Kundu)।">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,8 +15,10 @@
     <link rel="stylesheet" href="index.css">
 
     <!-- dFlip Flipbook CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/css/dflip.min.css"
+        rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/css/themify-icons.min.css"
+        rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -25,10 +28,13 @@
         <button class="hamburger" id="hamburger" aria-label="Menu">
             <span></span><span></span><span></span>
         </button>
-        <div class="topbar-logo" id="site-logo" style="cursor:pointer;" title="Go to Home">ই-বুক<span> লাইব্রেরি </span></div>
+        <div class="topbar-logo" id="site-logo" style="cursor:pointer;" title="Go to Home">ই-বুক<span> লাইব্রেরি
+            </span></div>
         <div class="topbar-actions" style="display: flex; gap: 10px;">
             <button class="theme-btn" id="toggleViewBtn">📝 নোটস</button>
-            <a target="_blank" href="https://docs.google.com/document/d/1FwVn9TMgkARUrM5x58BS0dEFGcTkUdjjBkhB99IaHkQ/edit?usp=sharing" class="pdf-btn" id="pdfBtn">📄PDF</a>
+            <a target="_blank"
+                href="https://docs.google.com/document/d/1FwVn9TMgkARUrM5x58BS0dEFGcTkUdjjBkhB99IaHkQ/edit?usp=sharing"
+                class="pdf-btn" id="pdfBtn">📄PDF</a>
             <button class="theme-btn" id="themeBtn" style="padding: 6px 10px;">🌙</button>
         </div>
     </header>
@@ -54,16 +60,60 @@
 
         <!-- MAIN -->
         <main class="main" id="main-content">
-            
+
             <!-- 📚 E-BOOK VIEW (HOME) -->
             <div id="ebook-view" class="ebook-view">
                 <div class="ebook-hero">
-                    <h1 class="ebook-title">ই-বুক লাইব্রেরি</h1>
-                    <p class="ebook-subtitle">ডিজিটাল বই পড়ার এক নতুন ও মনমুগ্ধকর অভিজ্ঞতা। আপনার পছন্দের বইটি বেছে নিয়ে পড়া শুরু করুন।</p>
+                    <div class="ebook-hero-deco" aria-hidden="true">
+                        <span>📚</span><span>📖</span><span>📓</span><span>📗</span>
+                    </div>
+                    <h1 class="ebook-title">
+                        <span class="ebook-title-icon">📚</span>
+                        SSC ই-বুক লাইব্রেরি
+                    </h1>
+                    <p class="ebook-subtitle">ডিজিটাল বই পড়ার এক নতুন ও মনমুগ্ধকর অভিজ্ঞতা। আপনার পছন্দের বইটি বেছে নিয়ে
+                        পড়া শুরু করুন।</p>
+                    <div class="ebook-hero-badges">
+                        <span class="ebook-badge">📄 পেজ ফ্লিপ</span>
+                        <span class="ebook-badge">🔍 যূমবেল</span>
+                        <span class="ebook-badge">🌙 ডার্ক মোড</span>
+                    </div>
                 </div>
-                
+
+                <h2 class="library-section-label">📚 সকল পাঠ্যবই</h2>
                 <div class="books-grid" id="books-grid">
                     <!-- Books will be loaded here automatically from db/books.json -->
+                </div>
+
+                <!-- 🌟 Credit Banner -->
+                <div class="credit-banner">
+                    <div class="credit-content">
+                        <img src="./bisnu.webp" alt="Bisnu Kundu" class="credit-avatar">
+                        <div class="credit-text">
+                            <h3>Developed with ❤️ by <span>Bisnu Kundu</span></h3>
+                            <p>Web Developer & Freelancer</p>
+                            <div class="credit-links-group">
+                                <a href="https://facebook.com/freelancerbisnu" target="_blank" class="c-link fb-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                        </path>
+                                    </svg>
+                                    Facebook
+                                </a>
+                                <a href="https://bisnukundu.netlify.app/" target="_blank" class="c-link web-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path
+                                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                        </path>
+                                    </svg>
+                                    Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -81,8 +131,7 @@
                 <div class="profile-card">
                     <div class="profile-img-box">
                         <!-- আপনার ছবির লিংক 'src' এ দিন -->
-                        <img src="./bisnu.webp"
-                       alt="Profile" class="profile-img" id="profileImg">
+                        <img src="./bisnu.webp" alt="Profile" class="profile-img" id="profileImg">
                     </div>
                     <div class="profile-info">
                         <!-- আপনার নাম ও স্কিল আপডেট করুন -->
@@ -102,14 +151,16 @@
 
                 <!-- 🔗 Quick Links -->
                 <div class="quick-links">
-                    <a href="https://drive.google.com/file/d/1c3K-8VBoTp7WxbrPOZ-lGEJMwlPT-MNr/view?usp=sharing" target="_blank" class="q-btn syllabus-btn">
+                    <a href="https://drive.google.com/file/d/1c3K-8VBoTp7WxbrPOZ-lGEJMwlPT-MNr/view?usp=sharing"
+                        target="_blank" class="q-btn syllabus-btn">
                         <span class="q-icon">📋</span>
                         <div class="q-text">
                             <span class="q-title">এসএসসি সিলেবাস</span>
                             <span class="q-sub">PDF ডাউনলোড করুন</span>
                         </div>
                     </a>
-                    <a href="https://drive.google.com/file/d/1my1qr3xcCqxN9FOUNjZnu1X-psKdwzJE/view?usp=sharing" target="_blank" class="q-btn routine-btn">
+                    <a href="https://drive.google.com/file/d/1my1qr3xcCqxN9FOUNjZnu1X-psKdwzJE/view?usp=sharing"
+                        target="_blank" class="q-btn routine-btn">
                         <span class="q-icon">📅</span>
                         <div class="q-text">
                             <span class="q-title">পরীক্ষার রুটিন</span>
