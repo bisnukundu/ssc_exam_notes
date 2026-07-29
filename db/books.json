@@ -38,5 +38,37 @@
     "pdf": "db/books/bangladesh_bisoporichoy.pdf",
     "gradient": "linear-gradient(135deg, #1a6b3c 0%, #3da35d 100%)",
     "icon": "🌏"
+  },
+   {
+    "id": "biggan",
+    "title": "বিজ্ঞান",
+    "short_title": "বিজ্ঞান",
+    "pdf": "db/books/biggan.pdf",
+    "gradient": "linear-gradient(135deg, #00b4db 0%, #0083b0 100%)",
+    "icon": "⚛️"
+  },
+  {
+    "id": "krisi",
+    "title": "কৃষি শিক্ষা",
+    "short_title": "কৃষিশিক্ষা",
+    "pdf": "db/books/krisi.pdf",
+    "gradient": "linear-gradient(135deg, #56ab2f 0%, #a8e063 100%)",
+    "icon": "🌾"
+  },
+  {
+    "id": "saririk",
+    "title": "শারীরিক শিক্ষা",
+    "short_title": "শারীরিক",
+    "pdf": "db/books/saririk.pdf",
+    "gradient": "linear-gradient(135deg, #f953c6 0%, #b91d73 100%)",
+    "icon": "🎽"
+  },
+   {
+    "id": "carriar",
+    "title": "ক্যারিয়ার শিক্ষা",
+    "short_title": "ক্যারিয়ার",
+    "pdf": "db/books/carriar.pdf",
+    "gradient": "linear-gradient(135deg, #eab4a4 0%, #d51616 100%)",
+    "icon": "💼"
   }
 ]
