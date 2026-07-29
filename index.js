@@ -39,9 +39,88 @@ window.addEventListener('scroll', () => {
 let activeSectionObserver = null;
 let activeCardObserver = null;
 
+// View Toggle Logic
+const ebookView = document.getElementById('ebook-view');
+const notesView = document.getElementById('notes-view');
+const toggleViewBtn = document.getElementById('toggleViewBtn');
+const siteLogo = document.getElementById('site-logo');
+const sidebar2 = document.getElementById('sidebar');
+
+function showNotesView() {
+    ebookView.style.display = 'none';
+    notesView.style.display = 'block';
+    toggleViewBtn.innerHTML = '📚 ই-বুক';
+    
+    sidebar2.style.display = ''; // Restore CSS default
+    document.getElementById('main-content').classList.remove('no-sidebar');
+    document.getElementById('hamburger').style.display = '';
+}
+
+function showEbookView() {
+    notesView.style.display = 'none';
+    ebookView.style.display = 'block';
+    toggleViewBtn.innerHTML = '📝 নোটস';
+    
+    sidebar2.style.display = 'none'; 
+    document.getElementById('main-content').classList.add('no-sidebar');
+    document.getElementById('hamburger').style.display = 'none'; // hide hamburger on ebook home
+}
+
+toggleViewBtn.addEventListener('click', () => {
+    if (notesView.style.display === 'none') {
+        showNotesView();
+    } else {
+        showEbookView();
+    }
+});
+
+siteLogo.addEventListener('click', () => {
+    showEbookView();
+    window.scrollTo({top:0, behavior:'smooth'});
+});
+
+// Load Books from db/books.json
+function loadBooks() {
+    fetch('db/books.json')
+        .then(res => res.json())
+        .then(books => {
+            const booksGrid = document.getElementById('books-grid');
+            booksGrid.innerHTML = ''; // clear loading state
+            
+            books.forEach(book => {
+                const card = document.createElement('div');
+                card.className = 'book-card';
+                card.onclick = () => openBook(book.pdf, book.title);
+                
+                // We use dynamic style for background if gradient is provided
+                const bgStyle = book.gradient ? `background: ${book.gradient};` : '';
+                
+                card.innerHTML = `
+                    <div class="book-cover" style="${bgStyle}">
+                         <div class="book-title-overlay">${book.short_title}</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>${book.title}</h3>
+                        <button class="read-btn">📖 পড়ুন</button>
+                    </div>
+                `;
+                booksGrid.appendChild(card);
+            });
+        })
+        .catch(err => {
+            console.error("Error loading books:", err);
+            document.getElementById('books-grid').innerHTML = '<p style="text-align:center;width:100%;">বই লোড করা যায়নি।</p>';
+        });
+}
+
+// Initial View Setup
+showEbookView();
+loadBooks();
+
 // Handle subject selection
 const subjectSelect = document.getElementById('subjectSelect');
 subjectSelect.addEventListener('change', (e) => {
+    showNotesView(); // Switch to notes view when a subject is picked
     loadSubject(e.target.value);
 });
 
@@ -275,3 +354,55 @@ function initDynamicInteractions() {
 
     cards.forEach(c => activeCardObserver.observe(c));
 }
+
+// ══════════════════════════════════════
+//   BOOK READER (dFlip)
+// ══════════════════════════════════════
+let currentFlipBook = null;
+
+function openBook(pdfUrl, title) {
+    document.getElementById('bookModalTitle').innerText = title;
+    const modal = document.getElementById('bookReaderModal');
+    modal.classList.add('active');
+    
+    // Lock body scroll
+    document.body.style.overflow = 'hidden';
+    
+    const container = document.getElementById('flipbookContainer');
+    container.innerHTML = '<div id="df_book_viewer"></div>';
+    
+    // Initialize dFlip
+    if (window.jQuery && window.DFLIP) {
+        // dFlip config options
+        const options = {
+            webgl: true,
+            height: '100%',
+            backgroundColor: "transparent",
+            duration: 800
+        };
+        
+        currentFlipBook = $('#df_book_viewer').flipBook(pdfUrl, options);
+    } else {
+        container.innerHTML = '<p style="color:white;text-align:center;">বই লোড করতে সমস্যা হচ্ছে। দয়া করে পেজটি রিলোড দিন।</p>';
+    }
+}
+
+function closeBook() {
+    const modal = document.getElementById('bookReaderModal');
+    modal.classList.remove('active');
+    
+    // Unlock body scroll
+    document.body.style.overflow = '';
+    
+    if (currentFlipBook && typeof currentFlipBook.dispose === 'function') {
+        currentFlipBook.dispose();
+    }
+    document.getElementById('flipbookContainer').innerHTML = '';
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.getElementById('bookReaderModal').classList.contains('active')) {
+        closeBook();
+    }
+});

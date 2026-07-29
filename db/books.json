@@ -1,0 +1,23 @@
+[
+  {
+    "id": "bangla",
+    "title": "বাংলা দ্বিতীয় পত্র",
+    "short_title": "বাংলা",
+    "pdf": "db/books/Bangla.pdf",
+    "gradient": "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)"
+  },
+  {
+    "id": "geography",
+    "title": "English 2nd",
+    "short_title": "English",
+    "pdf": "db/books/English2nd.pdf",
+    "gradient": "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)"
+  },
+  {
+    "id": "orthoniti",
+    "title": "অর্থনীতি",
+    "short_title": "অর্থনীতি",
+    "pdf": "db/books/orthoniti.pdf",
+    "gradient": "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)"
+  }
+]

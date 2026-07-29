@@ -12,6 +12,10 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&family=Noto+Serif+Bengali:wght@400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+
+    <!-- dFlip Flipbook CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -21,10 +25,11 @@
         <button class="hamburger" id="hamburger" aria-label="Menu">
             <span></span><span></span><span></span>
         </button>
-        <div class="topbar-logo">বাংলা<span> শর্ট নোট </span></div>
+        <div class="topbar-logo" id="site-logo" style="cursor:pointer;" title="Go to Home">ই-বুক<span> লাইব্রেরি </span></div>
         <div class="topbar-actions" style="display: flex; gap: 10px;">
+            <button class="theme-btn" id="toggleViewBtn">📝 নোটস</button>
             <a target="_blank" href="https://docs.google.com/document/d/1FwVn9TMgkARUrM5x58BS0dEFGcTkUdjjBkhB99IaHkQ/edit?usp=sharing" class="pdf-btn" id="pdfBtn">📄PDF</a>
-            <button class="theme-btn" id="themeBtn">🌙 Dark Mode</button>
+            <button class="theme-btn" id="themeBtn" style="padding: 6px 10px;">🌙</button>
         </div>
     </header>
     <div class="progress-bar">
@@ -49,56 +54,72 @@
 
         <!-- MAIN -->
         <main class="main" id="main-content">
-            <!-- HERO -->
-            <div class="hero" id="hero" style="display: none;">
-                <div class="hero-badge" id="hero-badge"></div>
-                <h1 id="hero-title"></h1>
-                <p id="hero-desc"></p>
-                <div class="hero-stats" id="hero-stats"></div>
-            </div>
-
-            <!-- 👨‍💻 Profile Card -->
-            <div class="profile-card">
-                <div class="profile-img-box">
-                    <!-- আপনার ছবির লিংক 'src' এ দিন -->
-                    <img src="./bisnu.webp"
-                   alt="Profile" class="profile-img" id="profileImg">
+            
+            <!-- 📚 E-BOOK VIEW (HOME) -->
+            <div id="ebook-view" class="ebook-view">
+                <div class="ebook-hero">
+                    <h1 class="ebook-title">ই-বুক লাইব্রেরি</h1>
+                    <p class="ebook-subtitle">ডিজিটাল বই পড়ার এক নতুন ও মনমুগ্ধকর অভিজ্ঞতা। আপনার পছন্দের বইটি বেছে নিয়ে পড়া শুরু করুন।</p>
                 </div>
-                <div class="profile-info">
-                    <!-- আপনার নাম ও স্কিল আপডেট করুন -->
-                    <h2 class="profile-name">বিষ্ণু কুন্ডু</h2>
-                    <div class="profile-title">ওয়েব-ডেভলপার / ফ্রীলান্সার</div>
-                    <div class="profile-links">
-                        <!-- আপনার ফেসবুক ও ওয়েবসাইটের আসল লিংক 'href' এ দিন -->
-                        <a href="https://facebook.com/freelancerbisnu" target="_blank" class="profile-btn fb-btn">
-                            📘 Facebook
-                        </a>
-                        <a href="https://bisnukundu.netlify.app/" target="_blank" class="profile-btn web-btn">
-                            🌐 Portfolio Website
-                        </a>
-                    </div>
+                
+                <div class="books-grid" id="books-grid">
+                    <!-- Books will be loaded here automatically from db/books.json -->
                 </div>
             </div>
 
-            <!-- 🔗 Quick Links -->
-            <div class="quick-links">
-                <a href="https://drive.google.com/file/d/1c3K-8VBoTp7WxbrPOZ-lGEJMwlPT-MNr/view?usp=sharing" target="_blank" class="q-btn syllabus-btn">
-                    <span class="q-icon">📋</span>
-                    <div class="q-text">
-                        <span class="q-title">এসএসসি সিলেবাস</span>
-                        <span class="q-sub">PDF ডাউনলোড করুন</span>
-                    </div>
-                </a>
-                <a href="https://drive.google.com/file/d/1my1qr3xcCqxN9FOUNjZnu1X-psKdwzJE/view?usp=sharing" target="_blank" class="q-btn routine-btn">
-                    <span class="q-icon">📅</span>
-                    <div class="q-text">
-                        <span class="q-title">পরীক্ষার রুটিন</span>
-                        <span class="q-sub">PDF ডাউনলোড করুন</span>
-                    </div>
-                </a>
-            </div>
+            <!-- 📝 NOTES VIEW (Hidden by default) -->
+            <div id="notes-view" style="display: none;">
+                <!-- HERO -->
+                <div class="hero" id="hero" style="display: none;">
+                    <div class="hero-badge" id="hero-badge"></div>
+                    <h1 id="hero-title"></h1>
+                    <p id="hero-desc"></p>
+                    <div class="hero-stats" id="hero-stats"></div>
+                </div>
 
-            <div id="dynamic-content"></div>
+                <!-- 👨‍💻 Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-img-box">
+                        <!-- আপনার ছবির লিংক 'src' এ দিন -->
+                        <img src="./bisnu.webp"
+                       alt="Profile" class="profile-img" id="profileImg">
+                    </div>
+                    <div class="profile-info">
+                        <!-- আপনার নাম ও স্কিল আপডেট করুন -->
+                        <h2 class="profile-name">বিষ্ণু কুন্ডু</h2>
+                        <div class="profile-title">ওয়েব-ডেভলপার / ফ্রীলান্সার</div>
+                        <div class="profile-links">
+                            <!-- আপনার ফেসবুক ও ওয়েবসাইটের আসল লিংক 'href' এ দিন -->
+                            <a href="https://facebook.com/freelancerbisnu" target="_blank" class="profile-btn fb-btn">
+                                📘 Facebook
+                            </a>
+                            <a href="https://bisnukundu.netlify.app/" target="_blank" class="profile-btn web-btn">
+                                🌐 Portfolio Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🔗 Quick Links -->
+                <div class="quick-links">
+                    <a href="https://drive.google.com/file/d/1c3K-8VBoTp7WxbrPOZ-lGEJMwlPT-MNr/view?usp=sharing" target="_blank" class="q-btn syllabus-btn">
+                        <span class="q-icon">📋</span>
+                        <div class="q-text">
+                            <span class="q-title">এসএসসি সিলেবাস</span>
+                            <span class="q-sub">PDF ডাউনলোড করুন</span>
+                        </div>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1my1qr3xcCqxN9FOUNjZnu1X-psKdwzJE/view?usp=sharing" target="_blank" class="q-btn routine-btn">
+                        <span class="q-icon">📅</span>
+                        <div class="q-text">
+                            <span class="q-title">পরীক্ষার রুটিন</span>
+                            <span class="q-sub">PDF ডাউনলোড করুন</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="dynamic-content"></div>
+            </div>
 
             <!-- FOOTER / SIGNATURE -->
             <footer class="footer">
@@ -133,6 +154,20 @@
     <!-- Back to top -->
     <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
+    <!-- Modal for Book Reader -->
+    <div id="bookReaderModal" class="book-modal">
+        <div class="book-modal-header">
+            <h3 id="bookModalTitle">বই পড়া হচ্ছে...</h3>
+            <button class="close-book-modal" onclick="closeBook()" title="বন্ধ করুন">✖</button>
+        </div>
+        <div class="book-modal-body">
+            <div id="flipbookContainer"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/js/dflip.min.js"></script>
     <script src="index.js"></script>
 </body>
 
