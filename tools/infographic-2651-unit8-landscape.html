@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .types { background: #e8eef8; border-radius: 24px; padding: 24px 30px; flex: 1; }
+  .types h2 { font-size: 36px; color: #2d4a8a; margin-bottom: 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+
+  .steps-card { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 26px 30px; flex: 1; }
+  .steps-card h2 { font-size: 38px; color: #16265c; margin-bottom: 16px; }
+  .steps { display: flex; align-items: stretch; gap: 0; }
+  .step { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 16px 10px; text-align: center; }
+  .step .n { display: inline-block; background: #2d4a8a; color: #ffffff; font-size: 26px; font-weight: bold;
+             width: 40px; height: 40px; line-height: 40px; text-align: center; border-radius: 50%; }
+  .step b { display: block; font-size: 26px; color: #16265c; margin: 8px 0 4px; line-height: 1.3; }
+  .step span { font-size: 22px; line-height: 1.4; color: #4a4a6a; }
+  .step.big { flex: 1.5; background: #fdf3e0; }
+  .step.big .n { background: #9a6208; }
+  .sarrow { align-self: center; font-size: 34px; color: #2d4a8a; padding: 0 6px; }
+
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 12px; }
+  .card p { font-size: 26px; line-height: 1.6; color: #3a3a55; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.55; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>পত্রলিখন (ইউনিট-০৮)</h1>
+    <p>SSC-2651 • বাংলা দ্বিতীয় পত্র • সৃজনশীল ৫ নম্বর</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="types">
+        <h2>✉️ পত্র ৬ ধরনের</h2>
+        <div class="chips">
+          <span class="chip">ব্যক্তিগত পত্র</span>
+          <span class="chip">আবেদনপত্র / দরখাস্ত</span>
+          <span class="chip">সংবাদপত্রের জন্য পত্র</span>
+          <span class="chip">মানপত্র ও স্মারকলিপি</span>
+          <span class="chip">বাণিজ্যিকপত্র</span>
+          <span class="chip">আমন্ত্রণপত্র</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="steps-card">
+        <h2>📝 আবেদনপত্রের কাঠামো — ৭ ধাপ</h2>
+        <div class="steps">
+          <div class="step"><span class="n">১</span><b>ঠিকানা</b><span>প্রাপকের ঠিকানা</span></div>
+          <div class="sarrow">→</div>
+          <div class="step"><span class="n">২</span><b>তারিখ</b><span>উপরে লিখবে</span></div>
+          <div class="sarrow">→</div>
+          <div class="step"><span class="n">৩</span><b>বিষয়</b><span>সংক্ষেপে</span></div>
+          <div class="sarrow">→</div>
+          <div class="step"><span class="n">৪</span><b>সম্বোধন</b><span>মাননীয়…</span></div>
+          <div class="sarrow">→</div>
+          <div class="step big"><span class="n">৫</span><b>মূল বক্তব্য</b><span>৩ অনুচ্ছেদ: পরিচয়, সমস্যা/প্রয়োজন, অনুরোধ</span></div>
+          <div class="sarrow">→</div>
+          <div class="step"><span class="n">৬</span><b>সমাপ্তি</b><span>বিনীত নিবেদক</span></div>
+          <div class="sarrow">→</div>
+          <div class="step"><span class="n">৭</span><b>স্বাক্ষর</b><span>নাম ও ঠিকানা</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>👨‍👩‍👧 ব্যক্তিগত পত্র</h2>
+        <p>তারিখ, সম্বোধন, কুশল, মূল কথা, সমাপ্তি।</p>
+      </div>
+      <div class="card c-orange" style="flex:1">
+        <h2>📰 সংবাদপত্রের পত্র</h2>
+        <p>সম্পাদক বরাবর, বিষয়, সমস্যার বর্ণনা, প্রতিকার, নাম-ঠিকানা।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষায় বেশি আসে:</b> আবেদনপত্র ও সংবাদপত্রের পত্র। ঠিকানা, তারিখ ও বানানে ভুল করবে না — এতে নম্বর কাটা যায়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2651 বই (পৃ. ২২১) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #7f1d1d, #92400e); border-radius: 24px;
+            padding: 24px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fef3c7; }
+  .badge { margin-left: auto; background: #f5c542; color: #16265c; font-size: 28px; font-weight: bold;
+           border-radius: 999px; padding: 12px 26px; white-space: nowrap; }
+
+  .karak { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 26px 30px; flex: 1; }
+  .karak h2 { font-size: 38px; color: #16265c; margin-bottom: 16px; }
+  .karak-grid { display: flex; gap: 14px; }
+  .k { flex: 1; border-radius: 16px; padding: 18px 8px; text-align: center; }
+  .k b { display: block; font-size: 31px; margin-bottom: 4px; }
+  .k span { font-size: 24px; color: #4a4a6a; }
+  .k1 { background: #e8eef8; } .k1 b { color: #2d4a8a; }
+  .k2 { background: #e8f4ec; } .k2 b { color: #2e6b41; }
+  .k3 { background: #fdf3e0; } .k3 b { color: #9a6208; }
+  .k4 { background: #f8e8f0; } .k4 b { color: #8b2252; }
+  .k5 { background: #e6f4f1; } .k5 b { color: #0f766e; }
+  .k6 { background: #ede9fe; } .k6 b { color: #5b21b6; }
+  .vibhakti { margin-top: 16px; display: flex; align-items: center; gap: 14px; }
+  .vibhakti b { font-size: 28px; color: #16265c; white-space: nowrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip { background: #f4f6fb; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 8px 20px; font-size: 26px; font-weight: bold; }
+
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .card p { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .card p b { color: #1a1a2e; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.55; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>বাক্য প্রকরণ (ইউনিট-০৫)</h1>
+    <p>SSC-2651 • বাংলা দ্বিতীয় পত্র</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">📖</div>
+        <div>
+          <h2>বাক্য কাকে বলে?</h2>
+          <p>এক বা একাধিক পদের সমষ্টি, যা মনের ভাব সম্পূর্ণভাবে প্রকাশ করে।</p>
+        </div>
+        <div class="badge">⭐ MCQ-র জন্য সবচেয়ে গুরুত্বপূর্ণ</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="karak">
+        <h2>⚖️ কারক ৬টি</h2>
+        <div class="karak-grid">
+          <div class="k k1"><b>কর্তৃ</b><span>কে?</span></div>
+          <div class="k k2"><b>কর্ম</b><span>কী?</span></div>
+          <div class="k k3"><b>করণ</b><span>কী দিয়ে?</span></div>
+          <div class="k k4"><b>সম্প্রদান</b><span>কাকে?</span></div>
+          <div class="k k5"><b>অপাদান</b><span>কোথা থেকে?</span></div>
+          <div class="k k6"><b>অধিকরণ</b><span>কোথায়?</span></div>
+        </div>
+        <div class="vibhakti">
+          <b>বিভক্তি দেখে চিনবে:</b>
+          <div class="chips">
+            <span class="chip">কে / রে</span>
+            <span class="chip">দ্বারা / দিয়ে</span>
+            <span class="chip">কে / জন্য</span>
+            <span class="chip">হতে / থেকে</span>
+            <span class="chip">এ / তে</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>🔄 বাচ্য ৩টি</h2>
+        <div class="chips">
+          <span class="chip">কর্তৃবাচ্য</span>
+          <span class="chip">কর্মবাচ্য</span>
+          <span class="chip">ভাববাচ্য</span>
+        </div>
+        <p style="margin-top:12px">বাচ্য পরিবর্তনে <b>ক্রিয়ার রূপ বদলায়</b>।</p>
+      </div>
+      <div class="card c-green" style="flex:1.25">
+        <h2>💬 উক্তি ২টি</h2>
+        <p><b>প্রত্যক্ষ:</b> সে বলল, 'আমি যাব'<br><b>পরোক্ষ:</b> সে বলল যে সে যাবে</p>
+      </div>
+      <div class="card c-orange" style="flex:1">
+        <h2>🌸 বাগধারা</h2>
+        <div class="chips">
+          <span class="chip">অন্ধকারে ঢিল ছোড়া</span>
+          <span class="chip">আকাশকুসুম</span>
+          <span class="chip">গোড়ায় গলদ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার টিপস:</b> বাগধারা, এক কথায় প্রকাশ ও প্রায়-সমোচ্চারিত শব্দ — প্রতিদিন ১০টি করে পড়লে MCQ-র বড় অংশ নিশ্চিত হয়। যতি চিহ্ন: দাঁড়ি, কমা, সেমিকোলন, প্রশ্নবোধক, বিস্ময়বোধক।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2651 বই (পৃ. ১৩৬–১৮৮) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

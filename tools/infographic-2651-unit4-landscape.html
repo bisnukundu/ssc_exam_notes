@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 22px 60px 18px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 64px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 18px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #4338ca, #0e7490); border-radius: 24px;
+            padding: 18px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 64px; }
+  .banner h2 { font-size: 36px; color: #ffffff; margin-bottom: 4px; }
+  .banner p { font-size: 28px; line-height: 1.45; color: #e0e7ff; }
+
+  .bisheshya { background: #e8eef8; border-radius: 24px; padding: 20px 30px; flex: 1;
+               display: flex; align-items: center; gap: 26px; }
+  .bisheshya .ico { font-size: 60px; }
+  .bisheshya h2 { font-size: 36px; color: #2d4a8a; white-space: nowrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+
+  .pada { flex: 1; border-radius: 24px; padding: 22px 20px; text-align: center; }
+  .pada .ico { font-size: 60px; }
+  .pada h2 { font-size: 36px; margin-top: 8px; }
+  .p-teal { background: #e6f4f1; } .p-teal h2 { color: #0f766e; }
+  .p-amber { background: #fdf3e0; } .p-amber h2 { color: #9a6208; }
+  .p-rose { background: #f8e8f0; } .p-rose h2 { color: #8b2252; }
+  .p-green { background: #e8f4ec; } .p-green h2 { color: #2e6b41; }
+
+  .card { border-radius: 24px; padding: 22px 28px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+
+  .vs2 { display: flex; gap: 14px; }
+  .vs2 .v { flex: 1; border-radius: 16px; padding: 12px 12px; text-align: center; }
+  .vs2 .v b { display: block; font-size: 30px; margin-bottom: 4px; }
+  .vs2 .v span { font-size: 25px; line-height: 1.45; color: #3a3a55; }
+  .v-ok { background: #e8f4ec; } .v-ok b { color: #2e6b41; }
+  .v-no { background: #fde8e8; } .v-no b { color: #b91c1c; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 18px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 27px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 16px 0 14px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>পদ প্রকরণ (ইউনিট-০৪)</h1>
+    <p>SSC-2651 • বাংলা দ্বিতীয় পত্র</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">📝</div>
+        <div>
+          <h2>পদ কাকে বলে?</h2>
+          <p>বাক্যে ব্যবহৃত প্রতিটি অর্থবোধক শব্দকে পদ বলে। পদ ৫ প্রকার।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="bisheshya">
+        <div class="ico">📦</div>
+        <h2>বিশেষ্য — ৫ প্রকার</h2>
+        <div class="chips">
+          <span class="chip">সংজ্ঞাবাচক</span>
+          <span class="chip">জাতিবাচক</span>
+          <span class="chip">বস্তুবাচক</span>
+          <span class="chip">সমষ্টিবাচক</span>
+          <span class="chip">ভাববাচক</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="pada p-teal">
+        <div class="ico">👤</div>
+        <h2>সর্বনাম</h2>
+      </div>
+      <div class="pada p-amber">
+        <div class="ico">🎨</div>
+        <h2>বিশেষণ</h2>
+      </div>
+      <div class="pada p-rose">
+        <div class="ico">🔗</div>
+        <h2>অব্যয়</h2>
+      </div>
+      <div class="pada p-green">
+        <div class="ico">🏃</div>
+        <h2>ক্রিয়া</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>⏰ ক্রিয়ার কাল ৩টি</h2>
+        <div class="chips">
+          <span class="chip">বর্তমান</span>
+          <span class="chip">অতীত</span>
+          <span class="chip">ভবিষ্যৎ</span>
+        </div>
+      </div>
+      <div class="card c-green" style="flex:1">
+        <h2>🧑 পুরুষ ৩টি</h2>
+        <div class="chips">
+          <span class="chip">উত্তম</span>
+          <span class="chip">মধ্যম</span>
+          <span class="chip">নাম</span>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1.3">
+        <h2>✅ সমাপিকা বনাম অসমাপিকা</h2>
+        <div class="vs2">
+          <div class="v v-ok"><b>সমাপিকা</b><span>সে যায় — বাক্য শেষ করে</span></div>
+          <div class="v v-no"><b>অসমাপিকা</b><span>সে গিয়ে… — শেষ করে না</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> অনুজ্ঞা — আদেশ, অনুরোধ, উপদেশ (যাও, করুন, বসো)। অনুসর্গ — পদের পরে বসে সম্পর্ক বোঝায় (দিয়ে, থেকে, জন্য, প্রতি)।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2651 বই (পৃ. ৯৮–১৩৫) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

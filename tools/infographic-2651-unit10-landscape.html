@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+
+  .layers { display: flex; flex-direction: column; align-items: center; gap: 14px; margin-top: 22px; }
+  .layer { border-radius: 20px; padding: 22px 36px; display: flex; align-items: center; gap: 26px; }
+  .layer .n { flex-shrink: 0; background: #ffffff; color: #16265c; font-size: 30px; font-weight: bold;
+              width: 52px; height: 52px; line-height: 52px; text-align: center; border-radius: 50%; }
+  .layer h2 { font-size: 38px; white-space: nowrap; }
+  .layer p { font-size: 27px; line-height: 1.5; color: #3a3a55; }
+  .layer p b { color: #1a1a2e; }
+  .l1 { width: 76%; background: #e8eef8; } .l1 h2 { color: #2d4a8a; }
+  .l2 { width: 100%; background: #e8f4ec; } .l2 h2 { color: #2e6b41; }
+  .l3 { width: 76%; background: #fdf3e0; } .l3 h2 { color: #9a6208; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 8px 20px; font-size: 26px; font-weight: bold; }
+
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .mini { flex: 1; border-radius: 24px; padding: 24px 28px; }
+  .mini h3 { font-size: 32px; margin-bottom: 6px; }
+  .mini p { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .m-blue { background: #e8eef8; } .m-blue h3 { color: #2d4a8a; }
+  .m-green { background: #e8f4ec; } .m-green h3 { color: #2e6b41; }
+  .m-orange { background: #fdf3e0; } .m-orange h3 { color: #9a6208; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.55; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>প্রবন্ধ রচনা (ইউনিট-১০)</h1>
+    <p>SSC-2651 • বাংলা দ্বিতীয় পত্র • সৃজনশীল ২০ নম্বর — সবচেয়ে বড় প্রশ্ন</p>
+  </div>
+
+  <div class="wrap">
+    <div class="layers">
+      <div class="layer l1">
+        <span class="n">১</span>
+        <h2>ভূমিকা</h2>
+        <p>বিষয়ের পরিচয় — <b>১ অনুচ্ছেদ</b>, সংক্ষিপ্ত।</p>
+      </div>
+      <div class="layer l2">
+        <span class="n">২</span>
+        <h2>মূল অংশ</h2>
+        <div>
+          <p style="margin-bottom:10px"><b>২–৪ অনুচ্ছেদ</b> — পয়েন্ট আকারে, সবচেয়ে বিস্তারিত।</p>
+          <div class="chips">
+            <span class="chip">সংজ্ঞা / ব্যাখ্যা</span>
+            <span class="chip">গুরুত্ব</span>
+            <span class="chip">সমস্যা</span>
+            <span class="chip">প্রতিকার</span>
+          </div>
+        </div>
+      </div>
+      <div class="layer l3">
+        <span class="n">৩</span>
+        <h2>উপসংহার</h2>
+        <p>সারকথা ও নিজের মত — <b>১ অনুচ্ছেদ</b>, সংক্ষিপ্ত।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mini m-blue">
+        <h3>✍️ ভাষা</h3>
+        <p>সহজ, শুদ্ধ ও এক রীতিতে; বানান ও যতি চিহ্ন ঠিক রাখবে।</p>
+      </div>
+      <div class="mini m-green">
+        <h3>📝 প্রস্তুতি</h3>
+        <p>সাধারণ বিষয়ের ৮–১০টি পয়েন্ট আগে থেকে তৈরি রাখবে।</p>
+      </div>
+      <div class="mini m-orange">
+        <h3>⏰ সময়</h3>
+        <p>২০ নম্বরের প্রশ্ন বলে সবচেয়ে বেশি সময় এখানে দেবে।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার কৌশল:</b> পরীক্ষার শুরুতে প্রবন্ধের পয়েন্টগুলো খসড়া করে নাও। ভূমিকা ও উপসংহার সংক্ষিপ্ত, মূল অংশ বিস্তারিত রাখবে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2651 বই (পৃ. ২৫৩) • Under Teacher Review</div>
+  </div>
+</body>
+</html>
