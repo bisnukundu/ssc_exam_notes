@@ -328,7 +328,8 @@
           "marks": 5
         }
       ],
-      "notes": "নমুনা প্রশ্ন পৃ. ২৮৫। সম্পূর্ণ Learning Content db/notes-2651.json-এ আছে।"
+      "notes": "নমুনা প্রশ্ন পৃ. ২৮৫। সম্পূর্ণ Learning Content db/notes-2651.json-এ আছে।",
+      "notes_file": "db/notes-2651.json"
     },
     {
       "code": "2652",
@@ -351,9 +352,339 @@
         }
       },
       "verification_status": "verified",
-      "unit_count": 17,
-      "units": null,
-      "unit_note": "১৭টি Unit — Unit 1 Sentence থেকে Unit 17 Completing Stories পর্যন্ত। মাঝের Unit-গুলোর শিরোনাম এই ফাইলে সংরক্ষিত নেই; বইয়ের সূচিপত্র থেকে যাচাই করে যুক্ত করা হবে।"
+      "units": [
+        {
+          "no": 1,
+          "title_bn": "Sentence",
+          "pages": "পৃ. 1–18",
+          "lessons": [
+            {
+              "no": "1.1",
+              "title_bn": "Subject and Predicate",
+              "pages": "পৃ. 2"
+            },
+            {
+              "no": "1.2",
+              "title_bn": "Four Functions of Sentences",
+              "pages": "পৃ. 4"
+            },
+            {
+              "no": "1.3",
+              "title_bn": "Three Structures of Sentences",
+              "pages": "পৃ. 14"
+            }
+          ]
+        },
+        {
+          "no": 2,
+          "title_bn": "Tense",
+          "pages": "পৃ. 19–36",
+          "lessons": [
+            {
+              "no": "2.1",
+              "title_bn": "Auxiliary Verb and Tense Structure",
+              "pages": "পৃ. 20"
+            },
+            {
+              "no": "2.2",
+              "title_bn": "Functions of Present and Past Tense",
+              "pages": "পৃ. 26"
+            },
+            {
+              "no": "2.3",
+              "title_bn": "Functions of Future Tense",
+              "pages": "পৃ. 33"
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title_bn": "Infinitive, Gerund, Participle",
+          "pages": "পৃ. 37–44",
+          "lessons": [
+            {
+              "no": "3.1",
+              "title_bn": "Gerund",
+              "pages": "পৃ. 38"
+            },
+            {
+              "no": "3.2",
+              "title_bn": "Participle",
+              "pages": "পৃ. 41"
+            },
+            {
+              "no": "3.3",
+              "title_bn": "Infinitive",
+              "pages": "পৃ. 43"
+            }
+          ]
+        },
+        {
+          "no": 4,
+          "title_bn": "Voice",
+          "pages": "পৃ. 45–52",
+          "lessons": [
+            {
+              "no": "4.1",
+              "title_bn": "Transformation: Active and Passive (Assertive and Interrogative Sentences)",
+              "pages": "পৃ. 46"
+            },
+            {
+              "no": "4.2",
+              "title_bn": "Transformation: Active and Passive (Imperative Sentences and Multiple Clauses)",
+              "pages": "পৃ. 50"
+            },
+            {
+              "no": "4.3",
+              "title_bn": "Miscellaneous",
+              "pages": "পৃ. 52"
+            }
+          ]
+        },
+        {
+          "no": 5,
+          "title_bn": "Speech / Narration",
+          "pages": "পৃ. 53–62",
+          "lessons": [
+            {
+              "no": "5.1",
+              "title_bn": "Direct-indirect Speech (Assertive Sentences)",
+              "pages": "পৃ. 54"
+            },
+            {
+              "no": "5.2",
+              "title_bn": "Direct-indirect Speech (Interrogative Sentences)",
+              "pages": "পৃ. 57"
+            },
+            {
+              "no": "5.3",
+              "title_bn": "Direct-indirect Speech (Imperative Sentences, Exclamatory Sentences)",
+              "pages": "পৃ. 59"
+            }
+          ]
+        },
+        {
+          "no": 6,
+          "title_bn": "Conditional sentence",
+          "pages": "পৃ. 63–72",
+          "lessons": [
+            {
+              "no": "6.1",
+              "title_bn": "Conditionals 1",
+              "pages": "পৃ. 64"
+            },
+            {
+              "no": "6.2",
+              "title_bn": "Conditionals 2",
+              "pages": "পৃ. 67"
+            },
+            {
+              "no": "6.3",
+              "title_bn": "Conditionals 3",
+              "pages": "পৃ. 70"
+            }
+          ]
+        },
+        {
+          "no": 7,
+          "title_bn": "Right form of verbs",
+          "pages": "পৃ. 73–82",
+          "lessons": [
+            {
+              "no": "7.1",
+              "title_bn": "The Right Forms of Verbs",
+              "pages": "পৃ. 74"
+            },
+            {
+              "no": "7.2",
+              "title_bn": "Subject-Verb Agreement",
+              "pages": "পৃ. 78"
+            }
+          ]
+        },
+        {
+          "no": 8,
+          "title_bn": "Phrase",
+          "pages": "পৃ. 83–92",
+          "lessons": [
+            {
+              "no": "8.1",
+              "title_bn": "Phrase",
+              "pages": "পৃ. 84"
+            },
+            {
+              "no": "8.2",
+              "title_bn": "Phrases & Idioms",
+              "pages": "পৃ. 86"
+            }
+          ]
+        },
+        {
+          "no": 9,
+          "title_bn": "Tag question",
+          "pages": "পৃ. 93–100",
+          "lessons": [
+            {
+              "no": "9.1",
+              "title_bn": "Tag Questions",
+              "pages": "পৃ. 94"
+            },
+            {
+              "no": "9.2",
+              "title_bn": "Rules for Making Tag Questions",
+              "pages": "পৃ. 95"
+            }
+          ]
+        },
+        {
+          "no": 10,
+          "title_bn": "Linking words or Connectors",
+          "pages": "পৃ. 101–110",
+          "lessons": [
+            {
+              "no": "10.1",
+              "title_bn": "Linking Words or Connectors",
+              "pages": "পৃ. 102"
+            },
+            {
+              "no": "10.2",
+              "title_bn": "Coordinators or Coordinating Conjunctions",
+              "pages": "পৃ. 103"
+            },
+            {
+              "no": "10.3",
+              "title_bn": "Subordinators or Subordinating Conjunctions",
+              "pages": "পৃ. 104"
+            },
+            {
+              "no": "10.4",
+              "title_bn": "Transitions or Sentence Connectors",
+              "pages": "পৃ. 106"
+            }
+          ]
+        },
+        {
+          "no": 11,
+          "title_bn": "Preposition",
+          "pages": "পৃ. 111–124",
+          "lessons": [
+            {
+              "no": "11.1",
+              "title_bn": "Prepositions",
+              "pages": "পৃ. 112"
+            },
+            {
+              "no": "11.2",
+              "title_bn": "Usages of Common Prepositions",
+              "pages": "পৃ. 113"
+            }
+          ]
+        },
+        {
+          "no": 12,
+          "title_bn": "Punctuation, Capitalization",
+          "pages": "পৃ. 125–135",
+          "lessons": [
+            {
+              "no": "12.1",
+              "title_bn": "Punctuation",
+              "pages": "পৃ. 126"
+            },
+            {
+              "no": "12.2",
+              "title_bn": "The Rules of Punctuation",
+              "pages": "পৃ. 128"
+            },
+            {
+              "no": "12.3",
+              "title_bn": "Capitalization",
+              "pages": "পৃ. 133"
+            }
+          ]
+        },
+        {
+          "no": 13,
+          "title_bn": "Dialogue writing",
+          "pages": "পৃ. 136–143",
+          "lessons": [
+            {
+              "no": "13.1",
+              "title_bn": "Dialogue Writing",
+              "pages": "পৃ. 137"
+            }
+          ]
+        },
+        {
+          "no": 14,
+          "title_bn": "Application / letter",
+          "pages": "পৃ. 144–170",
+          "lessons": [
+            {
+              "no": "14.1",
+              "title_bn": "Letter / Application Writing",
+              "pages": "পৃ. 145"
+            },
+            {
+              "no": "14.2",
+              "title_bn": "Job Letters & Resume Writing",
+              "pages": "পৃ. 160"
+            }
+          ]
+        },
+        {
+          "no": 15,
+          "title_bn": "Paragraphs",
+          "pages": "পৃ. 171–178",
+          "lessons": [
+            {
+              "no": "15.1",
+              "title_bn": "Paragraph Writing",
+              "pages": "পৃ. 172"
+            },
+            {
+              "no": "15.2",
+              "title_bn": "How to Write Good Paragraphs",
+              "pages": "পৃ. 175"
+            }
+          ]
+        },
+        {
+          "no": 16,
+          "title_bn": "Compositions",
+          "pages": "পৃ. 179–184",
+          "lessons": [
+            {
+              "no": "16.1",
+              "title_bn": "Composition Writing",
+              "pages": "পৃ. 180"
+            },
+            {
+              "no": "16.2",
+              "title_bn": "How to Write Good Compositions",
+              "pages": "পৃ. 182"
+            }
+          ]
+        },
+        {
+          "no": 17,
+          "title_bn": "Completing Stories",
+          "pages": "পৃ. 185–205",
+          "lessons": [
+            {
+              "no": "17.1",
+              "title_bn": "Completing Stories",
+              "pages": "পৃ. 186"
+            },
+            {
+              "no": "17.2",
+              "title_bn": "Summary Writing",
+              "pages": "পৃ. 192"
+            }
+          ]
+        }
+      ],
+      "notes": "বইয়ের Contents পাতা (English2nd.pdf) থেকে ১৭ Unit ও পাঠের তালিকা যাচাইকৃত, ১১ নভেম্বর ২০২৬। সম্পূর্ণ Learning Content db/notes-2652.json-এ আছে।",
+      "notes_file": "db/notes-2652.json"
     },
     {
       "code": "2669",
@@ -365,12 +696,162 @@
       "book_status": "available",
       "marks": null,
       "marks_note": "Not Yet Verified",
-      "verification_status": "partial",
-      "unit_count": null,
+      "verification_status": "verified_units",
       "units": [
+        {
+          "no": 1,
+          "title_bn": "সুস্থ জীবনের জন্য শারীরিক শিক্ষা",
+          "pages": "পৃ. 1–10",
+          "lessons": [
+            {
+              "no": "1.1",
+              "title_bn": "শারীরিক শিক্ষা"
+            },
+            {
+              "no": "1.2",
+              "title_bn": "শারীরিক শিক্ষার উদ্দেশ্য"
+            },
+            {
+              "no": "1.3",
+              "title_bn": "শারীরিক শিক্ষার প্রয়োজনীয়তা"
+            }
+          ],
+          "max_weeks": 2
+        },
+        {
+          "no": 2,
+          "title_bn": "শারীরিক সক্ষমতা",
+          "pages": "পৃ. 11–24",
+          "lessons": [
+            {
+              "no": "2.1",
+              "title_bn": "শারীরিক সক্ষমতার গুরুত্ব"
+            },
+            {
+              "no": "2.2",
+              "title_bn": "ব্যায়ামভেদে শারীরিক সক্ষমতা অর্জনে ব্যায়াম"
+            },
+            {
+              "no": "2.3",
+              "title_bn": "বয়স ও লিঙ্গভেদে শারীরিক সক্ষমতা অর্জনে ব্যায়াম"
+            },
+            {
+              "no": "2.4",
+              "title_bn": "শারীরিক সক্ষমতা অর্জনে ব্যায়ামের প্রভাব"
+            },
+            {
+              "no": "2.5",
+              "title_bn": "শারীরিক সক্ষমতা অর্জনে শক্তি, গতি, দম, ক্ষিপ্রতা ও নমনীয়তা বৃদ্ধির ব্যায়াম"
+            }
+          ]
+        },
+        {
+          "no": 3,
+          "title_bn": "মানসিক স্বাস্থ্য ও অবসাদ",
+          "pages": "পৃ. 25–31",
+          "lessons": [
+            {
+              "no": "3.1",
+              "title_bn": "মানসিক স্বাস্থ্য ও এর প্রভাব"
+            },
+            {
+              "no": "3.2",
+              "title_bn": "মানসিক অস্থিরতা ও মানসিক অবসাদ"
+            }
+          ]
+        },
+        {
+          "no": 4,
+          "title_bn": "স্বাস্থ্য বিজ্ঞান ও স্বাস্থ্যসেবা",
+          "pages": "পৃ. 32–39",
+          "lessons": [
+            {
+              "no": "4.1",
+              "title_bn": "স্বাস্থ্য বিজ্ঞানের গুরুত্ব"
+            },
+            {
+              "no": "4.2",
+              "title_bn": "ব্যক্তিগত স্বাস্থ্যরক্ষা"
+            },
+            {
+              "no": "4.3",
+              "title_bn": "সাধারণ স্বাস্থ্য সমস্যা ও প্রতিকার"
+            }
+          ]
+        },
+        {
+          "no": 5,
+          "title_bn": "স্বাস্থ্যের জন্য পুষ্টি",
+          "pages": "পৃ. 40–49",
+          "lessons": [
+            {
+              "no": "5.1",
+              "title_bn": "খাদ্য ও পুষ্টি"
+            },
+            {
+              "no": "5.2",
+              "title_bn": "পুষ্টিহীনতার কারণ ও প্রতিকার"
+            },
+            {
+              "no": "5.3",
+              "title_bn": "অবস্থাভেদে খাদ্য ও ক্যালরি চাহিদা"
+            },
+            {
+              "no": "5.4",
+              "title_bn": "খাদ্যে ভেজালের কারণ ও প্রতিবিধান"
+            }
+          ]
+        },
+        {
+          "no": 6,
+          "title_bn": "মাদকাসক্তি ও এইডস",
+          "pages": "পৃ. 50–68",
+          "lessons": [
+            {
+              "no": "6.1",
+              "title_bn": "মাদকদ্রব্য ও মাদকাসক্তি"
+            },
+            {
+              "no": "6.2",
+              "title_bn": "মাদকাসক্তি থেকে বিরত থাকার উপায়"
+            },
+            {
+              "no": "6.3",
+              "title_bn": "এইচআইভি ও এইডস"
+            },
+            {
+              "no": "6.4",
+              "title_bn": "বাংলাদেশে এইচআইভি ও এইডস-এর ঝুঁকি ও তার প্রতিরোধ কার্যক্রম"
+            },
+            {
+              "no": "6.5",
+              "title_bn": "অটিজম"
+            }
+          ]
+        },
+        {
+          "no": 7,
+          "title_bn": "বয়ঃসন্ধিকাল ও প্রজনন স্বাস্থ্য",
+          "pages": "পৃ. 69–76",
+          "lessons": [
+            {
+              "no": "7.1",
+              "title_bn": "বয়ঃসন্ধিকালের পরিবর্তন"
+            },
+            {
+              "no": "7.2",
+              "title_bn": "বয়ঃসন্ধিকালের মানসিক চাপ ও খাপ খাওয়ানো"
+            },
+            {
+              "no": "7.3",
+              "title_bn": "বয়ঃসন্ধিকালের পুষ্টি চাহিদা ও প্রজনন স্বাস্থ্যবিধি"
+            }
+          ]
+        },
         {
           "no": 8,
           "title_bn": "খেলাধুলা",
+          "pages": "পৃ. 77–109",
           "lessons": [
             {
               "no": "8.1",
@@ -394,9 +875,33 @@
             }
           ],
           "max_weeks": 4
+        },
+        {
+          "no": 9,
+          "title_bn": "খেলাধুলার দুর্ঘটনা ও প্রাথমিক প্রতিবিধান",
+          "pages": "পৃ. 110–121",
+          "lessons": [
+            {
+              "no": "9.1",
+              "title_bn": "দুর্ঘটনায় প্রাথমিক প্রতিবিধান"
+            },
+            {
+              "no": "9.2",
+              "title_bn": "চামড়া ছিঁড়ে যাওয়া, মাংসপেশির টান ও ফুলে যাওয়া"
+            },
+            {
+              "no": "9.3",
+              "title_bn": "সন্ধিচ্যুতি, মচকানো, হাড়ভাঙা ও লিগামেন্ট ছিঁড়ে যাওয়া"
+            },
+            {
+              "no": "9.4",
+              "title_bn": "নাক দিয়ে রক্ত পড়া, পানিতে ডুবে যাওয়া"
+            }
+          ]
         }
       ],
-      "unit_note": "শুধু Unit 8 যাচাই হয়েছে। পূর্ণ Unit তালিকা এখনো Not Yet Verified — BOU সূচিপত্র পাতা থেকে যাচাই করে যুক্ত করা হবে।"
+      "notes": "বই saririk.pdf (১২১ পৃষ্ঠা) থেকে ৯ Unit ও পাঠের তালিকা যাচাইকৃত, ১১ নভেম্বর ২০২৬। সম্পূর্ণ Learning Content db/notes-2669.json-এ আছে।",
+      "notes_file": "db/notes-2669.json"
     },
     {
       "code": "2671",
@@ -471,7 +976,8 @@
           "title_bn": "সরকারি অর্থব্যবস্থা",
           "pages": "পৃ. 169-183"
         }
-      ]
+      ],
+      "notes_file": "db/notes-2671.json"
     },
     {
       "code": "2672",
@@ -546,7 +1052,8 @@
           "title_bn": "সুশাসন ও বাংলাদেশ",
           "pages": "পৃ. 219-229"
         }
-      ]
+      ],
+      "notes_file": "db/notes-2672.json"
     },
     {
       "code": "2673",
@@ -630,7 +1137,8 @@
           "title_bn": "জীবন বাঁচাতে পদার্থবিজ্ঞান",
           "pages": "পৃ. 241-252"
         }
-      ]
+      ],
+      "notes_file": "db/notes-2673.json"
     },
     {
       "code": "2676",
@@ -711,7 +1219,8 @@
           "pages": "পৃ. 143"
         }
       ],
-      "notes": "বইয়ের PDF এখনো এই রিপোজিটরিতে যুক্ত হয়নি — Unit তালিকা BOU সূচিপত্র থেকে যাচাই করা।"
+      "notes": "বইয়ের PDF এখনো এই রিপোজিটরিতে যুক্ত হয়নি — Unit তালিকা BOU সূচিপত্র থেকে যাচাই করা।",
+      "notes_file": "db/notes-2676.json"
     },
     {
       "code": "2679",
@@ -801,7 +1310,8 @@
           "pages": "পৃ. 225-232"
         }
       ],
-      "notes": "বইয়ের PDF এখনো এই রিপোজিটরিতে যুক্ত হয়নি — Unit তালিকা BOU সূচিপত্র থেকে যাচাই করা।"
+      "notes": "বইয়ের PDF এখনো এই রিপোজিটরিতে যুক্ত হয়নি — Unit তালিকা BOU সূচিপত্র থেকে যাচাই করা।",
+      "notes_file": "db/notes-2679.json"
     },
     {
       "code": "2680",
@@ -886,7 +1396,8 @@
           "pages": "পৃ. 265-280"
         }
       ],
-      "notes": "বইয়ের PDF এখনো এই রিপোজিটরিতে যুক্ত হয়নি — Unit তালিকা BOU সূচিপত্র থেকে যাচাই করা।"
+      "notes": "বইয়ের PDF এখনো এই রিপোজিটরিতে যুক্ত হয়নি — Unit তালিকা BOU সূচিপত্র থেকে যাচাই করা।",
+      "notes_file": "db/notes-2680.json"
     },
     {
       "code": "2681",
@@ -975,7 +1486,8 @@
           "title_bn": "সামাজিক সমস্যা",
           "pages": "পৃ. 231-241"
         }
-      ]
+      ],
+      "notes_file": "db/notes-2681.json"
     },
     {
       "code": "2685",
@@ -1075,7 +1587,8 @@
           "pages": "পৃ. 169-184"
         }
       ],
-      "notes": "বইয়ের PDF এখনো এই রিপোজিটরিতে যুক্ত হয়নি — Unit তালিকা BOU সূচিপত্র থেকে যাচাই করা।"
+      "notes": "বইয়ের PDF এখনো এই রিপোজিটরিতে যুক্ত হয়নি — Unit তালিকা BOU সূচিপত্র থেকে যাচাই করা।",
+      "notes_file": "db/notes-2685.json"
     },
     {
       "code": "2686",
@@ -1154,7 +1667,8 @@
           "title_bn": "কৃষি সমবায় ও পারিবারিক খামার",
           "pages": "পৃ. 247-278"
         }
-      ]
+      ],
+      "notes_file": "db/notes-2686.json"
     },
     {
       "code": "2358",
@@ -1166,13 +1680,164 @@
       "book_status": "available",
       "marks": null,
       "marks_note": "Not Yet Verified",
-      "verification_status": "partial",
-      "unit_count": null,
+      "verification_status": "verified_units",
       "units": [
+        {
+          "no": 1,
+          "title_bn": "ক্যারিয়ারের ধারণা",
+          "pages": "পৃ. 1–11",
+          "lessons": [
+            {
+              "no": "1.1",
+              "title_bn": "ক্যারিয়ার ও এর বিকাশ"
+            },
+            {
+              "no": "1.2",
+              "title_bn": "ক্যারিয়ার রূপরেখা বা মডেল"
+            },
+            {
+              "no": "1.3",
+              "title_bn": "ক্যারিয়ার শিক্ষা ও এর গুরুত্ব"
+            },
+            {
+              "no": "1.4",
+              "title_bn": "আমি, আমার শিক্ষা ও ক্যারিয়ার"
+            },
+            {
+              "no": "1.5",
+              "title_bn": "আগ্রহ এবং যোগ্যতা"
+            },
+            {
+              "no": "1.6",
+              "title_bn": "আমার ক্যারিয়ার ও মূল্যবোধ"
+            }
+          ],
+          "max_weeks": 1
+        },
+        {
+          "no": 2,
+          "title_bn": "ক্যারিয়ার গঠনের উপাদান ও কৌশল",
+          "pages": "পৃ. 11–76",
+          "lessons": [
+            {
+              "no": "2.1",
+              "title_bn": "ইতিবাচক দৃষ্টিভঙ্গি, প্রতিযোগিতা ও সহযোগিতামূলক মনোভাব"
+            },
+            {
+              "no": "2.2",
+              "title_bn": "আত্ম সচেতনতা ও আত্মবিশ্বাস: গুরুত্ব ও উন্নয়ন"
+            },
+            {
+              "no": "2.3",
+              "title_bn": "দৃঢ় প্রত্যয়: গুরুত্ব ও কৌশল"
+            },
+            {
+              "no": "2.4",
+              "title_bn": "শ্রদ্ধাবোধ, পারস্পরিক নির্ভরশীলতা ও আন্তঃসম্পর্ক"
+            },
+            {
+              "no": "2.5",
+              "title_bn": "আইনের প্রতি শ্রদ্ধা ও দেশপ্রেম"
+            },
+            {
+              "no": "2.6",
+              "title_bn": "নাগরিকতা ও সুনাগরিকের গুণাবলি"
+            },
+            {
+              "no": "2.7",
+              "title_bn": "নেতৃত্ব, নেতার গুণাবলি ও দায়িত্ব"
+            },
+            {
+              "no": "2.8",
+              "title_bn": "প্রেরণা, প্রেরণা চক্র ও প্রেরণার বৈশিষ্ট্য"
+            },
+            {
+              "no": "2.9",
+              "title_bn": "প্রেরণার প্রকারভেদ ও ক্যারিয়ার গঠনে প্রেরণার গুরুত্ব"
+            },
+            {
+              "no": "2.10",
+              "title_bn": "আগ্রহ ও মনোযোগ এবং ক্যারিয়ার গঠনে আগ্রহ ও মনোযোগের গুরুত্ব"
+            },
+            {
+              "no": "2.11",
+              "title_bn": "মনোযোগের বৈশিষ্ট্য, গুরুত্ব ও মনোযোগ বৃদ্ধির উপায়"
+            },
+            {
+              "no": "2.12",
+              "title_bn": "আবেগ, আবেগের প্রকারভেদ এবং আবেগের প্রভাব"
+            },
+            {
+              "no": "2.13",
+              "title_bn": "ক্যারিয়ার গঠনে ইতিবাচক আবেগ ও চাপ নিয়ন্ত্রণের কৌশল"
+            }
+          ],
+          "max_weeks": 1
+        },
+        {
+          "no": 3,
+          "title_bn": "ক্যারিয়ার গঠনে সংযোগ স্থাপন ও আচরণ",
+          "pages": "পৃ. 77–145",
+          "lessons": [
+            {
+              "no": "3.1",
+              "title_bn": "সংযোগ স্থাপন ও ক্যারিয়ার"
+            },
+            {
+              "no": "3.2",
+              "title_bn": "ভাল শ্রোতার বৈশিষ্ট্য এবং ভাল শ্রোতা হওয়ার কৌশল"
+            },
+            {
+              "no": "3.3",
+              "title_bn": "উপস্থাপনার দক্ষতা ও বাচনভঙ্গি"
+            },
+            {
+              "no": "3.4",
+              "title_bn": "লক্ষ্য নির্ধারণ ও সে অনুযায়ী কাজ করা"
+            },
+            {
+              "no": "3.5",
+              "title_bn": "আত্মসমালোচনা, আত্মশুদ্ধি ও অঙ্গীকার মেনে নেওয়া"
+            },
+            {
+              "no": "3.6",
+              "title_bn": "ইতিবাচক মনোভাবাপন্ন মানুষের সাথে বন্ধুত্ব গড়ে তোলা"
+            },
+            {
+              "no": "3.7",
+              "title_bn": "কর্মে সফলতায় মূল্যবোধ"
+            },
+            {
+              "no": "3.8",
+              "title_bn": "সহমর্মিতা, পারস্পরিক নির্ভরশীলতা ও আস্থা স্থাপন"
+            },
+            {
+              "no": "3.9",
+              "title_bn": "সময়ানুবর্তিতা, নিয়মানুবর্তিতা ও শৃঙ্খলাবোধ গঠন"
+            },
+            {
+              "no": "3.10",
+              "title_bn": "সততা, নিষ্ঠা ও পেশাগত নৈতিকতা"
+            },
+            {
+              "no": "3.11",
+              "title_bn": "ক্যারিয়ার গঠনে প্রযুক্তির গুরুত্ব ও প্রযুক্তিগত দক্ষতা গঠনের উপায়"
+            },
+            {
+              "no": "3.12",
+              "title_bn": "ক্যারিয়ার গঠনে গাণিতিক দক্ষতা গঠনের উপায়"
+            },
+            {
+              "no": "3.13",
+              "title_bn": "অনুভূতি, মনোভাব ও আচরণ এবং ক্যারিয়ার গঠনে ব্যক্তিগত আচরণ উন্নয়ন"
+            }
+          ],
+          "max_weeks": 3
+        },
         {
           "no": 4,
           "title_bn": "কর্মক্ষেত্র নির্বাচন এবং ক্যারিয়ার উন্নয়ন",
-          "pages": "পৃ. 146 থেকে",
+          "pages": "পৃ. 146–178",
           "lessons": [
             {
               "no": "4.1",
@@ -1228,7 +1893,8 @@
           "max_weeks": 1
         }
       ],
-      "unit_note": "শুধু Unit 4 যাচাই হয়েছে (BOU eBook PDF: Unit-04.pdf)। পূর্ণ Unit তালিকা ও নম্বর বণ্টন এখনো Not Yet Verified। শিরোনামগুলো PDF-এর legacy Bijoy encoding থেকে decode করা — অক্ষর-পর্যায়ে মিলিয়ে নেওয়া বাকি।"
+      "notes": "বই carriar.pdf (১৭৮ পৃষ্ঠা) থেকে ৪ Unit ও ৪৪ পাঠের তালিকা যাচাইকৃত, ১১ নভেম্বর ২০২৬। শিরোনামগুলো PDF-এর legacy Bijoy encoding থেকে decode করা — অক্ষর-পর্যায়ে মিলিয়ে নেওয়া বাকি। সম্পূর্ণ Learning Content db/notes-2358.json-এ আছে।",
+      "notes_file": "db/notes-2358.json"
     }
   ]
 }

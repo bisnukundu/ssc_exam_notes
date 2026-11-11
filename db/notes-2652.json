@@ -1,0 +1,990 @@
+{
+  "course": {
+    "code": "English Two SSC-2652",
+    "title": "English Two — Complete Notes",
+    "exam_type": "SSC ২য় বর্ষ • নতুন ভার্সন",
+    "total_marks": 100,
+    "distribution": {
+      "grammar": "Grammar 60 নম্বর (12 x 5)",
+      "writing": "Writing 40 নম্বর — Completing story 8, Dialogue 6, Application/letter 8, Paragraph 8, Composition 10"
+    },
+    "source": "BOU SSC-2652 English Two (প্রথম প্রকাশ মে 2017, অনলাইন সংস্করণ জানুয়ারি 2022) — Contents পাতা থেকে Unit তালিকা যাচাইকৃত।",
+    "review_status": "Under Teacher Review — শিক্ষক অনুমোদন ছাড়া Published নয়।",
+    "practice_note": "প্রতিটি Unit-এর MCQ ও সৃজনশীল প্রশ্ন অনুশীলনী (Practice) — বইয়ের নিজস্ব প্রশ্ন নয়, Unit-এর বিষয়বস্তুর উপর তৈরি।"
+  },
+  "contents": {
+    "grammar": [
+      {
+        "id": 1,
+        "title": "Unit 1 — Sentence (p. 1–18)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>A sentence is a group of words that expresses a complete thought. (বাক্য = সম্পূর্ণ ভাব প্রকাশ করে এমন শব্দগুচ্ছ।) Every sentence has two parts: the Subject — who or what the sentence is about — and the Predicate — what is said about the subject. Example: 'Rahim (subject) plays football every day (predicate).' A group of words without a finite verb is not a sentence; it is only a phrase.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Four functions of sentences: (1) Assertive — a statement ('He is honest.'); (2) Interrogative — a question ('Are you ready?'); (3) Imperative — an order, request or advice ('Please sit down.'); (4) Exclamatory — a strong feeling ('What a nice day!').<br>• Three structures: (1) Simple — one clause ('Birds fly.'); (2) Complex — one main clause + one or more subordinate clauses ('I know that he is honest.'); (3) Compound — two main clauses joined by and/but/or ('He came and sat down.').<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>In the Grammar part (12 questions × 5 = 60 marks), sentence identification is a common item. First find the finite verb, then ask 'who/what + verb?' to find the subject. Common mistake: calling a phrase a sentence — a phrase has no subject and no finite verb. Practise changing one sentence into the other three functions.<br><br><strong>Quick Revision:</strong><br>Subject + Predicate = Sentence. Functions: Assertive, Interrogative, Imperative, Exclamatory. Structures: Simple, Complex, Compound.",
+        "mcq": [
+          {
+            "question": "Which is the subject in the sentence 'The students are reading in the library'?",
+            "options": [
+              "The students",
+              "are reading",
+              "in the library",
+              "reading"
+            ],
+            "answer": "The students"
+          },
+          {
+            "question": "'Please open the door.' — What kind of sentence is it?",
+            "options": [
+              "Assertive",
+              "Interrogative",
+              "Imperative",
+              "Exclamatory"
+            ],
+            "answer": "Imperative"
+          },
+          {
+            "question": "Which of the following is a complex sentence?",
+            "options": [
+              "He came and sat down.",
+              "I know that he is honest.",
+              "Rahim reads.",
+              "Open the window."
+            ],
+            "answer": "I know that he is honest."
+          },
+          {
+            "question": "'What a beautiful flower it is!' — What kind of sentence is it?",
+            "options": [
+              "Assertive",
+              "Interrogative",
+              "Imperative",
+              "Exclamatory"
+            ],
+            "answer": "Exclamatory"
+          }
+        ],
+        "creative": {
+          "question": "What is a sentence? Describe its two parts and the four functions of sentences with examples.",
+          "answer": {
+            "k": "(ক) A sentence is a group of words that expresses a complete thought. It has two parts: the Subject (who or what the sentence is about) and the Predicate (what is said about the subject). Example: 'Rahim plays football.' — 'Rahim' is the subject and 'plays football' is the predicate.",
+            "kh": "(খ) Four functions: Assertive — a statement, e.g. 'He is honest.' Interrogative — a question, e.g. 'Are you ready?' Imperative — an order, request or advice, e.g. 'Please sit down.' Exclamatory — a strong feeling, e.g. 'What a nice day!'",
+            "g": "(গ) Three structures: Simple sentence has one clause ('Birds fly.'). Complex sentence has one main clause and one or more subordinate clauses ('I know that he is honest.'). Compound sentence has two main clauses joined by and, but or or ('He came and sat down.').",
+            "gh": "(ঘ) Common mistakes: a phrase has no finite verb, so it is not a sentence. In an interrogative sentence the auxiliary verb comes before the subject ('Are you coming?'). In the examination, first find the finite verb and then the subject."
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "Unit 2 — Tense (p. 19–36)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>Tense shows the time of an action — past, present or future. (Tense = কাজের সময়।) There are three main tenses, and each has four forms: Indefinite, Continuous, Perfect and Perfect Continuous — twelve forms in all. Auxiliary verbs help to form tenses: be (am/is/are/was/were), have (has/have/had), do (do/does/did), and will/shall, can, may.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Present tense: habitual action ('He goes to school every day.'), universal truth ('The sun rises in the east.'), action happening now ('She is reading now.').<br>• Past tense: completed action ('I saw him yesterday.'), action in progress in the past ('They were playing when it rained.').<br>• Future tense: 'will/shall + base verb' ('He will come tomorrow.') and 'going to' for plans ('We are going to visit Dhaka.').<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Tense questions are very common in the Grammar part. Learn the structure of each form first (e.g. Present Perfect = have/has + past participle), then practise with time words: 'yesterday' → Past Indefinite, 'since/for' → Perfect, 'now/at this moment' → Present Continuous. Common mistake: using Present Indefinite after 'yesterday' or Past Indefinite after 'just now'.<br><br><strong>Quick Revision:</strong><br>3 tenses × 4 forms = 12. Present Perfect = have/has + past participle. Past Continuous = was/were + verb-ing. Future = will/shall + base verb.",
+        "mcq": [
+          {
+            "question": "Choose the correct form: 'She ___ to school every day.'",
+            "options": [
+              "go",
+              "goes",
+              "going",
+              "went"
+            ],
+            "answer": "goes"
+          },
+          {
+            "question": "Choose the correct form: 'I have ___ my homework.'",
+            "options": [
+              "do",
+              "did",
+              "done",
+              "doing"
+            ],
+            "answer": "done"
+          },
+          {
+            "question": "Choose the correct form: 'They ___ playing when it started to rain.'",
+            "options": [
+              "are",
+              "were",
+              "is",
+              "was"
+            ],
+            "answer": "were"
+          },
+          {
+            "question": "Choose the correct form: 'He will ___ tomorrow.'",
+            "options": [
+              "come",
+              "came",
+              "comes",
+              "coming"
+            ],
+            "answer": "come"
+          }
+        ],
+        "creative": {
+          "question": "What is tense? Describe the functions of the present and past tenses with examples.",
+          "answer": {
+            "k": "(ক) Tense shows the time of an action. There are three main tenses — Present, Past and Future — and each has four forms: Indefinite, Continuous, Perfect and Perfect Continuous. So there are twelve tense forms in all.",
+            "kh": "(খ) Present tense: it shows habitual actions ('He goes to school every day.'), universal truths ('The sun rises in the east.'), and actions happening now ('She is reading now.'). Present Perfect ('I have finished my work.') shows a completed action with a present result.",
+            "g": "(গ) Past tense: Past Indefinite shows a completed action ('I saw him yesterday.'). Past Continuous shows an action in progress in the past ('They were playing when it rained.'). Past Perfect ('He had left before I came.') shows an earlier past action.",
+            "gh": "(ঘ) Future tense uses 'will/shall + base verb' ('He will come tomorrow.') and 'going to' for plans. Common mistakes: do not use Present Indefinite with 'yesterday'; use 'since' with a point of time and 'for' with a period of time."
+          }
+        }
+      },
+      {
+        "id": 3,
+        "title": "Unit 3 — Infinitive, Gerund, Participle (p. 37–44)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>These three are non-finite verbs — they do not change with the subject. (এরা subject অনুযায়ী বদলায় না।) Infinitive = 'to + base verb' ('to read'). Gerund = 'verb + ing' used as a noun ('Reading is good.'). Participle = 'verb + ing' or 'past participle' used as an adjective ('a sleeping child', 'a broken chair').<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Infinitive: used as a noun ('To err is human.'), as an adjective ('I have a lot of work to do.'), or to show purpose ('He came to see me.').<br>• Gerund: works like a noun — as subject ('Swimming is good exercise.'), object ('She likes reading.'), or after a preposition ('He is fond of playing.').<br>• Participle: Present Participle (verb+ing) — 'a barking dog'; Past Participle (verb+ed/en) — 'a broken window'.<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>In the examination you must identify which form is used in a sentence. Remember: after a preposition, always use the gerund ('fond of reading', not 'fond of read'). After 'to', use the base verb, except in 'used to', 'accustomed to' and 'look forward to', where the gerund is used. Practise by underlining the non-finite verb in ten sentences every day.<br><br><strong>Quick Revision:</strong><br>Infinitive = to + base verb. Gerund = verb+ing as a noun. Participle = verb+ing / past participle as an adjective.",
+        "mcq": [
+          {
+            "question": "In the sentence 'To err is human', 'to err' is —",
+            "options": [
+              "a gerund",
+              "a participle",
+              "an infinitive",
+              "a finite verb"
+            ],
+            "answer": "an infinitive"
+          },
+          {
+            "question": "In the sentence 'Swimming is a good exercise', 'swimming' is —",
+            "options": [
+              "a gerund",
+              "a participle",
+              "an infinitive",
+              "an adverb"
+            ],
+            "answer": "a gerund"
+          },
+          {
+            "question": "Choose the correct form: 'I saw a ___ dog.'",
+            "options": [
+              "bark",
+              "barking",
+              "barked",
+              "to bark"
+            ],
+            "answer": "barking"
+          },
+          {
+            "question": "Choose the correct form: 'The ___ window needs repair.'",
+            "options": [
+              "break",
+              "breaking",
+              "broken",
+              "to break"
+            ],
+            "answer": "broken"
+          }
+        ],
+        "creative": {
+          "question": "Define infinitive, gerund and participle. Show the differences among them with examples.",
+          "answer": {
+            "k": "(ক) Infinitive: 'to + base verb', e.g. 'to read', 'to play'. It is used as a noun ('To err is human.'), as an adjective ('I have a lot of work to do.') and to show purpose ('He came to see me.').",
+            "kh": "(খ) Gerund: 'verb + ing' used as a noun. It works as the subject ('Swimming is a good exercise.'), as the object ('She likes reading.') and after a preposition ('He is fond of playing.').",
+            "g": "(গ) Participle: it works as an adjective. Present Participle (verb + ing): 'a barking dog', 'a sleeping child'. Past Participle (verb + ed/en): 'a broken window', 'a written letter'.",
+            "gh": "(ঘ) Differences: an infinitive begins with 'to'; a gerund is a verb+ing acting as a noun; a participle is a verb+ing or past participle acting as an adjective. Common mistake: after a preposition always use the gerund — 'fond of reading', never 'fond of read'."
+          }
+        }
+      },
+      {
+        "id": 4,
+        "title": "Unit 4 — Voice (p. 45–52)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>Voice shows whether the subject does the action or receives it. (Voice = কর্তা কাজ করে, নাকি কাজ কর্তার উপর হয়।) In the Active Voice the subject does the action ('He writes a letter.'). In the Passive Voice the object becomes the subject and the verb takes the form 'be + past participle' ('A letter is written by him.'). The tense never changes in the change of voice.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Assertive: Active 'He writes a letter.' → Passive 'A letter is written by him.' The object becomes the subject, the verb becomes 'be + past participle', and 'by + subject' is added.<br>• Interrogative: 'Did he write a letter?' → 'Was a letter written by him?' The auxiliary verb comes first.<br>• Imperative: 'Open the door.' → 'Let the door be opened.'<br>• Some verbs have no passive: intransitive verbs ('He sleeps.') cannot be changed into the passive voice.<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Voice change is a regular Grammar item (5 marks). First find the tense of the active sentence, then use the same tense in the passive. Common mistakes: changing the tense by accident, and forgetting 'be' before the past participle. Practise five assertive, three interrogative and three imperative sentences every day.<br><br><strong>Quick Revision:</strong><br>Active: subject does the action. Passive: be + past participle. Tense never changes. Intransitive verbs have no passive.",
+        "mcq": [
+          {
+            "question": "Choose the passive form of 'He writes a letter.'",
+            "options": [
+              "A letter is written by him.",
+              "A letter was written by him.",
+              "A letter has written by him.",
+              "A letter is writing by him."
+            ],
+            "answer": "A letter is written by him."
+          },
+          {
+            "question": "Choose the correct form: 'The work ___ done yesterday.'",
+            "options": [
+              "is",
+              "was",
+              "are",
+              "were"
+            ],
+            "answer": "was"
+          },
+          {
+            "question": "Choose the passive form of 'Open the door.'",
+            "options": [
+              "Let the door be opened.",
+              "Let the door opened.",
+              "The door is opened.",
+              "Open the door by you."
+            ],
+            "answer": "Let the door be opened."
+          },
+          {
+            "question": "Choose the active form of 'By whom was the cake made?'",
+            "options": [
+              "Who made the cake?",
+              "Who makes the cake?",
+              "Who has made the cake?",
+              "Who is making the cake?"
+            ],
+            "answer": "Who made the cake?"
+          }
+        ],
+        "creative": {
+          "question": "What is voice? Describe the rules of changing active voice into passive voice with examples.",
+          "answer": {
+            "k": "(ক) Voice shows whether the subject does the action or receives it. In the Active Voice the subject does the action: 'He writes a letter.' In the Passive Voice the object becomes the subject: 'A letter is written by him.' The verb takes the form 'be + past participle'.",
+            "kh": "(খ) Assertive sentences: the object becomes the subject, the verb becomes 'be + past participle' in the same tense, and 'by + subject' is added. Example: 'She sang a song.' → 'A song was sung by her.'",
+            "g": "(গ) Interrogative sentences: the auxiliary verb comes first — 'Did he write a letter?' → 'Was a letter written by him?' Imperative sentences begin with 'Let' — 'Open the door.' → 'Let the door be opened.'",
+            "gh": "(ঘ) The tense never changes in the change of voice. Intransitive verbs (e.g. 'sleep', 'go') have no object, so they cannot be changed into the passive voice. Always check the tense first, then change the voice."
+          }
+        }
+      },
+      {
+        "id": 5,
+        "title": "Unit 5 — Speech / Narration (p. 53–62)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>Narration is reporting what someone said. (Narration = কারো কথা বর্ণনা করা।) In Direct Speech we use the speaker's exact words inside quotation marks: He said, 'I am ill.' In Indirect Speech we report the meaning without quotation marks: He said that he was ill. When we change direct into indirect speech, the tense usually moves one step back (present → past) and pronouns and time words change.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Assertive: 'He said, \"I am ill.\"' → 'He said that he was ill.' The conjunction 'that' is used.<br>• Interrogative: 'He said, \"Where do you live?\"' → 'He asked me where I lived.' Use 'if' for yes/no questions and the wh-word for wh-questions.<br>• Imperative: 'He said, \"Please help me.\"' → 'He requested me to help him.' Use 'ordered/requested/advised + object + to-infinitive'.<br>• Exclamatory: 'She said, \"Hurrah! We have won.\"' → 'She exclaimed with joy that they had won.'<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Narration is a regular Grammar item. First find the kind of the reported sentence (assertive, interrogative, imperative or exclamatory), then apply its rule. Common mistakes: forgetting to change the tense, and forgetting to change time words — 'today' becomes 'that day', 'tomorrow' becomes 'the next day', 'yesterday' becomes 'the previous day'.<br><br><strong>Quick Revision:</strong><br>Direct = exact words in quotes. Indirect = reported meaning. Tense moves one step back. today→that day, tomorrow→the next day.",
+        "mcq": [
+          {
+            "question": "Choose the indirect form: He said, 'I am ill.'",
+            "options": [
+              "He said that he is ill.",
+              "He said that he was ill.",
+              "He said that I am ill.",
+              "He said that he had been ill."
+            ],
+            "answer": "He said that he was ill."
+          },
+          {
+            "question": "Choose the indirect form: He said to me, 'Where do you live?'",
+            "options": [
+              "He asked me where do I live.",
+              "He asked me where I lived.",
+              "He asked me where did I live.",
+              "He asked me where I live."
+            ],
+            "answer": "He asked me where I lived."
+          },
+          {
+            "question": "Choose the indirect form: He said, 'Please help me.'",
+            "options": [
+              "He ordered me to help him.",
+              "He requested me to help him.",
+              "He asked me help him.",
+              "He said me to help him."
+            ],
+            "answer": "He requested me to help him."
+          },
+          {
+            "question": "Choose the indirect form: She said, 'Hurrah! We have won.'",
+            "options": [
+              "She exclaimed with joy that they had won.",
+              "She said that they have won.",
+              "She exclaimed with joy that they win.",
+              "She said that we have won."
+            ],
+            "answer": "She exclaimed with joy that they had won."
+          }
+        ],
+        "creative": {
+          "question": "What is narration? Describe the rules of changing direct speech into indirect speech with examples.",
+          "answer": {
+            "k": "(ক) Narration is reporting what someone said. Direct Speech uses the speaker's exact words in quotation marks: He said, 'I am ill.' Indirect Speech reports the meaning without quotation marks: He said that he was ill. The tense usually moves one step back.",
+            "kh": "(খ) Assertive sentences: use 'that' — 'He said, \"I am ill.\"' → 'He said that he was ill.' The reporting verb 'said to' becomes 'told' when there is an object: 'He said to me, \"You are right.\"' → 'He told me that I was right.'",
+            "g": "(গ) Interrogative sentences: use 'asked' — for yes/no questions use 'if': 'He said, \"Are you ready?\"' → 'He asked if I was ready.' For wh-questions keep the wh-word: 'He said, \"Where do you live?\"' → 'He asked me where I lived.' Imperative sentences use 'ordered/requested/advised + object + to-infinitive': 'He said, \"Please help me.\"' → 'He requested me to help him.'",
+            "gh": "(ঘ) Exclamatory sentences use 'exclaimed with joy/sorrow': 'She said, \"Hurrah! We have won.\"' → 'She exclaimed with joy that they had won.' Time words change: 'today' → 'that day', 'tomorrow' → 'the next day', 'yesterday' → 'the previous day'."
+          }
+        }
+      },
+      {
+        "id": 6,
+        "title": "Unit 6 — Conditional sentence (p. 63–72)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>A conditional sentence has two parts: the 'if-clause' (the condition) and the main clause (the result). (Conditional = শর্তসাপেক্ষ বাক্য।) There are three main types. Type 1 is a real condition in the future: If + Present Indefinite, will + base verb. Type 2 is an unreal condition in the present: If + Past Indefinite, would + base verb. Type 3 is an unreal condition in the past: If + Past Perfect, would have + past participle.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Zero conditional (general truth): If + Present, Present — 'If water is heated, it boils.'<br>• Type 1: 'If it rains, we will stay at home.'<br>• Type 2: 'If I were rich, I would help the poor.' (Note: 'were' is used with all persons.)<br>• Type 3: 'If you had studied, you would have passed.'<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Conditional sentences are a regular Grammar item. First look at the tense of the if-clause, then choose the main clause to match it. Common mistakes: using 'will' in the if-clause ('If it will rain' is wrong), and using 'would' instead of 'would have' in Type 3. Learn the four patterns by heart with one example each.<br><br><strong>Quick Revision:</strong><br>Zero: if + present, present. Type 1: if + present, will. Type 2: if + past, would. Type 3: if + had + pp, would have + pp.",
+        "mcq": [
+          {
+            "question": "Choose the correct form: 'If it rains, we ___ at home.'",
+            "options": [
+              "stay",
+              "will stay",
+              "stayed",
+              "would stay"
+            ],
+            "answer": "will stay"
+          },
+          {
+            "question": "Choose the correct form: 'If I were rich, I ___ the poor.'",
+            "options": [
+              "help",
+              "will help",
+              "would help",
+              "had helped"
+            ],
+            "answer": "would help"
+          },
+          {
+            "question": "Choose the correct form: 'If you had studied, you ___ passed.'",
+            "options": [
+              "will",
+              "would",
+              "would have",
+              "have"
+            ],
+            "answer": "would have"
+          },
+          {
+            "question": "Choose the correct form: 'If water is heated, it ___.'",
+            "options": [
+              "boil",
+              "boils",
+              "boiled",
+              "would boil"
+            ],
+            "answer": "boils"
+          }
+        ],
+        "creative": {
+          "question": "What is a conditional sentence? Describe the three types of conditional sentences with examples.",
+          "answer": {
+            "k": "(ক) A conditional sentence has two parts: the if-clause (the condition) and the main clause (the result). Example: 'If it rains, we will stay at home.' The zero conditional shows a general truth: 'If water is heated, it boils.'",
+            "kh": "(খ) Type 1 — real condition in the future: If + Present Indefinite, will + base verb. Example: 'If it rains, we will stay at home.' 'If you work hard, you will succeed.'",
+            "g": "(গ) Type 2 — unreal condition in the present: If + Past Indefinite, would + base verb. Example: 'If I were rich, I would help the poor.' Note that 'were' is used with all persons: 'If I were you, I would go there.'",
+            "gh": "(ঘ) Type 3 — unreal condition in the past: If + Past Perfect, would have + past participle. Example: 'If you had studied, you would have passed.' Common mistake: never use 'will' in the if-clause, and never use 'would' instead of 'would have' in Type 3."
+          }
+        }
+      },
+      {
+        "id": 7,
+        "title": "Unit 7 — Right form of verbs (p. 73–82)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>The 'right form of verbs' means using the correct form of a verb according to the tense, the subject and the structure of the sentence. (সঠিক verb-form ব্যবহার করাই এই Unit-এর বিষয়।) The verb changes with time (tense), with the subject (subject-verb agreement) and with the words before it — for example, 'to' is followed by the base verb, and a modal (can, could, will, should) is also followed by the base verb.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• 'to + base verb': 'He wants to go.' 'have/has + past participle': 'She has finished her work.'<br>• Subject-verb agreement: a singular subject takes a singular verb — 'He goes', 'The quality of the mangoes is good.' 'Each', 'every', 'either', 'neither' take a singular verb.<br>• Special structures: 'It is high time we went home.' (past form after 'it is high time'); 'I wish I were rich.'; 'as if/as though' takes the past form.<br>• After a preposition, use the gerund: 'She is fond of reading.'<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>This is one of the most important Grammar items. Read the whole sentence first, find the subject and the tense, and then choose the verb form. Common mistakes: forgetting the 's/es' with he/she/it in the present tense ('He go' is wrong), and using the base verb after 'has/have'. Practise ten sentences every day from the book.<br><br><strong>Quick Revision:</strong><br>'to' + base verb; modal + base verb; have/has + past participle. Singular subject → singular verb. After a preposition → gerund.",
+        "mcq": [
+          {
+            "question": "Choose the correct form: 'He ___ to school yesterday.'",
+            "options": [
+              "go",
+              "goes",
+              "went",
+              "gone"
+            ],
+            "answer": "went"
+          },
+          {
+            "question": "Choose the correct form: 'She is fond of ___.'",
+            "options": [
+              "read",
+              "reads",
+              "reading",
+              "to read"
+            ],
+            "answer": "reading"
+          },
+          {
+            "question": "Choose the correct form: 'The quality of the mangoes ___ good.'",
+            "options": [
+              "is",
+              "are",
+              "were",
+              "been"
+            ],
+            "answer": "is"
+          },
+          {
+            "question": "Choose the correct form: 'It is high time we ___ home.'",
+            "options": [
+              "go",
+              "went",
+              "gone",
+              "going"
+            ],
+            "answer": "went"
+          }
+        ],
+        "creative": {
+          "question": "What is meant by the right form of verbs? Describe the important rules of the right form of verbs with examples.",
+          "answer": {
+            "k": "(ক) The right form of verbs means using the correct form of a verb according to the tense, the subject and the structure of the sentence. For example, 'He goes to school' is correct, but 'He go to school' is wrong.",
+            "kh": "(খ) Tense-based rules: 'to' is followed by the base verb ('He wants to go.'); a modal is followed by the base verb ('She can swim.'); 'have/has' is followed by the past participle ('She has finished her work.'); 'be' is followed by verb+ing or the past participle ('He is reading.', 'The work is done.').",
+            "g": "(গ) Subject-verb agreement: a singular subject takes a singular verb — 'He goes', 'The quality of the mangoes is good.' Words like 'each', 'every', 'either' and 'neither' take a singular verb: 'Each boy has a pen.'",
+            "gh": "(ঘ) Special structures: after 'it is high time', use the past form ('It is high time we went home.'). After 'wish', use 'were' ('I wish I were rich.'). After a preposition, use the gerund ('She is fond of reading.')."
+          }
+        }
+      },
+      {
+        "id": 8,
+        "title": "Unit 8 — Phrase (p. 83–92)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>A phrase is a group of words that has no subject and no finite verb, so it cannot stand alone as a sentence. (Phrase = শব্দগুচ্ছ, যার নিজস্ব subject ও finite verb নেই।) A phrase works like a single part of speech: a noun phrase works like a noun, an adjective phrase like an adjective, and an adverb phrase like an adverb. Idioms are fixed phrases with a special meaning that is different from the meanings of the separate words.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Noun phrase: 'To win the game was his aim.' ('to win the game' works as the subject.)<br>• Adjective phrase: 'A man of honesty is respected.' ('of honesty' describes the man.)<br>• Adverb phrase: 'He came in the morning.' ('in the morning' tells when.)<br>• Idioms: 'to kick the bucket' = to die; 'a black sheep' = a bad person; 'at sixes and sevens' = in confusion.<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Phrase questions ask you to identify the kind of phrase in a sentence. First ask what work the phrase does: if it names something, it is a noun phrase; if it describes a noun, an adjective phrase; if it tells when, where or how, an adverb phrase. Learn ten common idioms with their meanings, because idiom questions come every year.<br><br><strong>Quick Revision:</strong><br>Phrase = group of words, no subject, no finite verb. Kinds: noun, adjective, adverb, prepositional. Idiom = fixed phrase with a special meaning.",
+        "mcq": [
+          {
+            "question": "'In the morning' is a ___ phrase.",
+            "options": [
+              "noun",
+              "adjective",
+              "prepositional",
+              "verb"
+            ],
+            "answer": "prepositional"
+          },
+          {
+            "question": "In 'He tried to win the game', 'to win the game' is a ___ phrase.",
+            "options": [
+              "noun",
+              "adjective",
+              "adverb",
+              "verb"
+            ],
+            "answer": "noun"
+          },
+          {
+            "question": "In 'A man of honesty is respected', 'of honesty' is a ___ phrase.",
+            "options": [
+              "noun",
+              "adjective",
+              "adverb",
+              "prepositional"
+            ],
+            "answer": "adjective"
+          },
+          {
+            "question": "The idiom 'to kick the bucket' means —",
+            "options": [
+              "to die",
+              "to play",
+              "to run",
+              "to eat"
+            ],
+            "answer": "to die"
+          }
+        ],
+        "creative": {
+          "question": "What is a phrase? Describe its kinds and the use of phrases and idioms with examples.",
+          "answer": {
+            "k": "(ক) A phrase is a group of words that has no subject and no finite verb, so it cannot stand alone as a sentence. For example, 'in the morning' is a phrase; 'He came in the morning' is a sentence.",
+            "kh": "(খ) Kinds of phrases: Noun phrase works like a noun — 'To win the game was his aim.' Adjective phrase works like an adjective — 'A man of honesty is respected.' Adverb phrase works like an adverb — 'He came in the morning.' Prepositional phrase begins with a preposition — 'on the table', 'in the morning'.",
+            "g": "(গ) Idioms are fixed phrases with a special meaning: 'to kick the bucket' means to die; 'a black sheep' means a bad person in a family; 'at sixes and sevens' means in confusion; 'to rain cats and dogs' means to rain heavily.",
+            "gh": "(ঘ) To identify a phrase in the examination, ask what work it does in the sentence: if it names something, it is a noun phrase; if it describes a noun, it is an adjective phrase; if it tells when, where or how, it is an adverb phrase. Learn idioms with their meanings, not word by word."
+          }
+        }
+      },
+      {
+        "id": 9,
+        "title": "Unit 9 — Tag question (p. 93–100)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>A tag question is a short question added at the end of a statement to ask for agreement or confirmation. (Tag question = বাক্যের শেষে জুড়ে দেওয়া ছোট প্রশ্ন।) Example: 'She is happy, isn't she?' The tag is made with the same auxiliary verb as the statement, a pronoun for the subject, and the opposite form — a positive statement takes a negative tag, and a negative statement takes a positive tag.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Positive statement → negative tag: 'He is honest, isn't he?' 'They play, don't they?'<br>• Negative statement → positive tag: 'She does not sing, does she?' 'They don't play, do they?'<br>• Special rules: 'I am right, aren't I?' (never 'amn't I'); 'Let's go out, shall we?'; Imperative → 'will you': 'Open the door, will you?'<br>• The pronoun in the tag is the pronoun form of the subject: 'Rahim is here, isn't he?'<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Tag questions are a regular Grammar item. First find the auxiliary verb of the statement (if there is no auxiliary, use do/does/did according to the tense), then change positive to negative or negative to positive. Common mistakes: using the noun instead of the pronoun in the tag ('isn't Rahim' is wrong), and forgetting 'aren't I' after 'I am'.<br><br><strong>Quick Revision:</strong><br>Positive → negative tag; negative → positive tag. Same auxiliary + pronoun subject. I am → aren't I. Let's → shall we.",
+        "mcq": [
+          {
+            "question": "Choose the correct tag: 'She is happy, ___?'",
+            "options": [
+              "is she",
+              "isn't she",
+              "does she",
+              "don't she"
+            ],
+            "answer": "isn't she"
+          },
+          {
+            "question": "Choose the correct tag: 'They don't play, ___?'",
+            "options": [
+              "do they",
+              "don't they",
+              "are they",
+              "did they"
+            ],
+            "answer": "do they"
+          },
+          {
+            "question": "Choose the correct tag: 'I am right, ___?'",
+            "options": [
+              "am I",
+              "aren't I",
+              "isn't I",
+              "don't I"
+            ],
+            "answer": "aren't I"
+          },
+          {
+            "question": "Choose the correct tag: 'Let us go out, ___?'",
+            "options": [
+              "will you",
+              "shall we",
+              "won't we",
+              "don't we"
+            ],
+            "answer": "shall we"
+          }
+        ],
+        "creative": {
+          "question": "What is a tag question? Describe the rules of making tag questions with examples.",
+          "answer": {
+            "k": "(ক) A tag question is a short question added at the end of a statement to ask for agreement or confirmation. Example: 'She is happy, isn't she?' The tag is made with the same auxiliary verb as the statement and a pronoun for the subject.",
+            "kh": "(খ) Basic rules: a positive statement takes a negative tag — 'He is honest, isn't he?' 'They play, don't they?' A negative statement takes a positive tag — 'She does not sing, does she?' 'They don't play, do they?' If there is no auxiliary verb, use do/does/did according to the tense.",
+            "g": "(গ) Special cases: after 'I am', the tag is 'aren't I' — 'I am right, aren't I?' After 'Let's', the tag is 'shall we' — 'Let us go out, shall we?' After an imperative sentence, use 'will you' — 'Open the door, will you?'",
+            "gh": "(ঘ) Common mistakes: use a pronoun, not a noun, in the tag — 'Rahim is here, isn't he?' (not 'isn't Rahim'). Do not forget the comma before the tag, and do not forget the question mark at the end."
+          }
+        }
+      },
+      {
+        "id": 10,
+        "title": "Unit 10 — Linking words or Connectors (p. 101–110)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>Linking words, or connectors, join words, sentences and ideas together and show the relation between them. (Linking words = বাক্য ও ভাব জোড়া দেওয়ার শব্দ।) Without them, writing becomes a list of separate sentences. There are three main groups: coordinators join two equal parts, subordinators join a dependent clause to a main clause, and transitions join two sentences or paragraphs.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Coordinators: and (addition), but (contrast), or (choice), so (result) — 'He is poor but honest.'<br>• Subordinators: because (reason), although (contrast), when (time), if (condition), since (time/reason) — 'Although it was raining, we went out.'<br>• Transitions: however (contrast), therefore (result), moreover (addition), firstly/finally (order) — 'He worked hard; however, he failed.'<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Connector questions ask you to fill a gap with the right linking word. First read the whole sentence and find the relation: addition, contrast, reason or result. Common mistakes: using 'but' after 'although' ('Although he is poor but he is honest' is wrong — use only one), and using 'and' where a contrast word is needed.<br><br><strong>Quick Revision:</strong><br>Coordinators: and, but, or, so. Subordinators: because, although, when, if, since. Transitions: however, therefore, moreover, firstly, finally.",
+        "mcq": [
+          {
+            "question": "Choose the correct connector: 'He is poor ___ honest.'",
+            "options": [
+              "and",
+              "but",
+              "or",
+              "so"
+            ],
+            "answer": "but"
+          },
+          {
+            "question": "Choose the correct connector: '___ it was raining, we went out.'",
+            "options": [
+              "Although",
+              "Because",
+              "So",
+              "And"
+            ],
+            "answer": "Although"
+          },
+          {
+            "question": "Choose the correct connector: 'He worked hard; ___, he failed.'",
+            "options": [
+              "therefore",
+              "however",
+              "moreover",
+              "besides"
+            ],
+            "answer": "however"
+          },
+          {
+            "question": "Choose the correct connector: 'I stayed at home ___ I was ill.'",
+            "options": [
+              "but",
+              "because",
+              "although",
+              "however"
+            ],
+            "answer": "because"
+          }
+        ],
+        "creative": {
+          "question": "What are linking words? Describe coordinators, subordinators and transitions with examples.",
+          "answer": {
+            "k": "(ক) Linking words, or connectors, join words, sentences and ideas together and show the relation between them. Example: 'He is poor but honest.' Without connectors, writing becomes a list of separate, disconnected sentences.",
+            "kh": "(খ) Coordinators join two equal parts: 'and' for addition ('Rahim and Karim are friends.'), 'but' for contrast ('He is poor but honest.'), 'or' for choice ('Tea or coffee?'), 'so' for result ('He was ill, so he stayed at home.').",
+            "g": "(গ) Subordinators join a dependent clause to a main clause: 'because' for reason ('I stayed at home because I was ill.'), 'although' for contrast ('Although it was raining, we went out.'), 'when' for time, 'if' for condition, 'since' for time or reason.",
+            "gh": "(ঘ) Transitions join sentences or paragraphs: 'however' for contrast ('He worked hard; however, he failed.'), 'therefore' for result, 'moreover' for addition, 'firstly' and 'finally' for order. Remember: never use 'but' after 'although' — 'Although he is poor, he is honest.' is correct."
+          }
+        }
+      },
+      {
+        "id": 11,
+        "title": "Unit 11 — Preposition (p. 111–124)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>A preposition is a word placed before a noun or pronoun to show its relation to another word in the sentence. (Preposition = noun/pronoun-এর আগে বসে সম্পর্ক বোঝায়।) Common prepositions are in, on, at, by, with, from, to, for, of, about, between and among. The same preposition can show time, place or another relation, so you must learn its uses with examples.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Prepositions of time: 'at' for a point of time ('at 5 o'clock'), 'on' for days and dates ('on Monday', 'on 1 January'), 'in' for months, years and long periods ('in 2005', 'in the morning').<br>• Prepositions of place: 'at' for a point ('at the door'), 'in' for an enclosed place ('in the room'), 'on' for a surface ('on the table').<br>• Fixed uses: 'good at English', 'fond of reading', 'afraid of dogs', 'interested in music'.<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Preposition questions are very common in the Grammar part. Learn the time rules (at/on/in) and the place rules (at/in/on) first, then learn the fixed phrases by heart. Common mistakes: 'in Monday' (wrong — 'on Monday'), 'good in English' (wrong — 'good at English'). Practise with twenty sentences every day.<br><br><strong>Quick Revision:</strong><br>Time: at (point), on (day/date), in (month/year). Place: at (point), in (inside), on (surface). Fixed: good at, fond of, afraid of.",
+        "mcq": [
+          {
+            "question": "Choose the correct preposition: 'He was born ___ 2005.'",
+            "options": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "answer": "in"
+          },
+          {
+            "question": "Choose the correct preposition: 'The meeting is ___ Monday.'",
+            "options": [
+              "in",
+              "on",
+              "at",
+              "to"
+            ],
+            "answer": "on"
+          },
+          {
+            "question": "Choose the correct preposition: 'The book is ___ the table.'",
+            "options": [
+              "in",
+              "at",
+              "on",
+              "by"
+            ],
+            "answer": "on"
+          },
+          {
+            "question": "Choose the correct preposition: 'She is good ___ English.'",
+            "options": [
+              "in",
+              "at",
+              "on",
+              "of"
+            ],
+            "answer": "at"
+          }
+        ],
+        "creative": {
+          "question": "What is a preposition? Describe the uses of common prepositions with examples.",
+          "answer": {
+            "k": "(ক) A preposition is a word placed before a noun or pronoun to show its relation to another word in the sentence. Example: 'The book is on the table.' Common prepositions are in, on, at, by, with, from, to, for, of, about, between and among.",
+            "kh": "(খ) Prepositions of time: 'at' for a point of time — 'at 5 o'clock', 'at noon'. 'on' for days and dates — 'on Monday', 'on 1 January'. 'in' for months, years and long periods — 'in 2005', 'in the morning', 'in summer'.",
+            "g": "(গ) Prepositions of place: 'at' for a point — 'at the door', 'at home'. 'in' for an enclosed place — 'in the room', 'in Dhaka'. 'on' for a surface — 'on the table', 'on the wall'.",
+            "gh": "(ঘ) Fixed uses must be learnt by heart: 'good at English', 'fond of reading', 'afraid of dogs', 'interested in music', 'busy with work'. Common mistakes: 'in Monday' is wrong — say 'on Monday'. 'good in English' is wrong — say 'good at English'."
+          }
+        }
+      },
+      {
+        "id": 12,
+        "title": "Unit 12 — Punctuation, Capitalization (p. 125–135)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>Punctuation means the correct use of stops and marks in writing, and capitalization means using capital letters where they are needed. (Punctuation = যতিচিহ্নের সঠিক ব্যবহার; Capitalization = বড় হাতের অক্ষরের ব্যবহার।) The main marks are the full stop, comma, question mark, exclamation mark, apostrophe, quotation marks, colon and semicolon.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Full stop (.): at the end of an assertive sentence. Question mark (?): at the end of a question. Exclamation mark (!): after a strong feeling.<br>• Comma (,): to separate items in a list — 'I bought pens, pencils, and books.' Apostrophe ('): for possession ('Rahim's book') and contraction ('It's' = It is; 'Its' = possessive, no apostrophe).<br>• Quotation marks (' '): for direct speech — He said, 'I am going home.'<br>• Capital letters: at the beginning of a sentence, for proper nouns ('Dhaka', 'Rahim'), for 'I', for days and months ('Monday', 'January'), and for titles ('Mr', 'Dr').<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Punctuation questions ask you to rewrite a sentence with correct punctuation and capitals. Read the sentence aloud: pause where a comma is needed, and stop where a full stop is needed. Common mistakes: writing 'its' for 'it is' (the correct form is 'It's'), and forgetting the capital letter at the beginning of a sentence and for proper nouns.<br><br><strong>Quick Revision:</strong><br>Full stop = statement end. ? = question. ! = strong feeling. Comma = list/pause. Apostrophe = possession/contraction. Capital: sentence start, proper nouns, 'I', days/months.",
+        "mcq": [
+          {
+            "question": "Which sentence is correctly punctuated?",
+            "options": [
+              "rahim said i am going home",
+              "Rahim said, 'I am going home.'",
+              "rahim said, 'i am going home.'",
+              "Rahim said 'i am going home'"
+            ],
+            "answer": "Rahim said, 'I am going home.'"
+          },
+          {
+            "question": "Choose the correct form: '___ raining outside.'",
+            "options": [
+              "Its",
+              "It's",
+              "It",
+              "It is"
+            ],
+            "answer": "It's"
+          },
+          {
+            "question": "Choose the correctly punctuated sentence:",
+            "options": [
+              "I bought pens pencils and books.",
+              "I bought pens, pencils, and books.",
+              "I bought pens pencils, and books.",
+              "I bought, pens pencils and books."
+            ],
+            "answer": "I bought pens, pencils, and books."
+          },
+          {
+            "question": "Choose the correctly written sentence:",
+            "options": [
+              "i live in dhaka.",
+              "I live in Dhaka.",
+              "i live in Dhaka.",
+              "I live in dhaka."
+            ],
+            "answer": "I live in Dhaka."
+          }
+        ],
+        "creative": {
+          "question": "Describe the main rules of punctuation and capitalization with examples.",
+          "answer": {
+            "k": "(ক) Full stop (.): at the end of an assertive sentence — 'He is honest.' Question mark (?): at the end of a question — 'Are you ready?' Exclamation mark (!): after a strong feeling — 'What a nice day!'",
+            "kh": "(খ) Comma (,): to separate items in a list — 'I bought pens, pencils, and books.' Apostrophe ('): for possession — 'Rahim's book' — and for contraction — 'It's' means 'It is'. Remember: 'Its' (without apostrophe) shows possession — 'The dog wagged its tail.'",
+            "g": "(গ) Quotation marks (' '): for direct speech — He said, 'I am going home.' Colon (:) introduces a list or an explanation; semicolon (;) joins two closely related sentences — 'He worked hard; he passed the examination.'",
+            "gh": "(ঘ) Capital letters: at the beginning of every sentence, for proper nouns ('Dhaka', 'Rahim'), for the pronoun 'I', for days and months ('Monday', 'January'), and for titles ('Mr', 'Dr'). Common mistakes: forgetting the capital at the start of a sentence, and writing 'its' when 'it is' is meant."
+          }
+        }
+      }
+    ],
+    "writing": [
+      {
+        "id": 13,
+        "title": "Unit 13 — Dialogue writing (p. 136–143)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>A dialogue is a conversation between two or more people, written in the form of questions and answers. (Dialogue = সংলাপ।) In the examination you will be given a situation — for example, two friends talking about the importance of reading books — and you must write a natural conversation on it. A dialogue carries 6 marks in the Writing part.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Format: each speaker's words begin on a new line, with the speaker's name followed by a colon — 'Rahim: Hello, Karim! How are you?'<br>• Structure: (1) Greetings and opening — 'Good morning! How are you?'; (2) Main discussion — questions and answers on the topic; (3) Closing — a polite ending, e.g. 'Thank you. See you again.'<br>• Language: short, natural, polite sentences; correct grammar and spelling; use question forms properly.<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Before writing, think of 5–6 questions and answers on the topic. Keep the dialogue short and to the point — about 10–12 exchanges are enough. Common mistakes: writing the whole dialogue as one paragraph, using only statements (no questions), and forgetting the speakers' names. Practise one dialogue every week from the book's topics.<br><br><strong>Quick Revision:</strong><br>Dialogue = conversation in Q & A form. New line for each speaker. Opening → discussion → closing. 6 marks.",
+        "mcq": [
+          {
+            "question": "A dialogue should begin with —",
+            "options": [
+              "a greeting",
+              "a conclusion",
+              "a title",
+              "a summary"
+            ],
+            "answer": "a greeting"
+          },
+          {
+            "question": "In a dialogue, each speaker's words are written —",
+            "options": [
+              "in the same line",
+              "in a new line",
+              "in brackets",
+              "in italics"
+            ],
+            "answer": "in a new line"
+          },
+          {
+            "question": "'How are you?' is a ___ sentence.",
+            "options": [
+              "assertive",
+              "interrogative",
+              "imperative",
+              "exclamatory"
+            ],
+            "answer": "interrogative"
+          },
+          {
+            "question": "A good dialogue is —",
+            "options": [
+              "long and dull",
+              "short, natural and to the point",
+              "full of difficult words",
+              "without any questions"
+            ],
+            "answer": "short, natural and to the point"
+          }
+        ],
+        "creative": {
+          "question": "Write a dialogue between two friends about the importance of reading books.",
+          "answer": {
+            "k": "(ক) Opening and greetings: 'Rahim: Hello, Karim! How are you? Karim: Hello, Rahim! I am fine. What about you? Rahim: I am fine too. I have come to the library to borrow some books.'",
+            "kh": "(খ) Main discussion — why books are important: 'Karim: Why do you read so many books? Rahim: Books are our best friends. They give us knowledge and make us wise. A person who reads books can learn about the whole world sitting at home.'",
+            "g": "(গ) Suggestions and examples: 'Karim: Which books should we read? Rahim: We should read story books, history books and science books. We should also read newspapers every day to know what is happening in the world.'",
+            "gh": "(ঘ) Closing: 'Karim: You are right. From today I will read books regularly. Rahim: Very good. Let us borrow some books now. Karim: Thank you. See you again.' Exam tip: keep 10–12 exchanges, use short natural sentences, and end politely."
+          }
+        }
+      },
+      {
+        "id": 14,
+        "title": "Unit 14 — Application / letter (p. 144–170)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>A letter or application is a formal piece of writing sent to a person or an office. (Application/Letter = আবেদনপত্র/চিঠি।) In the examination you may be asked to write an application to the Headmaster, a letter to a friend, or a job application with a CV (resume). An application or letter carries 8 marks in the Writing part.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Format of an application: (1) Sender's address and date at the top; (2) Receiver's address; (3) Subject; (4) Salutation — 'Sir,'; (5) Body in 2–3 paragraphs; (6) Subscription — 'Yours faithfully,'; (7) Signature, name and class/roll.<br>• Job letter: add a CV with personal details, education, experience and references.<br>• Personal letter: date, salutation ('Dear friend,'), body, closing ('Yours sincerely,').<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Learn the format by heart first — half the marks depend on the format. The body should be short and clear: paragraph 1 introduces yourself and the purpose, paragraph 2 gives the details, paragraph 3 makes the request. Common mistakes: wrong date or address, no subject, and spelling mistakes in the receiver's designation. Practise five common applications before the examination.<br><br><strong>Quick Revision:</strong><br>Format: address → date → receiver → subject → salutation → body (3 paras) → subscription → signature. Job letter + CV. 8 marks.",
+        "mcq": [
+          {
+            "question": "In a formal letter, the date is written —",
+            "options": [
+              "at the top",
+              "at the bottom",
+              "in the middle",
+              "not needed"
+            ],
+            "answer": "at the top"
+          },
+          {
+            "question": "'Yours faithfully' is used —",
+            "options": [
+              "in personal letters",
+              "in formal letters",
+              "in dialogues",
+              "in stories"
+            ],
+            "answer": "in formal letters"
+          },
+          {
+            "question": "A job application should include —",
+            "options": [
+              "a CV/resume",
+              "a story",
+              "a poem",
+              "a dialogue"
+            ],
+            "answer": "a CV/resume"
+          },
+          {
+            "question": "The subject of an application is written —",
+            "options": [
+              "after the salutation",
+              "before the salutation",
+              "at the end",
+              "in the body"
+            ],
+            "answer": "before the salutation"
+          }
+        ],
+        "creative": {
+          "question": "Suppose you are Rahim, a student of class X of your school. Write an application to the Headmaster of your school for a testimonial.",
+          "answer": {
+            "k": "(ক) Heading: 'The Headmaster, [School Name], [Address]. Date: 11 November 2026. Subject: Prayer for a testimonial. Sir,' — the sender's address and the date come first, then the receiver, then the subject, then the salutation.",
+            "kh": "(খ) Body, paragraph 1 — introduction and purpose: 'With due respect, I beg to state that I am a student of class X of your school. I passed the SSC examination this year and I need a testimonial for admission to a college.'",
+            "g": "(গ) Body, paragraph 2 — details and request: 'I was a regular and attentive student. I took part in games and cultural activities of the school. I, therefore, pray and hope that you will be kind enough to issue me a testimonial.'",
+            "gh": "(ঘ) Closing: 'Yours faithfully, Rahim, Class X, Roll No. 5.' Exam tip: keep the body short, use polite language, and check the spelling of the receiver's designation and the date."
+          }
+        }
+      },
+      {
+        "id": 15,
+        "title": "Unit 15 — Paragraphs (p. 171–178)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>A paragraph is a short piece of writing on one main idea, written in about 100–150 words. (Paragraph = অনুচ্ছেদ।) It has three parts: the topic sentence (the first sentence, which gives the main idea), the supporting sentences (details, examples and reasons), and the concluding sentence (which ends the paragraph). A paragraph carries 8 marks in the Writing part.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Unity: a paragraph must have only one main idea — do not add unrelated ideas.<br>• Coherence: the sentences must follow a clear order and be joined with linking words (firstly, moreover, finally).<br>• Common paragraph topics: Tree Plantation, A Moonlit Night, Your School, Traffic Jam, The Value of Time, A Rainy Day.<br>• Length: about 100–150 words, written as a single paragraph — do not break it into parts.<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Before writing, note down 5–6 points on the topic, then arrange them in order: introduction, benefits or details, and conclusion. Common mistakes: writing many ideas in one paragraph, writing a paragraph that is too long, and forgetting the concluding sentence. Practise one paragraph every week from the book's list.<br><br><strong>Quick Revision:</strong><br>One main idea only. Topic sentence → supporting sentences → concluding sentence. 100–150 words, one paragraph. 8 marks.",
+        "mcq": [
+          {
+            "question": "A paragraph should have —",
+            "options": [
+              "one main idea",
+              "many main ideas",
+              "no idea",
+              "only examples"
+            ],
+            "answer": "one main idea"
+          },
+          {
+            "question": "The first sentence of a paragraph is called the —",
+            "options": [
+              "topic sentence",
+              "concluding sentence",
+              "title",
+              "summary"
+            ],
+            "answer": "topic sentence"
+          },
+          {
+            "question": "A good paragraph is —",
+            "options": [
+              "unified and coherent",
+              "long and confusing",
+              "without a topic",
+              "full of spelling mistakes"
+            ],
+            "answer": "unified and coherent"
+          },
+          {
+            "question": "In a paragraph on 'Tree Plantation', the concluding sentence should —",
+            "options": [
+              "introduce a new idea",
+              "summarise the main idea",
+              "ask a question",
+              "give a title"
+            ],
+            "answer": "summarise the main idea"
+          }
+        ],
+        "creative": {
+          "question": "Write a paragraph on 'Tree Plantation' in about 120 words.",
+          "answer": {
+            "k": "(ক) Topic sentence: 'Tree plantation means planting trees in a planned way. Trees are very important for our life and environment, so we should plant more and more trees.'",
+            "kh": "(খ) Benefits: 'Trees give us oxygen, fruits, flowers, timber and shade. They protect the land from erosion and keep the environment cool. They also bring rain and give shelter to birds and animals.'",
+            "g": "(গ) The problem and the need: 'But people are cutting down trees every day for houses and furniture. This is destroying our environment and causing floods, droughts and climate change. So we must stop cutting trees and plant new ones.'",
+            "gh": "(ঘ) Concluding sentence: 'Therefore, tree plantation is necessary for our survival, and every one of us should plant at least one tree every year.' Exam tip: one paragraph only, one main idea, about 120 words."
+          }
+        }
+      },
+      {
+        "id": 16,
+        "title": "Unit 16 — Compositions (p. 179–184)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>A composition is a longer piece of writing on a topic, usually 200–250 words. (Composition = রচনা।) It has three parts: the introduction (a short beginning), the body (two or three paragraphs with details, reasons and examples), and the conclusion (a short ending). A composition carries 10 marks — the biggest item in the Writing part.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Introduction: introduce the topic in 2–3 sentences; do not start with a long story.<br>• Body: discuss the topic point by point — definition, importance, problems, solutions — one point in each paragraph.<br>• Conclusion: end with your own opinion or a short summary in 2–3 sentences.<br>• Common topics: Your Aim in Life, The Value of Time, Your Favourite Game, Science in Everyday Life, Female Education.<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Before the examination, prepare the points of 6–8 common compositions. In the examination, first make a short outline, then write. Common mistakes: writing only one paragraph, going away from the topic, and spelling or grammar mistakes in the first lines. Keep the language simple and correct.<br><br><strong>Quick Revision:</strong><br>Introduction → body (2–3 paras) → conclusion. 200–250 words. Biggest writing item: 10 marks.",
+        "mcq": [
+          {
+            "question": "A composition usually has —",
+            "options": [
+              "introduction, body and conclusion",
+              "only introduction",
+              "only conclusion",
+              "only dialogue"
+            ],
+            "answer": "introduction, body and conclusion"
+          },
+          {
+            "question": "The introduction of a composition should —",
+            "options": [
+              "give the main idea briefly",
+              "tell a long story",
+              "end the topic",
+              "ask many questions"
+            ],
+            "answer": "give the main idea briefly"
+          },
+          {
+            "question": "'Your Aim in Life' is a —",
+            "options": [
+              "composition",
+              "dialogue",
+              "letter",
+              "story"
+            ],
+            "answer": "composition"
+          },
+          {
+            "question": "A good composition needs —",
+            "options": [
+              "clear ideas and correct grammar",
+              "difficult words only",
+              "no paragraphs",
+              "no conclusion"
+            ],
+            "answer": "clear ideas and correct grammar"
+          }
+        ],
+        "creative": {
+          "question": "Write a composition on 'Your Aim in Life' in about 200 words.",
+          "answer": {
+            "k": "(ক) Introduction: 'Every person should have an aim in life. An aim gives direction to our life. My aim in life is to become a teacher, because a teacher builds the future of a nation.'",
+            "kh": "(খ) Reasons for choosing it: 'A teacher is respected by all. A teacher spreads knowledge and removes the darkness of ignorance. I want to serve my country by teaching poor children who cannot afford good education.'",
+            "g": "(গ) How to achieve it: 'To become a teacher, I must study hard and pass the SSC and HSC examinations with good results. Then I will complete my graduation and take teacher training. I will also read good books to increase my knowledge.'",
+            "gh": "(ঘ) Conclusion: 'I know the path is not easy, but I will try my best. If I can become an ideal teacher, I will be able to serve my country and my people.' Exam tip: make a short outline first, then write in 3–4 paragraphs."
+          }
+        }
+      },
+      {
+        "id": 17,
+        "title": "Unit 17 — Completing Stories (p. 185–205)",
+        "genre": "Unit",
+        "summary": "<strong>সহজ ব্যাখ্যা:</strong><br>In 'Completing Stories' you are given the beginning of a story, and you must finish it in your own words. (Completing Story = অসম্পূর্ণ গল্প শেষ করা।) A completing story carries 8 marks. The summary writing in this unit means writing the main points of a passage briefly — about one-third of the original length. Read the given part carefully first, understand its mood and characters, and then continue it logically.<br><br><strong>গুরুত্বপূর্ণ পয়েন্ট:</strong><br>• Keep the same tense and the same characters as the given part — do not start a new story.<br>• Continue step by step: problem → struggle → solution → ending.<br>• Give a suitable title and a moral at the end (e.g. 'Slow and steady wins the race.').<br>• Summary: write only the main points, in your own words, without examples or quotations; keep it about one-third of the original.<br><br><strong>পরীক্ষার প্রস্তুতি:</strong><br>Before writing, read the given part twice and think of a natural ending. Common mistakes: changing the tense in the middle, ending the story suddenly without a moral, and writing too long. Practise five famous stories — The Hare and the Tortoise, The Thirsty Crow, The Fox and the Grapes, The Ant and the Dove, and A Foolish Crow.<br><br><strong>Quick Revision:</strong><br>Read the given part twice. Keep the same tense and characters. End with a moral and a title. Summary = one-third, main points only. 8 marks.",
+        "mcq": [
+          {
+            "question": "While completing a story, you should —",
+            "options": [
+              "keep the same tense and follow the given part",
+              "start a new story",
+              "change the characters' names",
+              "end the story suddenly"
+            ],
+            "answer": "keep the same tense and follow the given part"
+          },
+          {
+            "question": "A completed story should have —",
+            "options": [
+              "a suitable title and a moral",
+              "only a title",
+              "no ending",
+              "many morals"
+            ],
+            "answer": "a suitable title and a moral"
+          },
+          {
+            "question": "A summary should be —",
+            "options": [
+              "about one-third of the original",
+              "as long as the original",
+              "longer than the original",
+              "only the title"
+            ],
+            "answer": "about one-third of the original"
+          },
+          {
+            "question": "'Slow and steady wins the race' is the moral of —",
+            "options": [
+              "The Hare and the Tortoise",
+              "The Thirsty Crow",
+              "The Fox and the Grapes",
+              "The Ant and the Dove"
+            ],
+            "answer": "The Hare and the Tortoise"
+          }
+        ],
+        "creative": {
+          "question": "Complete the following story: 'Once there lived a hare and a tortoise in a forest. One day the hare laughed at the slow speed of the tortoise...' (Give a title and a moral.)",
+          "answer": {
+            "k": "(ক) Beginning: 'Once there lived a hare and a tortoise in a forest. One day the hare laughed at the slow speed of the tortoise and said, \"You walk so slowly!\" The tortoise replied, \"Let us have a race.\" The hare agreed, and the race began the next morning.'",
+            "kh": "(খ) The middle: 'The hare ran very fast and soon left the tortoise far behind. At the middle of the way he thought, \"The tortoise is very slow. I can rest for a while.\" So he lay down under a tree and fell fast asleep.'",
+            "g": "(গ) The ending: 'The tortoise walked slowly but steadily and reached the finishing line. When the hare woke up, he ran fast, but it was too late. The tortoise had already won the race. The hare was ashamed of his pride.'",
+            "gh": "(ঘ) Title and moral: Title — 'The Hare and the Tortoise'. Moral — 'Slow and steady wins the race.' Exam tip: keep the same tense, do not change the characters, and end with the moral in one line."
+          }
+        }
+      }
+    ]
+  }
+}

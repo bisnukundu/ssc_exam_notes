@@ -2044,3 +2044,97 @@ body {
         font-size: 22px;
     }
 }
+/* ===== Subject choice modal: 'নোট নাকি বই?' popup ===== */
+.choice-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.choice-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.choice-modal-card {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    max-height: 88vh;
+    overflow-y: auto;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+.close-choice-modal {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 15px;
+    cursor: pointer;
+}
+.choice-modal-card h3 {
+    margin: 0 34px 6px 0;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.choice-modal-meta {
+    margin: 0 0 16px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+.choice-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.choice-btn {
+    padding: 16px 10px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.12s ease, opacity 0.12s ease;
+}
+.choice-btn:hover:not(:disabled) { transform: translateY(-2px); }
+.choice-btn:disabled { opacity: 0.55; cursor: default; }
+.choice-btn.notes { background: linear-gradient(135deg, #10b981, #059669); }
+.choice-btn.book { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.choice-modal-note {
+    margin: 0 0 14px;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+.choice-units-label {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.choice-unit-row {
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 6px;
+    font-size: 13.5px;
+    line-height: 1.5;
+}
+.choice-unit-row span { color: var(--text-muted); font-size: 12.5px; }
+@media (max-width: 520px) {
+    .choice-buttons { grid-template-columns: 1fr; }
+    .choice-modal-card { padding: 18px; }
+}

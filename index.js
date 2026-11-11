@@ -90,7 +90,7 @@ function loadBooks() {
             books.forEach(book => {
                 const card = document.createElement('div');
                 card.className = 'book-card' + (book.pdf ? '' : ' no-pdf');
-                card.onclick = () => book.pdf ? openBook(book.pdf, book.title) : showSubjectUnits(book.code);
+                card.onclick = () => book.pdf ? openBook(book.pdf, book.title) : openSubjectChoice(book.code);
                 
                 // We use dynamic style for background if gradient is provided
                 const bgStyle = book.gradient ? `background: ${book.gradient};` : '';
@@ -158,7 +158,7 @@ function renderSecondYearCards() {
         const marks = s.marks && s.marks.total ? `${s.marks.total} নম্বর` : 'নম্বর: যাচাই হয়নি';
         const card = document.createElement('div');
         card.className = 'subject-card';
-        card.onclick = () => showSubjectUnits(s.code);
+        card.onclick = () => openSubjectChoice(s.code);
         card.innerHTML = `
             <div class="subject-card-top" style="background: ${s.gradient};">
                 <div class="subject-card-icon">${s.icon}</div>
@@ -180,51 +180,85 @@ function renderSecondYearCards() {
     });
 }
 
-function showSubjectUnits(code) {
+// Notes files for all 13 Second Year subjects (db/notes-<code>.json)
+const NOTES_FILES = {
+    '2651': 'db/notes-2651.json', '2652': 'db/notes-2652.json', '2669': 'db/notes-2669.json',
+    '2671': 'db/notes-2671.json', '2672': 'db/notes-2672.json', '2673': 'db/notes-2673.json',
+    '2676': 'db/notes-2676.json', '2679': 'db/notes-2679.json', '2680': 'db/notes-2680.json',
+    '2681': 'db/notes-2681.json', '2685': 'db/notes-2685.json', '2686': 'db/notes-2686.json',
+    '2358': 'db/notes-2358.json'
+};
+
+let currentChoiceSubject = null;
+
+function openSubjectChoice(code) {
     const s = secondYearSubjects.find(x => x.code === code);
-    const panel = document.getElementById('subject-units-panel');
-    const titleEl = document.getElementById('units-panel-title');
-    const bodyEl = document.getElementById('units-panel-body');
-    if (!s || !panel) return;
-    showEbookView();
-    titleEl.innerText = `SSC-${s.code} — ${s.title_bn}`;
-    let html = '';
-    if (s.marks && s.marks.total) {
-        const extra = s.marks.creative ? ` (সৃজনশীল ${s.marks.creative} + MCQ ${s.marks.mcq})` : (s.marks.grammar ? ` (Grammar ${s.marks.grammar} + Writing ${s.marks.writing})` : '');
-        html += `<p class="units-panel-note">মোট ${s.marks.total} নম্বর${extra}।</p>`;
+    const modal = document.getElementById('subject-choice-modal');
+    if (!s || !modal) return;
+    currentChoiceSubject = s;
+    document.getElementById('choice-modal-title').innerText = `SSC-${s.code} — ${s.title_bn}`;
+    const unitCount = s.units ? s.units.length : (s.unit_count || '—');
+    const unitLabel = s.verification_status === 'partial' ? 'আংশিক Unit যাচাইকৃত' : unitCount + ' Unit';
+    const marks = s.marks && s.marks.total ? `মোট ${s.marks.total} নম্বর` : 'নম্বর: যাচাই হয়নি';
+    document.getElementById('choice-modal-meta').innerText = `${s.title_en} • ${unitLabel} • ${marks}`;
+    const notesBtn = document.getElementById('choiceNotesBtn');
+    const bookBtn = document.getElementById('choiceBookBtn');
+    const noteEl = document.getElementById('choice-modal-note');
+    notesBtn.disabled = false;
+    notesBtn.innerText = '📝 নোট পড়ুন';
+    if (s.book_pdf) {
+        bookBtn.disabled = false;
+        bookBtn.innerText = '📕 বই পড়ুন';
     } else {
-        html += `<p class="units-panel-note">নম্বর বণ্টন এখনো Not Yet Verified — যাচাই হলে এখানে যুক্ত হবে।</p>`;
+        bookBtn.disabled = true;
+        bookBtn.innerText = '📕 বই শীঘ্রই আসছে';
     }
+    let note = 'কী পড়তে চাও? নোটে আছে সহজ ব্যাখ্যা, MCQ ও সৃজনশীল প্রশ্নোত্তর। বইয়ে আছে মূল পাঠ্যবই।';
+    if (s.verification_status === 'partial') note += ' (এই বিষয়ের কিছু Unit এখনো যাচাই হয়নি।)';
+    noteEl.innerText = note;
+    const unitsEl = document.getElementById('choice-modal-units');
     if (s.units && s.units.length > 0) {
-        html += '<div class="units-list">' + s.units.map(u => {
-            const lessons = u.lessons ? `<div class="unit-lessons">${u.lessons.map(l => `${l.no}. ${l.title_bn}${l.pages ? ` (${l.pages})` : ''}`).join('<br>')}</div>` : '';
-            const meta = [u.pages || '', u.marks ? `${u.marks} নম্বর` : '', u.max_weeks ? `সর্বোচ্চ ${u.max_weeks} সপ্তাহ` : ''].filter(Boolean).join(' • ');
-            return `<div class="unit-row"><div class="unit-row-title">Unit ${u.no} — ${u.title_bn}</div>${meta ? `<div class="unit-row-meta">${meta}</div>` : ''}${lessons}</div>`;
-        }).join('') + '</div>';
+        unitsEl.innerHTML = '<div class="choice-units-label">📚 Unit তালিকা</div>' + s.units.map(u => {
+            const meta = [u.pages || '', u.marks ? `${u.marks} নম্বর` : ''].filter(Boolean).join(' • ');
+            return `<div class="choice-unit-row"><strong>Unit ${u.no} — ${u.title_bn}</strong>${meta ? `<span> ${meta}</span>` : ''}</div>`;
+        }).join('');
+    } else {
+        unitsEl.innerHTML = s.unit_note ? `<div class="choice-units-label">📚 Unit তালিকা</div><p class="units-panel-note">${s.unit_note}</p>` : '';
     }
-    if (s.unit_note) html += `<p class="units-panel-note">${s.unit_note}</p>`;
-    if (s.marks && s.marks.marks_note) html += `<p class="units-panel-note">${s.marks.marks_note}</p>`;
-    html += '<div class="units-panel-actions">';
-    if (s.book_pdf) html += `<button class="subject-card-btn" onclick="openBook('${s.book_pdf}', '${s.title_bn}')">📕 বই পড়ুন</button>`;
-    if (s.code === '2651') html += `<button class="subject-card-btn secondary" onclick="openNotes2651()">📝 ২৬৫১-এর সম্পূর্ণ নোট পড়ুন</button>`;
-    else html += `<button class="subject-card-btn secondary" disabled style="opacity:0.6;cursor:default;">সম্পূর্ণ পাঠ শীঘ্রই আসছে — Under Teacher Review</button>`;
-    html += '</div>';
-    bodyEl.innerHTML = html;
-    panel.style.display = 'block';
-    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
 }
 
-function openNotes2651() {
+function closeSubjectChoice() {
+    const modal = document.getElementById('subject-choice-modal');
+    if (modal) modal.style.display = 'none';
+    document.body.style.overflow = '';
+    currentChoiceSubject = null;
+}
+
+function openSubjectNotes() {
+    if (!currentChoiceSubject) return;
+    const file = NOTES_FILES[currentChoiceSubject.code];
+    if (!file) return;
+    closeSubjectChoice();
     showNotesView();
     const sel = document.getElementById('subjectSelect');
-    if (sel) sel.value = 'db/notes-2651.json';
-    loadSubject('db/notes-2651.json');
+    if (sel) sel.value = file;
+    loadSubject(file);
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-document.getElementById('closeUnitsPanel').addEventListener('click', () => {
-    document.getElementById('subject-units-panel').style.display = 'none';
-});
+function openSubjectBook() {
+    if (!currentChoiceSubject || !currentChoiceSubject.book_pdf) return;
+    const s = currentChoiceSubject;
+    closeSubjectChoice();
+    openBook(s.book_pdf, s.title_bn);
+}
+
+document.getElementById('choiceNotesBtn').addEventListener('click', openSubjectNotes);
+document.getElementById('choiceBookBtn').addEventListener('click', openSubjectBook);
+document.getElementById('closeChoiceModal').addEventListener('click', closeSubjectChoice);
+document.getElementById('choiceModalBackdrop').addEventListener('click', closeSubjectChoice);
 
 document.getElementById('secondYearBtn').addEventListener('click', () => {
     showEbookView();
@@ -324,7 +358,9 @@ function renderData(data) {
         creative: { title: "সৃজনশীল (Creative)", icon: "🎨", colorClass: "blue" },
         chapters: { title: "অধ্যায় (Chapters)", icon: "🌍", colorClass: "green" },
         grammar: { title: "ব্যাকরণ (Grammar)", icon: "📖", colorClass: "blue" },
-        composition: { title: "নির্মিতি (Composition)", icon: "✍️", colorClass: "green" }
+        composition: { title: "নির্মিতি (Composition)", icon: "✍️", colorClass: "green" },
+        units: { title: "ইউনিট (Units)", icon: "📚", colorClass: "green" },
+        writing: { title: "রাইটিং (Writing)", icon: "✍️", colorClass: "green" }
     };
 
     let globalItemIndex = 0;
@@ -526,4 +562,5 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && document.getElementById('bookReaderModal').classList.contains('active')) {
         closeBook();
     }
+    if (e.key === 'Escape') closeSubjectChoice();
 });
