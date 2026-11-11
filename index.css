@@ -2139,3 +2139,24 @@ body {
     .choice-buttons { grid-template-columns: 1fr; }
     .choice-modal-card { padding: 18px; }
 }
+
+/* ===== Unit infographic image ===== */
+.infographic-wrap {
+    margin: 0 0 20px;
+    text-align: center;
+}
+.unit-infographic {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    display: block;
+    margin: 0 auto;
+}
+.infographic-caption {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--text2);
+}

@@ -461,6 +461,7 @@ function renderData(data) {
                 <div class="box-label ${meta.colorClass}">📋 সারসংক্ষেপ</div>
                 <p class="summary-text">${item.summary || 'কোনো সারসংক্ষেপ নেই।'}</p>
               </div>
+              ${item.infographic ? `<div class="infographic-wrap"><img class="unit-infographic" src="${item.infographic}" alt="${item.infographic_alt || 'ইনফোগ্রাফিক'}" loading="lazy"><div class="infographic-caption">📊 ইনফোগ্রাফিক — এক নজরে Unit-টি</div></div>` : ''}
               ${creativeHtml}
               ${mqHtml}
             </div>
