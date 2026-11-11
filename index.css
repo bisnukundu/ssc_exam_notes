@@ -1792,3 +1792,255 @@ body {
         justify-content: center;
     }
 }
+
+/* ══════════════════════════════════════
+   SSC 2nd Year – New Version (13 subjects)
+   Source: https://www.ebookbou.edu.bd/ssc.php
+   Appended 11 Nov 2026 — existing styles untouched.
+══════════════════════════════════════ */
+.second-year-section {
+    margin: 28px 0 8px;
+    padding: 22px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow2);
+}
+
+.second-year-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.second-year-sub {
+    color: var(--text2);
+    font-size: 15.5px;
+    line-height: 1.6;
+}
+
+.second-year-source {
+    color: var(--text3);
+    font-size: 13.5px;
+    margin-top: 6px;
+}
+
+.second-year-source a {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.subject-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.subject-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.subject-card-top {
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subject-card-icon {
+    font-size: 30px;
+    line-height: 1;
+}
+
+.subject-card-code {
+    font-size: 13px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.22);
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.subject-card-body {
+    padding: 14px 16px 16px;
+}
+
+.subject-card-body h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.subject-card-en {
+    color: var(--text3);
+    font-size: 13.5px;
+    margin-bottom: 10px;
+}
+
+.subject-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.subject-badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 20px;
+    background: var(--bg3);
+    color: var(--text2);
+}
+
+.subject-badge.verified {
+    background: var(--accent2-light);
+    color: var(--accent2);
+}
+
+.subject-badge.partial {
+    background: var(--accent4-light);
+    color: var(--accent4);
+}
+
+.subject-badge.pdf-pending {
+    background: var(--accent3-light);
+    color: var(--accent3);
+}
+
+.subject-card-btn {
+    width: 100%;
+    padding: 9px 12px;
+    border: none;
+    border-radius: var(--radius2);
+    background: var(--accent);
+    color: #fff;
+    font-family: inherit;
+    font-size: 14.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity var(--transition);
+}
+
+.subject-card-btn:hover {
+    opacity: 0.88;
+}
+
+.subject-card-btn.secondary {
+    background: var(--bg3);
+    color: var(--text);
+}
+
+.book-code-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-bottom: 6px;
+}
+
+.book-card.no-pdf {
+    opacity: 0.92;
+}
+
+.subject-units-panel {
+    margin-top: 18px;
+    padding: 18px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.units-panel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.units-panel-head h3 {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.close-units-panel {
+    border: none;
+    background: var(--bg3);
+    color: var(--text);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.units-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.unit-row {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius2);
+    background: var(--bg2);
+}
+
+.unit-row-title {
+    font-weight: 700;
+    font-size: 15.5px;
+}
+
+.unit-row-meta {
+    color: var(--text3);
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.unit-lessons {
+    color: var(--text2);
+    font-size: 13.5px;
+    margin-top: 6px;
+    line-height: 1.7;
+}
+
+.units-panel-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.units-panel-note {
+    color: var(--text2);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .second-year-section {
+        padding: 16px;
+    }
+    .second-year-title {
+        font-size: 22px;
+    }
+}

@@ -31,6 +31,7 @@
         <div class="topbar-logo" id="site-logo" style="cursor:pointer;" title="Go to Home">ই-বুক<span> লাইব্রেরি
             </span></div>
         <div class="topbar-actions" style="display: flex; gap: 10px;">
+            <button class="theme-btn" id="secondYearBtn">🎓 ২য় বর্ষ (নতুন)</button>
             <button class="theme-btn" id="toggleViewBtn">📝 নোটস</button>
             <a target="_blank"
                 href="https://docs.google.com/document/d/1FwVn9TMgkARUrM5x58BS0dEFGcTkUdjjBkhB99IaHkQ/edit?usp=sharing"
@@ -53,6 +54,7 @@
                 <select id="subjectSelect">
                     <option value="db/bangla_note.json">বাংলা (Bangla)</option>
                     <option value="db/vugol.json">ভূগোল (Geography)</option>
+                    <option value="db/notes-2651.json">বাংলা ২য় পত্র — ২৬৫১ (২য় বর্ষ, নতুন)</option>
                 </select>
             </div>
             <div id="toc-container"></div>
@@ -79,6 +81,28 @@
                         <span class="ebook-badge">🌙 ডার্ক মোড</span>
                     </div>
                 </div>
+
+                <!-- 🎓 SSC 2nd Year – New Version (Official: ebookbou.edu.bd/ssc.php) -->
+                <section class="second-year-section" id="second-year-new-version">
+                    <div class="second-year-head">
+                        <h2 class="second-year-title">🎓 SSC ২য় বর্ষ — নতুন ভার্সন</h2>
+                        <p class="second-year-sub">বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় (BOU) Open School — শুধু নতুন
+                            ভার্সনের ১৩টি বিষয়। ১ম বর্ষ ও পুরাতন ভার্সনের কোনো বিষয় এখানে নেই।</p>
+                        <p class="second-year-source">উৎস: <a href="https://www.ebookbou.edu.bd/ssc.php"
+                                target="_blank" rel="noopener">ebookbou.edu.bd/ssc.php — ২য় বর্ষ নতুন ভার্সন</a> •
+                            যাচাই: ১১ নভেম্বর ২০২৬</p>
+                    </div>
+                    <div class="subjects-grid" id="second-year-grid">
+                        <!-- 13 subject cards load here from db/ssc-2nd-year-new-version.json -->
+                    </div>
+                    <div class="subject-units-panel" id="subject-units-panel" style="display:none;">
+                        <div class="units-panel-head">
+                            <h3 id="units-panel-title"></h3>
+                            <button class="close-units-panel" id="closeUnitsPanel" title="বন্ধ করুন">✖</button>
+                        </div>
+                        <div id="units-panel-body"></div>
+                    </div>
+                </section>
 
                 <h2 class="library-section-label">📚 সকল পাঠ্যবই</h2>
                 <div class="books-grid" id="books-grid">

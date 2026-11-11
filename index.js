@@ -89,8 +89,8 @@ function loadBooks() {
             
             books.forEach(book => {
                 const card = document.createElement('div');
-                card.className = 'book-card';
-                card.onclick = () => openBook(book.pdf, book.title);
+                card.className = 'book-card' + (book.pdf ? '' : ' no-pdf');
+                card.onclick = () => book.pdf ? openBook(book.pdf, book.title) : showSubjectUnits(book.code);
                 
                 // We use dynamic style for background if gradient is provided
                 const bgStyle = book.gradient ? `background: ${book.gradient};` : '';
@@ -104,10 +104,11 @@ function loadBooks() {
                          <div class="book-pages-edge"></div>
                     </div>
                     <div class="book-info">
+                        ${book.code ? `<span class="book-code-badge">SSC-${book.code} • ২য় বর্ষ (নতুন)</span>` : ''}
                         <h3>${book.title}</h3>
                         <button class="read-btn">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px; margin-top: -2px;"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                            পড়ুন
+                            ${book.pdf ? 'পড়ুন' : 'ইউনিট দেখুন'}
                         </button>
                     </div>
                 `;
@@ -120,9 +121,120 @@ function loadBooks() {
         });
 }
 
+// ══════════════════════════════════════
+//   SSC 2nd Year – New Version (13 subjects)
+//   Data: db/ssc-2nd-year-new-version.json
+//   Official source: https://www.ebookbou.edu.bd/ssc.php
+// ══════════════════════════════════════
+let secondYearSubjects = [];
+
+function loadSecondYearSubjects() {
+    fetch('db/ssc-2nd-year-new-version.json')
+        .then(res => res.json())
+        .then(data => {
+            secondYearSubjects = data.subjects || [];
+            renderSecondYearCards();
+        })
+        .catch(err => {
+            console.error("Error loading 2nd year subjects:", err);
+            const grid = document.getElementById('second-year-grid');
+            if (grid) grid.innerHTML = '<p style="text-align:center;width:100%;">বিষয়ের তালিকা লোড করা যায়নি।</p>';
+        });
+}
+
+function verificationBadge(s) {
+    if (s.verification_status === 'verified') return '<span class="subject-badge verified">✓ যাচাইকৃত</span>';
+    if (s.verification_status === 'verified_units') return '<span class="subject-badge verified">✓ Unit তালিকা যাচাইকৃত</span>';
+    return '<span class="subject-badge partial">◐ আংশিক যাচাইকৃত</span>';
+}
+
+function renderSecondYearCards() {
+    const grid = document.getElementById('second-year-grid');
+    if (!grid) return;
+    grid.innerHTML = '';
+    secondYearSubjects.forEach(s => {
+        const unitCount = s.units ? s.units.length : (s.unit_count || '—');
+        const unitLabel = s.verification_status === 'partial' ? 'আংশিক Unit' : unitCount + ' Unit';
+        const marks = s.marks && s.marks.total ? `${s.marks.total} নম্বর` : 'নম্বর: যাচাই হয়নি';
+        const card = document.createElement('div');
+        card.className = 'subject-card';
+        card.onclick = () => showSubjectUnits(s.code);
+        card.innerHTML = `
+            <div class="subject-card-top" style="background: ${s.gradient};">
+                <div class="subject-card-icon">${s.icon}</div>
+                <div><div class="subject-card-code">SSC-${s.code}</div>
+                <div style="font-size:13px;opacity:0.9;">২য় বর্ষ • নতুন ভার্সন</div></div>
+            </div>
+            <div class="subject-card-body">
+                <h3>${s.title_bn}</h3>
+                <div class="subject-card-en">${s.title_en}</div>
+                <div class="subject-meta">
+                    ${verificationBadge(s)}
+                    <span class="subject-badge">${unitLabel}</span>
+                    <span class="subject-badge">${marks}</span>
+                    ${s.book_status === 'pdf_pending' ? '<span class="subject-badge pdf-pending">বই PDF শীঘ্রই আসছে</span>' : ''}
+                </div>
+                <button class="subject-card-btn">📖 Unit / Chapter দেখুন</button>
+            </div>`;
+        grid.appendChild(card);
+    });
+}
+
+function showSubjectUnits(code) {
+    const s = secondYearSubjects.find(x => x.code === code);
+    const panel = document.getElementById('subject-units-panel');
+    const titleEl = document.getElementById('units-panel-title');
+    const bodyEl = document.getElementById('units-panel-body');
+    if (!s || !panel) return;
+    showEbookView();
+    titleEl.innerText = `SSC-${s.code} — ${s.title_bn}`;
+    let html = '';
+    if (s.marks && s.marks.total) {
+        const extra = s.marks.creative ? ` (সৃজনশীল ${s.marks.creative} + MCQ ${s.marks.mcq})` : (s.marks.grammar ? ` (Grammar ${s.marks.grammar} + Writing ${s.marks.writing})` : '');
+        html += `<p class="units-panel-note">মোট ${s.marks.total} নম্বর${extra}।</p>`;
+    } else {
+        html += `<p class="units-panel-note">নম্বর বণ্টন এখনো Not Yet Verified — যাচাই হলে এখানে যুক্ত হবে।</p>`;
+    }
+    if (s.units && s.units.length > 0) {
+        html += '<div class="units-list">' + s.units.map(u => {
+            const lessons = u.lessons ? `<div class="unit-lessons">${u.lessons.map(l => `${l.no}. ${l.title_bn}${l.pages ? ` (${l.pages})` : ''}`).join('<br>')}</div>` : '';
+            const meta = [u.pages || '', u.marks ? `${u.marks} নম্বর` : '', u.max_weeks ? `সর্বোচ্চ ${u.max_weeks} সপ্তাহ` : ''].filter(Boolean).join(' • ');
+            return `<div class="unit-row"><div class="unit-row-title">Unit ${u.no} — ${u.title_bn}</div>${meta ? `<div class="unit-row-meta">${meta}</div>` : ''}${lessons}</div>`;
+        }).join('') + '</div>';
+    }
+    if (s.unit_note) html += `<p class="units-panel-note">${s.unit_note}</p>`;
+    if (s.marks && s.marks.marks_note) html += `<p class="units-panel-note">${s.marks.marks_note}</p>`;
+    html += '<div class="units-panel-actions">';
+    if (s.book_pdf) html += `<button class="subject-card-btn" onclick="openBook('${s.book_pdf}', '${s.title_bn}')">📕 বই পড়ুন</button>`;
+    if (s.code === '2651') html += `<button class="subject-card-btn secondary" onclick="openNotes2651()">📝 ২৬৫১-এর সম্পূর্ণ নোট পড়ুন</button>`;
+    else html += `<button class="subject-card-btn secondary" disabled style="opacity:0.6;cursor:default;">সম্পূর্ণ পাঠ শীঘ্রই আসছে — Under Teacher Review</button>`;
+    html += '</div>';
+    bodyEl.innerHTML = html;
+    panel.style.display = 'block';
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function openNotes2651() {
+    showNotesView();
+    const sel = document.getElementById('subjectSelect');
+    if (sel) sel.value = 'db/notes-2651.json';
+    loadSubject('db/notes-2651.json');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.getElementById('closeUnitsPanel').addEventListener('click', () => {
+    document.getElementById('subject-units-panel').style.display = 'none';
+});
+
+document.getElementById('secondYearBtn').addEventListener('click', () => {
+    showEbookView();
+    document.getElementById('second-year-new-version').scrollIntoView({ behavior: 'smooth' });
+});
+
 // Initial View Setup
 showEbookView();
 loadBooks();
+loadSecondYearSubjects();
 
 // Handle subject selection
 const subjectSelect = document.getElementById('subjectSelect');
@@ -210,7 +322,9 @@ function renderData(data) {
         novel: { title: "উপন্যাস (Novel)", icon: "📙", colorClass: "red" },
         drama: { title: "নাটক (Drama)", icon: "🎭", colorClass: "orange" },
         creative: { title: "সৃজনশীল (Creative)", icon: "🎨", colorClass: "blue" },
-        chapters: { title: "অধ্যায় (Chapters)", icon: "🌍", colorClass: "green" }
+        chapters: { title: "অধ্যায় (Chapters)", icon: "🌍", colorClass: "green" },
+        grammar: { title: "ব্যাকরণ (Grammar)", icon: "📖", colorClass: "blue" },
+        composition: { title: "নির্মিতি (Composition)", icon: "✍️", colorClass: "green" }
     };
 
     let globalItemIndex = 0;

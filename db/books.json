@@ -5,7 +5,12 @@
     "short_title": "বাংলা",
     "pdf": "db/books/Bangla.pdf",
     "gradient": "linear-gradient(135deg, #c94b4b 0%, #4b134f 100%)",
-    "icon": "✍️"
+    "icon": "✍️",
+    "code": "2651",
+    "year": "second",
+    "version": "new",
+    "title_en": "Bangla Second Paper",
+    "book_status": "available"
   },
   {
     "id": "english",
@@ -13,47 +18,12 @@
     "short_title": "English",
     "pdf": "db/books/English2nd.pdf",
     "gradient": "linear-gradient(135deg, #005C97 0%, #363795 100%)",
-    "icon": "🇬🇧"
-  },
-  {
-    "id": "orthoniti",
-    "title": "অর্থনীতি",
-    "short_title": "অর্থনীতি",
-    "pdf": "db/books/orthoniti.pdf",
-    "gradient": "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
-    "icon": "💰"
-  },
-  {
-    "id": "nagorikota",
-    "title": "পৌরনীতি ও নাগরিকতা",
-    "short_title": "পৌরনীতি",
-    "pdf": "db/books/nagorikota.pdf",
-    "gradient": "linear-gradient(135deg, #134E5E 0%, #71B280 100%)",
-    "icon": "🏛️"
-  },
-  {
-    "id": "bangladesh_bisoporichoy",
-    "title": "বাংলাদেশ ও বিশ্বপরিচয়",
-    "short_title": "বিশ্বপরিচয়",
-    "pdf": "db/books/bangladesh_bisoporichoy.pdf",
-    "gradient": "linear-gradient(135deg, #1a6b3c 0%, #3da35d 100%)",
-    "icon": "🌏"
-  },
-   {
-    "id": "biggan",
-    "title": "বিজ্ঞান",
-    "short_title": "বিজ্ঞান",
-    "pdf": "db/books/biggan.pdf",
-    "gradient": "linear-gradient(135deg, #00b4db 0%, #0083b0 100%)",
-    "icon": "⚛️"
-  },
-  {
-    "id": "krisi",
-    "title": "কৃষি শিক্ষা",
-    "short_title": "কৃষিশিক্ষা",
-    "pdf": "db/books/krisi.pdf",
-    "gradient": "linear-gradient(135deg, #56ab2f 0%, #a8e063 100%)",
-    "icon": "🌾"
+    "icon": "🇬🇧",
+    "code": "2652",
+    "year": "second",
+    "version": "new",
+    "title_en": "English Two",
+    "book_status": "available"
   },
   {
     "id": "saririk",
@@ -61,14 +31,141 @@
     "short_title": "শারীরিক",
     "pdf": "db/books/saririk.pdf",
     "gradient": "linear-gradient(135deg, #f953c6 0%, #b91d73 100%)",
-    "icon": "🎽"
+    "icon": "🎽",
+    "code": "2669",
+    "year": "second",
+    "version": "new",
+    "title_en": "Physical Education, Health Science and Sports",
+    "book_status": "available"
   },
-   {
+  {
+    "id": "orthoniti",
+    "title": "অর্থনীতি",
+    "short_title": "অর্থনীতি",
+    "pdf": "db/books/orthoniti.pdf",
+    "gradient": "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
+    "icon": "💰",
+    "code": "2671",
+    "year": "second",
+    "version": "new",
+    "title_en": "Economics",
+    "book_status": "available"
+  },
+  {
+    "id": "nagorikota",
+    "title": "পৌরনীতি ও নাগরিকতা",
+    "short_title": "পৌরনীতি",
+    "pdf": "db/books/nagorikota.pdf",
+    "gradient": "linear-gradient(135deg, #134E5E 0%, #71B280 100%)",
+    "icon": "🏛️",
+    "code": "2672",
+    "year": "second",
+    "version": "new",
+    "title_en": "Civics and Citizenship",
+    "book_status": "available"
+  },
+  {
+    "id": "biggan",
+    "title": "বিজ্ঞান",
+    "short_title": "বিজ্ঞান",
+    "pdf": "db/books/biggan.pdf",
+    "gradient": "linear-gradient(135deg, #00b4db 0%, #0083b0 100%)",
+    "icon": "⚛️",
+    "code": "2673",
+    "year": "second",
+    "version": "new",
+    "title_en": "Science",
+    "book_status": "available"
+  },
+  {
+    "id": "2676",
+    "title": "ফিন্যান্স ও ব্যাংকিং",
+    "short_title": "ফিন্যান্স ও ব্যাংকিং",
+    "pdf": null,
+    "gradient": "linear-gradient(135deg, #0f2027 0%, #2c5364 100%)",
+    "icon": "🏦",
+    "code": "2676",
+    "year": "second",
+    "version": "new",
+    "title_en": "Finance and Banking",
+    "book_status": "pdf_pending"
+  },
+  {
+    "id": "2679",
+    "title": "জীববিজ্ঞান",
+    "short_title": "জীববিজ্ঞান",
+    "pdf": null,
+    "gradient": "linear-gradient(135deg, #1a6b3c 0%, #3da35d 100%)",
+    "icon": "🧬",
+    "code": "2679",
+    "year": "second",
+    "version": "new",
+    "title_en": "Biology",
+    "book_status": "pdf_pending"
+  },
+  {
+    "id": "2680",
+    "title": "উচ্চতর গণিত",
+    "short_title": "উচ্চতর গণিত",
+    "pdf": null,
+    "gradient": "linear-gradient(135deg, #141e30 0%, #355c7d 100%)",
+    "icon": "📐",
+    "code": "2680",
+    "year": "second",
+    "version": "new",
+    "title_en": "Higher Mathematics",
+    "book_status": "pdf_pending"
+  },
+  {
+    "id": "bangladesh_bisoporichoy",
+    "title": "বাংলাদেশ ও বিশ্বপরিচয়",
+    "short_title": "বিশ্বপরিচয়",
+    "pdf": "db/books/bangladesh_bisoporichoy.pdf",
+    "gradient": "linear-gradient(135deg, #1a6b3c 0%, #3da35d 100%)",
+    "icon": "🌏",
+    "code": "2681",
+    "year": "second",
+    "version": "new",
+    "title_en": "Bangladesh and Global Studies",
+    "book_status": "available"
+  },
+  {
+    "id": "2685",
+    "title": "গার্হস্থ্য বিজ্ঞান",
+    "short_title": "গার্হস্থ্য বিজ্ঞান",
+    "pdf": null,
+    "gradient": "linear-gradient(135deg, #bc4b1f 0%, #e07b39 100%)",
+    "icon": "🏠",
+    "code": "2685",
+    "year": "second",
+    "version": "new",
+    "title_en": "Home Economics",
+    "book_status": "pdf_pending"
+  },
+  {
+    "id": "krisi",
+    "title": "কৃষি শিক্ষা",
+    "short_title": "কৃষিশিক্ষা",
+    "pdf": "db/books/krisi.pdf",
+    "gradient": "linear-gradient(135deg, #56ab2f 0%, #a8e063 100%)",
+    "icon": "🌾",
+    "code": "2686",
+    "year": "second",
+    "version": "new",
+    "title_en": "Agricultural Education",
+    "book_status": "available"
+  },
+  {
     "id": "carriar",
     "title": "ক্যারিয়ার শিক্ষা",
     "short_title": "ক্যারিয়ার",
     "pdf": "db/books/carriar.pdf",
     "gradient": "linear-gradient(135deg, #eab4a4 0%, #d51616 100%)",
-    "icon": "💼"
+    "icon": "💼",
+    "code": "2358",
+    "year": "second",
+    "version": "new",
+    "title_en": "Career Education",
+    "book_status": "available"
   }
 ]
