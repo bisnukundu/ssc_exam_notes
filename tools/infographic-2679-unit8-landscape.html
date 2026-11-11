@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+
+  .flow { display: flex; align-items: stretch; gap: 10px; }
+  .flow .step { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 18px 16px; text-align: center; }
+  .flow .step .n { display: inline-block; background: #2d4a8a; color: #ffffff; font-size: 26px;
+                   font-weight: bold; width: 44px; height: 44px; line-height: 44px;
+                   border-radius: 50%; margin-bottom: 6px; }
+  .flow .step b { display: block; font-size: 31px; color: #16265c; margin-bottom: 4px; }
+  .flow .step span { font-size: 24px; line-height: 1.45; color: #4a4a6a; }
+  .flow .arr { font-size: 44px; color: #2d4a8a; align-self: center; flex-shrink: 0; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+
+  .stat { flex: 1; background: #ffffff; border-radius: 16px; padding: 16px 14px; text-align: center; }
+  .stat b { display: block; font-size: 38px; color: #2d4a8a; }
+  .stat span { font-size: 24px; color: #4a4a6a; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>রেচন প্রক্রিয়া (ইউনিট-০৮)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🚽 রেচন কী?</h2>
+        <p style="font-size:27px; line-height:1.55; color:#3a3a55">বিপাকে তৈরি ইউরিয়া, অতিরিক্ত পানি ও লবণের মতো বর্জ্য বের করে দেওয়ার প্রক্রিয়াই রেচন। মানুষের প্রধান রেচন অঙ্গ <b>বৃক্ক (কিডনি)</b>। প্রতিটি বৃক্কে প্রায় <b>দশ লাখ নেফ্রন</b> থাকে, যেখানে মূত্র তৈরি হয়।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>📋 মূত্র তৈরির ৩ ধাপ</h2>
+        <div class="flow">
+          <div class="step"><span class="n">১</span><b>পরিস্রাবণ</b><span>গ্লোমেরুলাসে রক্ত থেকে পানি, গ্লুকোজ, লবণ ও ইউরিয়া ছেঁকে যায়</span></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">২</span><b>পুনঃশোষণ</b><span>নালিকায় প্রয়োজনীয় গ্লুকোজ, পানি ও লবণ রক্তে ফিরে যায়</span></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">৩</span><b>নিঃসরণ</b><span>বাকি বর্জ্য মূত্র হিসেবে বেরিয়ে যায়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1.2">
+        <h2>🔬 নেফ্রনের অংশ</h2>
+        <div class="chips">
+          <span class="chip">গ্লোমেরুলাস (কৈশিক জালিকা)</span>
+          <span class="chip">বোম্যান্স ক্যাপসুল</span>
+          <span class="chip">প্রক্সিমাল নালিকা</span>
+          <span class="chip">হেনলির লুপ</span>
+          <span class="chip">ডিস্টাল নালিকা</span>
+        </div>
+      </div>
+      <div class="card c-orange" style="flex:1">
+        <h2>🧪 মূত্রের উপাদান</h2>
+        <div style="display:flex; gap:14px">
+          <div class="stat"><b>৯৫% পানি</b><span>প্রধান উপাদান</span></div>
+          <div class="stat"><b>ইউরিয়া</b><span>বর্জ্য পদার্থ</span></div>
+          <div class="stat"><b>ইউরোক্রোম</b><span>হলুদ রঙের কারণ</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> সুস্থ মানুষের মূত্রে গ্লুকোজ থাকে না — থাকলে তা ডায়াবেটিসের লক্ষণ হতে পারে। বৃক্ক বিকল হলে ডায়ালাইসিস বা বৃক্ক প্রতিস্থাপন প্রয়োজন হয়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ১১১–১২০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

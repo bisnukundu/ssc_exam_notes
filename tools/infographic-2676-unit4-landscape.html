@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #b91c1c, #7c2d12); border-radius: 24px;
+            padding: 24px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fee2e2; }
+  .tile { flex: 1; border-radius: 24px; padding: 22px 20px; text-align: center; }
+  .tile .ico { font-size: 54px; }
+  .tile b { display: block; font-size: 31px; margin: 8px 0 6px; }
+  .tile span { font-size: 24px; line-height: 1.45; color: #3a3a55; }
+  .t1 { background: #fdecea; } .t1 b { color: #b91c1c; }
+  .t2 { background: #fdf3e0; } .t2 b { color: #9a6208; }
+  .t3 { background: #e8eef8; } .t3 b { color: #2d4a8a; }
+  .t4 { background: #f8e8f0; } .t4 b { color: #8b2252; }
+  .t5 { background: #e8f4ec; } .t5 b { color: #2e6b41; }
+  .half { flex: 1; border-radius: 24px; padding: 26px 30px; }
+  .half h2 { font-size: 36px; margin-bottom: 12px; }
+  .half p { font-size: 27px; line-height: 1.55; color: #3a3a55; }
+  .h-risk { background: #fdecea; } .h-risk h2 { color: #b91c1c; }
+  .h-unc { background: #e8eef8; } .h-unc h2 { color: #2d4a8a; }
+  .scale { flex: 1; border-radius: 24px; padding: 24px 32px;
+           background: linear-gradient(90deg, #e8f4ec, #fef9c3, #fdecea); }
+  .scale h2 { font-size: 34px; color: #16265c; margin-bottom: 10px; }
+  .scale p { font-size: 27px; line-height: 1.5; color: #3a3a55; }
+  .scale .bar { display: flex; justify-content: space-between; font-size: 25px; font-weight: bold;
+                color: #16265c; margin-top: 12px; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ঝুঁকি ও অনিশ্চয়তা (ইউনিট-০৪)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">⚠️</div>
+        <div>
+          <h2>ঝুঁকি কাকে বলে?</h2>
+          <p>বিনিয়োগে প্রত্যাশিত আয় না পাওয়ার সম্ভাবনাকেই ঝুঁকি বলে — যেমন শেয়ারের দাম কমে গেলে ক্ষতি হতে পারে।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tile t1"><div class="ico">📉</div><b>ব্যবসায়িক</b><span>বিক্রি কমে যাওয়া, খরচ বেড়ে যাওয়া</span></div>
+      <div class="tile t2"><div class="ico">💳</div><b>আর্থিক</b><span>বেশি ঋণে সুদ পরিশোধের চাপ</span></div>
+      <div class="tile t3"><div class="ico">📊</div><b>সুদের হার</b><span>সুদের হার বদলে যাওয়া</span></div>
+      <div class="tile t4"><div class="ico">🛒</div><b>মুদ্রাস্ফীতি</b><span>টাকার ক্রয়ক্ষমতা কমে যাওয়া</span></div>
+      <div class="tile t5"><div class="ico">💧</div><b>তারল্য</b><span>সম্পদ দ্রুত নগদে রূপান্তর না পারা</span></div>
+    </div>
+
+    <div class="row">
+      <div class="half h-risk">
+        <h2>📏 ঝুঁকি — পরিমাপযোগ্য</h2>
+        <p>সম্ভাবনা দিয়ে মাপা যায়। বেশি ঋণ নিলে আর্থিক ঝুঁকি বাড়ে, কারণ সুদ পরিশোধ বাধ্যতামূলক।</p>
+      </div>
+      <div class="half h-unc">
+        <h2>🌫️ অনিশ্চয়তা — পরিমাপ করা যায় না</h2>
+        <p>হঠাৎ ভূমিকম্প বা যুদ্ধের ফল কেউ আগে থেকে মাপতে পারে না — এটাই মূল পার্থক্য।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="scale">
+        <h2>⚖️ ঝুঁকি-আয় সম্পর্ক: ধনাত্মক</h2>
+        <p>বেশি ঝুঁকি নিলে বেশি আয়ের সম্ভাবনা থাকে, আবার ক্ষতির সম্ভাবনাও বেশি থাকে — নিশ্চয়তা থাকে না। ঝুঁকি কমায়: বৈচিত্র্যকরণ ও বীমা।</p>
+        <div class="bar"><span>⬅ কম ঝুঁকি • কম আয়</span><span>বেশি ঝুঁকি • বেশি আয় ➡</span></div>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ৪৩–৫৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

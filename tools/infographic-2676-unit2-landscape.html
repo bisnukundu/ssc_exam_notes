@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .half { flex: 1; border-radius: 24px; padding: 26px 30px; }
+  .half h2 { font-size: 38px; margin-bottom: 14px; }
+  .h-in { background: #e8f4ec; } .h-in h2 { color: #2e6b41; }
+  .h-out { background: #fdf3e0; } .h-out h2 { color: #9a6208; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+  .half p { font-size: 26px; line-height: 1.5; color: #3a3a55; margin-top: 14px; }
+  .term { flex: 1; border-radius: 24px; padding: 24px 22px; text-align: center; position: relative; }
+  .term .arrow { font-size: 44px; color: #16265c; }
+  .term b { display: block; font-size: 34px; margin: 6px 0; }
+  .term span { font-size: 25px; line-height: 1.45; color: #3a3a55; }
+  .term .when { display: inline-block; background: #16265c; color: #f5c542; font-size: 24px;
+                font-weight: bold; border-radius: 999px; padding: 6px 18px; margin-bottom: 6px; }
+  .t-short { background: #e8eef8; } .t-short b { color: #2d4a8a; }
+  .t-mid { background: #f8e8f0; } .t-mid b { color: #8b2252; }
+  .t-long { background: #e8f4ec; } .t-long b { color: #2e6b41; }
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>অর্থায়নের উৎস (ইউনিট-০২)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="half h-in">
+        <h2>🏠 অভ্যন্তরীণ উৎস</h2>
+        <div class="chips">
+          <span class="chip">মালিকের মূলধন</span>
+          <span class="chip">সংরক্ষিত মুনাফা</span>
+          <span class="chip">অবচয় তহবিল</span>
+        </div>
+        <p>সুদ দিতে হয় না, তবে পরিমাণ সীমিত। সংরক্ষিত মুনাফা সবচেয়ে সস্তা উৎস।</p>
+      </div>
+      <div class="half h-out">
+        <h2>🌍 বাহ্যিক উৎস</h2>
+        <div class="chips">
+          <span class="chip">শেয়ার</span>
+          <span class="chip">ডিবেঞ্চার</span>
+          <span class="chip">ব্যাংক ঋণ</span>
+          <span class="chip">বাণিজ্যিক ঋণ</span>
+        </div>
+        <p>বড় অঙ্কের অর্থ পাওয়া যায়, তবে সুদ বা লভ্যাংশ দিতে হয়।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="term t-short">
+        <span class="when">১ বছর পর্যন্ত</span>
+        <b>স্বল্পমেয়াদি</b>
+        <span>বাণিজ্যিক ঋণ, ব্যাংক ওভারড্রাফট — দৈনন্দিন খরচের জন্য</span>
+      </div>
+      <div class="term t-mid">
+        <span class="when">১–৫ বছর</span>
+        <b>মধ্যমেয়াদি</b>
+        <span>মেয়াদি ঋণ, লিজ</span>
+      </div>
+      <div class="term t-long">
+        <span class="when">৫ বছরের বেশি</span>
+        <b>দীর্ঘমেয়াদি</b>
+        <span>শেয়ার, ডিবেঞ্চার, দীর্ঘমেয়াদি ঋণ — যন্ত্রপাতি ও ভবনের জন্য</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> বাণিজ্যিক ঋণ স্বল্পমেয়াদি, আর সংরক্ষিত মুনাফা অভ্যন্তরীণ উৎস — গুলিয়ে ফেলবে না।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ১৯–২৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

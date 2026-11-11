@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 64px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .panel { flex: 1; border-radius: 24px; padding: 28px 32px; text-align: center; }
+  .panel h2 { font-size: 42px; margin-bottom: 6px; }
+  .panel .def { font-size: 26px; color: #3a3a55; margin-bottom: 14px; }
+  .panel .ex { font-size: 34px; font-weight: bold; background: #ffffff; border-radius: 16px; padding: 14px 18px; }
+  .p-active { background: #e8f4ec; } .p-active h2 { color: #2e6b41; }
+  .p-passive { background: #e8eef8; } .p-passive h2 { color: #2d4a8a; }
+  .arrow { width: 150px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .arrow .a { font-size: 64px; color: #16265c; line-height: 1; }
+  .arrow span { font-size: 23px; font-weight: bold; color: #16265c; text-align: center; margin-top: 6px; }
+
+  .card { flex: 1; border-radius: 24px; padding: 24px 28px; background: #ffffff; border: 2px solid #e0dbd0; }
+  .card h2 { font-size: 32px; color: #16265c; margin-bottom: 8px; }
+  .card p { font-size: 25px; line-height: 1.55; color: #3a3a55; }
+  .card p i { color: #6b6b85; }
+
+  .warn { background: #fdf3e0; border: 2px solid #f5c542; border-radius: 24px; padding: 20px 32px;
+          display: flex; align-items: center; gap: 22px; }
+  .warn .ico { font-size: 48px; }
+  .warn p { font-size: 27px; line-height: 1.5; color: #4a3a08; }
+  .warn b { color: #9a6208; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Voice (Unit-04)</h1>
+    <p>SSC-2652 • English Second Paper</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="panel p-active">
+        <h2>🟢 Active Voice</h2>
+        <p class="def">The subject does the action.</p>
+        <div class="ex">'He writes a letter.'</div>
+      </div>
+      <div class="arrow">
+        <div class="a">➜</div>
+        <span>be + past participle</span>
+      </div>
+      <div class="panel p-passive">
+        <h2>🔵 Passive Voice</h2>
+        <p class="def">The object becomes the subject.</p>
+        <div class="ex">'A letter is written by him.'</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h2>Assertive</h2>
+        <p><i>'He writes a letter.'</i> → <i>'A letter is written by him.'</i><br>The object becomes the subject; add 'by + subject'.</p>
+      </div>
+      <div class="card">
+        <h2>Interrogative</h2>
+        <p><i>'Did he write a letter?'</i> → <i>'Was a letter written by him?'</i><br>The auxiliary verb comes first.</p>
+      </div>
+      <div class="card">
+        <h2>Imperative</h2>
+        <p><i>'Open the door.'</i> → <i>'Let the door be opened.'</i><br>Use 'Let + object + be + past participle'.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="warn" style="flex:1">
+        <div class="ico">⚠️</div>
+        <p><b>The tense never changes</b> in the change of voice. Intransitive verbs have no passive: <i>'He sleeps.'</i> cannot be changed.</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 45–52) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

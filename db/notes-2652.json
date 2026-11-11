@@ -69,7 +69,9 @@
             "g": "(গ) Three structures: Simple sentence has one clause ('Birds fly.'). Complex sentence has one main clause and one or more subordinate clauses ('I know that he is honest.'). Compound sentence has two main clauses joined by and, but or or ('He came and sat down.').",
             "gh": "(ঘ) Common mistakes: a phrase has no finite verb, so it is not a sentence. In an interrogative sentence the auxiliary verb comes before the subject ('Are you coming?'). In the examination, first find the finite verb and then the subject."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit1-sentence-infographic.png",
+        "infographic_alt": "Sentence — Unit 1 infographic (Formula design): Subject + Predicate = Sentence, 4 functions, 3 structures, how to find the subject"
       },
       {
         "id": 2,
@@ -126,7 +128,9 @@
             "g": "(গ) Past tense: Past Indefinite shows a completed action ('I saw him yesterday.'). Past Continuous shows an action in progress in the past ('They were playing when it rained.'). Past Perfect ('He had left before I came.') shows an earlier past action.",
             "gh": "(ঘ) Future tense uses 'will/shall + base verb' ('He will come tomorrow.') and 'going to' for plans. Common mistakes: do not use Present Indefinite with 'yesterday'; use 'since' with a point of time and 'for' with a period of time."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit2-tense-infographic.png",
+        "infographic_alt": "Tense — Unit 2 infographic (Grid design): 3 tenses x 4 forms = 12 forms, structures and examples, time-word clues"
       },
       {
         "id": 3,
@@ -183,7 +187,9 @@
             "g": "(গ) Participle: it works as an adjective. Present Participle (verb + ing): 'a barking dog', 'a sleeping child'. Past Participle (verb + ed/en): 'a broken window', 'a written letter'.",
             "gh": "(ঘ) Differences: an infinitive begins with 'to'; a gerund is a verb+ing acting as a noun; a participle is a verb+ing or past participle acting as an adjective. Common mistake: after a preposition always use the gerund — 'fond of reading', never 'fond of read'."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit3-non-finite-verbs-infographic.png",
+        "infographic_alt": "Infinitive, Gerund, Participle — Unit 3 infographic (Compare design): three non-finite verbs with uses and examples, gerund after prepositions"
       },
       {
         "id": 4,
@@ -240,7 +246,9 @@
             "g": "(গ) Interrogative sentences: the auxiliary verb comes first — 'Did he write a letter?' → 'Was a letter written by him?' Imperative sentences begin with 'Let' — 'Open the door.' → 'Let the door be opened.'",
             "gh": "(ঘ) The tense never changes in the change of voice. Intransitive verbs (e.g. 'sleep', 'go') have no object, so they cannot be changed into the passive voice. Always check the tense first, then change the voice."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit4-voice-infographic.png",
+        "infographic_alt": "Voice — Unit 4 infographic (Transform design): Active to Passive, assertive, interrogative and imperative changes, tense never changes"
       },
       {
         "id": 5,
@@ -297,7 +305,9 @@
             "g": "(গ) Interrogative sentences: use 'asked' — for yes/no questions use 'if': 'He said, \"Are you ready?\"' → 'He asked if I was ready.' For wh-questions keep the wh-word: 'He said, \"Where do you live?\"' → 'He asked me where I lived.' Imperative sentences use 'ordered/requested/advised + object + to-infinitive': 'He said, \"Please help me.\"' → 'He requested me to help him.'",
             "gh": "(ঘ) Exclamatory sentences use 'exclaimed with joy/sorrow': 'She said, \"Hurrah! We have won.\"' → 'She exclaimed with joy that they had won.' Time words change: 'today' → 'that day', 'tomorrow' → 'the next day', 'yesterday' → 'the previous day'."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit5-narration-infographic.png",
+        "infographic_alt": "Speech / Narration — Unit 5 infographic (Speech bubbles design): Direct vs Indirect speech, four kinds of narration, time-word changes"
       },
       {
         "id": 6,
@@ -354,7 +364,9 @@
             "g": "(গ) Type 2 — unreal condition in the present: If + Past Indefinite, would + base verb. Example: 'If I were rich, I would help the poor.' Note that 'were' is used with all persons: 'If I were you, I would go there.'",
             "gh": "(ঘ) Type 3 — unreal condition in the past: If + Past Perfect, would have + past participle. Example: 'If you had studied, you would have passed.' Common mistake: never use 'will' in the if-clause, and never use 'would' instead of 'would have' in Type 3."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit6-conditional-infographic.png",
+        "infographic_alt": "Conditional Sentence — Unit 6 infographic (Steps design): Zero, Type 1, Type 2 and Type 3 with formulas and examples, common mistakes"
       },
       {
         "id": 7,
@@ -411,7 +423,9 @@
             "g": "(গ) Subject-verb agreement: a singular subject takes a singular verb — 'He goes', 'The quality of the mangoes is good.' Words like 'each', 'every', 'either' and 'neither' take a singular verb: 'Each boy has a pen.'",
             "gh": "(ঘ) Special structures: after 'it is high time', use the past form ('It is high time we went home.'). After 'wish', use 'were' ('I wish I were rich.'). After a preposition, use the gerund ('She is fond of reading.')."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit7-right-form-of-verbs-infographic.png",
+        "infographic_alt": "Right Form of Verbs — Unit 7 infographic (Rule cards design): to + base verb, have/has + past participle, subject-verb agreement, special structures"
       },
       {
         "id": 8,
@@ -468,7 +482,9 @@
             "g": "(গ) Idioms are fixed phrases with a special meaning: 'to kick the bucket' means to die; 'a black sheep' means a bad person in a family; 'at sixes and sevens' means in confusion; 'to rain cats and dogs' means to rain heavily.",
             "gh": "(ঘ) To identify a phrase in the examination, ask what work it does in the sentence: if it names something, it is a noun phrase; if it describes a noun, it is an adjective phrase; if it tells when, where or how, it is an adverb phrase. Learn idioms with their meanings, not word by word."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit8-phrase-infographic.png",
+        "infographic_alt": "Phrase — Unit 8 infographic (Kinds design): noun, adjective and adverb phrases with examples, common idioms"
       },
       {
         "id": 9,
@@ -525,7 +541,9 @@
             "g": "(গ) Special cases: after 'I am', the tag is 'aren't I' — 'I am right, aren't I?' After 'Let's', the tag is 'shall we' — 'Let us go out, shall we?' After an imperative sentence, use 'will you' — 'Open the door, will you?'",
             "gh": "(ঘ) Common mistakes: use a pronoun, not a noun, in the tag — 'Rahim is here, isn't he?' (not 'isn't Rahim'). Do not forget the comma before the tag, and do not forget the question mark at the end."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit9-tag-question-infographic.png",
+        "infographic_alt": "Tag Question — Unit 9 infographic (Flip design): positive to negative tag and negative to positive tag, special rules"
       },
       {
         "id": 10,
@@ -582,7 +600,9 @@
             "g": "(গ) Subordinators join a dependent clause to a main clause: 'because' for reason ('I stayed at home because I was ill.'), 'although' for contrast ('Although it was raining, we went out.'), 'when' for time, 'if' for condition, 'since' for time or reason.",
             "gh": "(ঘ) Transitions join sentences or paragraphs: 'however' for contrast ('He worked hard; however, he failed.'), 'therefore' for result, 'moreover' for addition, 'firstly' and 'finally' for order. Remember: never use 'but' after 'although' — 'Although he is poor, he is honest.' is correct."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit10-linking-words-infographic.png",
+        "infographic_alt": "Linking Words / Connectors — Unit 10 infographic (Groups design): coordinators, subordinators and transitions with examples"
       },
       {
         "id": 11,
@@ -639,7 +659,9 @@
             "g": "(গ) Prepositions of place: 'at' for a point — 'at the door', 'at home'. 'in' for an enclosed place — 'in the room', 'in Dhaka'. 'on' for a surface — 'on the table', 'on the wall'.",
             "gh": "(ঘ) Fixed uses must be learnt by heart: 'good at English', 'fond of reading', 'afraid of dogs', 'interested in music', 'busy with work'. Common mistakes: 'in Monday' is wrong — say 'on Monday'. 'good in English' is wrong — say 'good at English'."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit11-preposition-infographic.png",
+        "infographic_alt": "Preposition — Unit 11 infographic (Table design): prepositions of time and place (at/on/in), fixed phrases, common mistakes"
       },
       {
         "id": 12,
@@ -696,7 +718,9 @@
             "g": "(গ) Quotation marks (' '): for direct speech — He said, 'I am going home.' Colon (:) introduces a list or an explanation; semicolon (;) joins two closely related sentences — 'He worked hard; he passed the examination.'",
             "gh": "(ঘ) Capital letters: at the beginning of every sentence, for proper nouns ('Dhaka', 'Rahim'), for the pronoun 'I', for days and months ('Monday', 'January'), and for titles ('Mr', 'Dr'). Common mistakes: forgetting the capital at the start of a sentence, and writing 'its' when 'it is' is meant."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit12-punctuation-infographic.png",
+        "infographic_alt": "Punctuation & Capitalization — Unit 12 infographic (Marks gallery design): full stop, question mark, exclamation, comma, apostrophe, quotation marks, capital letter rules"
       }
     ],
     "writing": [
@@ -755,7 +779,9 @@
             "g": "(গ) Suggestions and examples: 'Karim: Which books should we read? Rahim: We should read story books, history books and science books. We should also read newspapers every day to know what is happening in the world.'",
             "gh": "(ঘ) Closing: 'Karim: You are right. From today I will read books regularly. Rahim: Very good. Let us borrow some books now. Karim: Thank you. See you again.' Exam tip: keep 10–12 exchanges, use short natural sentences, and end politely."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit13-dialogue-infographic.png",
+        "infographic_alt": "Dialogue Writing — Unit 13 infographic (Chat design): example dialogue, greetings, main discussion and closing, format rules, 6 marks"
       },
       {
         "id": 14,
@@ -812,7 +838,9 @@
             "g": "(গ) Body, paragraph 2 — details and request: 'I was a regular and attentive student. I took part in games and cultural activities of the school. I, therefore, pray and hope that you will be kind enough to issue me a testimonial.'",
             "gh": "(ঘ) Closing: 'Yours faithfully, Rahim, Class X, Roll No. 5.' Exam tip: keep the body short, use polite language, and check the spelling of the receiver's designation and the date."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit14-application-letter-infographic.png",
+        "infographic_alt": "Application / Letter — Unit 14 infographic (Steps flow design): 7-step application format, job letter with CV, personal letter, 8 marks"
       },
       {
         "id": 15,
@@ -869,7 +897,9 @@
             "g": "(গ) The problem and the need: 'But people are cutting down trees every day for houses and furniture. This is destroying our environment and causing floods, droughts and climate change. So we must stop cutting trees and plant new ones.'",
             "gh": "(ঘ) Concluding sentence: 'Therefore, tree plantation is necessary for our survival, and every one of us should plant at least one tree every year.' Exam tip: one paragraph only, one main idea, about 120 words."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit15-paragraph-infographic.png",
+        "infographic_alt": "Paragraphs — Unit 15 infographic (Single block design): topic sentence, supporting sentences, concluding sentence, unity, coherence, common topics, 8 marks"
       },
       {
         "id": 16,
@@ -926,7 +956,9 @@
             "g": "(গ) How to achieve it: 'To become a teacher, I must study hard and pass the SSC and HSC examinations with good results. Then I will complete my graduation and take teacher training. I will also read good books to increase my knowledge.'",
             "gh": "(ঘ) Conclusion: 'I know the path is not easy, but I will try my best. If I can become an ideal teacher, I will be able to serve my country and my people.' Exam tip: make a short outline first, then write in 3–4 paragraphs."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit16-composition-infographic.png",
+        "infographic_alt": "Compositions — Unit 16 infographic (Layers design): introduction, body and conclusion, 200-250 words, 10 marks, common topics"
       },
       {
         "id": 17,
@@ -983,7 +1015,9 @@
             "g": "(গ) The ending: 'The tortoise walked slowly but steadily and reached the finishing line. When the hare woke up, he ran fast, but it was too late. The tortoise had already won the race. The hare was ashamed of his pride.'",
             "gh": "(ঘ) Title and moral: Title — 'The Hare and the Tortoise'. Moral — 'Slow and steady wins the race.' Exam tip: keep the same tense, do not change the characters, and end with the moral in one line."
           }
-        }
+        },
+        "infographic": "db/images/2652-unit17-completing-story-infographic.png",
+        "infographic_alt": "Completing Stories — Unit 17 infographic (Story arc design): problem, struggle, solution, ending with moral, summary rules, five famous stories, 8 marks"
       }
     ]
   }

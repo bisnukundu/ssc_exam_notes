@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #7c3aed, #1d3557); border-radius: 24px;
+            padding: 16px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #ede9fe; }
+
+  .cycle { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px;
+           padding: 16px 30px 18px; }
+  .cycle h2 { font-size: 36px; color: #16265c; margin-bottom: 14px; text-align: center; }
+  .flow { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .node { flex: 1; background: #f3e8ff; border: 3px solid #7c3aed; border-radius: 18px;
+          padding: 14px 10px; text-align: center; }
+  .node b { display: block; font-size: 32px; color: #5b21b6; }
+  .node span { font-size: 24px; color: #4a4a6a; }
+  .arrow { font-size: 44px; color: #7c3aed; font-weight: bold; }
+  .loop { text-align: center; font-size: 24px; color: #7a7a9a; margin-top: 8px; }
+
+  .card { border-radius: 24px; padding: 16px 24px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .cell { background: #ffffff; border-radius: 16px; padding: 14px 16px; }
+  .cell b { display: block; font-size: 28px; color: #16265c; margin-bottom: 2px; }
+  .cell span { font-size: 24px; line-height: 1.45; color: #3a3a55; }
+  .c-purple { background: #f3e8ff; } .c-purple h2 { color: #5b21b6; }
+
+  .vs { display: flex; gap: 22px; }
+  .vs .v { flex: 1; border-radius: 24px; padding: 14px 26px; }
+  .vs .v b { display: block; font-size: 30px; margin-bottom: 4px; }
+  .vs .v span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .v-a { background: #e8eef8; } .v-a b { color: #2d4a8a; }
+  .v-b { background: #e8f4ec; } .v-b b { color: #2e6b41; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ক্যারিয়ার গঠনের উপাদান ও কৌশল (ইউনিট-০২)</h1>
+    <p>SSC-2358 • ক্যারিয়ার শিক্ষা • ১৩টি পাঠ</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">⚙️</div>
+        <div>
+          <h2>ক্যারিয়ার গড়ার ভেতরের গুণ</h2>
+          <p>ইতিবাচক দৃষ্টিভঙ্গি, আত্মবিশ্বাস, নেতৃত্ব, প্রেরণা, মনোযোগ ও আবেগ নিয়ন্ত্রণ — এই Unit-এর ১৩টি পাঠে শেখা যায়।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cycle" style="flex:1">
+        <h2>🔄 প্রেরণা চক্র — ঘুরে ঘুরে চলে</h2>
+        <div class="flow">
+          <div class="node"><b>চাহিদা</b><span>কিছু পাওয়ার ইচ্ছা</span></div>
+          <div class="arrow">→</div>
+          <div class="node"><b>লক্ষ্য</b><span>কী পেতে চাই</span></div>
+          <div class="arrow">→</div>
+          <div class="node"><b>চেষ্টা</b><span>কাজ করে এগোনো</span></div>
+          <div class="arrow">→</div>
+          <div class="node"><b>সন্তুষ্টি</b><span>অর্জনের আনন্দ</span></div>
+        </div>
+        <div class="loop">সন্তুষ্টি থেকে আবার নতুন চাহিদা — চক্র চলতেই থাকে</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-purple" style="flex:1">
+        <h2>⭐ মূল গুণগুলো</h2>
+        <div class="grid">
+          <div class="cell"><b>ইতিবাচক দৃষ্টিভঙ্গি</b><span>সমস্যায় সুযোগ দেখা</span></div>
+          <div class="cell"><b>আত্মবিশ্বাস</b><span>নিজের সামর্থ্যে আস্থা</span></div>
+          <div class="cell"><b>নেতৃত্ব</b><span>অনুপ্রাণিত করে এগিয়ে নেওয়া</span></div>
+          <div class="cell"><b>সুনাগরিক</b><span>আইন মানা, দেশপ্রেম, দায়িত্ব পালন</span></div>
+          <div class="cell"><b>মনোযোগ</b><span>অভ্যাস ও পরিবেশ নিয়ন্ত্রণে বাড়ে</span></div>
+          <div class="cell"><b>চাপ নিয়ন্ত্রণ</b><span>ইতিবাচক আবেগ ও পরিকল্পনা</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="vs" style="flex:1">
+        <div class="v v-a"><b>🏆 প্রতিযোগিতা</b><span>নিজেকে উন্নত করা</span></div>
+        <div class="v v-b"><b>🤝 সহযোগিতা</b><span>একসঙ্গে কাজ করে সবার উন্নতি করা — দুটোই ক্যারিয়ারে দরকার</span></div>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2358 বই (পৃ. ১১–৭৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

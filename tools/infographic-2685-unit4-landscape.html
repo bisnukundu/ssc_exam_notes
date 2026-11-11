@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-purple { background: #f8e8f0; } .c-purple h2 { color: #8b2252; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-teal { background: #e6f4f1; } .c-teal h2 { color: #0f766e; }
+  .c-red { background: #fdeceb; } .c-red h2 { color: #9b2226; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .banner { border-radius: 24px; padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #f0f0f0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 27px; font-weight: bold; }
+  .tile { border-radius: 16px; padding: 20px 22px; background: #ffffff; }
+  .tile b { display: block; font-size: 30px; margin-bottom: 4px; }
+  .tile span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .num { display: inline-block; background: #2d4a8a; color: #ffffff;
+         font-size: 26px; font-weight: bold; width: 42px; height: 42px;
+         line-height: 42px; text-align: center; border-radius: 50%; margin-right: 10px; }
+  .steps { display: flex; align-items: stretch; }
+  .step { flex: 1; border-radius: 20px; padding: 22px 20px; text-align: center; }
+  .step b { display: block; font-size: 32px; margin: 8px 0 6px; }
+  .step span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .arr { align-self: center; font-size: 52px; color: #16265c; padding: 0 6px; font-weight: bold; }
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+  /* Compact variant for units whose content overflows 1080px */
+  body.compact .header { padding: 20px 60px 16px; }
+  body.compact .wrap { padding-top: 14px; }
+  body.compact .row { margin-top: 12px; }
+  body.compact .card { padding: 18px 28px; }
+  body.compact .card h2 { margin-bottom: 10px; }
+  body.compact .banner { padding: 18px 32px; }
+  body.compact .banner p { font-size: 27px; }
+  body.compact .tip { padding: 16px 28px; }
+  body.compact .tip p { font-size: 26px; }
+  body.compact .footer { padding: 12px 0 12px; }
+  body.compact .tile { padding: 14px 18px; }
+  body.compact .step { padding: 16px 18px; }
+  body.compact .chip { padding: 7px 18px; font-size: 25px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>গৃহের অভ্যন্তরীণ সজ্জা (ইউনিট-০৪)</h1>
+    <p>SSC-2685 • গার্হস্থ্য বিজ্ঞান</p>
+  </div>
+  <div class="wrap">
+
+    <div class="row">
+      <div class="banner" style="flex:1; background: linear-gradient(120deg, #be185d, #831843);">
+        <div class="ico">🛋️</div>
+        <div>
+          <h2>অভ্যন্তরীণ সজ্জা কী?</h2>
+          <p>ঘরের ভেতরে আসবাব, রং, আলো, পর্দা ও সাজসজ্জার জিনিস সুন্দর ও সুবিধাজনকভাবে সাজানো। ঘর শুধু দেখতে সুন্দর হলেই হবে না — থাকতে আরাম লাগতে হবে, কাজ করতে সুবিধা হতে হবে।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🎨 সজ্জার ৫টি নীতি</h2>
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap:16px;">
+          <div class="tile" style="background:#f8e8f0;"><b style="color:#8b2252;">ঐক্য</b><span>সব জিনিসের মধ্যে মিল ও সামঞ্জস্য</span></div>
+          <div class="tile" style="background:#e8eef8;"><b style="color:#2d4a8a;">ভারসাম্য</b><span>ঘরের দুই পাশে সমান গুরুত্ব দিয়ে সাজানো</span></div>
+          <div class="tile" style="background:#e8f4ec;"><b style="color:#2e6b41;">ছন্দ</b><span>নিয়মিত পুনরাবৃত্তি — একই রঙের পর্দা ও কুশন</span></div>
+          <div class="tile" style="background:#fdf3e0;"><b style="color:#9a6208;">অনুপাত</b><span>ঘরের আকারের সঙ্গে আসবাবের আকারের সামঞ্জস্য</span></div>
+          <div class="tile" style="background:#e6f4f1;"><b style="color:#0f766e;">গুরুত্ব</b><span>প্রাধান্য — কোন জিনিসে চোখ প্রথমে যাবে</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>🌞 আলো ও রং</h2>
+        <p style="font-size:27px; line-height:1.55;">হালকা রং ঘরকে বড় ও উজ্জ্বল দেখায়। পর্যাপ্ত আলো ও বাতাস স্বাস্থ্যের জন্য জরুরি। পড়ার ঘরে পর্যাপ্ত আলো ও শান্ত রং থাকলে মন বসে।</p>
+      </div>
+      <div class="card c-orange" style="flex:1">
+        <h2>💭 মনে রাখবে</h2>
+        <p style="font-size:27px; line-height:1.55;">দামি জিনিস দিয়েই ঘর সাজানো যায় — এমন নয়। নীতি মেনে সাজালে সাধারণ জিনিস দিয়েও ঘর সুন্দর হয়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2685 বই (পৃ. ৩২–৪৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

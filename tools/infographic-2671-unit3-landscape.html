@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 62px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #7c3aed, #4c1d95); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 70px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 4px; }
+  .banner p { font-size: 28px; line-height: 1.45; color: #ede9fe; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 36px; margin-bottom: 10px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .card p { font-size: 27px; line-height: 1.55; color: #3a3a55; }
+  .steps { display: flex; gap: 16px; align-items: stretch; }
+  .step { flex: 1; background: #ffffff; border-radius: 16px; padding: 12px 18px; text-align: center; }
+  .step .n { font-size: 40px; font-weight: bold; color: #7c3aed; }
+  .step b { display: block; font-size: 30px; color: #16265c; margin: 2px 0 4px; }
+  .step span { font-size: 24px; line-height: 1.45; color: #3a3a55; }
+  .arrow { align-self: center; font-size: 40px; color: #7c3aed; font-weight: bold; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #f4f6fb; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 8px 20px; font-size: 26px; font-weight: bold; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 16px 0 14px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>উপযোগ ও নিরপেক্ষ রেখা (ইউনিট-০৩)</h1>
+    <p>SSC-2671 • অর্থনীতি</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🍎</div>
+        <div>
+          <h2>উপযোগ কী?</h2>
+          <p>কোনো দ্রব্যের মানুষের অভাব মেটানোর ক্ষমতাই উপযোগ। একটি আম খেলে যে তৃপ্তি পাও, সেটাই আমের উপযোগ।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>📊 মোট উপযোগ</h2>
+        <p>সবগুলো দ্রব্য থেকে পাওয়া মোট তৃপ্তি। প্রান্তিক উপযোগ শূন্য হলে মোট উপযোগ সর্বোচ্চ হয়।</p>
+      </div>
+      <div class="card c-green" style="flex:1">
+        <h2>➕ প্রান্তিক উপযোগ</h2>
+        <p>আরেকটি দ্রব্য খেলে যে বাড়তি তৃপ্তি পাওয়া যায়। দ্রব্য ভোগ বাড়লে এটি কমতে থাকে।</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>📉 ক্রমহ্রাসমান প্রান্তিক উপযোগ বিধি</h2>
+        <div class="steps">
+          <div class="step"><div class="n">১ম</div><b>আম</b><span>তৃপ্তি সবচেয়ে বেশি</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><div class="n">২য়</div><b>আম</b><span>তৃপ্তি কমে যায়</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><div class="n">৩য়</div><b>আম</b><span>তৃপ্তি আরও কম</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><div class="n">০</div><b>প্রান্তিক উপযোগ</b><span>মোট উপযোগ সর্বোচ্চ</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>📈 নিরপেক্ষ রেখার বৈশিষ্ট্য</h2>
+        <div class="chips">
+          <span class="chip">সমান তৃপ্তির সংমিশ্রণ</span>
+          <span class="chip">ডানদিকে নিম্নগামী</span>
+          <span class="chip">দুটি রেখা ছেদ করে না</span>
+          <span class="chip">মূলবিন্দুর দিকে উত্তল</span>
+          <span class="chip">উচ্চতর রেখা = বেশি তৃপ্তি</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2671 বই (পৃ. ২৫–৩৫) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

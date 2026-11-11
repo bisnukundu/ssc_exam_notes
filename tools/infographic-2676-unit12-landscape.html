@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 18px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 18px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #5b21b6, #7c3aed); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 66px; }
+  .banner h2 { font-size: 36px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 26px; line-height: 1.5; color: #ede9fe; }
+  .rel { flex: 1; border-radius: 24px; padding: 18px 26px; text-align: center; }
+  .rel .ico { font-size: 44px; }
+  .rel b { display: block; font-size: 31px; margin: 8px 0 6px; }
+  .rel span { font-size: 25px; line-height: 1.45; color: #3a3a55; }
+  .r1 { background: #e8eef8; } .r1 b { color: #2d4a8a; }
+  .r2 { background: #fdecea; } .r2 b { color: #b91c1c; }
+  .r3 { background: #e8f4ec; } .r3 b { color: #2e6b41; }
+  .steps { flex: 1.15; background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 20px 30px; }
+  .steps h2 { font-size: 33px; color: #16265c; margin-bottom: 10px; }
+  .step { display: flex; align-items: center; gap: 14px; padding: 7px 0; border-bottom: 2px dashed #e8e4da; }
+  .step:last-child { border-bottom: none; }
+  .step .n { font-size: 26px; font-weight: bold; background: #5b21b6; color: #ffffff;
+             width: 44px; height: 44px; line-height: 44px; text-align: center; border-radius: 50%; flex-shrink: 0; }
+  .step span { font-size: 26px; color: #3a3a55; }
+  .cheque { flex: 1; border-radius: 24px; padding: 20px 30px; }
+  .cheque h2 { font-size: 33px; margin-bottom: 10px; }
+  .cq { background: #ffffff; border-radius: 16px; padding: 11px 18px; margin-bottom: 9px; }
+  .cq b { font-size: 29px; display: block; margin-bottom: 4px; }
+  .cq span { font-size: 25px; line-height: 1.45; color: #3a3a55; }
+  .h-cheque { background: #f8e8f0; } .h-cheque h2 { color: #8b2252; }
+  .badge { display: inline-block; background: #16265c; color: #f5c542; font-size: 26px; font-weight: bold;
+           border-radius: 999px; padding: 8px 20px; margin-top: 6px; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ব্যাংক ও গ্রাহক (ইউনিট-১২)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🤝</div>
+        <div>
+          <h2>ব্যাংক ও গ্রাহকের সম্পর্ক</h2>
+          <p>আমানতকারী হিসেবে গ্রাহক ব্যাংকের ঋণদাতা — কারণ ব্যাংক গ্রাহকের টাকা ব্যবহার করে। ঋণ নিলে গ্রাহক হন ব্যাংকের ঋণগ্রহীতা।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="rel r1"><div class="ico">💰</div><b>আমানতকারী = ঋণদাতা</b><span>গ্রাহকের টাকা ব্যাংক ব্যবহার করে</span></div>
+      <div class="rel r2"><div class="ico">📝</div><b>ঋণগ্রহীতা</b><span>ঋণ নিলে গ্রাহক ঋণগ্রহীতা হন</span></div>
+      <div class="rel r3"><div class="ico">🤵</div><b>এজেন্ট-প্রিন্সিপাল</b><span>বিল আদায় করলে ব্যাংক এজেন্ট</span></div>
+    </div>
+
+    <div class="row">
+      <div class="steps">
+        <h2>📋 হিসাব খুলতে যা লাগে</h2>
+        <div class="step"><span class="n">১</span><span>আবেদনপত্র পূরণ</span></div>
+        <div class="step"><span class="n">২</span><span>পাসপোর্ট সাইজের ছবি</span></div>
+        <div class="step"><span class="n">৩</span><span>জাতীয় পরিচয়পত্রের ফটোকপি</span></div>
+        <div class="step"><span class="n">৪</span><span>পরিচয়দানকারীর সুপারিশ</span></div>
+        <div class="step"><span class="n">৫</span><span>প্রাথমিক জমা</span></div>
+      </div>
+      <div class="cheque h-cheque">
+        <h2>🧾 চেক ৩ প্রকার</h2>
+        <div class="cq"><b>বাহক চেক</b><span>যে কেউ ভাঙাতে পারে</span></div>
+        <div class="cq"><b>আদেশ চেক</b><span>শুধু নাম লেখা ব্যক্তি পাবে</span></div>
+        <div class="cq"><b>দাগকাটা চেক</b><span>দুটি সমান্তরাল রেখা — শুধু ব্যাংক হিসাবের মাধ্যমে পরিশোধ; হারিয়ে গেলেও নগদ তোলা যায় না</span></div>
+        <span class="badge">⏳ চেকের মেয়াদ: ৬ মাস</span>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ১৩৩–১৪২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

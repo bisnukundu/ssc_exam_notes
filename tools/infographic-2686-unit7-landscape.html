@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 14px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 54px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 12px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 12px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #a16207, #713f12); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 60px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fef9c3; }
+  .card { border-radius: 24px; padding: 20px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-yellow { background: #fef9c3; } .c-yellow h2 { color: #854d0e; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .cats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cat { border-radius: 16px; padding: 16px 20px; }
+  .cat b { display: block; font-size: 29px; margin-bottom: 4px; }
+  .cat span { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .k1 { background: #fef9c3; } .k1 b { color: #854d0e; }
+  .k2 { background: #e8f4ec; } .k2 b { color: #2e6b41; }
+  .k3 { background: #fdf3e0; } .k3 b { color: #9a6208; }
+  .k4 { background: #f8e8f0; } .k4 b { color: #8b2252; }
+  .rice { display: flex; gap: 14px; }
+  .r { flex: 1; background: #ffffff; border-radius: 16px; padding: 16px 10px; text-align: center;
+       border-top: 8px solid #eab308; }
+  .r b { display: block; font-size: 30px; color: #854d0e; margin-bottom: 2px; }
+  .r span { font-size: 23px; color: #4a4a6a; }
+  .steps { display: flex; gap: 10px; align-items: stretch; }
+  .step { flex: 1; background: #fef9c3; border-radius: 16px; padding: 14px 8px; text-align: center; }
+  .step .n { display: inline-block; background: #a16207; color: #ffffff; font-size: 24px; font-weight: bold;
+             width: 40px; height: 40px; line-height: 40px; border-radius: 50%; margin-bottom: 6px; }
+  .step b { display: block; font-size: 25px; color: #713f12; line-height: 1.3; }
+  .arrow { align-self: center; font-size: 30px; color: #a16207; flex: 0 0 24px; text-align: center; }
+  .tip { background: #16265c; border-radius: 24px; padding: 12px 24px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 20px; color: #7a7a9a; padding: 8px 0 6px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>কৃষিজ উৎপাদন: ফসল (ইউনিট-০৭)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌾</div>
+        <div>
+          <h2>ফসল উৎপাদন কী?</h2>
+          <p>ধান, গম, পাট, ডাল, তেলবীজের মতো ফসল চাষ করে ফলন পাওয়া। প্রতিটি ফসলের নিজস্ব মৌসুম, মাটি, পানি ও পরিচর্যার প্রয়োজন আছে। ধান বাংলাদেশের প্রধান খাদ্যশস্য।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1.15">
+        <h2>🌱 ফসলের ৪ শ্রেণি</h2>
+        <div class="cats">
+          <div class="cat k1"><b>🍚 খাদ্যশস্য</b><span>ধান, গম, ভুট্টা</span></div>
+          <div class="cat k2"><b>🧵 আঁশ ফসল</b><span>পাট</span></div>
+          <div class="cat k3"><b>🫗 তেলবীজ</b><span>সরিষা, তিল, সূর্যমুখী</span></div>
+          <div class="cat k4"><b>🥜 ডাল ফসল</b><span>মসুর, ছোলা, মুগ</span></div>
+        </div>
+      </div>
+      <div class="card c-yellow" style="flex:1">
+        <h2>🌾 ধানের ৩ মৌসুম</h2>
+        <div class="rice">
+          <div class="r"><b>আউশ</b><span>গ্রীষ্মকালীন</span></div>
+          <div class="r"><b>আমন</b><span>বর্ষাকালীন</span></div>
+          <div class="r"><b>বোরো</b><span>শীতকালীন</span></div>
+        </div>
+        <p style="font-size:25px; color:#713f12; margin-top:16px; text-align:center;">🌾 <b>গম:</b> রবি মৌসুমের ফসল — শীতকালে চাষ হয়।</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🔄 ফসল চাষের ৬ ধাপ</h2>
+        <div class="steps">
+          <div class="step"><span class="n">১</span><b>জমি তৈরি</b></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">২</span><b>বীজ বপন / চারা রোপণ</b></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">৩</span><b>সার ও সেচ</b></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">৪</span><b>আগাছা দমন</b></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">৫</span><b>পোকা দমন</b></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">৬</span><b>কাটা ও মাড়াই</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">🔁</div>
+        <p><b>শস্য পর্যায়:</b> একই জমিতে পর্যায়ক্রমে ভিন্ন ফসল চাষ করলে মাটির উর্বরতা ভালো থাকে ও রোগ কমে। একই জমিতে বারবার একই ফসল চাষ করলে উর্বরতা কমে ও রোগ বাড়ে।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ১০৯–১৩৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

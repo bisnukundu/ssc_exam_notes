@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #c94b4b, #4b134f); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #ffecec; }
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-purple { background: #f8e8f0; } .c-purple h2 { color: #8b2252; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .card p { font-size: 27px; line-height: 1.55; color: #3a3a55; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 27px; font-weight: bold; }
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; border-radius: 16px; padding: 18px 20px; }
+  .col b { display: block; font-size: 32px; margin-bottom: 4px; }
+  .col span { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .col-a { background: #e8eef8; } .col-a b { color: #2d4a8a; }
+  .col-b { background: #e8f4ec; } .col-b b { color: #2e6b41; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>অর্থনীতি পরিচিতি (ইউনিট-০১)</h1>
+    <p>SSC-2671 • অর্থনীতি</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">💰</div>
+        <div>
+          <h2>অর্থনীতি কাকে বলে?</h2>
+          <p>অসীম অভাব ও সীমিত সম্পদের মধ্যে নির্বাচনের বিজ্ঞানই অর্থনীতি। অভাব অসীম, কিন্তু তা মেটানোর সম্পদ সীমিত — তাই কোন অভাব আগে মেটাব, এই নির্বাচন করাই অর্থনীতির মূল কাজ।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-blue" style="flex:1.2">
+        <h2>🎯 অর্থনৈতিক সমস্যা ৩টি</h2>
+        <div class="chips">
+          <span class="chip">কী উৎপাদন করব</span>
+          <span class="chip">কীভাবে উৎপাদন করব</span>
+          <span class="chip">কার জন্য উৎপাদন করব</span>
+        </div>
+      </div>
+      <div class="card c-green" style="flex:1">
+        <h2>⚖️ সুযোগ ব্যয়</h2>
+        <p>একটি সুযোগ নিতে গিয়ে যে সুযোগ ছাড়তে হয়, তার মূল্যই সুযোগ ব্যয়।</p>
+      </div>
+      <div class="card c-purple" style="flex:1">
+        <h2>📖 জনক: অ্যাডাম স্মিথ</h2>
+        <p>অর্থনীতিকে বলেছেন সম্পদের বিজ্ঞান। বিখ্যাত বই: <b>Wealth of Nations</b>।</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🔍 অর্থনীতির দুই ভাগ</h2>
+        <div class="cols">
+          <div class="col col-a"><b>ব্যষ্টিক অর্থনীতি</b><span>ব্যক্তি, পরিবার বা একটি ফার্মের আচরণ — ছোট একক</span></div>
+          <div class="col col-b"><b>সামষ্টিক অর্থনীতি</b><span>জাতীয় আয়, মুদ্রাস্ফীতি, বেকারত্ব — পুরো দেশ</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2671 বই (পৃ. ১–১৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

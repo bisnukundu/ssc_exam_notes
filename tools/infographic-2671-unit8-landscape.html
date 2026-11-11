@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #92400e, #78350f); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #fef3c7; }
+  .func { flex: 1; border-radius: 24px; padding: 26px 26px; text-align: center; }
+  .func .n { display: inline-block; background: #16265c; color: #f5c542; font-size: 30px;
+             font-weight: bold; width: 52px; height: 52px; line-height: 52px;
+             border-radius: 50%; }
+  .func h2 { font-size: 34px; margin: 12px 0 8px; }
+  .func p { font-size: 25px; line-height: 1.55; color: #3a3a55; }
+  .f-blue { background: #e8eef8; } .f-blue h2 { color: #2d4a8a; }
+  .f-green { background: #e8f4ec; } .f-green h2 { color: #2e6b41; }
+  .f-orange { background: #fdf3e0; } .f-orange h2 { color: #9a6208; }
+  .bank { flex: 1; border-radius: 24px; padding: 26px 30px; }
+  .bank h2 { font-size: 36px; margin-bottom: 12px; }
+  .bank ul { list-style: none; }
+  .bank li { font-size: 26px; line-height: 1.6; color: #3a3a55; }
+  .bank li::before { content: "• "; font-weight: bold; }
+  .b-blue { background: #e8eef8; } .b-blue h2 { color: #2d4a8a; }
+  .b-green { background: #e8f4ec; } .b-green h2 { color: #2e6b41; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 26px; font-weight: bold; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>অর্থ ও ব্যাংক ব্যবস্থা (ইউনিট-০৮)</h1>
+    <p>SSC-2671 • অর্থনীতি</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">💵</div>
+        <div>
+          <h2>অর্থ কী?</h2>
+          <p>অর্থ হলো এমন কিছু, যা সবাই বিনিময়ের মাধ্যম হিসেবে গ্রহণ করে। অর্থের ধরন: ধাতব মুদ্রা, কাগজি মুদ্রা ও ব্যাংক মুদ্রা (চেক, ড্রাফট)।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="func f-blue">
+        <div class="n">১</div>
+        <h2>বিনিময়ের মাধ্যম</h2>
+        <p>টাকা দিয়ে যেকোনো জিনিস কেনা যায়</p>
+      </div>
+      <div class="func f-green">
+        <div class="n">২</div>
+        <h2>মূল্যের পরিমাপক</h2>
+        <p>টাকায় সব জিনিসের দাম মাপা যায়</p>
+      </div>
+      <div class="func f-orange">
+        <div class="n">৩</div>
+        <h2>সঞ্চয়ের ভাণ্ডার</h2>
+        <p>টাকা জমিয়ে রেখে পরে খরচ করা যায়</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="bank b-blue">
+        <h2>🏦 কেন্দ্রীয় ব্যাংক — বাংলাদেশ ব্যাংক</h2>
+        <ul>
+          <li>টাকা ছাপায় ও ঋণ নিয়ন্ত্রণ করে</li>
+          <li>সরকারের ব্যাংক ও অন্য ব্যাংকের ব্যাংক</li>
+          <li>সাধারণ মানুষের সঙ্গে লেনদেন করে না</li>
+        </ul>
+      </div>
+      <div class="bank b-green">
+        <h2>🏧 বাণিজ্যিক ব্যাংক</h2>
+        <ul>
+          <li>আমানত গ্রহণ করে ও ঋণ দেয়</li>
+          <li>চেক প্রচলন করে</li>
+          <li>যেমন: সোনালী, জনতা ব্যাংক</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2671 বই (পৃ. ৯৫–১১৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

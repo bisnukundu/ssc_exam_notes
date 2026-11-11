@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-red { background: #fdecea; } .c-red h2 { color: #b03030; }
+
+  .path { display: flex; align-items: center; gap: 8px; }
+  .path .step { flex: 1; background: #ffffff; border-radius: 16px; padding: 14px 8px; text-align: center; }
+  .path .step b { display: block; font-size: 27px; color: #16265c; }
+  .path .step span { font-size: 22px; color: #4a4a6a; }
+  .path .arr { font-size: 32px; color: #2d4a8a; flex-shrink: 0; }
+  .path .step.hl { background: #2e6b41; }
+  .path .step.hl b { color: #ffffff; }
+  .path .step.hl span { color: #d8f3dc; }
+
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 16px 20px; }
+  .col b { display: block; font-size: 29px; color: #16265c; margin-bottom: 4px; }
+  .col span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+
+  .stat { flex: 1; background: #ffffff; border-radius: 16px; padding: 16px 14px; text-align: center; }
+  .stat b { display: block; font-size: 38px; color: #2e6b41; }
+  .stat span { font-size: 24px; color: #4a4a6a; }
+
+  .warn { background: #fdecea; border-radius: 24px; padding: 16px 28px;
+          display: flex; align-items: center; gap: 22px; }
+  .warn .ico { font-size: 48px; }
+  .warn p { font-size: 26px; line-height: 1.5; color: #5a1a1a; }
+  .warn b { color: #b03030; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>গ্যাসীয় বিনিময় (ইউনিট-০৭)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>🌬️ শ্বাসতন্ত্রের পথ</h2>
+        <div class="path">
+          <div class="step"><b>নাসারন্ধ্র</b><span>বাতাস ঢোকে</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>নাসাপথ</b><span>বাতাস যায়</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>শ্বাসনালি</b><span>ট্রাকিয়া</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>ব্রংকাই</b><span>শ্বাসতন্ত্রের অংশ</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>ফুসফুস</b><span>শ্বাসতন্ত্রের অংশ</span></div>
+          <div class="arr">→</div>
+          <div class="step hl"><b>অ্যালভিওলাই</b><span>গ্যাস বিনিময় হয়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1.2">
+        <h2>🫧 অ্যালভিওলাই — বিনিময়ের জায়গা</h2>
+        <div class="cols">
+          <div class="col"><b>খুব পাতলা প্রাচীর</b><span>কৈশিক নালি দিয়ে ঘেরা, তাই ব্যাপন প্রক্রিয়ায় গ্যাস বিনিময় সহজে হয়</span></div>
+          <div class="col"><b>অক্সিজেন → রক্তে</b><span>কার্বন ডাই-অক্সাইড → বেরিয়ে আসে</span></div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>⏱️ শ্বাস-প্রশ্বাসের হার</h2>
+        <div class="stats">
+          <div class="stat"><b>১৬–২০ বার</b><span>প্রতি মিনিটে (স্বাভাবিক)</span></div>
+          <div class="stat"><b>ব্যায়ামে ↑</b><span>হার বেড়ে যায়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>↕️ শ্বাস গ্রহণ বনাম ত্যাগ</h2>
+        <div class="cols">
+          <div class="col"><b>শ্বাস গ্রহণ</b><span>ডায়াফ্রাম নিচে নামে ও বক্ষগহ্বর বড় হয়</span></div>
+          <div class="col"><b>শ্বাস ত্যাগ</b><span>উল্টোটি ঘটে — ডায়াফ্রাম উপরে ওঠে</span></div>
+          <div class="col"><b>উদ্ভিদে</b><span>পত্ররন্ধ্র দিয়ে গ্যাসীয় বিনিময় হয়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="warn" style="flex:1">
+        <div class="ico">🚬</div>
+        <p><b>ধূমপান ফুসফুস নষ্ট করে:</b> অ্যালভিওলাই নষ্ট হয়; এতে শ্বাসকষ্ট, ব্রংকাইটিস ও ফুসফুসের ক্যান্সার হতে পারে। শ্বাসনালি ও অন্ননালি গুলিয়ে ফেলবে না — খাদ্য যায় অন্ননালি দিয়ে, বাতাস যায় শ্বাসনালি দিয়ে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ১০১–১১০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

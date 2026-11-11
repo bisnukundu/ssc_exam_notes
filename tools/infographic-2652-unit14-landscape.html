@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 62px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .flow { flex: 1; background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 24px 28px; }
+  .flow h2 { font-size: 34px; color: #16265c; margin-bottom: 16px; }
+  .steps { display: flex; gap: 10px; align-items: stretch; }
+  .step { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 14px 10px; text-align: center; }
+  .step .n { display: inline-block; background: #2d4a8a; color: #ffffff; font-size: 22px; font-weight: bold;
+             width: 34px; height: 34px; line-height: 34px; border-radius: 50%; margin-bottom: 6px; }
+  .step b { display: block; font-size: 24px; color: #16265c; margin-bottom: 3px; }
+  .step span { font-size: 21px; line-height: 1.35; color: #3a3a55; }
+  .step.hot { background: #fdf3e0; } .step.hot .n { background: #9a6208; }
+  .arr { display: flex; align-items: center; font-size: 26px; color: #16265c; flex-shrink: 0; }
+
+  .card { flex: 1; border-radius: 24px; padding: 22px 28px; }
+  .card h2 { font-size: 32px; margin-bottom: 8px; }
+  .card p { font-size: 25px; line-height: 1.55; color: #3a3a55; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-purple { background: #f8e8f0; } .c-purple h2 { color: #8b2252; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 20px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 20px 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Application / Letter (Unit-14)</h1>
+    <p>SSC-2652 • English Second Paper • Writing — 8 marks</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="flow" style="flex:1">
+        <h2>✉️ Format of an application — 7 steps</h2>
+        <div class="steps">
+          <div class="step"><div class="n">1</div><b>Sender's address</b><span>at the top</span></div>
+          <div class="arr">›</div>
+          <div class="step"><div class="n">2</div><b>Date</b><span>below the address</span></div>
+          <div class="arr">›</div>
+          <div class="step"><div class="n">3</div><b>Receiver's address</b><span>Headmaster / Manager</span></div>
+          <div class="arr">›</div>
+          <div class="step"><div class="n">4</div><b>Subject</b><span>short &amp; clear</span></div>
+          <div class="arr">›</div>
+          <div class="step"><div class="n">5</div><b>Salutation</b><span>'Sir,'</span></div>
+          <div class="arr">›</div>
+          <div class="step hot"><div class="n">6</div><b>Body</b><span>2–3 paragraphs</span></div>
+          <div class="arr">›</div>
+          <div class="step"><div class="n">7</div><b>Subscription</b><span>'Yours faithfully,' + signature</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green">
+        <h2>📄 Job letter — add a CV</h2>
+        <p>Personal details, education, experience and references.</p>
+      </div>
+      <div class="card c-purple">
+        <h2>💌 Personal letter</h2>
+        <p>Date, salutation ('Dear friend,'), body, closing ('Yours sincerely,').</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>Half the marks depend on the format</b> — learn it by heart. Body: para 1 introduces you and the purpose, para 2 gives the details, para 3 makes the request.</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 144–170) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

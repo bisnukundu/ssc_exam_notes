@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-purple { background: #f8e8f0; } .c-purple h2 { color: #8b2252; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-teal { background: #e6f4f1; } .c-teal h2 { color: #0f766e; }
+  .c-red { background: #fdeceb; } .c-red h2 { color: #9b2226; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .banner { border-radius: 24px; padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #f0f0f0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 27px; font-weight: bold; }
+  .tile { border-radius: 16px; padding: 20px 22px; background: #ffffff; }
+  .tile b { display: block; font-size: 30px; margin-bottom: 4px; }
+  .tile span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .num { display: inline-block; background: #2d4a8a; color: #ffffff;
+         font-size: 26px; font-weight: bold; width: 42px; height: 42px;
+         line-height: 42px; text-align: center; border-radius: 50%; margin-right: 10px; }
+  .steps { display: flex; align-items: stretch; }
+  .step { flex: 1; border-radius: 20px; padding: 22px 20px; text-align: center; }
+  .step b { display: block; font-size: 32px; margin: 8px 0 6px; }
+  .step span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .arr { align-self: center; font-size: 52px; color: #16265c; padding: 0 6px; font-weight: bold; }
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+  /* Compact variant for units whose content overflows 1080px */
+  body.compact .header { padding: 20px 60px 16px; }
+  body.compact .wrap { padding-top: 14px; }
+  body.compact .row { margin-top: 12px; }
+  body.compact .card { padding: 18px 28px; }
+  body.compact .card h2 { margin-bottom: 10px; }
+  body.compact .banner { padding: 18px 32px; }
+  body.compact .banner p { font-size: 27px; }
+  body.compact .tip { padding: 16px 28px; }
+  body.compact .tip p { font-size: 26px; }
+  body.compact .footer { padding: 12px 0 12px; }
+  body.compact .tile { padding: 14px 18px; }
+  body.compact .step { padding: 16px 18px; }
+  body.compact .chip { padding: 7px 18px; font-size: 25px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>পোশাকের শিল্পকলার উপাদান ও নীতি (ইউনিট-১৪)</h1>
+    <p>SSC-2685 • গার্হস্থ্য বিজ্ঞান</p>
+  </div>
+  <div class="wrap">
+
+    <div class="row">
+      <div class="banner" style="flex:1; background: linear-gradient(120deg, #db2777, #9d174d);">
+        <div class="ico">👗</div>
+        <div>
+          <h2>পোশাকের শিল্পকলা কী?</h2>
+          <p>পোশাককে সুন্দর ও মানানসই করে তোলার কৌশল। নিজের গঠন, গায়ের রং ও অনুষ্ঠানের ধরন অনুযায়ী পোশাক বাছলে দেখতে ভালো লাগে ও আরাম হয়।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-purple" style="flex:1">
+        <h2>🧩 উপাদান ৫টি</h2>
+        <div class="chips">
+          <span class="chip">রেখা</span>
+          <span class="chip">আকৃতি</span>
+          <span class="chip">রং</span>
+          <span class="chip">গঠন</span>
+          <span class="chip">নকশা</span>
+        </div>
+        <p style="font-size:26px; line-height:1.55; margin-top:16px; color:#3a3a55;">সরল রেখা লম্বা দেখায়, আড়াআড়ি রেখা চওড়া দেখায়। হালকা রং উজ্জ্বল ও বড় দেখায়, গাঢ় রং ছোট দেখায়।</p>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <h2>⚖️ নীতি ৪টি</h2>
+        <div class="chips">
+          <span class="chip">ঐক্য (মিল)</span>
+          <span class="chip">ভারসাম্য (দুই পাশে সমতা)</span>
+          <span class="chip">অনুপাত (অংশের সামঞ্জস্য)</span>
+          <span class="chip">ছন্দ (নকশার পুনরাবৃত্তি)</span>
+        </div>
+        <p style="font-size:26px; line-height:1.55; margin-top:16px; color:#3a3a55;">পোশাকের সব অংশের মধ্যে মিল থাকলে তা সুন্দর লাগে।</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🪞 পোশাক বাছার সময় বিবেচ্য</h2>
+        <div class="chips">
+          <span class="chip">নিজের গঠন</span>
+          <span class="chip">গায়ের রং</span>
+          <span class="chip">বয়স</span>
+          <span class="chip">অনুষ্ঠান</span>
+          <span class="chip">আবহাওয়া</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> শুধু ফ্যাশন দেখে পোশাক কেনা ভুল — নিজের গঠন ও রঙের সঙ্গে মানানসই কি না, তা দেখা জরুরি।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2685 বই (পৃ. ১৪১–১৫৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

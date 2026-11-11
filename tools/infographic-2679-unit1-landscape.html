@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #1b5e20, #00695c); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 34px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 26px; line-height: 1.5; color: #e8f5e9; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; background: #ffffff; border-radius: 16px; padding: 18px 20px; }
+  .col b { display: block; font-size: 32px; color: #2e6b41; margin-bottom: 4px; }
+  .col span { font-size: 26px; color: #4a4a6a; }
+
+  .kings { display: flex; gap: 14px; }
+  .king { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 12px 12px; text-align: center;
+          border-top: 8px solid #2e6b41; }
+  .king b { display: block; font-size: 30px; color: #16265c; margin-bottom: 4px; }
+  .king span { font-size: 24px; color: #4a4a6a; }
+
+  .lin { background: #fdf3e0; border-radius: 16px; padding: 12px 20px; margin-top: 10px; }
+  .lin p { font-size: 25px; line-height: 1.55; color: #4a3a08; }
+  .lin b { color: #9a6208; }
+  .lin .lat { font-family: 'DejaVu Sans', sans-serif; font-style: italic; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জীবন পাঠ (ইউনিট-০১)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌱</div>
+        <div>
+          <h2>জীব কাকে বলে?</h2>
+          <p>যে সত্তার বৃদ্ধি, প্রজনন, বিপাক, উদ্দীপনায় সাড়া দেওয়া ও অভিযোজন ক্ষমতা আছে, তাকেই জীব বলে। জীববিজ্ঞান হলো জীবের গঠন, কাজ ও জীবনপ্রক্রিয়া নিয়ে অধ্যয়নের শাখা।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1.25">
+        <h2>✨ জীবের ৭টি বৈশিষ্ট্য</h2>
+        <div class="chips">
+          <span class="chip">কোষীয় সংগঠন</span>
+          <span class="chip">বৃদ্ধি</span>
+          <span class="chip">বিপাক</span>
+          <span class="chip">প্রজনন</span>
+          <span class="chip">উদ্দীপনায় সাড়া</span>
+          <span class="chip">অভিযোজন</span>
+          <span class="chip">মৃত্যু</span>
+        </div>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <h2>🌿 জীববিজ্ঞানের ২ প্রধান শাখা</h2>
+        <div class="cols">
+          <div class="col"><b>উদ্ভিদবিজ্ঞান</b><span>উদ্ভিদ নিয়ে</span></div>
+          <div class="col"><b>প্রাণিবিজ্ঞান</b><span>প্রাণী নিয়ে</span></div>
+        </div>
+        <div class="chips" style="margin-top:14px">
+          <span class="chip">অণুজীববিজ্ঞান</span>
+          <span class="chip">জিনতত্ত্ব</span>
+          <span class="chip">বাস্তুবিদ্যা</span>
+          <span class="chip">শারীরবিদ্যা</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🌍 হুইটেকারের পাঁচ জগৎ</h2>
+        <div class="kings">
+          <div class="king"><b>মনিরা</b><span>ব্যাকটেরিয়া</span></div>
+          <div class="king"><b>প্রোটিস্টা</b><span>অ্যামিবা</span></div>
+          <div class="king"><b>ফানজাই</b><span>মাশরুম</span></div>
+          <div class="king"><b>প্লান্টি</b><span>উদ্ভিদ</span></div>
+          <div class="king"><b>অ্যানিমেলিয়া</b><span>প্রাণী</span></div>
+        </div>
+        <div class="lin">
+          <p><b>শ্রেণিবিন্যাসের জনক ক্যারোলাস লিনিয়াস</b> — দ্বিপদ নামকরণ পদ্ধতি প্রবর্তন করেন। গণ (Genus) বড় হাতের, প্রজাতি (Species) ছোট হাতের অক্ষরে লিখতে হয়। যেমন মানুষ: <span class="lat">Homo sapiens</span>, আম: <span class="lat">Mangifera indica</span>।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ১–১০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

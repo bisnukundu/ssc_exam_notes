@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 64px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #16265c, #0f766e); border-radius: 24px;
+            padding: 28px 36px; text-align: center; }
+  .banner .formula { font-size: 56px; font-weight: bold; color: #ffffff; }
+  .banner .formula .gold { color: #f5c542; }
+  .banner p { font-size: 28px; color: #d7e8e6; margin-top: 10px; }
+  .banner p b { color: #ffffff; }
+
+  .tile { flex: 1; border-radius: 24px; padding: 24px 26px; }
+  .tile .ico { font-size: 52px; }
+  .tile h2 { font-size: 32px; margin: 8px 0 8px; }
+  .tile p { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .tile p i { color: #6b6b85; }
+  .t-blue { background: #e8eef8; } .t-blue h2 { color: #2d4a8a; }
+  .t-green { background: #e8f4ec; } .t-green h2 { color: #2e6b41; }
+  .t-orange { background: #fdf3e0; } .t-orange h2 { color: #9a6208; }
+  .t-purple { background: #f8e8f0; } .t-purple h2 { color: #8b2252; }
+
+  .card { flex: 1; border-radius: 24px; padding: 24px 28px; background: #ffffff; border: 2px solid #e0dbd0; }
+  .card h2 { font-size: 34px; color: #16265c; margin-bottom: 8px; }
+  .card h2 span { color: #2d4a8a; }
+  .card p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 27px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Sentence (Unit-01)</h1>
+    <p>SSC-2652 • English Second Paper</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="formula"><span class="gold">Subject</span> + <span class="gold">Predicate</span> = Sentence</div>
+        <p><b>Rahim</b> (subject) <b>plays football every day</b> (predicate). &nbsp; A group of words without a finite verb is only a phrase, not a sentence.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tile t-blue">
+        <div class="ico">📢</div>
+        <h2>Assertive</h2>
+        <p>A statement.<br><i>'He is honest.'</i></p>
+      </div>
+      <div class="tile t-green">
+        <div class="ico">❓</div>
+        <h2>Interrogative</h2>
+        <p>A question.<br><i>'Are you ready?'</i></p>
+      </div>
+      <div class="tile t-orange">
+        <div class="ico">👉</div>
+        <h2>Imperative</h2>
+        <p>Order, request or advice.<br><i>'Please sit down.'</i></p>
+      </div>
+      <div class="tile t-purple">
+        <div class="ico">🎉</div>
+        <h2>Exclamatory</h2>
+        <p>A strong feeling.<br><i>'What a nice day!'</i></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h2>1️⃣ <span>Simple</span></h2>
+        <p>One clause.<br><i>'Birds fly.'</i></p>
+      </div>
+      <div class="card">
+        <h2>2️⃣ <span>Complex</span></h2>
+        <p>One main clause + subordinate clause(s).<br><i>'I know that he is honest.'</i></p>
+      </div>
+      <div class="card">
+        <h2>3️⃣ <span>Compound</span></h2>
+        <p>Two main clauses joined by and / but / or.<br><i>'He came and sat down.'</i></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>How to find the subject:</b> first find the finite verb, then ask 'who / what + verb?'. A phrase has no subject and no finite verb.</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 1–18) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

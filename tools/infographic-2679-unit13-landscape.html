@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-red { background: #fdecea; } .c-red h2 { color: #b03030; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+
+  .chain { display: flex; align-items: center; gap: 8px; }
+  .chain .step { flex: 1; background: #ffffff; border-radius: 16px; padding: 14px 8px; text-align: center; }
+  .chain .step .ico { font-size: 44px; }
+  .chain .step b { display: block; font-size: 28px; color: #16265c; margin-top: 2px; }
+  .chain .step span { font-size: 22px; color: #4a4a6a; }
+  .chain .arr { font-size: 34px; color: #2e6b41; flex-shrink: 0; }
+  .chain .step.prod { background: #2e6b41; }
+  .chain .step.prod b, .chain .step.prod span { color: #ffffff; }
+
+  .stat { flex: 1; background: #ffffff; border-radius: 16px; padding: 16px 14px; text-align: center; }
+  .stat b { display: block; font-size: 40px; color: #2e6b41; }
+  .stat span { font-size: 24px; color: #4a4a6a; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জীবের পরিবেশ (ইউনিট-১৩)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>🔗 খাদ্যশৃঙ্খল — একটি উদাহরণ</h2>
+        <div class="chain">
+          <div class="step prod"><div class="ico">🌱</div><b>ঘাস</b><span>উৎপাদক</span></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="ico">🦗</div><b>ঘাসফড়িং</b><span>তৃণভোজী</span></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="ico">🐸</div><b>ব্যাঙ</b><span>ভোক্তা</span></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="ico">🐍</div><b>সাপ</b><span>মাংসাশী</span></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="ico">🦅</div><b>ঈগল</b><span>শীর্ষ ভোক্তা</span></div>
+        </div>
+        <p style="font-size:25px; line-height:1.5; color:#3a3a55; margin-top:12px">খাদ্যশৃঙ্খলে শক্তি উৎপাদক (সবুজ উদ্ভিদ) থেকে ভোক্তা ও বিয়োজকের দিকে প্রবাহিত হয়। খাদ্যজাল হলো একাধিক খাদ্যশৃঙ্খলের জটিল সংযোগ।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-orange" style="flex:1">
+        <h2>⚡ শক্তির ১০% সূত্র</h2>
+        <div style="display:flex; gap:14px">
+          <div class="stat"><b>১০%</b><span>শক্তি পরের ধাপে যায়</span></div>
+          <div class="stat"><b>৯০%</b><span>শক্তি প্রতিটি ধাপে হারিয়ে যায়</span></div>
+          <div class="stat"><b>একমুখী</b><span>শক্তির প্রবাহ</span></div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>🌳 জীববৈচিত্র্য সংরক্ষণ</h2>
+        <div class="chips">
+          <span class="chip">জাতীয় উদ্যান</span>
+          <span class="chip">অভয়ারণ্য</span>
+          <span class="chip">বন সংরক্ষণ</span>
+          <span class="chip">সুন্দরবন — বিশ্বের বৃহত্তম ম্যানগ্রোভ বন</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-red" style="flex:1">
+        <h2>🏭 পরিবেশ দূষণ — ৩ ধরন</h2>
+        <div class="chips">
+          <span class="chip">বায়ু দূষণ</span>
+          <span class="chip">পানি দূষণ</span>
+          <span class="chip">মাটি দূষণ</span>
+          <span class="chip">কারণ: কলকারখানার বর্জ্য, যানবাহনের ধোঁয়া, কীটনাশক ও প্লাস্টিক</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> বিয়োজক (ব্যাকটেরিয়া, ছত্রাক) ভোক্তা নয় — এরা মৃতদেহ পচিয়ে পুষ্টি মাটিতে ফেরায়। বাস্তুতন্ত্র = জীবসম্প্রদায় + পরিবেশ।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ১৯১–২০৯) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

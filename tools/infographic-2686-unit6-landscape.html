@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 14px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 54px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 12px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 12px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #0284c7, #075985); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 60px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e0f2fe; }
+  .card { border-radius: 24px; padding: 20px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-sky { background: #e0f2fe; } .c-sky h2 { color: #075985; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-red { background: #fef2f2; } .c-red h2 { color: #b3261e; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .seasons { display: flex; gap: 16px; }
+  .season { flex: 1; border-radius: 20px; padding: 20px 16px; text-align: center; }
+  .season span { display: block; font-size: 52px; margin-bottom: 6px; }
+  .season b { display: block; font-size: 32px; margin-bottom: 4px; }
+  .season p { font-size: 25px; color: #3a3a55; }
+  .s1 { background: #fef9c3; } .s1 b { color: #854d0e; }
+  .s2 { background: #dbeafe; } .s2 b { color: #1e40af; }
+  .s3 { background: #e0f2fe; } .s3 b { color: #075985; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #b9d9e8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+  .vs { display: flex; gap: 16px; }
+  .vs .v { flex: 1; border-radius: 16px; padding: 16px 20px; }
+  .vs .v b { display: block; font-size: 28px; margin-bottom: 6px; }
+  .vs .v ul { list-style: none; }
+  .vs .v li { font-size: 25px; line-height: 1.6; color: #3a3a55; padding-left: 26px; position: relative; }
+  .vs .v li::before { content: "•"; position: absolute; left: 6px; font-weight: bold; }
+  .v-bad { background: #fef2f2; } .v-bad b { color: #b3261e; }
+  .v-good { background: #e8f4ec; } .v-good b { color: #2e6b41; }
+  .tip { background: #16265c; border-radius: 24px; padding: 12px 24px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 20px; color: #7a7a9a; padding: 8px 0 6px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>কৃষি ও জলবায়ু (ইউনিট-০৬)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌤️</div>
+        <div>
+          <h2>জলবায়ু কী?</h2>
+          <p>কোনো অঞ্চলের দীর্ঘদিনের আবহাওয়ার গড় অবস্থা। কৃষি সরাসরি জলবায়ুর উপর নির্ভর করে — কোন ফসল কখন বুনতে হবে, কতটুকু সেচ লাগবে, রোগ-পোকা কেমন হবে, সবই জলবায়ু দিয়ে নির্ধারিত হয়।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🗓️ বাংলাদেশের ৩ মৌসুম</h2>
+        <div class="seasons">
+          <div class="season s1"><span>☀️</span><b>খরিপ-১</b><p>গ্রীষ্মকালীন</p></div>
+          <div class="season s2"><span>🌧️</span><b>খরিপ-২</b><p>বর্ষাকালীন</p></div>
+          <div class="season s3"><span>❄️</span><b>রবি</b><p>শীতকালীন</p></div>
+        </div>
+      </div>
+      <div class="card c-sky" style="flex:1">
+        <h2>🌡️ জলবায়ুর ৫ উপাদান</h2>
+        <div class="chips">
+          <span class="chip">তাপমাত্রা</span>
+          <span class="chip">বৃষ্টিপাত</span>
+          <span class="chip">আর্দ্রতা</span>
+          <span class="chip">বাতাস</span>
+          <span class="chip">সূর্যালোক</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-red" style="flex:1">
+        <h2>⚠️ জলবায়ু পরিবর্তনের প্রভাব</h2>
+        <div class="vs"><div class="v v-bad"><b>যা হচ্ছে</b>
+          <ul><li>খরা ও বন্যা বাড়ছে</li><li>লবণাক্ততা বাড়ছে</li><li>অসময়ে বৃষ্টি, ফলন কমছে</li></ul>
+        </div></div>
+      </div>
+      <div class="card c-green" style="flex:1">
+        <h2>🛡️ অভিযোজনের উপায়</h2>
+        <div class="vs"><div class="v v-good"><b>যা করতে হবে</b>
+          <ul><li>খরা-সহনশীল জাত চাষ</li><li>সঠিক বপন সময় মানা</li><li>পানি সংরক্ষণ ও শস্য বৈচিত্র্য</li></ul>
+        </div></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>গুরুত্বপূর্ণ পার্থক্য:</b> আবহাওয়া স্বল্পকালীন অবস্থা, জলবায়ু দীর্ঘমেয়াদি গড় — দুটো এক নয়।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ৮৭–১০৮) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #0369a1, #0e7490); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e0f2fe; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-blue { background: #e0f2fe; } .c-blue h2 { color: #0369a1; }
+  .c-green { background: #dcfce7; } .c-green h2 { color: #166534; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .seq { background: #ffffff; border-radius: 16px; padding: 16px 20px; text-align: center;
+         font-size: 34px; font-weight: bold; letter-spacing: 2px; margin-bottom: 14px; }
+  .c-blue .seq { color: #0369a1; }
+  .c-green .seq { color: #166534; }
+  .f { background: rgba(255,255,255,0.75); border-radius: 14px; padding: 14px 18px; margin-top: 10px; }
+  .f b { display: block; font-size: 30px; margin-bottom: 4px; }
+  .f span { font-size: 25px; color: #3a3a55; }
+  .c-blue .f b { color: #0369a1; }
+  .c-green .f b { color: #166534; }
+  .vs { display: flex; align-items: center; justify-content: center; }
+  .vs b { background: #16265c; color: #f5c542; font-size: 40px; width: 90px; height: 90px;
+          border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .inf { background: linear-gradient(120deg, #f59e0b, #ea580c); border-radius: 24px;
+         padding: 24px 30px; text-align: center; }
+  .inf b { display: block; font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .inf span { font-size: 27px; color: #ffedd5; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>অসীম ধারা (ইউনিট-০৫)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">♾️</div>
+        <div>
+          <h2>ধারা কী?</h2>
+          <p>ধারা হলো সংখ্যার একটি ক্রম, যেমন 2, 5, 8, 11, …। সমান্তর ধারায় পরপর দুটি পদের পার্থক্য সমান থাকে — সেই পার্থক্য সাধারণ অন্তর d। গুণোত্তর ধারায় পরপর দুটি পদের অনুপাত সমান থাকে — সেই অনুপাত সাধারণ অনুপাত r।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>➕ সমান্তর ধারা</h2>
+        <div class="seq">2, 5, 8, 11, … &nbsp; d = 3</div>
+        <div class="f"><b>n তম পদ = a + (n − 1)d</b><span>প্রথম n পদের সমষ্টি = n/2 {2a + (n − 1)d}</span></div>
+      </div>
+      <div class="vs" style="flex:0 0 110px"><b>VS</b></div>
+      <div class="card c-green" style="flex:1">
+        <h2>✖️ গুণোত্তর ধারা</h2>
+        <div class="seq">2, 4, 8, 16, … &nbsp; r = 2</div>
+        <div class="f"><b>n তম পদ = a × r<sup>n−1</sup></b><span>প্রথম n পদের সমষ্টি = a(r<sup>n</sup> − 1) / (r − 1), যেখানে r ≠ 1</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="inf" style="flex:1">
+        <b>অসীম গুণোত্তর ধারার সমষ্টি = a / (1 − r)</b>
+        <span>শুধু তখনই, যখন |r| &lt; 1</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> সূত্রে n-এর জায়গায় সঠিক সংখ্যা বসাবে — ১০ম পদের জন্য n = 10, (n − 1) = 9। অসীম ধারার সমষ্টির সূত্র শুধু |r| &lt; 1 হলেই চলে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ৯৭–১০৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

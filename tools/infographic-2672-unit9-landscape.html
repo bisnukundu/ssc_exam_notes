@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #be123c, #9f1239); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #ffe4e6; }
+  .prob { flex: 1; border-radius: 20px; padding: 20px 22px; background: #fff1f2; }
+  .prob .ico { font-size: 48px; }
+  .prob b { display: block; font-size: 31px; color: #9f1239; margin: 6px 0 4px; }
+  .prob span { font-size: 25px; line-height: 1.45; color: #3a3a55; }
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .do { display: flex; flex-wrap: wrap; gap: 12px; }
+  .do span { background: #ffffff; border: 2px solid #86efac; border-radius: 999px;
+             padding: 10px 22px; font-size: 27px; font-weight: bold; color: #166534; }
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+<style>
+  /* Compact overrides so the footer fits inside 1080px. */
+  .header { padding: 18px 60px 14px; }
+  .header h1 { font-size: 60px; }
+  .wrap { padding: 14px 48px 0; }
+  .row { margin-top: 14px; }
+  .banner { padding: 20px 36px; }
+  .prob { padding: 14px 22px; }
+  .prob .ico { font-size: 40px; }
+  .row { margin-top: 10px; }
+  .banner { padding: 16px 36px; }
+  .tip { padding: 12px 32px; }
+  .footer { padding: 10px 0 8px; }
+  .header h1 { font-size: 56px; }
+  .card { padding: 20px 30px; }
+  .tip { padding: 16px 32px; }
+  .footer { padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>নাগরিক সমস্যা ও আমাদের করণীয় (ইউনিট-০৯)</h1>
+    <p>SSC-2672 • পৌরনীতি ও নাগরিকতা</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">⚠️</div>
+        <div>
+          <h2>নাগরিক সমস্যা</h2>
+          <p>বাংলাদেশের নাগরিকরা প্রতিদিন নানা সমস্যার মুখোমুখি হয়। এসব সমস্যা শুধু সরকারের একার সমাধান করা সম্ভব নয় — নাগরিক হিসেবে আমাদেরও করণীয় আছে।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prob">
+        <div class="ico">👥</div>
+        <b>জনসংখ্যা</b>
+        <span>শিক্ষা, স্বাস্থ্য ও কর্মসংস্থানের ওপর চাপ বাড়ছে</span>
+      </div>
+      <div class="prob">
+        <div class="ico">😔</div>
+        <b>দারিদ্র্য</b>
+        <span>অনেক শিশু স্কুল ছেড়ে কাজে যায়</span>
+      </div>
+      <div class="prob">
+        <div class="ico">💰</div>
+        <b>দুর্নীতি</b>
+        <span>ঘুষ, স্বজনপ্রীতি — সেবা পেতে বাধা দেয়</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prob">
+        <div class="ico">🏭</div>
+        <b>পরিবেশ দূষণ</b>
+        <span>বায়ু, পানি ও শব্দ দূষণ — স্বাস্থ্যের ক্ষতি করে</span>
+      </div>
+      <div class="prob">
+        <div class="ico">🚗</div>
+        <b>যানজট</b>
+        <span>শহরের জীবনকে দুর্বিষহ করেছে</span>
+      </div>
+      <div class="prob">
+        <div class="ico">🚫</div>
+        <b>মাদক</b>
+        <span>যুবসমাজকে ধ্বংস করছে</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>✅ নাগরিকের করণীয়</h2>
+        <div class="do">
+          <span>আইন মানা</span>
+          <span>কর দেওয়া</span>
+          <span>পরিবেশ পরিচ্ছন্ন রাখা</span>
+          <span>মাদকবিরোধী সচেতনতা</span>
+          <span>দুর্নীতির বিরুদ্ধে প্রতিবাদ</span>
+          <span>ভোট দিয়ে সৎ প্রতিনিধি বেছে নেওয়া</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> সব দায় সরকারের ওপর চাপাবে না — সমস্যা সমাধানে সরকার ও নাগরিক, দুই পক্ষের সহযোগিতা দরকার। এটাই এই Unit-এর মূল কথা।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2672 বই (পৃ. ১২৭–১৪২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

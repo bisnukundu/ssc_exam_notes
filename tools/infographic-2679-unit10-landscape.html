@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-purple { background: #f8e8f0; } .c-purple h2 { color: #8b2252; }
+
+  .vs { display: flex; gap: 18px; align-items: stretch; }
+  .vs .side { flex: 1; border-radius: 16px; padding: 14px 22px; }
+  .vs .side b { display: block; font-size: 32px; margin-bottom: 6px; }
+  .vs .side p { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .v-nerve { background: #e8eef8; } .v-nerve b { color: #2d4a8a; }
+  .v-horm { background: #f8e8f0; } .v-horm b { color: #8b2252; }
+  .vs-badge { align-self: center; background: #16265c; color: #f5c542; font-size: 30px;
+              font-weight: bold; border-radius: 50%; width: 76px; height: 76px;
+              line-height: 76px; text-align: center; flex-shrink: 0; }
+
+  .hors { display: flex; gap: 14px; }
+  .hor { flex: 1; background: #ffffff; border-radius: 16px; padding: 12px 16px; }
+  .hor b { display: block; font-size: 29px; color: #8b2252; margin-bottom: 2px; }
+  .hor span { font-size: 24px; line-height: 1.45; color: #4a4a6a; }
+
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 12px 20px; }
+  .col b { display: block; font-size: 29px; color: #16265c; margin-bottom: 4px; }
+  .col span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>সমন্বয় (ইউনিট-১০)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>⚡ সমন্বয় — ২ ভাবে</h2>
+        <div class="vs">
+          <div class="side v-nerve">
+            <b>🧠 স্নায়ুতন্ত্র</b>
+            <p>দ্রুত, বৈদ্যুতিক সংকেত। মূল অংশ: মস্তিষ্ক, সুষুম্না কাণ্ড ও স্নায়ু। কার্যকর একক <span style="font-weight:bold; color:#2d4a8a">নিউরন</span> (ডেনড্রন, কোষদেহ ও অ্যাক্সন)।</p>
+          </div>
+          <div class="vs-badge">VS</div>
+          <div class="side v-horm">
+            <b>💧 অন্তঃক্ষরা তন্ত্র</b>
+            <p>হরমোন দিয়ে, ধীরে কিন্তু দীর্ঘস্থায়ী। হরমোন রক্তের মাধ্যমে সারা দেহে ছড়িয়ে নির্দিষ্ট অঙ্গের কাজ নিয়ন্ত্রণ করে।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-purple" style="flex:1">
+        <h2>🧪 ৩টি গুরুত্বপূর্ণ হরমোন</h2>
+        <div class="hors">
+          <div class="hor"><b>ইনসুলিন</b><span>অগ্ন্যাশয় — রক্তের গ্লুকোজ নিয়ন্ত্রণ করে</span></div>
+          <div class="hor"><b>থাইরক্সিন</b><span>থাইরয়েড — বিপাক নিয়ন্ত্রণ করে</span></div>
+          <div class="hor"><b>অ্যাড্রেনালিন</b><span>অ্যাড্রেনাল গ্রন্থি — জরুরি অবস্থায় দেহকে প্রস্তুত করে</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>🤚 প্রতিবর্ত ক্রিয়া</h2>
+        <div class="cols">
+          <div class="col"><b>হঠাৎ গরম জিনিসে হাত লাগলে</b><span>মস্তিষ্কের অপেক্ষা না করে সুষুম্না কাণ্ডের নির্দেশে হাত সরে যায় — দেহের সুরক্ষা ব্যবস্থা।</span></div>
+          <div class="col"><b>উদ্ভিদের চলন</b><span>ফটোট্রপিজম (আলোর দিকে) ও জিওট্রপিজম (মাধ্যাকর্ষণের দিকে); অক্সিন কাণ্ডকে আলোর দিকে বাঁকায়।</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> ইনসুলিনের অভাবে গ্লুকোজ কোষে ঢুকতে পারে না, তাই রক্তে গ্লুকোজ বেড়ে ডায়াবেটিস হয় — কমে যায় না। প্রতিবর্ত ক্রিয়া মস্তিষ্ক দিয়ে নয়, সুষুম্না কাণ্ড দিয়ে ঘটে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ১২৯–১৫০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

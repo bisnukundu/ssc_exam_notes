@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .tile { flex: 1; border-radius: 24px; padding: 16px 24px; }
+  .tile .ico { font-size: 56px; }
+  .tile h2 { font-size: 32px; margin: 6px 0 6px; }
+  .tile p { font-size: 24px; line-height: 1.55; color: #3a3a55; }
+  .t-blue { background: #e8eef8; } .t-blue h2 { color: #2d4a8a; }
+  .t-orange { background: #fdf3e0; } .t-orange h2 { color: #9a6208; }
+  .t-green { background: #e8f4ec; } .t-green h2 { color: #2e6b41; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-purple { background: #f8e8f0; } .c-purple h2 { color: #8b2252; }
+
+  .vs { display: flex; gap: 18px; align-items: stretch; }
+  .vs .side { flex: 1; border-radius: 16px; padding: 14px 20px; }
+  .vs .side b { display: block; font-size: 32px; margin-bottom: 8px; }
+  .vs .side p { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .vs .side .ok { color: #2e6b41; font-weight: bold; }
+  .vs .side .no { color: #b03030; font-weight: bold; }
+  .v-plant { background: #e8f4ec; } .v-plant b { color: #2e6b41; }
+  .v-animal { background: #f8e8f0; } .v-animal b { color: #8b2252; }
+  .vs-badge { align-self: center; background: #16265c; color: #f5c542; font-size: 30px;
+              font-weight: bold; border-radius: 50%; width: 76px; height: 76px;
+              line-height: 76px; text-align: center; flex-shrink: 0; }
+
+  .tiss { display: flex; gap: 16px; }
+  .tiss .t { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 12px 16px; }
+  .tiss .t b { display: block; font-size: 29px; color: #16265c; margin-bottom: 4px; }
+  .tiss .t span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জীবকোষ ও টিস্যু (ইউনিট-০২)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="tile t-blue">
+        <div class="ico">🧬</div>
+        <h2>নিউক্লিয়াস</h2>
+        <p>কোষের নিয়ন্ত্রণকেন্দ্র। সব কোষ পূর্ববর্তী কোষ থেকে সৃষ্টি হয়।</p>
+      </div>
+      <div class="tile t-orange">
+        <div class="ico">⚡</div>
+        <h2>মাইটোকন্ড্রিয়া</h2>
+        <p>শক্তি উৎপাদন করে বলে একে কোষের শক্তিঘর বলে।</p>
+      </div>
+      <div class="tile t-green">
+        <div class="ico">🌿</div>
+        <h2>ক্লোরোপ্লাস্ট</h2>
+        <p>সালোকসংশ্লেষণ হয় এখানে — শুধু উদ্ভিদকোষে থাকে।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🔬 উদ্ভিদকোষ বনাম প্রাণীকোষ</h2>
+        <div class="vs">
+          <div class="side v-plant">
+            <b>🌱 উদ্ভিদকোষ</b>
+            <p><span class="ok">✓</span> কোষপ্রাচীর আছে<br><span class="ok">✓</span> ক্লোরোপ্লাস্ট আছে<br><span class="ok">✓</span> বড় কোষগহ্বর আছে</p>
+          </div>
+          <div class="vs-badge">VS</div>
+          <div class="side v-animal">
+            <b>🐾 প্রাণীকোষ</b>
+            <p><span class="no">✗</span> কোষপ্রাচীর নেই<br><span class="no">✗</span> ক্লোরোপ্লাস্ট নেই<br><span class="ok">✓</span> সেন্ট্রোজোম আছে</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-purple" style="flex:1.15">
+        <h2>🌱 উদ্ভিদ টিস্যু</h2>
+        <div class="tiss">
+          <div class="t"><b>ভাজক টিস্যু</b><span>বৃদ্ধি ঘটায়</span></div>
+          <div class="t"><b>জাইলেম</b><span>পানি পরিবহন করে</span></div>
+          <div class="t"><b>ফ্লোয়েম</b><span>খাদ্য পরিবহন করে</span></div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>🐾 প্রাণী টিস্যু — ৪ প্রকার</h2>
+        <div class="chips">
+          <span class="chip">আবরণী</span>
+          <span class="chip">সংযোজক</span>
+          <span class="chip">পেশি</span>
+          <span class="chip">স্নায়ু</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> কোষঝিল্লি সব কোষেই থাকে, কিন্তু কোষপ্রাচীর শুধু উদ্ভিদকোষে থাকে — দুটো এক নয়। একই ধরনের কোষ একত্রে টিস্যু, টিস্যু মিলে অঙ্গ ও অঙ্গতন্ত্র তৈরি করে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ১১–৩২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

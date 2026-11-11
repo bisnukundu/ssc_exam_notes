@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #558b2f, #33691e); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #f1f8e9; }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .nut { border-radius: 18px; padding: 18px 22px; background: #f4f6fb; }
+  .nut b { display: block; font-size: 31px; color: #16265c; margin-bottom: 2px; }
+  .nut span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .nut .n { display: inline-block; background: #558b2f; color: #ffffff;
+            font-size: 24px; font-weight: bold; width: 36px; height: 36px;
+            line-height: 36px; text-align: center; border-radius: 50%; margin-right: 8px; }
+
+  .card { border-radius: 24px; padding: 24px 28px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .card p { font-size: 26px; line-height: 1.6; color: #3a3a55; }
+  .card p b { color: #16265c; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-red { background: #fce4ec; } .c-red h2 { color: #880e4f; }
+  .c-amber { background: #fff8e1; } .c-amber h2 { color: #8d6e00; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>স্বাস্থ্যের জন্য পুষ্টি (ইউনিট-০৫)</h1>
+    <p>SSC-2669 • শারীরিক শিক্ষা, স্বাস্থ্য বিজ্ঞান ও খেলাধুলা</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🍎</div>
+        <div>
+          <h2>পুষ্টি কী?</h2>
+          <p>খাদ্য থেকে শরীরের প্রয়োজনীয় উপাদান পাওয়া। সুষম খাদ্য মানে সব উপাদান সঠিক পরিমাণে থাকা খাবার।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🥗 খাদ্যের ৬টি পুষ্টি উপাদান</h2>
+        <div class="grid">
+          <div class="nut"><b><span class="n">১</span>শর্করা</b><span>শক্তি দেয়</span></div>
+          <div class="nut"><b><span class="n">২</span>আমিষ</b><span>শরীর গঠন করে</span></div>
+          <div class="nut"><b><span class="n">৩</span>স্নেহ</b><span>শক্তি জমা রাখে</span></div>
+          <div class="nut"><b><span class="n">৪</span>ভিটামিন</b><span>রোগ প্রতিরোধে সাহায্য করে</span></div>
+          <div class="nut"><b><span class="n">৫</span>খনিজ লবণ</b><span>রোগ প্রতিরোধে সাহায্য করে</span></div>
+          <div class="nut"><b><span class="n">৬</span>পানি</b><span>শরীরের সব কাজে লাগে</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-red" style="flex:1">
+        <h2>⚠️ পুষ্টিহীনতা</h2>
+        <p>কারণ: <b>দারিদ্র্য, সুষম খাদ্যের অভাব, অজ্ঞতা, রোগ</b>। প্রতিকার: সুষম খাদ্য, শিশুদের টিকা ও পুষ্টিকর খাবার, সচেতনতা।</p>
+      </div>
+      <div class="card c-amber" style="flex:1">
+        <h2>🔥 ক্যালরি চাহিদা আলাদা</h2>
+        <p>শিশু ও কিশোরদের <b>বেশি আমিষ</b> দরকার; কায়িক শ্রমিকের <b>বেশি ক্যালরি</b> দরকার; গর্ভবতী মায়ের <b>অতিরিক্ত পুষ্টি</b> দরকার।</p>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>🛡️ খাদ্যে ভেজাল</h2>
+        <p>লাভের জন্য খাদ্যে ক্ষতিকর জিনিস মেশানো। প্রতিবিধান: <b>সচেতনতা, ভেজাল পরীক্ষা, আইনের কঠোর প্রয়োগ</b>।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2669 বই (পৃ. ৪০–৪৯) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 62px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .chat { flex: 1.5; background: #eef2f7; border-radius: 24px; padding: 24px 30px; }
+  .chat h2 { font-size: 32px; color: #16265c; margin-bottom: 14px; }
+  .bubble { max-width: 82%; border-radius: 18px; padding: 12px 18px; margin-bottom: 10px;
+            font-size: 25px; line-height: 1.45; }
+  .bubble b { color: #16265c; }
+  .b-left { background: #ffffff; }
+  .b-right { background: #d9e8d0; margin-left: auto; }
+
+  .steps { flex: 1; display: flex; flex-direction: column; gap: 14px; }
+  .step { flex: 1; border-radius: 18px; padding: 16px 22px; display: flex; align-items: center; gap: 16px; }
+  .step .n { background: #16265c; color: #f5c542; font-size: 26px; font-weight: bold; width: 48px; height: 48px;
+             line-height: 48px; text-align: center; border-radius: 50%; flex-shrink: 0; }
+  .step b { display: block; font-size: 28px; color: #16265c; }
+  .step span { font-size: 24px; color: #3a3a55; }
+  .st-blue { background: #e8eef8; } .st-green { background: #e8f4ec; } .st-orange { background: #fdf3e0; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 20px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 20px 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Dialogue Writing (Unit-13)</h1>
+    <p>SSC-2652 • English Second Paper • Writing — 6 marks</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="chat">
+        <h2>💬 A dialogue — questions &amp; answers</h2>
+        <div class="bubble b-left"><b>Rahim:</b> Hello, Karim! How are you?</div>
+        <div class="bubble b-right"><b>Karim:</b> I am fine. What are you reading?</div>
+        <div class="bubble b-left"><b>Rahim:</b> A book on great men. Why is reading important?</div>
+        <div class="bubble b-right"><b>Karim:</b> Reading gives us knowledge and pleasure. Thank you. See you again!</div>
+      </div>
+      <div class="steps">
+        <div class="step st-blue"><div class="n">1</div><div><b>Greetings &amp; opening</b><span>'Good morning! How are you?'</span></div></div>
+        <div class="step st-green"><div class="n">2</div><div><b>Main discussion</b><span>Questions and answers on the topic</span></div></div>
+        <div class="step st-orange"><div class="n">3</div><div><b>Closing</b><span>A polite ending — 'Thank you. See you again.'</span></div></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>Format:</b> each speaker's words begin on a new line, with the speaker's name and a colon. Keep it short — about 10–12 exchanges. Think of 5–6 questions and answers before you start.</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 136–143) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

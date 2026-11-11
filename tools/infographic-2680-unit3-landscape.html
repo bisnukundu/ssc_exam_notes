@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #9f1239, #c2410c); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #ffe4e6; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 36px; margin-bottom: 10px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .states { display: flex; gap: 18px; }
+  .state { flex: 1; border-radius: 20px; padding: 14px 20px; text-align: center; }
+  .state .cond { font-size: 40px; font-weight: bold; display: block; margin-bottom: 8px; }
+  .state b { display: block; font-size: 32px; margin-bottom: 6px; }
+  .state span { font-size: 24px; line-height: 1.45; }
+  .s-green { background: #dcfce7; } .s-green .cond { color: #166534; } .s-green b { color: #166534; } .s-green span { color: #14532d; }
+  .s-amber { background: #fef3c7; } .s-amber .cond { color: #92400e; } .s-amber b { color: #92400e; } .s-amber span { color: #78350f; }
+  .s-red { background: #fee2e2; } .s-red .cond { color: #991b1b; } .s-red b { color: #991b1b; } .s-red span { color: #7f1d1d; }
+  .sum { display: flex; gap: 16px; }
+  .sum .s { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 10px 16px; text-align: center; }
+  .sum .s b { display: block; font-size: 33px; color: #9f1239; margin-bottom: 4px; }
+  .sum .s span { font-size: 25px; color: #3a3a55; }
+  .formula { background: #fff1f2; border: 2px solid #fda4af; border-radius: 16px;
+             padding: 13px 22px; text-align: center; }
+  .formula b { display: block; font-size: 38px; color: #9f1239; margin-bottom: 6px; }
+  .formula span { font-size: 26px; color: #3a3a55; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>সমীকরণ (ইউনিট-০৩)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">⚖️</div>
+        <div>
+          <h2>দ্বিঘাত সমীকরণ</h2>
+          <p>সমীকরণ হলো চলকসহ দুটি রাশির সমতা, যেমন 2x + 3 = 7। দ্বিঘাত সমীকরণের সাধারণ আকার ax<sup>2</sup> + bx + c = 0, যেখানে D = b<sup>2</sup> − 4ac নিশ্চায়ক।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🔍 নিশ্চায়ক D = b<sup>2</sup> − 4ac — মূলের প্রকৃতি</h2>
+        <div class="states">
+          <div class="state s-green"><span class="cond">D &gt; 0</span><b>দুটি ভিন্ন বাস্তব মূল</b><span>ধনাত্মক হলে দুটি আলাদা বাস্তব মূল</span></div>
+          <div class="state s-amber"><span class="cond">D = 0</span><b>দুটি সমান বাস্তব মূল</b><span>নিশ্চায়ক শূন্য হলে দুটি মূল একই হয়</span></div>
+          <div class="state s-red"><span class="cond">D &lt; 0</span><b>বাস্তব মূল নেই</b><span>নিশ্চায়ক ঋণাত্মক হলে কোনো বাস্তব মূল থাকে না</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1.2">
+        <h2>➕ মূলের যোগফল ও গুণফল</h2>
+        <div class="sum">
+          <div class="s"><b>−b / a</b><span>মূলদ্বয়ের যোগফল</span></div>
+          <div class="s"><b>c / a</b><span>মূলদ্বয়ের গুণফল</span></div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>📏 মূলের সূত্র</h2>
+        <div class="formula"><b>x = (−b ± √D) / 2a</b><span>D = b<sup>2</sup> − 4ac</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>সাধারণ ভুল:</b> নিশ্চায়ক বের করার সময় b-এর চিহ্নসহ বর্গ করবে; b ঋণাত্মক হলেও b<sup>2</sup> ধনাত্মক হয়। সূত্রের −b অংশে চিহ্ন ভুল সবচেয়ে বেশি হয়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ৫৫–৮২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

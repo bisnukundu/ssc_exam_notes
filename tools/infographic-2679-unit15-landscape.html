@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-red { background: #fdecea; } .c-red h2 { color: #b03030; }
+
+  .flow { display: flex; align-items: center; gap: 8px; }
+  .flow .step { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 16px 8px; text-align: center; }
+  .flow .step .n { display: inline-block; background: #2d4a8a; color: #ffffff; font-size: 26px;
+                   font-weight: bold; width: 42px; height: 42px; line-height: 42px;
+                   border-radius: 50%; margin-bottom: 6px; }
+  .flow .step b { display: block; font-size: 27px; color: #16265c; }
+  .flow .arr { font-size: 34px; color: #2d4a8a; flex-shrink: 0; }
+
+  .parts { display: flex; gap: 14px; }
+  .part { flex: 1; background: #ffffff; border-radius: 16px; padding: 14px 16px; text-align: center; }
+  .part b { display: block; font-size: 28px; color: #2e6b41; margin-bottom: 2px; }
+  .part span { font-size: 24px; color: #4a4a6a; }
+
+  .rules { display: flex; gap: 14px; }
+  .rule { flex: 1; background: #ffffff; border-radius: 16px; padding: 14px 18px; }
+  .rule b { display: block; font-size: 28px; color: #b03030; margin-bottom: 2px; }
+  .rule span { font-size: 24px; line-height: 1.45; color: #4a4a6a; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ব্যবহারিক জীববিজ্ঞান (ইউনিট-১৫)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>🔬 যৌগিক অণুবীক্ষণ যন্ত্র — মূল যন্ত্র</h2>
+        <div class="parts">
+          <div class="part"><b>অভিলক্ষ্য লেন্স</b><span>বস্তুর কাছে থাকে</span></div>
+          <div class="part"><b>অভিনেত্র লেন্স</b><span>চোখের কাছে থাকে</span></div>
+          <div class="part"><b>স্টেজ</b><span>স্লাইড রাখার জায়গা</span></div>
+          <div class="part"><b>আয়না / আলোর উৎস</b><span>আলো দেয়</span></div>
+          <div class="part"><b>ফোকাসের নব</b><span>ফোকাস করতে হয়</span></div>
+        </div>
+        <p style="font-size:25px; line-height:1.5; color:#3a3a55; margin-top:12px">এতে পেঁয়াজের খোসা বা পাতার কোষের মতো ক্ষুদ্র বস্তু বড় করে দেখা যায়।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>📝 পর্যবেক্ষণ লেখার ক্রম</h2>
+        <div class="flow">
+          <div class="step"><span class="n">১</span><b>উদ্দেশ্য</b></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">২</span><b>উপকরণ</b></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">৩</span><b>পদ্ধতি</b></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">৪</span><b>পর্যবেক্ষণ</b></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">৫</span><b>চিত্র</b></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">৬</span><b>সিদ্ধান্ত</b></div>
+        </div>
+        <p style="font-size:25px; line-height:1.5; color:#3a3a55; margin-top:12px">তারিখ দিয়ে শুরু করবে; চিত্র লেবেলসহ আঁকবে। পর্যবেক্ষণ সঙ্গে সঙ্গে খাতায় লিখবে — মনে করে পরে লিখলে ভুল হওয়ার আশঙ্কা থাকে।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-red" style="flex:1">
+        <h2>⚠️ নিরাপত্তার নিয়ম — মানা বাধ্যতামূলক</h2>
+        <div class="rules">
+          <div class="rule"><b>ধারালো জিনিস</b><span>সাবধানে ধরবে</span></div>
+          <div class="rule"><b>রাসায়নিক</b><span>মুখে নেবে না</span></div>
+          <div class="rule"><b>হাত ধোয়া</b><span>পরীক্ষার পর হাত ধুয়ে নেবে</span></div>
+          <div class="rule"><b>নমুনা</b><span>জীবের ক্ষতি করবে না, ব্যবহৃত নমুনা ঠিকমতো ফেলবে</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> অভিলক্ষ্য লেন্স বস্তুর কাছে থাকে, অভিনেত্র লেন্স চোখের কাছে — দুটো গুলিয়ে ফেলবে না। চিত্র আঁকার সময় প্রকৃত আকারের অনুপাত ঠিক রাখবে, লেবেল সরলরেখায় টানবে ও শিরোনাম দেবে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ২২৫–২৩২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

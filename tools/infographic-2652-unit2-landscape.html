@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 24px 60px 20px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 62px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 20px 48px 0; }
+  .row { display: flex; gap: 20px; margin-top: 18px; }
+  .row:first-child { margin-top: 0; }
+
+  .intro { background: linear-gradient(120deg, #7c2d12, #9a6208); border-radius: 24px;
+           padding: 20px 36px; text-align: center; }
+  .intro p { font-size: 30px; color: #ffffff; }
+  .intro b { color: #f5c542; }
+
+  .grid { flex: 1; display: flex; flex-direction: column; gap: 14px; }
+  .g-row { display: flex; gap: 14px; flex: 1; }
+  .tlabel { width: 200px; border-radius: 18px; display: flex; align-items: center; justify-content: center;
+            font-size: 34px; font-weight: bold; color: #ffffff; text-align: center; line-height: 1.25; }
+  .l-present { background: #2e6b41; } .l-past { background: #9a6208; } .l-future { background: #2d4a8a; }
+  .cell { flex: 1; background: #ffffff; border: 2px solid #e0dbd0; border-radius: 18px; padding: 12px 16px; }
+  .cell b { display: block; font-size: 26px; color: #16265c; margin-bottom: 3px; }
+  .cell span { font-size: 23px; line-height: 1.4; color: #3a3a55; }
+  .cell span i { color: #6b6b85; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 20px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 20px 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Tense (Unit-02)</h1>
+    <p>SSC-2652 • English Second Paper</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="intro" style="flex:1">
+        <p><b>3 tenses × 4 forms = 12 forms.</b> &nbsp; Tense shows the time of an action — past, present or future.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="grid">
+        <div class="g-row">
+          <div class="tlabel l-present">Present</div>
+          <div class="cell"><b>Indefinite</b><span>Subject + base verb (+s/es)<br><i>'He goes to school every day.'</i></span></div>
+          <div class="cell"><b>Continuous</b><span>am / is / are + verb-ing<br><i>'She is reading now.'</i></span></div>
+          <div class="cell"><b>Perfect</b><span>have / has + past participle<br><i>'She has finished her work.'</i></span></div>
+          <div class="cell"><b>Perfect Continuous</b><span>have / has been + verb-ing<br><i>'It has been raining since morning.'</i></span></div>
+        </div>
+        <div class="g-row">
+          <div class="tlabel l-past">Past</div>
+          <div class="cell"><b>Indefinite</b><span>Subject + past form of verb<br><i>'I saw him yesterday.'</i></span></div>
+          <div class="cell"><b>Continuous</b><span>was / were + verb-ing<br><i>'They were playing when it rained.'</i></span></div>
+          <div class="cell"><b>Perfect</b><span>had + past participle<br><i>'He had finished before I came.'</i></span></div>
+          <div class="cell"><b>Perfect Continuous</b><span>had been + verb-ing<br><i>'She had been waiting for an hour.'</i></span></div>
+        </div>
+        <div class="g-row">
+          <div class="tlabel l-future">Future</div>
+          <div class="cell"><b>Indefinite</b><span>will / shall + base verb<br><i>'He will come tomorrow.'</i></span></div>
+          <div class="cell"><b>Continuous</b><span>will be + verb-ing<br><i>'They will be playing then.'</i></span></div>
+          <div class="cell"><b>Perfect</b><span>will have + past participle<br><i>'He will have finished by then.'</i></span></div>
+          <div class="cell"><b>Perfect Continuous</b><span>will have been + verb-ing<br><i>'They will have been working for hours.'</i></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">⏰</div>
+        <p><b>Time-word clues:</b> 'yesterday' → Past Indefinite &nbsp;•&nbsp; 'since / for' → Perfect &nbsp;•&nbsp; 'now / at this moment' → Present Continuous</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 19–36) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

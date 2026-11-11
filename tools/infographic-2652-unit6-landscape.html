@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 62px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .step { flex: 1; border-radius: 24px; padding: 24px 24px; position: relative; }
+  .step .n { display: inline-block; background: #16265c; color: #f5c542; font-size: 26px; font-weight: bold;
+             border-radius: 999px; padding: 6px 18px; margin-bottom: 10px; }
+  .step h2 { font-size: 32px; margin-bottom: 6px; }
+  .step .formula { font-size: 26px; font-weight: bold; color: #ffffff; border-radius: 12px;
+                   padding: 10px 12px; margin-bottom: 10px; line-height: 1.4; }
+  .step p { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .step p i { color: #6b6b85; }
+  .s-zero { background: #e8f4ec; } .s-zero h2 { color: #2e6b41; } .s-zero .formula { background: #2e6b41; }
+  .s-one { background: #e8eef8; } .s-one h2 { color: #2d4a8a; } .s-one .formula { background: #2d4a8a; }
+  .s-two { background: #fdf3e0; } .s-two h2 { color: #9a6208; } .s-two .formula { background: #9a6208; }
+  .s-three { background: #f8e8f0; } .s-three h2 { color: #8b2252; } .s-three .formula { background: #8b2252; }
+
+  .qr { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 20px 32px; text-align: center; }
+  .qr p { font-size: 26px; line-height: 1.6; color: #3a3a55; }
+  .qr b { color: #16265c; }
+
+  .warn { background: #16265c; border-radius: 24px; padding: 22px 32px;
+          display: flex; align-items: center; gap: 22px; }
+  .warn .ico { font-size: 52px; }
+  .warn p { font-size: 27px; line-height: 1.5; color: #ffffff; }
+  .warn b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Conditional Sentence (Unit-06)</h1>
+    <p>SSC-2652 • English Second Paper</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="step s-zero">
+        <span class="n">Zero</span>
+        <h2>General truth</h2>
+        <div class="formula">If + Present, Present</div>
+        <p><i>'If water is heated, it boils.'</i></p>
+      </div>
+      <div class="step s-one">
+        <span class="n">Type 1</span>
+        <h2>Real — future</h2>
+        <div class="formula">If + Present, will + base verb</div>
+        <p><i>'If it rains, we will stay at home.'</i></p>
+      </div>
+      <div class="step s-two">
+        <span class="n">Type 2</span>
+        <h2>Unreal — present</h2>
+        <div class="formula">If + Past, would + base verb</div>
+        <p><i>'If I were rich, I would help the poor.'</i><br>'were' is used with all persons.</p>
+      </div>
+      <div class="step s-three">
+        <span class="n">Type 3</span>
+        <h2>Unreal — past</h2>
+        <div class="formula">If + had + pp, would have + pp</div>
+        <p><i>'If you had studied, you would have passed.'</i></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="qr" style="flex:1">
+        <p><b>Quick Revision:</b> &nbsp; Zero: if + present, present &nbsp;•&nbsp; Type 1: if + present, will &nbsp;•&nbsp; Type 2: if + past, would &nbsp;•&nbsp; Type 3: if + had + pp, would have + pp</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="warn" style="flex:1">
+        <div class="ico">⚠️</div>
+        <p><b>Common mistakes:</b> never use 'will' in the if-clause — <i>'If it will rain'</i> is wrong. In Type 3 use 'would have', not 'would'. First look at the tense of the if-clause, then choose the main clause to match it.</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 63–72) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

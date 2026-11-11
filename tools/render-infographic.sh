@@ -8,7 +8,10 @@ OUT="$2"
 W="${3:-1920}"
 H="${4:-1080}"
 CH=~/workspace/.chrome-headless-shell/chrome-headless-shell-linux64/chrome-headless-shell
-TMP=/tmp/infographic-raw.png
+# Unique temp file per run: parallel renders share this script and a fixed
+# /tmp path lets one render overwrite another's screenshot mid-flight.
+TMP=$(mktemp /tmp/infographic-raw-XXXXXX.png)
+trap 'rm -f "$TMP"' EXIT
 "$CH" --headless --disable-gpu --no-sandbox --hide-scrollbars \
   --force-device-scale-factor=1 --window-size=${W},${H} \
   --screenshot="$TMP" "file://$HTML" 2>/dev/null

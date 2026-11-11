@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #0f766e, #155e75); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e0f2f1; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-teal { background: #e6f4f1; } .c-teal h2 { color: #0f766e; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+  .venn { position: relative; height: 250px; margin: 0 30px; }
+  .circle { position: absolute; width: 240px; height: 240px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; }
+  .circle.a { left: 150px; background: rgba(15, 118, 110, 0.28); border: 4px solid #0f766e; }
+  .circle.b { right: 150px; background: rgba(245, 197, 66, 0.35); border: 4px solid #d9a400; }
+  .circle span { font-size: 44px; font-weight: bold; color: #16265c; }
+  .venn-mid { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+              font-size: 30px; font-weight: bold; color: #0f766e; background: #ffffff;
+              border-radius: 12px; padding: 4px 14px; }
+  .venn-cap { display: flex; justify-content: space-around; margin-top: 10px; }
+  .venn-cap span { font-size: 25px; font-weight: bold; color: #3a3a55; }
+  .ops { display: flex; gap: 16px; margin-top: 12px; }
+  .op { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 12px 14px; text-align: center; }
+  .op b { display: block; font-size: 32px; color: #0f766e; margin-bottom: 4px; }
+  .op span { font-size: 25px; color: #3a3a55; }
+  .stat { text-align: center; }
+  .stat b { display: block; font-size: 52px; color: #0f766e; }
+  .stat span { font-size: 26px; color: #4a4a6a; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>সেট ও ফাংশন (ইউনিট-০১)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1.25">
+        <div class="ico">🗂️</div>
+        <div>
+          <h2>সেট কাকে বলে?</h2>
+          <p>সেট হলো সুসংজ্ঞায়িত বস্তুর সমষ্টি। যেমন ১০-এর চেয়ে ছোট মৌলিক সংখ্যার সেট {2, 3, 5, 7}। ফাংশনে ডোমেনের প্রতিটি উপাদানের জন্য রেঞ্জে ঠিক একটি মান থাকে — f(x) = 2x + 1 হলে f(3) = 7।</p>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>🔵 ভেনচিত্র</h2>
+        <div class="venn">
+          <div class="circle a"><span>A</span></div>
+          <div class="circle b"><span>B</span></div>
+          <div class="venn-mid">A ∩ B</div>
+        </div>
+        <div class="venn-cap"><span>সংযোগ A ∪ B</span><span>ছেদ A ∩ B</span><span>পূরক A′</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-teal" style="flex:1.4">
+        <h2>📦 সেটের প্রকার</h2>
+        <div class="chips">
+          <span class="chip">সসীম সেট</span>
+          <span class="chip">অসীম সেট</span>
+          <span class="chip">শূন্য সেট</span>
+          <span class="chip">একক সেট</span>
+          <span class="chip">সার্বিক সেট</span>
+        </div>
+        <div class="ops">
+          <div class="op"><b>A ∪ B</b><span>সংযোগ</span></div>
+          <div class="op"><b>A ∩ B</b><span>ছেদ</span></div>
+          <div class="op"><b>A′</b><span>পূরক</span></div>
+          <div class="op"><b>A ⊆ B</b><span>উপসেট</span></div>
+        </div>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <h2>🔢 মনে রাখবে</h2>
+        <div style="display:flex; gap:16px">
+          <div class="stat" style="flex:1"><b>2<sup>n</sup></b><span>n উপাদানের সেটের উপসেটের সংখ্যা</span></div>
+          <div class="stat" style="flex:1"><b>3 ∈ A</b><span>3 হলো A-এর উপাদান</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>সাধারণ ভুল:</b> শূন্য সেট আর {0} এক নয় — {0}-এর একটি উপাদান আছে, আর শূন্য সেটের কোনো উপাদান নেই।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ১–৩০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

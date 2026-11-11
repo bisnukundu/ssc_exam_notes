@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 62px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .panel { flex: 1; border-radius: 24px; padding: 26px 32px; }
+  .panel h2 { font-size: 36px; margin-bottom: 8px; }
+  .panel p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .panel .quote { font-size: 32px; font-weight: bold; background: #ffffff; border-radius: 16px;
+                  padding: 16px 20px; margin-top: 12px; color: #16265c; }
+  .p-direct { background: #e8f4ec; } .p-direct h2 { color: #2e6b41; }
+  .p-indirect { background: #e8eef8; } .p-indirect h2 { color: #2d4a8a; }
+  .arrow { width: 110px; display: flex; align-items: center; justify-content: center; font-size: 72px; color: #16265c; }
+
+  .card { flex: 1; border-radius: 24px; padding: 22px 26px; background: #ffffff; border: 2px solid #e0dbd0; }
+  .card h2 { font-size: 30px; color: #16265c; margin-bottom: 8px; }
+  .card p { font-size: 24px; line-height: 1.5; color: #3a3a55; }
+  .card p i { color: #6b6b85; }
+
+  .time { background: #fdf3e0; border: 2px solid #f5c542; border-radius: 24px; padding: 20px 32px;
+          display: flex; align-items: center; gap: 18px; }
+  .time .ico { font-size: 48px; }
+  .time p { font-size: 27px; line-height: 1.5; color: #4a3a08; }
+  .time b { color: #9a6208; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Speech / Narration (Unit-05)</h1>
+    <p>SSC-2652 • English Second Paper</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="panel p-direct">
+        <h2>💬 Direct Speech</h2>
+        <p>The speaker's exact words inside quotation marks.</p>
+        <div class="quote">He said, 'I am ill.'</div>
+      </div>
+      <div class="arrow">➜</div>
+      <div class="panel p-indirect">
+        <h2>📝 Indirect Speech</h2>
+        <p>The meaning reported — no quotation marks. Tense moves one step back.</p>
+        <div class="quote">He said that he was ill.</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h2>Assertive</h2>
+        <p>Use 'that'.<br><i>'He said, "I am ill."'</i> → <i>'He said that he was ill.'</i></p>
+      </div>
+      <div class="card">
+        <h2>Interrogative</h2>
+        <p>'if' for yes/no; wh-word for wh-questions.<br><i>'Where do you live?'</i> → <i>'He asked me where I lived.'</i></p>
+      </div>
+      <div class="card">
+        <h2>Imperative</h2>
+        <p>ordered / requested / advised + to-infinitive.<br><i>'Please help me.'</i> → <i>'He requested me to help him.'</i></p>
+      </div>
+      <div class="card">
+        <h2>Exclamatory</h2>
+        <p>exclaimed with joy / sorrow.<br><i>'Hurrah! We have won.'</i> → <i>'She exclaimed with joy that they had won.'</i></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="time" style="flex:1">
+        <div class="ico">🕒</div>
+        <p><b>Time words change too:</b> today → <b>that day</b> &nbsp;•&nbsp; tomorrow → <b>the next day</b> &nbsp;•&nbsp; yesterday → <b>the previous day</b></p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 53–62) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 14px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 54px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 12px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 12px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #0f766e, #134e4a); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e6f7f4; }
+  .card { border-radius: 24px; padding: 20px 26px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .c-teal { background: #e6f7f4; } .c-teal h2 { color: #0f766e; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-amber { background: #fdf3e0; } .c-amber h2 { color: #9a6208; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .card .ico { font-size: 60px; }
+  .card ul { list-style: none; }
+  .card li { font-size: 26px; line-height: 1.6; color: #3a3a55; padding-left: 30px; position: relative; }
+  .card li::before { content: "✓"; position: absolute; left: 0; color: #0f766e; font-weight: bold; }
+  .enemies { display: flex; gap: 16px; }
+  .enemy { flex: 1; background: #ffffff; border: 2px solid #f0c9c9; border-radius: 16px; padding: 14px 10px;
+           text-align: center; font-size: 28px; font-weight: bold; color: #b3261e; }
+  .enemy span { display: block; font-size: 44px; margin-bottom: 4px; }
+  .def { background: #e6f7f4; border-radius: 16px; padding: 18px 22px; font-size: 26px; line-height: 1.55; color: #134e4a; }
+  .def b { color: #0f766e; font-size: 28px; }
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 28px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>বীজ, মাছ ও পশু-পাখির খাদ্য সংরক্ষণ (ইউনিট-০২)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">📦</div>
+        <div>
+          <h2>সংরক্ষণ কী?</h2>
+          <p>কোনো জিনিসকে নষ্ট হওয়া থেকে বাঁচিয়ে ভবিষ্যতে ব্যবহারের উপযোগী করে রাখা। বীজ না রাখলে অঙ্কুরোদগম ক্ষমতা নষ্ট হয়, মাছ দ্রুত পচে যায়, খাদ্য না থাকলে পশুকে খাওয়ানো যায় না।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-teal" style="flex:1">
+        <div class="ico">🌾</div>
+        <h2>বীজ সংরক্ষণ</h2>
+        <ul>
+          <li>ভালোভাবে শুকানো</li>
+          <li>ঠান্ডা ও শুষ্ক স্থানে রাখা</li>
+          <li>বায়ুরোধী পাত্র ব্যবহার</li>
+          <li>পোকার আক্রমণ থেকে রক্ষা</li>
+        </ul>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <div class="ico">🐟</div>
+        <h2>মাছ সংরক্ষণ</h2>
+        <ul>
+          <li>বরফে রাখা</li>
+          <li>লবণ দিয়ে শুকানো</li>
+          <li>ধোঁয়া দিয়ে শুকানো</li>
+          <li>হিমায়িত করা</li>
+        </ul>
+      </div>
+      <div class="card c-amber" style="flex:1">
+        <div class="ico">🐄</div>
+        <h2>পশুখাদ্য সংরক্ষণ</h2>
+        <ul>
+          <li>খড় শুকিয়ে রাখা</li>
+          <li>সাইলেজ তৈরি</li>
+          <li>খৈল ও ভুসি শুষ্ক স্থানে রাখা</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1.4">
+        <h2>⚠️ সংরক্ষণের শত্রু ৪টি</h2>
+        <div class="enemies">
+          <div class="enemy"><span>💧</span>আর্দ্রতা</div>
+          <div class="enemy"><span>🌡️</span>তাপ</div>
+          <div class="enemy"><span>🐛</span>পোকা</div>
+          <div class="enemy"><span>🦠</span>জীবাণু</div>
+        </div>
+      </div>
+      <div class="card c-teal" style="flex:1">
+        <h2>🌿 সাইলেজ কী?</h2>
+        <div class="def">সবুজ ঘাস বা ভুট্টা গাছ কেটে <b>বায়ুরোধীভাবে গাঁজিয়ে</b> সংরক্ষণ করা পশুখাদ্য।</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> ভেজা বীজ সংরক্ষণ করা যায় না — ভেজা বীজে ছত্রাক জন্মে ও অঙ্কুরোদগম ক্ষমতা নষ্ট হয়।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ১৯–৩৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

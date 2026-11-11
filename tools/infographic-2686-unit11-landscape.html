@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 58px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #3730a3, #1e1b4b); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e0e7ff; }
+  .card { border-radius: 24px; padding: 20px 26px; }
+  .card h2 { font-size: 36px; margin-bottom: 14px; }
+  .c-indigo { background: #e0e7ff; } .c-indigo h2 { color: #3730a3; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .maps { display: flex; flex-direction: column; gap: 12px; }
+  .map { display: flex; align-items: center; gap: 16px; }
+  .from { flex: 1; background: #ffffff; border-radius: 14px; padding: 12px 20px; font-size: 28px; font-weight: bold; color: #3730a3; text-align: center; }
+  .map .arr { font-size: 32px; color: #3730a3; flex: 0 0 40px; text-align: center; }
+  .to { flex: 1.3; background: #e0e7ff; border-radius: 14px; padding: 12px 20px; font-size: 27px; color: #1e1b4b; text-align: center; }
+  .gold { background: #fef9c3; border-radius: 16px; padding: 18px 22px; font-size: 27px; line-height: 1.55; color: #713f12; }
+  .gold b { color: #854d0e; font-size: 29px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #c7c9f0; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 28px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>শিল্পের কাঁচামাল: কৃষিজ দ্রব্যাদি (ইউনিট-১১)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🏭</div>
+        <div>
+          <h2>কাঁচামাল কী?</h2>
+          <p>শিল্পে পণ্য তৈরির জন্য ব্যবহৃত প্রাথমিক উপাদান। অনেক শিল্পের কাঁচামাল আসে কৃষি থেকে — তাই কৃষি ও শিল্প একে অপরের সঙ্গে গভীরভাবে যুক্ত।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1.35">
+        <h2>🔗 কোন কাঁচামাল → কোন পণ্য</h2>
+        <div class="maps">
+          <div class="map"><div class="from">🌾 পাট</div><div class="arr">→</div><div class="to">বস্তা ও দড়ি (বস্ত্রশিল্প)</div></div>
+          <div class="map"><div class="from">☁️ তুলা</div><div class="arr">→</div><div class="to">সুতা ও কাপড়</div></div>
+          <div class="map"><div class="from">🎋 আখ</div><div class="arr">→</div><div class="to">চিনি ও গুড়</div></div>
+          <div class="map"><div class="from">🥛 দুধ</div><div class="arr">→</div><div class="to">ঘি, মাখন ও মিষ্টি</div></div>
+          <div class="map"><div class="from">🐄 চামড়া</div><div class="arr">→</div><div class="to">জুতা ও ব্যাগ</div></div>
+        </div>
+      </div>
+      <div style="flex:1; display:flex; flex-direction:column; gap:20px;">
+        <div class="gold">✨ <b>পাট — সোনালি আঁশ</b><br>পাট বস্ত্র ও বস্তা শিল্পের কাঁচামাল, সোনালি আঁশ নামে পরিচিত।</div>
+        <div class="card c-indigo" style="flex:1">
+          <h2>🏭 কৃষিভিত্তিক শিল্প</h2>
+          <div class="chips">
+            <span class="chip">পাটকল</span>
+            <span class="chip">চিনিকল</span>
+            <span class="chip">বস্ত্রকল</span>
+            <span class="chip">চালকল</span>
+            <span class="chip">দুগ্ধ শিল্প</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> কাঁচামাল আর তৈরি পণ্য গুলিয়ে ফেলবে না — পাট কাঁচামাল, বস্তা তৈরি পণ্য। কাঁচামালের সরবরাহ ভালো থাকলে শিল্প চলে, কর্মসংস্থান হয় ও রপ্তানি আয় বাড়ে।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ১৯৭–২১২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

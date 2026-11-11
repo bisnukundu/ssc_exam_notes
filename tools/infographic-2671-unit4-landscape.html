@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .big { flex: 1; border-radius: 24px; padding: 28px 32px; text-align: center; }
+  .big .ico { font-size: 64px; }
+  .big h2 { font-size: 42px; margin: 8px 0 10px; }
+  .big p { font-size: 27px; line-height: 1.55; color: #3a3a55; }
+  .big .law { display: inline-block; background: #ffffff; border-radius: 14px;
+              padding: 12px 22px; margin-top: 14px; font-size: 28px; font-weight: bold; }
+  .b-blue { background: #e8eef8; } .b-blue h2 { color: #2d4a8a; }
+  .b-green { background: #e8f4ec; } .b-green h2 { color: #2e6b41; }
+  .mid { flex: 0 0 300px; background: #16265c; border-radius: 24px; padding: 28px 24px;
+         text-align: center; color: #ffffff; display: flex; flex-direction: column; justify-content: center; }
+  .mid b { font-size: 40px; color: #f5c542; display: block; margin-bottom: 8px; }
+  .mid span { font-size: 26px; line-height: 1.5; }
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #f4f6fb; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>চাহিদা ও যোগান (ইউনিট-০৪)</h1>
+    <p>SSC-2671 • অর্থনীতি</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="big b-blue">
+        <div class="ico">🛒</div>
+        <h2>চাহিদা</h2>
+        <p>কেনার ইচ্ছা + সামর্থ্য + প্রস্তুতি — তিনটি একসঙ্গে থাকলেই চাহিদা হয়।</p>
+        <div class="law">দাম ↑ হলে চাহিদা ↓ — রেখা নিম্নগামী</div>
+      </div>
+      <div class="mid">
+        <b>⚖️ ভারসাম্য</b>
+        <span>যে দামে চাহিদা = যোগান, সেটাই ভারসাম্য দাম; সেই পরিমাণই ভারসাম্য পরিমাণ।</span>
+      </div>
+      <div class="big b-green">
+        <div class="ico">🏪</div>
+        <h2>যোগান</h2>
+        <p>বিক্রেতা নির্দিষ্ট দামে যে পরিমাণ দ্রব্য বিক্রি করতে রাজি থাকে।</p>
+        <div class="law">দাম ↑ হলে যোগান ↑ — রেখা ঊর্ধ্বগামী</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🔑 চাহিদার নির্ধারক</h2>
+        <div class="chips">
+          <span class="chip">দাম</span>
+          <span class="chip">ভোক্তার আয়</span>
+          <span class="chip">রুচি</span>
+          <span class="chip">বিকল্প দ্রব্যের দাম</span>
+          <span class="chip">জনসংখ্যা</span>
+          <span class="chip">ভবিষ্যৎ দামের প্রত্যাশা</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>💡 মনে রাখবে</h2>
+        <div class="chips">
+          <span class="chip">দাম বদলালে রেখার ওপর চলন হয়</span>
+          <span class="chip">অন্য নির্ধারক বদলালে পুরো রেখা সরে যায়</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2671 বই (পৃ. ৩৬–৫২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

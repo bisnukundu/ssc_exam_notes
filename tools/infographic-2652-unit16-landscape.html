@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 64px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .layer { border-radius: 24px; padding: 20px 32px; display: flex; align-items: center; gap: 24px; }
+  .layer .n { background: #16265c; color: #f5c542; font-size: 28px; font-weight: bold; width: 52px; height: 52px;
+              line-height: 52px; text-align: center; border-radius: 50%; flex-shrink: 0; }
+  .layer h2 { font-size: 34px; min-width: 300px; }
+  .layer p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .l-intro { background: #e8eef8; width: 82%; margin: 0 auto; } .l-intro h2 { color: #2d4a8a; }
+  .l-body { background: #e8f4ec; width: 94%; margin: 0 auto; } .l-body h2 { color: #2e6b41; }
+  .l-end { background: #fdf3e0; width: 82%; margin: 0 auto; } .l-end h2 { color: #9a6208; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 7px 16px; font-size: 24px; font-weight: bold; color: #16265c; }
+
+  .stat { flex: 1; border-radius: 24px; padding: 20px 26px; text-align: center; }
+  .stat b { display: block; font-size: 40px; margin-bottom: 2px; }
+  .stat span { font-size: 25px; color: #3a3a55; }
+  .s-blue { background: #e8eef8; } .s-blue b { color: #2d4a8a; }
+  .s-green { background: #e8f4ec; } .s-green b { color: #2e6b41; }
+  .s-orange { background: #fdf3e0; } .s-orange b { color: #9a6208; }
+
+  .topics { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 20px 30px; }
+  .topics h2 { font-size: 30px; color: #16265c; margin-bottom: 12px; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Compositions (Unit-16)</h1>
+    <p>SSC-2652 • English Second Paper • Writing — 10 marks (biggest writing item)</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div style="flex:1; display:flex; flex-direction:column; gap:16px;">
+        <div class="layer l-intro"><div class="n">1</div><h2>Introduction</h2><p>Introduce the topic in 2–3 sentences — do not start with a long story.</p></div>
+        <div class="layer l-body"><div class="n">2</div><h2>Body</h2><p>Two or three paragraphs, one point in each: definition, importance, problems, solutions.</p></div>
+        <div class="layer l-end"><div class="n">3</div><h2>Conclusion</h2><p>End with your own opinion or a short summary in 2–3 sentences.</p></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="stat s-blue"><b>200–250 words</b><span>Longer than a paragraph</span></div>
+      <div class="stat s-green"><b>10 marks</b><span>Biggest item in the Writing part</span></div>
+      <div class="stat s-orange"><b>Outline first</b><span>Make a short outline, then write</span></div>
+    </div>
+
+    <div class="row">
+      <div class="topics" style="flex:1">
+        <h2>📌 Common topics — prepare 6–8 before the exam</h2>
+        <div class="chips">
+          <span class="chip">Your Aim in Life</span>
+          <span class="chip">The Value of Time</span>
+          <span class="chip">Your Favourite Game</span>
+          <span class="chip">Science in Everyday Life</span>
+          <span class="chip">Female Education</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 179–184) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

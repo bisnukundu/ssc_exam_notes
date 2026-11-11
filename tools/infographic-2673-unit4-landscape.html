@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .timeline { display: flex; align-items: center; gap: 0; margin-top: 20px; }
+  .tl { flex: 1; border-radius: 20px; padding: 22px 24px; text-align: center; }
+  .tl b { display: block; font-size: 34px; margin-bottom: 4px; }
+  .tl span { font-size: 25px; line-height: 1.45; color: #3a3a55; }
+  .tl1 { background: #e0e7ff; } .tl1 b { color: #3730a3; }
+  .tl2 { background: #ede9fe; border: 3px solid #8b5cf6; } .tl2 b { color: #6d28d9; }
+  .tl3 { background: #dcfce7; } .tl3 b { color: #166534; }
+  .tarr { align-self: center; font-size: 56px; color: #6d28d9; padding: 0 12px; }
+
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-purple { background: #f3e8ff; } .c-purple h2 { color: #6b21a8; }
+  .c-pink { background: #fce7f3; } .c-pink h2 { color: #9d174d; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+
+  .pts { display: flex; flex-direction: column; gap: 10px; }
+  .pt { background: #ffffff; border-radius: 14px; padding: 12px 18px; font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .pt b { color: #1a1a2e; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #e9d5ff; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; color: #6b21a8; }
+  .chip2 { background: #ffffff; border: 2px solid #bbf7d0; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; color: #166534; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.55; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>নবজীবনের সূচনায় কৈশোর (ইউনিট-০৪)</h1>
+    <p>SSC-2673 • বিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="timeline">
+      <div class="tl tl1"><b>👶 শিশুকাল</b><span>কৈশোরের আগের সময়</span></div>
+      <div class="tarr">→</div>
+      <div class="tl tl2"><b>🧑 কৈশোর — ১০ থেকে ১৯ বছর</b><span>শিশুকাল থেকে যৌবনে যাওয়ার সময়</span></div>
+      <div class="tarr">→</div>
+      <div class="tl tl3"><b>🧑‍🎓 যৌবন</b><span>কৈশোরের পরের ধাপ</span></div>
+    </div>
+
+    <div class="row">
+      <div class="card c-purple" style="flex:1">
+        <h2>💪 শারীরিক পরিবর্তন</h2>
+        <div class="pts">
+          <div class="pt">উচ্চতা বাড়ে</div>
+          <div class="pt">ওজন বাড়ে</div>
+          <div class="pt">কণ্ঠস্বর বদলায়</div>
+        </div>
+      </div>
+      <div class="card c-pink" style="flex:1">
+        <h2>💭 মানসিক পরিবর্তন</h2>
+        <div class="pts">
+          <div class="pt">আবেগ বেশি হয়</div>
+          <div class="pt">নিজের মতামত তৈরি হয়</div>
+          <div class="pt">বন্ধুদের গুরুত্ব বাড়ে</div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>⚠️ এই সময়ের সমস্যা</h2>
+        <div class="chips">
+          <span class="chip">পড়াশোনার চাপ</span>
+          <span class="chip">বন্ধুদের সঙ্গে মানিয়ে চলা</span>
+          <span class="chip">মাদকের প্রলোভন</span>
+          <span class="chip">মানসিক চাপ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card" style="flex:1; background:#dcfce7;">
+        <h2 style="font-size:38px; color:#166534; margin-bottom:14px;">✅ করণীয়</h2>
+        <div class="chips">
+          <span class="chip2">সুষম খাবার</span>
+          <span class="chip2">নিয়মিত ব্যায়াম</span>
+          <span class="chip2">পর্যাপ্ত ঘুম</span>
+          <span class="chip2">ভালো বন্ধু</span>
+          <span class="chip2">মাদক থেকে দূরে থাকা</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💬</div>
+        <p><b>মনে রাখবে:</b> কৈশোরের সমস্যা নিয়ে বাবা-মা বা শিক্ষকের সঙ্গে খোলাখুলি কথা বলা উচিত — লুকিয়ে রাখলে সমস্যা বাড়ে। মাদক শরীর ও মন দুটোই নষ্ট করে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2673 বই (পৃ. ৭১–৮৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

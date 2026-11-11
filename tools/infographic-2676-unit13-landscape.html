@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .timeline { flex: 1; background: linear-gradient(120deg, #0c4a6e, #075985); border-radius: 24px;
+              padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .timeline .date { background: #f5c542; color: #16265c; border-radius: 20px; padding: 18px 26px;
+                    text-align: center; flex-shrink: 0; }
+  .timeline .date b { display: block; font-size: 44px; line-height: 1.1; }
+  .timeline .date span { font-size: 26px; font-weight: bold; }
+  .timeline h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .timeline p { font-size: 27px; line-height: 1.5; color: #e0f2fe; }
+  .jobs { flex: 1.2; background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 24px 30px; }
+  .jobs h2 { font-size: 36px; color: #16265c; margin-bottom: 12px; }
+  .job { display: flex; align-items: center; gap: 14px; padding: 9px 0; }
+  .job .ico { font-size: 34px; }
+  .job span { font-size: 27px; color: #3a3a55; }
+  .tools { flex: 1; background: #e8eef8; border-radius: 24px; padding: 24px 30px; }
+  .tools h2 { font-size: 36px; color: #2d4a8a; margin-bottom: 12px; }
+  .tool { background: #ffffff; border-radius: 16px; padding: 14px 18px; margin-bottom: 12px; }
+  .tool b { font-size: 29px; color: #16265c; display: block; margin-bottom: 4px; }
+  .tool span { font-size: 25px; line-height: 1.45; color: #3a3a55; }
+  .strip { flex: 1; background: #16265c; border-radius: 24px; padding: 22px 32px;
+           display: flex; align-items: center; gap: 22px; }
+  .strip .ico { font-size: 52px; }
+  .strip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .strip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>কেন্দ্রীয় ব্যাংক (ইউনিট-১৩)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="timeline">
+        <div class="date"><b>১৬ ডিসেম্বর</b><span>১৯৭১</span></div>
+        <div>
+          <h2>🏛️ বাংলাদেশ ব্যাংক প্রতিষ্ঠিত</h2>
+          <p>দেশের সব ব্যাংকের অভিভাবক ও নিয়ন্ত্রক। মুনাফার জন্য কাজ করে না — কাজ দেশের অর্থনৈতিক স্থিতি রক্ষা করা।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="jobs">
+        <h2>📋 কেন্দ্রীয় ব্যাংকের প্রধান কাজ</h2>
+        <div class="job"><span class="ico">💵</span><span>কাগজি মুদ্রা ইস্যু করা (১, ২ ও ৫ টাকার নোট ছাড়া — ওগুলো সরকার ইস্যু করে)</span></div>
+        <div class="job"><span class="ico">🏛️</span><span>সরকারের ব্যাংক হিসেবে কাজ করা</span></div>
+        <div class="job"><span class="ico">🏦</span><span>ব্যাংকগুলোর ব্যাংক হিসেবে কাজ করা</span></div>
+        <div class="job"><span class="ico">📊</span><span>ঋণ নিয়ন্ত্রণ করা</span></div>
+        <div class="job"><span class="ico">🌍</span><span>বৈদেশিক মুদ্রার রিজার্ভ সংরক্ষণ করা</span></div>
+      </div>
+      <div class="tools">
+        <h2>🛠️ মুদ্রানীতির ৩ হাতিয়ার</h2>
+        <div class="tool"><b>ব্যাংক হার</b><span>যে হারে কেন্দ্রীয় ব্যাংক বাণিজ্যিক ব্যাংককে ঋণ দেয়</span></div>
+        <div class="tool"><b>খোলা বাজার কার্যক্রম</b><span>সরকারি সিকিউরিটিজ কেনাবেচা</span></div>
+        <div class="tool"><b>CRR — নগদ জমা অনুপাত</b><span>আমানতের একটি অংশ কেন্দ্রীয় ব্যাংকে জমা রাখা</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="strip">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> ব্যাংক হার বাড়ালে বাণিজ্যিক ব্যাংকের ঋণের খরচ বাড়ে, ফলে বাজারে ঋণ কমে ও মুদ্রাস্ফীতি নিয়ন্ত্রণে আসে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ১৪৩ থেকে) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

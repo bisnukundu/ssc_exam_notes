@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #0f766e, #1d3557); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #e0f2f1; }
+
+  .journey { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px;
+             padding: 20px 30px 22px; }
+  .journey h2 { font-size: 38px; color: #16265c; margin-bottom: 18px; }
+  .steps { display: flex; gap: 0; align-items: flex-start; }
+  .step { flex: 1; text-align: center; position: relative; padding: 0 8px; }
+  .step .dot { width: 64px; height: 64px; border-radius: 50%; background: #0f766e;
+               color: #ffffff; font-size: 28px; font-weight: bold; line-height: 64px;
+               margin: 0 auto 10px; position: relative; z-index: 2; }
+  .step:not(:last-child)::after { content: ''; position: absolute; top: 32px; left: 50%;
+               width: 100%; height: 6px; background: #c8e6e2; z-index: 1; }
+  .step b { display: block; font-size: 26px; line-height: 1.4; color: #1a1a2e; }
+  .step span { font-size: 23px; color: #4a4a6a; }
+
+  .pillar { flex: 1; border-radius: 24px; padding: 18px 26px; text-align: center; }
+  .pillar .ico { font-size: 56px; }
+  .pillar h3 { font-size: 34px; margin: 6px 0 6px; }
+  .pillar p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .p-teal { background: #e6f4f1; } .p-teal h3 { color: #0f766e; }
+  .p-blue { background: #e8eef8; } .p-blue h3 { color: #2d4a8a; }
+  .p-amber { background: #fdf3e0; } .p-amber h3 { color: #9a6208; }
+
+  .strip { background: #16265c; border-radius: 24px; padding: 18px 32px;
+           display: flex; align-items: center; gap: 22px; }
+  .strip .ico { font-size: 52px; }
+  .strip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .strip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 16px 0 14px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ক্যারিয়ারের ধারণা (ইউনিট-০১)</h1>
+    <p>SSC-2358 • ক্যারিয়ার শিক্ষা</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🎯</div>
+        <div>
+          <h2>ক্যারিয়ার কাকে বলে?</h2>
+          <p>ক্যারিয়ার মানে শুধু একটি চাকরি নয় — জীবনব্যাপী শিক্ষা, কাজ, অভিজ্ঞতা ও অর্জনের ধারাবাহিক পথ।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="journey" style="flex:1">
+        <h2>🗺️ এই Unit-এর ৬টি পাঠ</h2>
+        <div class="steps">
+          <div class="step"><div class="dot">১.১</div><b>ক্যারিয়ার ও এর বিকাশ</b></div>
+          <div class="step"><div class="dot">১.২</div><b>ক্যারিয়ার রূপরেখা বা মডেল</b></div>
+          <div class="step"><div class="dot">১.৩</div><b>ক্যারিয়ার শিক্ষা ও এর গুরুত্ব</b></div>
+          <div class="step"><div class="dot">১.৪</div><b>আমি, আমার শিক্ষা ও ক্যারিয়ার</b></div>
+          <div class="step"><div class="dot">১.৫</div><b>আগ্রহ এবং যোগ্যতা</b></div>
+          <div class="step"><div class="dot">১.৬</div><b>আমার ক্যারিয়ার ও মূল্যবোধ</b></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="pillar p-teal">
+        <div class="ico">❤️</div>
+        <h3>আগ্রহ</h3>
+        <p>কোনো কাজের প্রতি ভালো লাগা</p>
+      </div>
+      <div class="pillar p-blue">
+        <div class="ico">💪</div>
+        <h3>যোগ্যতা</h3>
+        <p>সেই কাজ করার দক্ষতা ও জ্ঞান</p>
+      </div>
+      <div class="pillar p-amber">
+        <div class="ico">⚖️</div>
+        <h3>মূল্যবোধ</h3>
+        <p>ভালো-মন্দ বিচারের মানদণ্ড — সততা, পরিশ্রম, দায়িত্ববোধ</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="strip" style="flex:1">
+        <div class="ico">🧭</div>
+        <p><b>ক্যারিয়ার রূপরেখা:</b> লক্ষ্য ঠিক করে ধাপে ধাপে এগোনোর পরিকল্পনা — আগ্রহ + যোগ্যতা + মূল্যবোধ = সফল ক্যারিয়ারের ভিত্তি।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2358 বই (পৃ. ১–১১) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

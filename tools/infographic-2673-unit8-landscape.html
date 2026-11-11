@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 22px 60px 18px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 20px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 18px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #78350f, #92400e); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 68px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fef3c7; }
+
+  .split { flex: 1; border-radius: 24px; padding: 22px 28px; }
+  .split h2 { font-size: 36px; margin-bottom: 6px; }
+  .split .sub { font-size: 26px; color: #3a3a55; margin-bottom: 12px; }
+  .s-ren { background: #dcfce7; } .s-ren h2 { color: #166534; }
+  .s-non { background: #fee2e2; } .s-non h2 { color: #991b1b; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border-radius: 999px; padding: 10px 22px;
+          font-size: 27px; font-weight: bold; }
+  .s-ren .chip { border: 2px solid #86efac; color: #166534; }
+  .s-non .chip { border: 2px solid #fca5a5; color: #991b1b; }
+
+  .card { border-radius: 24px; padding: 22px 30px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-green { background: #dcfce7; } .c-green h2 { color: #166534; }
+
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 16px 20px; }
+  .col b { display: block; font-size: 30px; color: #16265c; margin-bottom: 4px; }
+  .col span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 20px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 18px 0 16px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>আমাদের সম্পদ (ইউনিট-০৮)</h1>
+    <p>SSC-2673 • বিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌍</div>
+        <div>
+          <h2>সম্পদ মানে কী?</h2>
+          <p>প্রকৃতি থেকে পাওয়া এমন সবকিছু, যা মানুষের কাজে লাগে — যেমন গ্যাস, কয়লা, পানি, মাটি, বন, সূর্যের আলো। সম্পদ সীমিত, তাই অপচয় করা যাবে না।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="split s-ren">
+        <h2>♻️ নবায়নযোগ্য সম্পদ</h2>
+        <div class="sub">শেষ হয় না, আবার তৈরি হয়।</div>
+        <div class="chips">
+          <span class="chip">☀️ সূর্যের আলো</span>
+          <span class="chip">💨 বাতাস</span>
+          <span class="chip">💧 পানি</span>
+          <span class="chip">🌳 বন</span>
+        </div>
+      </div>
+      <div class="split s-non">
+        <h2>⛏️ অনবায়নযোগ্য সম্পদ</h2>
+        <div class="sub">একবার শেষ হলে আর ফিরে আসে না।</div>
+        <div class="chips">
+          <span class="chip">🔥 গ্যাস</span>
+          <span class="chip">⬛ কয়লা</span>
+          <span class="chip">🛢️ তেল</span>
+          <span class="chip">💎 খনিজ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1.3">
+        <h2>🇧🇩 বাংলাদেশের গুরুত্বপূর্ণ সম্পদ</h2>
+        <div class="cols">
+          <div class="col"><b>প্রাকৃতিক গ্যাস</b><span>বিদ্যুৎ তৈরি, রান্না ও শিল্পে ব্যবহৃত হয়।</span></div>
+          <div class="col"><b>কয়লা</b><span>বিদ্যুৎ উৎপাদন হয়।</span></div>
+          <div class="col"><b>পানি ও উর্বর মাটি</b><span>বাংলাদেশের গুরুত্বপূর্ণ সম্পদ।</span></div>
+        </div>
+      </div>
+      <div class="card c-green" style="flex:1">
+        <h2>🌱 সংরক্ষণের উপায়</h2>
+        <div class="chips">
+          <span class="chip">অপচয় রোধ</span>
+          <span class="chip">সৌরবিদ্যুৎ ব্যবহার</span>
+          <span class="chip">গাছ লাগানো</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার টিপস:</b> গ্যাসকে নবায়নযোগ্য বলবে না — গ্যাস লক্ষ লক্ষ বছর ধরে তৈরি হয়, তাই এটি অনবায়নযোগ্য। সংরক্ষণ না করলে ভবিষ্যৎ প্রজন্ম কিছুই পাবে না।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2673 বই (পৃ. ১৩২–১৪৫) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

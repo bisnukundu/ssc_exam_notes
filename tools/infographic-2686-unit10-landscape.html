@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 14px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 54px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 12px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 12px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #9f1239, #4c0519); border-radius: 24px;
+            padding: 16px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 60px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #ffe4e6; }
+  .card { border-radius: 24px; padding: 16px 24px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-rose { background: #fff1f2; } .c-rose h2 { color: #9f1239; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .layers { display: flex; flex-direction: column; gap: 5px; }
+  .layer { display: flex; align-items: center; gap: 18px; background: #ffffff; border-radius: 14px;
+           padding: 6px 16px; }
+  .layer .n { background: #9f1239; color: #ffffff; font-size: 24px; font-weight: bold;
+              width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%; flex: 0 0 36px; }
+  .layer b { font-size: 25px; color: #4c0519; }
+  .layer .desc { font-size: 23px; color: #4a4a6a; margin-left: auto; text-align: right; }
+  .vs { display: flex; gap: 16px; align-items: stretch; }
+  .vs .v { flex: 1; border-radius: 18px; padding: 18px 20px; text-align: center; }
+  .vs .v span { display: block; font-size: 52px; margin-bottom: 6px; }
+  .vs .v b { display: block; font-size: 30px; margin-bottom: 4px; }
+  .vs .v p { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .v-a { background: #fff1f2; } .v-a b { color: #9f1239; }
+  .v-b { background: #fdf3e0; } .v-b b { color: #9a6208; }
+  .vsbadge { align-self: center; background: #16265c; color: #f5c542; font-size: 28px; font-weight: bold;
+             width: 60px; height: 60px; line-height: 60px; text-align: center; border-radius: 50%; flex: 0 0 60px; }
+  .vax { background: #e8f4ec; border-radius: 16px; padding: 18px 22px; font-size: 26px; line-height: 1.55; color: #1d4d2b; }
+  .vax b { color: #2e6b41; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+  .chip { background: #ffffff; border: 2px solid #b9d9c0; border-radius: 999px;
+          padding: 8px 18px; font-size: 25px; font-weight: bold; }
+  .tip { background: #16265c; border-radius: 24px; padding: 10px 20px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 20px; color: #7a7a9a; padding: 4px 0 4px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>গৃহপালিত পশু-পাখি পালন পদ্ধতি (ইউনিট-১০)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🐄</div>
+        <div>
+          <h2>পশু-পাখি পালন কী?</h2>
+          <p>গরু, ছাগল, মুরগি, হাঁস পালন করে দুধ, ডিম, মাংস ও আয় পাওয়া। নিয়মিত টিকা দিলে রোগ থেকে পশু-পাখি রক্ষা পায়।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-rose" style="flex:1.1">
+        <h2>🔄 পালনের ৬ ধাপ</h2>
+        <div class="layers">
+          <div class="layer"><span class="n">১</span><b>ভালো জাত নির্বাচন</b></div>
+          <div class="layer"><span class="n">২</span><b>আবাসন</b><span class="desc">শুষ্ক, আলো-বাতাসযুক্ত ঘর</span></div>
+          <div class="layer"><span class="n">৩</span><b>সুষম খাদ্য</b></div>
+          <div class="layer"><span class="n">৪</span><b>পরিষ্কার পানি</b></div>
+          <div class="layer"><span class="n">৫</span><b>টিকা ও চিকিৎসা</b></div>
+          <div class="layer"><span class="n">৬</span><b>পরিচ্ছন্নতা</b></div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>🐔 মুরগি পালন ২ ধরনের</h2>
+        <div class="vs">
+          <div class="v v-a"><span>🥚</span><b>লেয়ার</b><p>ডিম পাড়া মুরগি</p></div>
+          <div class="vsbadge">VS</div>
+          <div class="v v-b"><span>🍗</span><b>ব্রয়লার</b><p>মাংসের মুরগি</p></div>
+        </div>
+        <div class="vax" style="margin-top:10px;">💉 <b>টিকার গুরুত্ব:</b> রোগ প্রতিরোধ, মৃত্যুহার কমানো, উৎপাদন বজায় রাখা।</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>🐄 গাভি ও 🐐 ছাগল পালন</h2>
+        <p style="font-size:27px; line-height:1.55; color:#3a3a55;"><b style="color:#2e6b41;">গাভি:</b> দুধ দোহন, বাছুরের যত্ন, প্রজনন ব্যবস্থাপনা। <b style="color:#2e6b41;">ছাগল:</b> কম খরচে পালনযোগ্য, দ্রুত বংশবৃদ্ধি করে, মাংস ও দুধের উৎস।</p>
+        <div class="chips"><span class="chip">রানীক্ষেত</span><span class="chip">গামবোরো</span><span class="chip">তড়কা</span><span class="chip">বাদলা</span></div>
+        <p style="font-size:24px; color:#4a4a6a; margin-top:8px;">↑ টিকা দিয়ে এসব রোগ থেকে রক্ষা পাওয়া যায়।</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> টিকা না দিয়ে রোগ হলে চিকিৎসা করা ভুল — প্রতিরোধ চিকিৎসার চেয়ে সস্তা ও কার্যকর।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ১৭৯–১৯৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

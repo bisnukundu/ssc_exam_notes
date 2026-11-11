@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+
+  .divs { display: flex; gap: 18px; }
+  .divs .d { flex: 1; border-radius: 16px; padding: 14px 20px; }
+  .divs .d .big { display: block; font-size: 38px; font-weight: bold; text-align: center;
+                  margin-bottom: 6px; }
+  .divs .d b { display: block; font-size: 32px; text-align: center; margin-bottom: 6px; }
+  .divs .d p { font-size: 26px; line-height: 1.55; color: #3a3a55; text-align: center; }
+  .d-mito { background: #e8eef8; } .d-mito b, .d-mito .big { color: #2d4a8a; }
+  .d-meio { background: #e8f4ec; } .d-meio b, .d-meio .big { color: #2e6b41; }
+  .d-ami { background: #fdf3e0; } .d-ami b, .d-ami .big { color: #9a6208; }
+
+  .flow { display: flex; align-items: center; gap: 10px; }
+  .flow .step { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 12px 10px; text-align: center; }
+  .flow .step .n { display: inline-block; background: #2d4a8a; color: #ffffff; font-size: 26px;
+                   font-weight: bold; width: 42px; height: 42px; line-height: 42px;
+                   border-radius: 50%; margin-bottom: 6px; }
+  .flow .step b { display: block; font-size: 30px; color: #16265c; margin-bottom: 2px; }
+  .flow .step span { font-size: 23px; color: #4a4a6a; }
+  .flow .arr { font-size: 40px; color: #2d4a8a; flex-shrink: 0; }
+
+  .vs { display: flex; gap: 16px; }
+  .vs .v { flex: 1; border-radius: 16px; padding: 12px 18px; }
+  .vs .v b { display: block; font-size: 30px; margin-bottom: 4px; }
+  .vs .v span { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>কোষ বিভাজন (ইউনিট-০৩)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🔀 কোষ বিভাজন — ৩ প্রকার</h2>
+        <div class="divs">
+          <div class="d d-mito">
+            <span class="big">১ → ২</span>
+            <b>মাইটোসিস</b>
+            <p>দুটি অভিন্ন কোষ তৈরি হয়। ক্রোমোজোম সংখ্যা একই থাকে। বৃদ্ধি, ক্ষতপূরণ ও অযৌন প্রজনন।</p>
+          </div>
+          <div class="d d-meio">
+            <span class="big">১ → ৪</span>
+            <b>মিয়োসিস</b>
+            <p>চারটি কোষ তৈরি হয়, ক্রোমোজোম সংখ্যা অর্ধেক হয়। জননকোষ (শুক্রাণু ও ডিম্বাণু) তৈরি করে।</p>
+          </div>
+          <div class="d d-ami">
+            <span class="big">সরল জীবে</span>
+            <b>অ্যামাইটোসিস</b>
+            <p>নিউক্লিয়াস সরাসরি বিভাজিত হয়। যেমন অ্যামিবা।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>📋 মাইটোসিসের ধাপ</h2>
+        <div class="flow">
+          <div class="step"><span class="n">১</span><b>প্রোফেজ</b><span>প্রথম ধাপ</span></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">২</span><b>মেটাফেজ</b><span>দ্বিতীয় ধাপ</span></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">৩</span><b>অ্যানাফেজ</b><span>তৃতীয় ধাপ</span></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">৪</span><b>টেলোফেজ</b><span>চতুর্থ ধাপ</span></div>
+          <div class="arr">→</div>
+          <div class="step"><span class="n">৫</span><b>সাইটোকাইনেসিস</b><span>সাইটোপ্লাজম ভাগ হয়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>🔄 ক্রসিং ওভার — বৈচিত্র্যের উৎস</h2>
+        <div class="vs">
+          <div class="v" style="background:#ffffff"><b>মিয়োসিস-১-এর প্রোফেজ-১-এ ঘটে</b><span>ক্রোমোজোমের অংশ বিনিময় হয়, ফলে বংশগত বৈচিত্র্য সৃষ্টি হয়।</span></div>
+          <div class="v" style="background:#ffffff"><b>মিয়োসিসের গুরুত্ব</b><span>জননকোষ সৃষ্টি, ক্রোমোজোম সংখ্যা স্থির রাখা ও বৈচিত্র্য সৃষ্টি।</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার টিপস:</b> মাইটোসিসে ক্রোমোজোম সংখ্যা একই থাকে (দেহকোষে), মিয়োসিসে অর্ধেক হয় (জননকোষে) — দুটো গুলিয়ে ফেলবে না। মাইটোসিস বনাম মিয়োসিসের পার্থক্যের ছক অবশ্যই মুখস্থ করবে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ৩৩–৪৩) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

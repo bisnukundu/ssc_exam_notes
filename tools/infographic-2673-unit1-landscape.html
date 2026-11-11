@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 18px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #2e6b41, #4d7c0f); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e8f4ec; }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 16px; }
+  .nut { border-radius: 20px; padding: 16px 24px; }
+  .nut b { display: block; font-size: 32px; margin-bottom: 4px; }
+  .nut span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .n1 { background: #fef3c7; } .n1 b { color: #92400e; }
+  .n2 { background: #fee2e2; } .n2 b { color: #991b1b; }
+  .n3 { background: #fef9c3; } .n3 b { color: #854d0e; }
+  .n4 { background: #dcfce7; } .n4 b { color: #166534; }
+  .n5 { background: #e0e7ff; } .n5 b { color: #3730a3; }
+  .n6 { background: #cffafe; } .n6 b { color: #155e75; }
+
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+
+  .match { display: flex; gap: 16px; }
+  .m { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 18px 14px; text-align: center; }
+  .m b { display: block; font-size: 30px; color: #991b1b; margin-bottom: 4px; }
+  .m span { font-size: 26px; color: #3a3a55; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 18px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.55; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 16px 0 14px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>খাদ্য ও জীবন (ইউনিট-০১)</h1>
+    <p>SSC-2673 • বিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🍎</div>
+        <div>
+          <h2>খাদ্য ছাড়া জীবন চলে না</h2>
+          <p>খাদ্য থেকে আমরা শক্তি পাই, শরীর বাড়ে ও রোগের সঙ্গে লড়ার শক্তি পাই। সুষম খাদ্য মানে সব উপাদান সঠিক পরিমাণে থাকা খাবার — যেমন ভাত, ডাল, সবজি, মাছ ও ফল একসঙ্গে খাওয়া।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="nut n1"><b>🌾 শর্করা</b><span>শক্তির প্রধান উৎস — ভাত, রুটি, আলু।</span></div>
+      <div class="nut n2"><b>🍗 আমিষ</b><span>শরীর গঠন করে — মাছ, মাংস, ডিম, ডাল।</span></div>
+      <div class="nut n3"><b>🫗 স্নেহ</b><span>শক্তি জমা রাখে — তেল, ঘি।</span></div>
+      <div class="nut n4"><b>🍊 ভিটামিন</b><span>রোগ প্রতিরোধ করে।</span></div>
+      <div class="nut n5"><b>🦴 খনিজ লবণ</b><span>হাড় ও দাঁত মজবুত করে।</span></div>
+      <div class="nut n6"><b>💧 পানি</b><span>শরীরের জন্য অপরিহার্য উপাদান।</span></div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🩺 অভাবজনিত রোগ — জোড়া মিলিয়ে মনে রাখো</h2>
+        <div class="match">
+          <div class="m"><b>ভিটামিন এ</b><span>→ রাতকানা</span></div>
+          <div class="m"><b>ভিটামিন সি</b><span>→ স্কার্ভি</span></div>
+          <div class="m"><b>ভিটামিন ডি</b><span>→ রিকেটস</span></div>
+          <div class="m"><b>আয়োডিন</b><span>→ গলগণ্ড</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার টিপস:</b> শর্করা শক্তি দেয়, আমিষ শরীর গড়ে — গুলিয়ে ফেলবে না। পরিপাক মানে খাদ্য ভেঙে শরীরে শোষিত হওয়ার প্রক্রিয়া।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2673 বই (পৃ. ১–৩৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #0e7490, #155e75); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #cffafe; }
+  .shape { flex: 1; border-radius: 24px; padding: 16px 26px; text-align: center; }
+  .shape .glyph { font-size: 68px; line-height: 1.1; }
+  .shape h2 { font-size: 36px; margin: 6px 0 8px; }
+  .shape p { font-size: 25px; line-height: 1.55; color: #3a3a55; text-align: left; }
+  .shape p b { color: #16265c; }
+  .s-blue { background: #e0f2fe; } .s-blue h2 { color: #0369a1; }
+  .s-green { background: #dcfce7; } .s-green h2 { color: #166534; }
+  .s-orange { background: #ffedd5; } .s-orange h2 { color: #9a3412; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .chip { background: #f4f6fb; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জ্যামিতি (ইউনিট-০৮)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">📐</div>
+        <div>
+          <h2>জ্যামিতি কী?</h2>
+          <p>জ্যামিতি হলো আকৃতি, আকার ও স্থানের বিজ্ঞান। এই Unit-এ ত্রিভুজ, বৃত্ত ও চতুর্ভুজের গুরুত্বপূর্ণ উপপাদ্যগুলো শিখবে — এগুলো দিয়ে অজানা কোণ ও বাহুর দৈর্ঘ্য বের করা যায়।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="shape s-blue">
+        <div class="glyph">△</div>
+        <h2>ত্রিভুজ</h2>
+        <p>• তিন কোণের সমষ্টি <b>180°</b><br>• পিথাগোরাস: অতিভুজ<sup>2</sup> = লম্ব<sup>2</sup> + ভূমি<sup>2</sup><br>• 3, 4, 5 একটি পিথাগোরীয় ত্রয়ী</p>
+      </div>
+      <div class="shape s-green">
+        <div class="glyph">○</div>
+        <h2>বৃত্ত</h2>
+        <p>• ব্যাস = 2 × ব্যাসার্ধ<br>• পরিধি = 2πr, ক্ষেত্রফল = πr<sup>2</sup><br>• কেন্দ্রস্থ কোণ = 2 × বৃত্তস্থ কোণ<br>• কেন্দ্র থেকে জ্যা-এর উপর লম্ব জ্যা-কে সমদ্বিখণ্ডিত করে</p>
+      </div>
+      <div class="shape s-orange">
+        <div class="glyph">▢</div>
+        <h2>চতুর্ভুজ</h2>
+        <p>• সামান্তরিকের বিপরীত বাহু সমান<br>• আয়তের প্রতিটি কোণ 90°<br>• বর্গের সব বাহু সমান</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>✅ ত্রিভুজের সর্বসমতার শর্ত</h2>
+        <div class="chips">
+          <span class="chip">বাহু-বাহু-বাহু</span>
+          <span class="chip">বাহু-কোণ-বাহু</span>
+          <span class="chip">কোণ-বাহু-কোণ</span>
+          <span class="chip">অতিভুজ-বাহু (সমকোণী)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> অতিভুজ সবসময় সমকোণের বিপরীত বাহু ও সবচেয়ে বড় বাহু — ভূমি বা লম্বকে অতিভুজ ভাবা যাবে না।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ১৩৫–১৪৮) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

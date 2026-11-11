@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #14532d, #166534); border-radius: 24px;
+            padding: 24px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #dcfce7; }
+  .ladder { flex: 1.35; background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px;
+            padding: 24px 30px; }
+  .ladder h2 { font-size: 36px; color: #16265c; margin-bottom: 16px; }
+  .step { display: flex; align-items: center; gap: 16px; border-radius: 16px;
+          padding: 14px 20px; margin-bottom: 12px; }
+  .step .rank { font-size: 30px; font-weight: bold; background: #16265c; color: #f5c542;
+                width: 48px; height: 48px; line-height: 48px; text-align: center; border-radius: 50%; flex-shrink: 0; }
+  .step b { font-size: 31px; }
+  .step span { font-size: 25px; color: #3a3a55; margin-left: auto; text-align: right; }
+  .s1 { background: #fdecea; width: 100%; } .s1 b { color: #b91c1c; }
+  .s2 { background: #f8e8f0; width: 88%; } .s2 b { color: #8b2252; }
+  .s3 { background: #fdf3e0; width: 76%; } .s3 b { color: #9a6208; }
+  .s4 { background: #e8f4ec; width: 64%; } .s4 b { color: #2e6b41; }
+  .ladder-tip { margin-top: 16px; background: #e8eef8; border-radius: 14px; padding: 14px 18px;
+                font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .ladder-tip b { color: #2d4a8a; }
+  .side { flex: 1; display: flex; flex-direction: column; gap: 22px; }
+  .card { border-radius: 24px; padding: 24px 28px; }
+  .card h3 { font-size: 34px; margin-bottom: 8px; }
+  .card p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .c-blue { background: #e8eef8; } .c-blue h3 { color: #2d4a8a; }
+  .c-amber { background: #fdf3e0; } .c-amber h3 { color: #9a6208; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>মূলধন ব্যয় (ইউনিট-০৬)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">💸</div>
+        <div>
+          <h2>মূলধন ব্যয় কাকে বলে?</h2>
+          <p>ব্যবসায় অর্থ সংগ্রহের জন্য যে খরচ দিতে হয় — ঋণ নিলে সুদ, শেয়ার বিক্রি করলে লভ্যাংশ।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ladder">
+        <h2>💰 ব্যয়ের ক্রম — বেশি থেকে কম</h2>
+        <div class="step s1"><span class="rank">১</span><b>সাধারণ শেয়ার</b><span>সবচেয়ে ব্যয়বহুল — সবচেয়ে বেশি ঝুঁকি</span></div>
+        <div class="step s2"><span class="rank">২</span><b>অগ্রাধিকার শেয়ার</b><span>নির্দিষ্ট লভ্যাংশ</span></div>
+        <div class="step s3"><span class="rank">৩</span><b>সংরক্ষিত মুনাফা</b><span>ইস্যু খরচ নেই বলে কিছুটা কম</span></div>
+        <div class="step s4"><span class="rank">৪</span><b>ঋণ</b><span>সবচেয়ে সস্তা — সুদে কর সুবিধা</span></div>
+        <div class="ladder-tip">💡 <b>মূলধন ব্যয়ের উপাদান ৪টি:</b> ঋণ, অগ্রাধিকার শেয়ার, সাধারণ শেয়ার ও সংরক্ষিত মুনাফা — সংরক্ষিত মুনাফার ব্যয় সাধারণ শেয়ারের ব্যয়ের প্রায় সমান।</div>
+      </div>
+      <div class="side">
+        <div class="card c-blue">
+          <h3>⚖️ WACC — গড় মূলধন ব্যয়</h3>
+          <p>সব উৎসের ব্যয়ের ভারযুক্ত গড়। বিনিয়োগ সিদ্ধান্তে ন্যূনতম গ্রহণযোগ্য আয়ের হার — প্রকল্পের আয় WACC-এর চেয়ে কম হলে বিনিয়োগ নয়।</p>
+        </div>
+        <div class="card c-amber">
+          <h3>🧾 ঋণের ব্যয় কর-পরবর্তী কেন?</h3>
+          <p>সুদ কর-ছাড়যোগ্য ব্যয় — সুদ দিলে কর কম দিতে হয়।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ৭১–৮০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

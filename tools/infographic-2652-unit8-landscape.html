@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 64px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #4b134f, #2d4a8a); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 28px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e8eef8; }
+
+  .kind { flex: 1; border-radius: 24px; padding: 24px 28px; }
+  .kind .ico { font-size: 52px; }
+  .kind h2 { font-size: 33px; margin: 8px 0 8px; }
+  .kind p { font-size: 25px; line-height: 1.55; color: #3a3a55; }
+  .kind p i { color: #6b6b85; }
+  .k-blue { background: #e8eef8; } .k-blue h2 { color: #2d4a8a; }
+  .k-green { background: #e8f4ec; } .k-green h2 { color: #2e6b41; }
+  .k-orange { background: #fdf3e0; } .k-orange h2 { color: #9a6208; }
+
+  .idiom { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 24px 30px; }
+  .idiom h2 { font-size: 34px; color: #16265c; margin-bottom: 14px; }
+  .idiom .items { display: flex; gap: 16px; }
+  .idiom .it { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 16px 18px; text-align: center; }
+  .idiom .it b { display: block; font-size: 27px; color: #16265c; margin-bottom: 4px; }
+  .idiom .it span { font-size: 24px; color: #3a3a55; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Phrase (Unit-08)</h1>
+    <p>SSC-2652 • English Second Paper</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🧩</div>
+        <div>
+          <h2>What is a phrase?</h2>
+          <p>A group of words with <b>no subject and no finite verb</b> — so it cannot stand alone as a sentence. A phrase works like a single part of speech.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="kind k-blue">
+        <div class="ico">📦</div>
+        <h2>Noun Phrase</h2>
+        <p>Works like a noun.<br><i>'To win the game was his aim.'</i> ('to win the game' is the subject.)</p>
+      </div>
+      <div class="kind k-green">
+        <div class="ico">🏷️</div>
+        <h2>Adjective Phrase</h2>
+        <p>Describes a noun.<br><i>'A man of honesty is respected.'</i> ('of honesty' describes the man.)</p>
+      </div>
+      <div class="kind k-orange">
+        <div class="ico">🕒</div>
+        <h2>Adverb Phrase</h2>
+        <p>Tells when, where or how.<br><i>'He came in the morning.'</i> ('in the morning' tells when.)</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="idiom" style="flex:1">
+        <h2>💬 Idioms — fixed phrases with a special meaning</h2>
+        <div class="items">
+          <div class="it"><b>'to kick the bucket'</b><span>= to die</span></div>
+          <div class="it"><b>'a black sheep'</b><span>= a bad person</span></div>
+          <div class="it"><b>'at sixes and sevens'</b><span>= in confusion</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 83–92) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

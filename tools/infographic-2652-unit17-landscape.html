@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 62px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .arc { flex: 1; background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 24px 30px; }
+  .arc h2 { font-size: 32px; color: #16265c; margin-bottom: 16px; }
+  .steps { display: flex; gap: 10px; align-items: stretch; }
+  .step { flex: 1; border-radius: 16px; padding: 16px 14px; text-align: center; }
+  .step .ico { font-size: 44px; }
+  .step b { display: block; font-size: 28px; margin-bottom: 4px; }
+  .step span { font-size: 23px; line-height: 1.4; color: #3a3a55; }
+  .s1 { background: #e8eef8; } .s1 b { color: #2d4a8a; }
+  .s2 { background: #fdf3e0; } .s2 b { color: #9a6208; }
+  .s3 { background: #e8f4ec; } .s3 b { color: #2e6b41; }
+  .s4 { background: #f8e8f0; } .s4 b { color: #8b2252; }
+  .arr { display: flex; align-items: center; font-size: 30px; color: #16265c; flex-shrink: 0; }
+
+  .card { flex: 1; border-radius: 24px; padding: 22px 28px; }
+  .card h2 { font-size: 31px; margin-bottom: 8px; }
+  .card p { font-size: 25px; line-height: 1.55; color: #3a3a55; }
+  .card p i { color: #6b6b85; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+
+  .stories { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 20px 30px; }
+  .stories h2 { font-size: 30px; color: #16265c; margin-bottom: 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #f4f6fb; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 26px; font-weight: bold; color: #16265c; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Completing Stories (Unit-17)</h1>
+    <p>SSC-2652 • English Second Paper • Writing — 8 marks</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="arc" style="flex:1">
+        <h2>📖 Continue the story step by step — keep the same tense &amp; characters</h2>
+        <div class="steps">
+          <div class="step s1"><div class="ico">❓</div><b>Problem</b><span>What goes wrong?</span></div>
+          <div class="arr">›</div>
+          <div class="step s2"><div class="ico">💪</div><b>Struggle</b><span>Trying to solve it</span></div>
+          <div class="arr">›</div>
+          <div class="step s3"><div class="ico">✅</div><b>Solution</b><span>How it is solved</span></div>
+          <div class="arr">›</div>
+          <div class="step s4"><div class="ico">🏆</div><b>Ending</b><span>Title + a moral<br><i>'Slow and steady wins the race.'</i></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue">
+        <h2>🔑 Before you write</h2>
+        <p>Read the given part <b>twice</b> — understand its mood and characters. Do not start a new story.</p>
+      </div>
+      <div class="card c-green">
+        <h2>📝 Summary — also in this unit</h2>
+        <p>Only the main points, in your own words, without examples or quotations — about <b>one-third</b> of the original.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="stories" style="flex:1">
+        <h2>🐢 Practise these five famous stories</h2>
+        <div class="chips">
+          <span class="chip">The Hare and the Tortoise</span>
+          <span class="chip">The Thirsty Crow</span>
+          <span class="chip">The Fox and the Grapes</span>
+          <span class="chip">The Ant and the Dove</span>
+          <span class="chip">A Foolish Crow</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 185–205) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

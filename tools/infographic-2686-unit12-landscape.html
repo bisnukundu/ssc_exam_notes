@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 58px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #166534, #14532d); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #dcfce7; }
+  .card { border-radius: 24px; padding: 20px 26px; }
+  .card h2 { font-size: 36px; margin-bottom: 14px; }
+  .c-green { background: #dcfce7; } .c-green h2 { color: #166534; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-sky { background: #e0f2fe; } .c-sky h2 { color: #075985; }
+  .benefits { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .ben { background: #ffffff; border-radius: 16px; padding: 14px 12px; text-align: center; }
+  .ben span { display: block; font-size: 40px; margin-bottom: 4px; }
+  .ben b { font-size: 25px; color: #14532d; line-height: 1.3; }
+  .types { display: flex; gap: 14px; }
+  .type { flex: 1; border-radius: 16px; padding: 16px 12px; text-align: center; }
+  .type b { display: block; font-size: 28px; margin-bottom: 4px; }
+  .type span { font-size: 24px; line-height: 1.45; color: #3a3a55; }
+  .t1 { background: #dcfce7; } .t1 b { color: #166534; }
+  .t2 { background: #e0f2fe; } .t2 b { color: #075985; }
+  .t3 { background: #fef9c3; } .t3 b { color: #854d0e; }
+  .steps { display: flex; gap: 10px; align-items: stretch; }
+  .step { flex: 1; background: #dcfce7; border-radius: 16px; padding: 14px 8px; text-align: center; }
+  .step .n { display: inline-block; background: #166534; color: #ffffff; font-size: 24px; font-weight: bold;
+             width: 40px; height: 40px; line-height: 40px; border-radius: 50%; margin-bottom: 6px; }
+  .step b { display: block; font-size: 25px; color: #14532d; line-height: 1.3; }
+  .rain { background: #e0f2fe; border-radius: 16px; padding: 18px 22px; text-align: center; }
+  .rain b { display: block; font-size: 30px; color: #075985; margin-bottom: 4px; }
+  .rain span { font-size: 25px; color: #3a3a55; line-height: 1.5; }
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 28px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>বনায়ন (ইউনিট-১২)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌳</div>
+        <div>
+          <h2>বনায়ন কী?</h2>
+          <p>পরিকল্পিতভাবে গাছ লাগানো, পরিচর্যা করা ও বন সংরক্ষণ করা। বন আমাদের জীবনের জন্য অত্যন্ত গুরুত্বপূর্ণ।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-green" style="flex:1.35">
+        <h2>🌍 বনের ৬ উপকারিতা</h2>
+        <div class="benefits">
+          <div class="ben"><span>🫧</span><b>অক্সিজেন দেয়</b></div>
+          <div class="ben"><span>🌫️</span><b>কার্বন ডাই-অক্সাইড শোষণ</b></div>
+          <div class="ben"><span>🌧️</span><b>বৃষ্টিপাত বাড়ায়</b></div>
+          <div class="ben"><span>⛰️</span><b>মাটির ক্ষয় রোধ</b></div>
+          <div class="ben"><span>🦌</span><b>বন্যপ্রাণীর আবাস</b></div>
+          <div class="ben"><span>🪵</span><b>কাঠ, জ্বালানি, ফল ও ঔষধি গাছ</b></div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>🌲 বনের ৩ ধরন</h2>
+        <div class="types">
+          <div class="type t1"><b>প্রাকৃতিক বন</b><span>নিজে থেকে গড়ে ওঠা</span></div>
+          <div class="type t2"><b>সংরক্ষিত বন</b><span>সরকারি সুরক্ষায়</span></div>
+          <div class="type t3"><b>সামাজিক বনায়ন</b><span>জনগণের অংশগ্রহণে</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1.35">
+        <h2>🌱 গাছ লাগানোর ৫ ধাপ</h2>
+        <div class="steps">
+          <div class="step"><span class="n">১</span><b>গর্ত তৈরি</b></div>
+          <div class="step"><span class="n">২</span><b>চারা রোপণ</b></div>
+          <div class="step"><span class="n">৩</span><b>বেড়া দেওয়া</b></div>
+          <div class="step"><span class="n">৪</span><b>সেচ</b></div>
+          <div class="step"><span class="n">৫</span><b>পরিচর্যা</b></div>
+        </div>
+      </div>
+      <div style="flex:1">
+        <div class="rain">🌧️ <b>গাছ লাগানোর উপযুক্ত সময়: বর্ষাকাল</b><span>সামাজিক বনায়নে রাস্তার ধারে, পুকুর পাড়ে, বাড়ির আঙিনায় গাছ লাগানো হয়।</span></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> শুধু কাঠের জন্য বন দরকার মনে করবে না — বনের পরিবেশগত ভূমিকাই সবচেয়ে বড়। গাছের শিকড় মাটিকে আঁকড়ে ধরে মাটির ক্ষয় রোধ করে।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ২১৩–২৪৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

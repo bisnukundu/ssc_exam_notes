@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 58px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 16px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #2e6b41, #1d4d2b); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e8f4ec; }
+  .steps { display: flex; gap: 12px; align-items: stretch; }
+  .step { flex: 1; background: #e8f4ec; border-radius: 20px; padding: 18px 12px; text-align: center; }
+  .step .n { display: inline-block; background: #2e6b41; color: #ffffff; font-size: 26px; font-weight: bold;
+             width: 44px; height: 44px; line-height: 44px; border-radius: 50%; margin-bottom: 8px; }
+  .step b { display: block; font-size: 28px; color: #1d4d2b; margin-bottom: 4px; }
+  .step span { font-size: 23px; line-height: 1.45; color: #3a3a55; }
+  .arrow { align-self: center; font-size: 34px; color: #2e6b41; flex: 0 0 28px; text-align: center; }
+  .card { border-radius: 24px; padding: 24px 28px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .vs { display: flex; gap: 16px; }
+  .vs .v { flex: 1; border-radius: 16px; padding: 16px 18px; }
+  .vs .v b { display: block; font-size: 30px; margin-bottom: 4px; }
+  .vs .v span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .v-a { background: #e8f4ec; } .v-a b { color: #2e6b41; }
+  .v-b { background: #fdf3e0; } .v-b b { color: #9a6208; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #b9d9c0; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 28px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ফসল সম্পর্কিত কৃষি প্রযুক্তি (ইউনিট-০১)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌱</div>
+        <div>
+          <h2>কৃষি প্রযুক্তি কী?</h2>
+          <p>ফসল উৎপাদনে ব্যবহৃত আধুনিক জ্ঞান, যন্ত্রপাতি ও পদ্ধতি। উদ্দেশ্য: উৎপাদন বাড়ানো, খরচ কমানো, ফসলের মান ভালো করা ও পরিবেশ রক্ষা করা।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🌾 ভালো ফসলের ৬ ধাপ</h2>
+        <div class="steps">
+          <div class="step"><span class="n">১</span><b>জমি তৈরি</b><span>আগাছা পরিষ্কার, চাষ, মই, সমান করা</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">২</span><b>বীজ বপন</b><span>সঠিক সময়ে বপন করলে অনুকূল আবহাওয়া পায়</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">৩</span><b>সার প্রয়োগ</b><span>জৈব ও রাসায়নিক সার সুষমভাবে</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">৪</span><b>সেচ</b><span>প্রয়োজনমতো পানি দেওয়া</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">৫</span><b>আগাছা দমন</b><span>আগাছা সরিয়ে ফসলকে বাড়তে দেওয়া</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><span class="n">৬</span><b>পোকা দমন</b><span>আইপিএম পদ্ধতিতে</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-green" style="flex:1.25">
+        <h2>🧪 সার ২ ধরনের</h2>
+        <div class="vs">
+          <div class="v v-a"><b>জৈব সার</b><span>গোবর, কম্পোস্ট, সবুজ সার</span></div>
+          <div class="v v-b"><b>রাসায়নিক সার</b><span>ইউরিয়া, টিএসপি, এমওপি</span></div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>💧 সেচের ৪ পদ্ধতি</h2>
+        <div class="chips">
+          <span class="chip">প্লাবন সেচ</span>
+          <span class="chip">নালা সেচ</span>
+          <span class="chip">ছিটানো সেচ</span>
+          <span class="chip">ফোঁটা সেচ</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">🐛</div>
+        <p><b>আইপিএম — সমন্বিত বালাই ব্যবস্থাপনা:</b> জৈবিক, যান্ত্রিক ও রাসায়নিক পদ্ধতির সমন্বয়ে পোকা দমন করা হয়।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ১–১৮) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

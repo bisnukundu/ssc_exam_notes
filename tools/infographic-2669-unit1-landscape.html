@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 64px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #1b7a43, #14532d); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #e8f4ec; }
+  .badge { margin-left: auto; background: #f5c542; color: #16265c; border-radius: 999px;
+           padding: 14px 26px; font-size: 28px; font-weight: bold; white-space: nowrap; }
+
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #1b6b3a; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 27px; font-weight: bold; }
+  .plist { list-style: none; }
+  .plist li { font-size: 27px; line-height: 1.6; color: #3a3a55; }
+  .plist li::before { content: "✓ "; color: #1b6b3a; font-weight: bold; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>সুস্থ জীবনের জন্য শারীরিক শিক্ষা (ইউনিট-০১)</h1>
+    <p>SSC-2669 • শারীরিক শিক্ষা, স্বাস্থ্য বিজ্ঞান ও খেলাধুলা</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🏃</div>
+        <div>
+          <h2>শারীরিক শিক্ষা কাকে বলে?</h2>
+          <p>শরীরচর্চা, খেলাধুলা ও স্বাস্থ্যবিধির মাধ্যমে সুস্থ শরীর ও সুস্থ মন গড়ে তোলার শিক্ষা।</p>
+        </div>
+        <div class="badge">সর্বোচ্চ ২ সপ্তাহ</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1.15">
+        <h2>🎯 উদ্দেশ্য</h2>
+        <div class="chips">
+          <span class="chip">সুস্থ ও সবল দেহ</span>
+          <span class="chip">মানসিক বিকাশ</span>
+          <span class="chip">চরিত্র গঠন</span>
+          <span class="chip">শৃঙ্খলা</span>
+          <span class="chip">নেতৃত্বের গুণ</span>
+          <span class="chip">সামাজিক আচরণ</span>
+        </div>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <h2>💪 প্রয়োজনীয়তা</h2>
+        <ul class="plist">
+          <li>রোগ প্রতিরোধ ক্ষমতা বাড়ে</li>
+          <li>হৃৎপিণ্ড ও ফুসফুস শক্তিশালী হয়</li>
+          <li>মন প্রফুল্ল থাকে</li>
+          <li>পড়াশোনায় মনোযোগ বাড়ে</li>
+        </ul>
+      </div>
+      <div class="card c-orange" style="flex:1">
+        <h2>🏅 কীভাবে শেখা হয়?</h2>
+        <div class="chips">
+          <span class="chip">খেলাধুলা</span>
+          <span class="chip">ব্যায়াম</span>
+          <span class="chip">শরীরচর্চা</span>
+          <span class="chip">স্বাস্থ্যবিধি পালন</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> শারীরিক শিক্ষা মানে শুধু খেলাধুলা নয় — স্বাস্থ্যবিধি ও শৃঙ্খলাও এর অংশ। সুস্থ শরীর ছাড়া পড়াশোনা বা কাজে ভালো করা যায় না।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2669 বই (পৃ. ১–১০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

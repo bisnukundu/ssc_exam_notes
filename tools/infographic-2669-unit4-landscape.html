@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #00897b, #004d40); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #e0f2f1; }
+
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-teal { background: #e0f2f1; } .c-teal h2 { color: #00695c; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #1b6b3a; }
+
+  .check { list-style: none; }
+  .check li { font-size: 28px; line-height: 1.65; color: #3a3a55; }
+  .check li::before { content: "✅ "; }
+  .check li b { color: #16265c; }
+
+  .mini { border-radius: 16px; padding: 18px 22px; margin-top: 14px; }
+  .mini b { display: block; font-size: 30px; margin-bottom: 4px; }
+  .mini span { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .m-blue { background: #ffffff; } .m-blue b { color: #2d4a8a; }
+  .m-green { background: #ffffff; } .m-green b { color: #1b6b3a; }
+
+  .warn { background: #b71c1c; border-radius: 24px; padding: 22px 32px;
+          display: flex; align-items: center; gap: 22px; }
+  .warn .ico { font-size: 52px; }
+  .warn p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .warn b { color: #ffcdd2; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>স্বাস্থ্য বিজ্ঞান ও স্বাস্থ্যসেবা (ইউনিট-০৪)</h1>
+    <p>SSC-2669 • শারীরিক শিক্ষা, স্বাস্থ্য বিজ্ঞান ও খেলাধুলা</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🩺</div>
+        <div>
+          <h2>স্বাস্থ্য বিজ্ঞান কী?</h2>
+          <p>সুস্থ থাকার নিয়মকানুনের জ্ঞান। স্বাস্থ্যসেবা মানে সুস্থ থাকার ব্যবস্থা ও অসুস্থ হলে চিকিৎসা পাওয়ার ব্যবস্থা। রোগ হওয়ার আগেই সতর্ক থাকতে হয়।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-teal" style="flex:1.1">
+        <h2>🧼 ব্যক্তিগত স্বাস্থ্যরক্ষা</h2>
+        <ul class="check">
+          <li>প্রতিদিন <b>গোসল</b> করা</li>
+          <li><b>দাঁত মাজা</b> ও <b>নখ কাটা</b></li>
+          <li>পরিষ্কার <b>কাপড়</b> পরা</li>
+          <li>খাওয়ার আগে ও টয়লেটের পরে <b>সাবান দিয়ে হাত ধোয়া</b></li>
+        </ul>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <h2>🤒 সাধারণ স্বাস্থ্য সমস্যা</h2>
+        <div class="mini m-blue">
+          <b>যা হয়</b>
+          <span>সর্দি-জ্বর, পেটের অসুখ, চর্মরোগ, মাথাব্যথা</span>
+        </div>
+        <div class="mini m-green">
+          <b>প্রতিকার</b>
+          <span>বিশ্রাম, প্রচুর পানি পান, পুষ্টিকর খাবার, পরিষ্কার পরিবেশ — সমস্যা বেশি হলে চিকিৎসকের কাছে যাওয়া</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="warn" style="flex:1">
+        <div class="ico">⚠️</div>
+        <p><b>সাবধান:</b> অসুস্থ হলে নিজে নিজে ওষুধ খাবে না — চিকিৎসকের পরামর্শ ছাড়া ওষুধ খাওয়া উচিত নয়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2669 বই (পৃ. ৩২–৩৯) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

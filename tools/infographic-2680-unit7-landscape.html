@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #be185d, #7c3aed); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fce7f3; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-pink { background: #fdf2f8; } .c-pink h2 { color: #be185d; }
+  .pascal { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .prow { display: flex; gap: 10px; align-items: center; }
+  .prow .n { font-size: 22px; font-weight: bold; color: #9d174d; width: 70px; text-align: right; }
+  .num { width: 52px; height: 52px; border-radius: 50%; background: #be185d; color: #ffffff;
+         display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; }
+  .num.alt { background: #f9a8d4; color: #831843; }
+  .theorem { background: #fdf2f8; border-radius: 16px; padding: 18px 22px; text-align: center; }
+  .theorem b { display: block; font-size: 32px; color: #be185d; margin-bottom: 6px; }
+  .theorem span { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .facts { display: flex; flex-direction: column; gap: 12px; }
+  .fact { background: #f4f6fb; border-radius: 14px; padding: 14px 18px; font-size: 26px; line-height: 1.5; }
+  .fact b { color: #be185d; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>দ্বিপদী বিস্তৃতি (ইউনিট-০৭)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🔺</div>
+        <div>
+          <h2>দ্বিপদী বিস্তৃতি কী?</h2>
+          <p>(a + b)<sup>n</sup>-কে পদে পদে বিস্তৃত করে লেখা, যেমন (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>। n যত বড় হয়, হাতে গুণ করে বিস্তৃত করা তত কঠিন হয়; তাই দ্বিপদী উপপাদ্য ব্যবহার করা হয়।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🔺 প্যাসকেলের ত্রিভুজ — সহগের ছক</h2>
+        <div class="pascal">
+          <div class="prow"><span class="n">n = 0</span><span class="num">1</span></div>
+          <div class="prow"><span class="n">n = 1</span><span class="num">1</span><span class="num alt">1</span></div>
+          <div class="prow"><span class="n">n = 2</span><span class="num">1</span><span class="num alt">2</span><span class="num">1</span></div>
+          <div class="prow"><span class="n">n = 3</span><span class="num">1</span><span class="num alt">3</span><span class="num">3</span><span class="num alt">1</span></div>
+          <div class="prow"><span class="n">n = 4</span><span class="num">1</span><span class="num alt">4</span><span class="num">6</span><span class="num alt">4</span><span class="num">1</span></div>
+        </div>
+      </div>
+      <div class="card c-pink" style="flex:1.15">
+        <h2>📜 দ্বিপদী উপপাদ্য</h2>
+        <div class="theorem"><b>(a + b)<sup>n</sup> = C(n,0)a<sup>n</sup> + C(n,1)a<sup>n−1</sup>b + … + C(n,n)b<sup>n</sup></b><span>যেখানে C(n,r) = n! / (r!(n−r)!)</span></div>
+        <div class="facts" style="margin-top:16px">
+          <div class="fact"><b>মোট পদ:</b> (n + 1)টি</div>
+          <div class="fact"><b>সাধারণ পদ:</b> (r + 1) তম পদ = C(n,r) a<sup>n−r</sup> b<sup>r</sup></div>
+          <div class="fact"><b>(a − b)<sup>n</sup>-এ:</b> পদের চিহ্ন একান্তরভাবে + ও − হয়</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> (a + b)<sup>n</sup>-এর পদসংখ্যা (n + 1), n নয়। (a − b)<sup>n</sup>-এ প্রথম পদ ধনাত্মক, তারপর একান্তরভাবে ঋণাত্মক ও ধনাত্মক।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ১২৫–১৩৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

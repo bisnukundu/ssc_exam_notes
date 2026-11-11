@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #166534, #14532d); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #dcfce7; }
+  table { width: 100%; border-collapse: separate; border-spacing: 12px 0; }
+  th { background: #16265c; color: #f5c542; font-size: 30px; padding: 16px 10px;
+       border-radius: 14px 14px 0 0; }
+  td { background: #ffffff; font-size: 29px; padding: 16px 10px; text-align: center;
+       border-bottom: 3px solid #e0dbd0; }
+  td b { color: #2e6b41; }
+  .formula { flex: 1; background: #fdf3e0; border-radius: 24px; padding: 24px 32px;
+             display: flex; align-items: center; justify-content: center; gap: 26px; }
+  .formula .f { font-size: 40px; font-weight: bold; color: #9a6208; }
+  .formula .plus { font-size: 44px; font-weight: bold; color: #7a7a9a; }
+  .formula .ex { font-size: 27px; line-height: 1.5; color: #3a3a55; }
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; border-radius: 16px; padding: 18px 20px; }
+  .col b { display: block; font-size: 32px; margin-bottom: 4px; }
+  .col span { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .col-a { background: #e8eef8; } .col-a b { color: #2d4a8a; }
+  .col-b { background: #e8f4ec; } .col-b b { color: #2e6b41; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>উৎপাদন ও উৎপাদন ব্যয় (ইউনিট-০৫)</h1>
+    <p>SSC-2671 • অর্থনীতি</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🏭</div>
+        <div>
+          <h2>উৎপাদন কী?</h2>
+          <p>উপযোগ সৃষ্টি করাই উৎপাদন — যেমন কাঠ দিয়ে চেয়ার বানানো, ধান থেকে চাল তৈরি করা।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <table>
+        <tr><th>🌍 ভূমি</th><th>👷 শ্রম</th><th>💰 মূলধন</th><th>🎯 সংগঠন</th></tr>
+        <tr><td>পারিশ্রমিক: <b>খাজনা</b></td><td>পারিশ্রমিক: <b>মজুরি</b></td><td>পারিশ্রমিক: <b>সুদ</b></td><td>পারিশ্রমিক: <b>মুনাফা</b></td></tr>
+      </table>
+    </div>
+    <div class="row">
+      <div class="formula">
+        <div class="f">মোট ব্যয় = স্থির ব্যয় + পরিবর্তনশীল ব্যয়</div>
+        <div class="plus">|</div>
+        <div class="ex"><b>স্থির ব্যয়:</b> ঘরভাড়া, বেতন — উৎপাদন শূন্য হলেও দিতে হয়<br><b>পরিবর্তনশীল ব্যয়:</b> কাঁচামাল, বিদ্যুৎ বিল — উৎপাদনের সঙ্গে বাড়ে-কমে</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <div class="cols">
+          <div class="col col-a"><b>স্বল্পকাল</b><span>কিছু উপাদান স্থির থাকে — সব বদলানো যায় না</span></div>
+          <div class="col col-b"><b>দীর্ঘকাল</b><span>সব উপাদানই পরিবর্তন করা যায়</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2671 বই (পৃ. ৫৩–৬৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

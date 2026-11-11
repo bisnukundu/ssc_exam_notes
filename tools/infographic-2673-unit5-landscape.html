@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 14px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #b45309, #d97706); border-radius: 24px;
+            padding: 16px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 68px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fef3c7; }
+
+  .vs { flex: 1; border-radius: 24px; padding: 18px 28px; }
+  .vs h2 { font-size: 36px; margin-bottom: 10px; }
+  .vs p { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .vs p b { color: #1a1a2e; }
+  .v-a { background: #fef3c7; } .v-a h2 { color: #92400e; }
+  .v-b { background: #ffedd5; } .v-b h2 { color: #9a3412; }
+  .v-c { background: #e0f2fe; } .v-c h2 { color: #075985; }
+  .v-d { background: #dcfce7; } .v-d h2 { color: #166534; }
+
+  .badge { display: inline-block; background: #ffffff; border-radius: 999px;
+           padding: 6px 18px; font-size: 25px; font-weight: bold; margin-top: 10px; }
+
+  .card { border-radius: 24px; padding: 18px 30px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 16px 20px; }
+  .col b { display: block; font-size: 30px; color: #16265c; margin-bottom: 4px; }
+  .col span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>দেখার জন্য আলো (ইউনিট-০৫)</h1>
+    <p>SSC-2673 • বিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">💡</div>
+        <div>
+          <h2>আলো ছাড়া আমরা কিছু দেখতে পারি না</h2>
+          <p>আলো সরলরেখায় চলে। চোখও এক ধরনের লেন্সের মতো কাজ করে — চোখের লেন্স আলোকে রেটিনায় ফেলে, আর মস্তিষ্ক ছবি তৈরি করে।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="vs v-a">
+        <h2>🪞 প্রতিফলন</h2>
+        <p>আলো কোনো তলে পড়ে <b>ফিরে আসা</b>। আয়নায় নিজেকে দেখি প্রতিফলনের কারণে।</p>
+      </div>
+      <div class="vs v-b">
+        <h2>🥛 প্রতিসরণ</h2>
+        <p>আলো এক মাধ্যম থেকে অন্য মাধ্যমে গেলে <b>বেঁকে যাওয়া</b>। পানিতে ডোবানো লাঠি বাঁকা দেখায় প্রতিসরণের কারণে।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="vs v-c">
+        <h2>🔍 উত্তল লেন্স</h2>
+        <p>আলোকে <b>এক বিন্দুতে মিলিত</b> করে।</p>
+        <span class="badge">দীর্ঘদৃষ্টির চশমায় লাগে</span>
+      </div>
+      <div class="vs v-d">
+        <h2>🔎 অবতল লেন্স</h2>
+        <p>আলোকে <b>ছড়িয়ে দেয়</b>।</p>
+        <span class="badge">হ্রস্বদৃষ্টির চশমায় লাগে</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>👁️ চোখের ত্রুটি — জোড়া মিলিয়ে মনে রাখো</h2>
+        <div class="cols">
+          <div class="col"><b>হ্রস্বদৃষ্টি</b><span>দূরের জিনিস ঝাপসা দেখা যায় — অবতল লেন্সের চশমা লাগে।</span></div>
+          <div class="col"><b>দীর্ঘদৃষ্টি</b><span>কাছের জিনিস ঝাপসা দেখা যায় — উত্তল লেন্সের চশমা লাগে।</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">✏️</div>
+        <p><b>পরীক্ষার টিপস:</b> রশ্মি চিত্র আঁকার প্রশ্নে তীর চিহ্ন দিতে ভুলবে না। হ্রস্বদৃষ্টিতে অবতল, দীর্ঘদৃষ্টিতে উত্তল লেন্স — গুলিয়ে ফেলবে না।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2673 বই (পৃ. ৮৭–৯৭) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

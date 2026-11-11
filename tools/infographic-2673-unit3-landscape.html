@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #991b1b, #7f1d1d); border-radius: 24px;
+            padding: 24px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fee2e2; }
+
+  .stats { display: flex; gap: 18px; margin-top: 20px; }
+  .stat { flex: 1; background: #ffffff; border: 2px solid #fecaca; border-radius: 20px;
+          padding: 20px 14px; text-align: center; }
+  .stat b { display: block; font-size: 44px; color: #991b1b; }
+  .stat span { font-size: 25px; line-height: 1.4; color: #3a3a55; }
+
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-blue { background: #e0f2fe; } .c-blue h2 { color: #075985; }
+  .c-rose { background: #fff1f2; } .c-rose h2 { color: #9f1239; }
+
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; background: #ffffff; border-radius: 16px; padding: 18px 20px; }
+  .col b { display: block; font-size: 32px; margin-bottom: 4px; }
+  .col span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+
+  .blood { display: flex; gap: 16px; }
+  .b { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 18px 14px; text-align: center; }
+  .b .ico { font-size: 48px; }
+  .b b { display: block; font-size: 29px; color: #16265c; margin: 6px 0 4px; }
+  .b span { font-size: 24px; line-height: 1.4; color: #3a3a55; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.55; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>হৃদযন্ত্রের যত কথা (ইউনিট-০৩)</h1>
+    <p>SSC-2673 • বিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">❤️</div>
+        <div>
+          <h2>হৃৎপিণ্ড — শরীরের পাম্পযন্ত্র</h2>
+          <p>এটি সারাজীবন থামা ছাড়াই রক্ত পাম্প করে। সংকুচিত হয়ে রক্ত ধমনির মাধ্যমে শরীরের সব জায়গায় পাঠায়, আর শিরার মাধ্যমে রক্ত ফিরে আসে।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>৪টি</b><span>প্রকোষ্ঠ — দুটি অলিন্দ, দুটি নিলয়</span></div>
+      <div class="stat"><b>১২০/৮০</b><span>স্বাভাবিক রক্তচাপ</span></div>
+      <div class="stat"><b>A • B • AB • O</b><span>রক্তের ৪টি গ্রুপ</span></div>
+      <div class="stat"><b>O → সবাইকে</b><span>সর্বজনীন দাতা; AB → সবার গ্রহীতা</span></div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>🫀 ধমনি বনাম শিরা</h2>
+        <div class="cols">
+          <div class="col"><b style="color:#075985;">ধমনি</b><span>হৃৎপিণ্ড থেকে রক্ত নিয়ে যায়।</span></div>
+          <div class="col"><b style="color:#075985;">শিরা</b><span>রক্ত ফিরিয়ে আনে।</span></div>
+        </div>
+      </div>
+      <div class="card c-rose" style="flex:1.5">
+        <h2>🩸 রক্তের ৪ উপাদান</h2>
+        <div class="blood">
+          <div class="b"><div class="ico">🔴</div><b>লোহিত কণিকা</b><span>অক্সিজেন বহন করে</span></div>
+          <div class="b"><div class="ico">🛡️</div><b>শ্বেত কণিকা</b><span>রোগের সঙ্গে লড়ে</span></div>
+          <div class="b"><div class="ico">🟡</div><b>অনুচক্রিকা</b><span>রক্ত জমাট বাঁধায়</span></div>
+          <div class="b"><div class="ico">💛</div><b>প্লাজমা</b><span>রক্তের একটি উপাদান</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">⚠️</div>
+        <p><b>হৃদরোগের কারণ:</b> ধূমপান, অতিরিক্ত চর্বি, ব্যায়ামের অভাব, মানসিক চাপ। রক্তের কাজ: অক্সিজেন ও পুষ্টি পৌঁছে দেওয়া, কার্বন ডাই-অক্সাইড ও বর্জ্য বের করা, রোগ প্রতিরোধ করা।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2673 বই (পৃ. ৪৯–৭০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

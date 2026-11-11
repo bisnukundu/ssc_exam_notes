@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #6b21a8, #1e40af); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #f3e8ff; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-purple { background: #f5f3ff; } .c-purple h2 { color: #6b21a8; }
+  .numberline { position: relative; height: 96px; margin: 10px 20px 0; }
+  .line { position: absolute; left: 0; right: 0; top: 46px; height: 8px; background: #cbd5e1; border-radius: 4px; }
+  .line-arrow { position: absolute; right: -14px; top: 32px; font-size: 44px; color: #6b21a8; }
+  .region { position: absolute; left: 62%; right: 0; top: 46px; height: 8px; background: #6b21a8; border-radius: 4px; }
+  .tick { position: absolute; top: 30px; width: 4px; height: 36px; background: #16265c; }
+  .tick b { position: absolute; top: 40px; left: 50%; transform: translateX(-50%); font-size: 26px; color: #16265c; }
+  .region-cap { position: absolute; left: 62%; right: 0; top: 0; text-align: center;
+                font-size: 30px; font-weight: bold; color: #6b21a8; }
+  .rules { display: flex; gap: 16px; }
+  .rule { flex: 1; border-radius: 16px; padding: 13px 18px; text-align: center; }
+  .rule b { display: block; font-size: 30px; margin-bottom: 6px; }
+  .rule span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .r-ok { background: #dcfce7; } .r-ok b { color: #166534; }
+  .r-flip { background: #fee2e2; } .r-flip b { color: #991b1b; }
+  .abs { background: #f5f3ff; border-radius: 16px; padding: 14px 22px; text-align: center; }
+  .abs b { display: block; font-size: 34px; color: #6b21a8; margin-bottom: 6px; }
+  .abs span { font-size: 26px; color: #3a3a55; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>অসমতা (ইউনিট-০৪)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">⚖️</div>
+        <div>
+          <h2>অসমতা কী?</h2>
+          <p>অসমতা হলো দুটি রাশির মধ্যে ছোট-বড় সম্পর্ক, যেমন x + 3 &gt; 7 বা 2x − 1 &lt; 5। অসমতার সমাধান হলো চলকের এমন সব মান যা অসমতাটিকে সত্য করে — এগুলো সাধারণত একটি ব্যবধি হয়, যেমন x &gt; 4।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1.5">
+        <h2>📏 সংখ্যারেখায় সমাধান — x &gt; 4</h2>
+        <div class="numberline">
+          <div class="region-cap">x &gt; 4 এর অঞ্চল →</div>
+          <div class="line"></div>
+          <div class="region"></div>
+          <div class="line-arrow">▶</div>
+          <div class="tick" style="left:10%"><b>−2</b></div>
+          <div class="tick" style="left:36%"><b>0</b></div>
+          <div class="tick" style="left:62%"><b>4</b></div>
+        </div>
+      </div>
+      <div class="card c-purple" style="flex:1">
+        <h2>🎯 পরম মানের অসমতা</h2>
+        <div class="abs"><b>|x| &lt; 2 মানে −2 &lt; x &lt; 2</b><span>আর |x| &gt; 2 মানে x &lt; −2 অথবা x &gt; 2</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🔑 চিহ্নের নিয়ম</h2>
+        <div class="rules">
+          <div class="rule r-ok"><b>যোগ / বিয়োগ</b><span>দুই পক্ষে একই সংখ্যা যোগ বা বিয়োগ করলে চিহ্ন বদলায় না</span></div>
+          <div class="rule r-ok"><b>ধনাত্মক দিয়ে গুণ / ভাগ</b><span>চিহ্ন বদলায় না</span></div>
+          <div class="rule r-flip"><b>⚠️ ঋণাত্মক দিয়ে গুণ / ভাগ</b><span>চিহ্ন উল্টে যায়: −2x &lt; 6 হলে x &gt; −3</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>সাধারণ ভুল:</b> ঋণাত্মক সংখ্যা দিয়ে গুণ বা ভাগ করেও চিহ্ন না বদলানো। সমাধান বের করার পর একটি মান বসিয়ে যাচাই করবে — যেমন x &gt; 4-এর জন্য x = 5 বসিয়ে দেখবে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ৮৩–৯৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

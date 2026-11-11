@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-red { background: #fdecea; } .c-red h2 { color: #b03030; }
+
+  .nuts { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .nut { background: #ffffff; border-radius: 16px; padding: 14px 18px; }
+  .nut b { display: block; font-size: 29px; color: #16265c; }
+  .nut span { font-size: 24px; color: #4a4a6a; }
+
+  .flow { display: flex; align-items: center; gap: 8px; }
+  .flow .step { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 14px 8px; text-align: center; }
+  .flow .step b { display: block; font-size: 28px; color: #16265c; margin-bottom: 2px; }
+  .flow .step span { font-size: 23px; line-height: 1.35; color: #4a4a6a; }
+  .flow .arr { font-size: 34px; color: #2d4a8a; flex-shrink: 0; }
+
+  .vit { display: flex; gap: 14px; }
+  .vit .v { flex: 1; background: #ffffff; border-radius: 16px; padding: 14px 16px; text-align: center; }
+  .vit .v b { display: block; font-size: 30px; color: #b03030; margin-bottom: 2px; }
+  .vit .v span { font-size: 24px; color: #4a4a6a; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>খাদ্য, পুষ্টি ও পরিপাক (ইউনিট-০৫)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-orange" style="flex:1">
+        <h2>🍽️ খাদ্যের ৬টি উপাদান</h2>
+        <div class="nuts">
+          <div class="nut"><b>শর্করা</b><span>শক্তি দেয়</span></div>
+          <div class="nut"><b>আমিষ</b><span>দেহ গঠন ও ক্ষয়পূরণ</span></div>
+          <div class="nut"><b>স্নেহ</b><span>শক্তি দেয়</span></div>
+          <div class="nut"><b>ভিটামিন</b><span>দেহ সুস্থ রাখে</span></div>
+          <div class="nut"><b>খনিজ লবণ</b><span>দেহ সুস্থ রাখে</span></div>
+          <div class="nut"><b>পানি</b><span>খাদ্যের উপাদান</span></div>
+        </div>
+      </div>
+      <div class="card c-green" style="flex:1">
+        <h2>🧪 পরিপাকের এনজাইম</h2>
+        <div class="nuts">
+          <div class="nut"><b>অ্যামাইলেজ</b><span>শর্করা ভাঙে (মুখে)</span></div>
+          <div class="nut"><b>পেপসিন</b><span>আমিষ ভাঙে (পাকস্থলী)</span></div>
+          <div class="nut"><b>লাইপেজ</b><span>স্নেহ ভাঙে</span></div>
+          <div class="nut"><b>পিত্তরস</b><span>পরিপাক সম্পূর্ণ করে (ক্ষুদ্রান্ত্রে)</span></div>
+          <div class="nut"><b>অগ্ন্যাশয়</b><span>এনজাইম দেয়</span></div>
+          <div class="nut"><b>ভিলাই</b><span>শোষণের ক্ষেত্রফল বাড়ায়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>🫄 পরিপাকতন্ত্রের পথ</h2>
+        <div class="flow">
+          <div class="step"><b>মুখ</b><span>লালার অ্যামাইলেজ শর্করা ভাঙা শুরু করে</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>অন্ননালি</b><span>পরিপাকতন্ত্রের অংশ</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>পাকস্থলী</b><span>পেপসিন আমিষ ভাঙে</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>ক্ষুদ্রান্ত্র</b><span>পরিপাক সম্পূর্ণ ও শোষণ হয়</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>বৃহদন্ত্র</b><span>পরিপাকতন্ত্রের অংশ</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-red" style="flex:1">
+        <h2>⚠️ ভিটামিনের অভাবে রোগ</h2>
+        <div class="vit">
+          <div class="v"><b>ভিটামিন C</b><span>অভাবে স্কার্ভি</span></div>
+          <div class="v"><b>ভিটামিন D</b><span>অভাবে রিকেটস</span></div>
+          <div class="v"><b>ভিটামিন A</b><span>অভাবে রাতকানা</span></div>
+          <div class="v"><b>আয়োডিন</b><span>অভাবে গলগণ্ড</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> পাকস্থলীতে শর্করা পরিপাক হয় না — মুখে শুরু হয়, ক্ষুদ্রান্ত্রে শেষ হয়। সুষম খাদ্য মানে সব উপাদান সঠিক পরিমাণে থাকা।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ৫৩–৭৩) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

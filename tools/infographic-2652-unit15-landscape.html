@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 64px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .block { flex: 1; background: #fffdf5; border: 2px solid #e8dcc0; border-radius: 24px; padding: 26px 32px; }
+  .block h2 { font-size: 32px; color: #16265c; margin-bottom: 14px; }
+  .parts { display: flex; gap: 14px; }
+  .part { flex: 1; border-radius: 16px; padding: 18px 20px; }
+  .part b { display: block; font-size: 28px; margin-bottom: 6px; }
+  .part span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .pt-topic { background: #e8eef8; } .pt-topic b { color: #2d4a8a; }
+  .pt-support { background: #e8f4ec; } .pt-support b { color: #2e6b41; }
+  .pt-end { background: #fdf3e0; } .pt-end b { color: #9a6208; }
+  .block .note { margin-top: 14px; font-size: 25px; color: #6b6b85; text-align: center; }
+
+  .rule { flex: 1; border-radius: 24px; padding: 22px 28px; text-align: center; }
+  .rule b { display: block; font-size: 34px; margin-bottom: 4px; }
+  .rule span { font-size: 25px; color: #3a3a55; }
+  .r-blue { background: #e8eef8; } .r-blue b { color: #2d4a8a; }
+  .r-green { background: #e8f4ec; } .r-green b { color: #2e6b41; }
+  .r-orange { background: #fdf3e0; } .r-orange b { color: #9a6208; }
+
+  .topics { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 20px 30px; }
+  .topics h2 { font-size: 30px; color: #16265c; margin-bottom: 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #f4f6fb; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 26px; font-weight: bold; color: #16265c; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Paragraphs (Unit-15)</h1>
+    <p>SSC-2652 • English Second Paper • Writing — 8 marks</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="block" style="flex:1">
+        <h2>📝 One paragraph, one main idea — 100–150 words</h2>
+        <div class="parts">
+          <div class="part pt-topic"><b>1. Topic sentence</b><span>The first sentence gives the main idea.</span></div>
+          <div class="part pt-support"><b>2. Supporting sentences</b><span>Details, examples and reasons — joined with linking words (firstly, moreover, finally).</span></div>
+          <div class="part pt-end"><b>3. Concluding sentence</b><span>Ends the paragraph.</span></div>
+        </div>
+        <p class="note">Do not break it into parts — write it as a single paragraph.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="rule r-blue"><b>Unity</b><span>Only one main idea — no unrelated ideas.</span></div>
+      <div class="rule r-green"><b>Coherence</b><span>Sentences follow a clear order.</span></div>
+      <div class="rule r-orange"><b>Length</b><span>About 100–150 words.</span></div>
+    </div>
+
+    <div class="row">
+      <div class="topics" style="flex:1">
+        <h2>📌 Common topics</h2>
+        <div class="chips">
+          <span class="chip">Tree Plantation</span>
+          <span class="chip">A Moonlit Night</span>
+          <span class="chip">Your School</span>
+          <span class="chip">Traffic Jam</span>
+          <span class="chip">The Value of Time</span>
+          <span class="chip">A Rainy Day</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 171–178) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .vs-card { flex: 1; border-radius: 24px; padding: 28px 32px; text-align: center; }
+  .vs-card .ico { font-size: 64px; }
+  .vs-card h2 { font-size: 40px; margin: 10px 0 10px; }
+  .vs-card p { font-size: 27px; line-height: 1.55; color: #3a3a55; }
+  .v-blue { background: #e8eef8; } .v-blue h2 { color: #2d4a8a; }
+  .v-green { background: #e8f4ec; } .v-green h2 { color: #2e6b41; }
+  .vs-badge { flex: 0 0 120px; align-self: center; background: #16265c; color: #f5c542;
+              font-size: 44px; font-weight: bold; text-align: center; border-radius: 50%;
+              width: 120px; height: 120px; line-height: 120px; }
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .hdi { display: flex; gap: 16px; }
+  .hdi .h { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 18px 14px; text-align: center; }
+  .hdi .h b { display: block; font-size: 32px; color: #16265c; margin-bottom: 4px; }
+  .hdi .h span { font-size: 25px; color: #3a3a55; }
+  .banner { background: linear-gradient(120deg, #0d9488, #115e59); border-radius: 24px;
+            padding: 24px 32px; display: flex; align-items: center; gap: 24px; }
+  .banner .ico { font-size: 60px; }
+  .banner h2 { font-size: 36px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 27px; line-height: 1.5; color: #ccfbf1; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>অর্থনৈতিক প্রবৃদ্ধি ও উন্নয়ন (ইউনিট-১০)</h1>
+    <p>SSC-2671 • অর্থনীতি</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="vs-card v-blue">
+        <div class="ico">📊</div>
+        <h2>প্রবৃদ্ধি</h2>
+        <p>জাতীয় আয় ও মাথাপিছু আয় বাড়া — এটি সংখ্যার বিষয়।</p>
+      </div>
+      <div class="vs-badge">VS</div>
+      <div class="vs-card v-green">
+        <div class="ico">🌍</div>
+        <h2>উন্নয়ন</h2>
+        <p>আয় বাড়ার সঙ্গে জীবনযাত্রার মান ভালো হওয়া — শিক্ষা, স্বাস্থ্য, পানি, কর্মসংস্থান।</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>📏 মানব উন্নয়ন সূচক (HDI) — উপাদান ৩টি</h2>
+        <div class="hdi">
+          <div class="h"><b>💰 আয়</b><span>মাথাপিছু আয়</span></div>
+          <div class="h"><b>📚 শিক্ষা</b><span>শিক্ষার মান ও সুযোগ</span></div>
+          <div class="h"><b>❤️ স্বাস্থ্য</b><span>আয়ু ও সুস্থতা</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌱</div>
+        <div>
+          <h2>টেকসই উন্নয়ন কী?</h2>
+          <p>এমন উন্নয়ন, যা পরিবেশ নষ্ট না করে ভবিষ্যৎ প্রজন্মের প্রয়োজন মেটাতে পারে। প্রবৃদ্ধি ছাড়া উন্নয়ন সম্ভব নয়, কিন্তু প্রবৃদ্ধি মানেই উন্নয়ন নয়।</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2671 বই (পৃ. ১৩৪–১৪৫) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #1e3a8a, #0f766e); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #dbeafe; }
+  .solids { display: flex; gap: 16px; }
+  .solid { flex: 1; border-radius: 20px; padding: 14px 16px; text-align: center; }
+  .solid .glyph { font-size: 56px; line-height: 1.1; }
+  .solid h3 { font-size: 30px; margin: 8px 0 10px; }
+  .solid .fv { background: rgba(255,255,255,0.85); border-radius: 12px; padding: 10px 8px;
+               font-size: 26px; font-weight: bold; margin-top: 8px; }
+  .solid .fv span { display: block; font-size: 23px; font-weight: normal; color: #4a4a6a; margin-top: 2px; }
+  .s1 { background: #dbeafe; } .s1 h3 { color: #1e40af; } .s1 .fv { color: #1e40af; }
+  .s2 { background: #dcfce7; } .s2 h3 { color: #166534; } .s2 .fv { color: #166534; }
+  .s3 { background: #fef3c7; } .s3 h3 { color: #92400e; } .s3 .fv { color: #92400e; }
+  .s4 { background: #ffedd5; } .s4 h3 { color: #9a3412; } .s4 .fv { color: #9a3412; }
+  .s5 { background: #ede9fe; } .s5 h3 { color: #6d28d9; } .s5 .fv { color: #6d28d9; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .defs { display: flex; gap: 16px; }
+  .def { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 13px 20px; text-align: center; }
+  .def b { display: block; font-size: 30px; color: #1e3a8a; margin-bottom: 6px; }
+  .def span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ঘন জ্যামিতি (ইউনিট-১২)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🧊</div>
+        <div>
+          <h2>ঘন জ্যামিতি কী?</h2>
+          <p>ঘন জ্যামিতি ত্রিমাত্রিক বস্তু নিয়ে আলোচনা করে। ঘনক, আয়তঘনক, বেলন, শঙ্কু ও গোলকের আয়তন ও পৃষ্ঠতলের ক্ষেত্রফল বের করাই এই Unit-এর মূল কাজ।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="solids" style="flex:1">
+        <div class="solid s1"><div class="glyph">⬛</div><h3>ঘনক</h3><div class="fv">আয়তন = a<sup>3</sup><span>ক্ষেত্রফল = 6a<sup>2</sup></span></div></div>
+        <div class="solid s2"><div class="glyph">🧱</div><h3>আয়তঘনক</h3><div class="fv">আয়তন = l × b × h<span>ক্ষেত্রফল = 2(lb + bh + hl)</span></div></div>
+        <div class="solid s3"><div class="glyph">🥫</div><h3>বেলন</h3><div class="fv">আয়তন = πr<sup>2</sup>h<span>বক্রতল = 2πrh</span></div></div>
+        <div class="solid s4"><div class="glyph">🔺</div><h3>শঙ্কু</h3><div class="fv">আয়তন = (1/3)πr<sup>2</sup>h<span>বেলনের এক-তৃতীয়াংশ</span></div></div>
+        <div class="solid s5"><div class="glyph">⚽</div><h3>গোলক</h3><div class="fv">আয়তন = (4/3)πr<sup>3</sup><span>ক্ষেত্রফল = 4πr<sup>2</sup></span></div></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>📏 দুটি মৌলিক ধারণা</h2>
+        <div class="defs">
+          <div class="def"><b>আয়তন</b><span>বস্তুটি কতটুকু জায়গা দখল করে — ঘন এককে মাপা হয়</span></div>
+          <div class="def"><b>পৃষ্ঠতলের ক্ষেত্রফল</b><span>বাইরের তলের মোট ক্ষেত্রফল — বর্গ এককে মাপা হয়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>সাধারণ ভুল:</b> ব্যাস দেওয়া থাকলে ব্যাসার্ধ = ব্যাস/2 করে নেবে। শঙ্কুর আয়তনে (1/3) গুণ করতে হয়, বেলনের আয়তনে হয় না। ঘনকের আয়তনে a<sup>3</sup> আর ক্ষেত্রফলে 6a<sup>2</sup> — ঘাত ও সহগ গুলিয়ে ফেলবে না।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ২০১–২২২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

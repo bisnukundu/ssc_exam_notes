@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 58px; color: #f5c542; line-height: 1.15; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { border-radius: 24px; padding: 24px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #f2f6ff; }
+  .card { border-radius: 24px; padding: 24px 30px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .card h3 { font-size: 32px; margin-bottom: 6px; }
+  .card p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .c-blue { background: #e8eef8; } .c-blue h2, .c-blue h3 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2, .c-green h3 { color: #2e6b41; }
+  .c-purple { background: #f8e8f0; } .c-purple h2, .c-purple h3 { color: #8b2252; }
+  .c-orange { background: #fdf3e0; } .c-orange h2, .c-orange h3 { color: #9a6208; }
+  .c-red { background: #fdecec; } .c-red h2, .c-red h3 { color: #9a1c1c; }
+  .c-teal { background: #e0f2f1; } .c-teal h2, .c-teal h3 { color: #0f5f5c; }
+  .c-yellow { background: #fff8e1; } .c-yellow h2, .c-yellow h3 { color: #7a5c00; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2, .c-white h3 { color: #16265c; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 27px; font-weight: bold; }
+  .mini { flex: 1; border-radius: 20px; padding: 20px 22px; }
+  .mini h3 { font-size: 32px; margin-bottom: 6px; }
+  .mini p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .warn { background: #9a1c1c; border-radius: 24px; padding: 20px 32px;
+          display: flex; align-items: center; gap: 22px; }
+  .warn .ico { font-size: 52px; }
+  .warn p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .warn b { color: #ffd166; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+  .compact .wrap { padding-top: 16px; }
+  .compact .row { margin-top: 14px; }
+  .compact .card { padding: 18px 26px; }
+  .compact .banner { padding: 18px 30px; }
+  .compact .tip, .compact .warn { padding: 16px 28px; }
+  .compact .footer { padding: 10px 0 10px; }
+  .compact .header { padding: 18px 60px 16px; }
+  .timeline { position: relative; display: flex; gap: 14px; margin-top: 34px; }
+  .timeline::before { content: ""; position: absolute; top: -16px; left: 30px; right: 30px;
+                      height: 6px; background: #c94b4b; border-radius: 3px; }
+  .titem { flex: 1; background: #ffffff; border: 2px solid #e0dbd0; border-radius: 18px;
+           padding: 18px 14px; text-align: center; position: relative; }
+  .titem::before { content: ""; position: absolute; top: -26px; left: 50%; margin-left: -11px;
+                   width: 22px; height: 22px; border-radius: 50%; background: #c94b4b;
+                   border: 4px solid #ffffff; box-shadow: 0 0 0 2px #c94b4b; }
+  .titem b { display: block; font-size: 34px; color: #9a1c1c; margin-bottom: 4px; }
+  .titem span { font-size: 24px; line-height: 1.4; color: #3a3a55; }
+  .steps { display: flex; align-items: stretch; gap: 8px; }
+  .step { flex: 1; border-radius: 18px; padding: 18px 16px; text-align: center; }
+  .step .n { display: inline-block; background: #16265c; color: #ffffff; font-size: 26px;
+             font-weight: bold; width: 44px; height: 44px; line-height: 44px;
+             text-align: center; border-radius: 50%; margin-bottom: 8px; }
+  .step b { display: block; font-size: 30px; color: #16265c; margin-bottom: 4px; }
+  .step span { font-size: 24px; line-height: 1.45; color: #3a3a55; }
+  .arrow { align-self: center; font-size: 44px; color: #16265c; flex: 0 0 auto; }
+  .layers { display: flex; flex-direction: column; gap: 12px; }
+  .layer { border-radius: 16px; padding: 14px 24px; text-align: center; }
+  .layer b { font-size: 30px; }
+  .layer span { font-size: 25px; color: #3a3a55; }
+  .bigstat { text-align: center; }
+  .bigstat b { display: block; font-size: 96px; line-height: 1; color: #2d4a8a; }
+  .bigstat span { font-size: 28px; color: #3a3a55; }
+  .numgrid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 14px; }
+  .numgrid .nc { background: #f4f6fb; border-radius: 16px; padding: 16px 14px; }
+  .numgrid .nc b { display: block; font-size: 29px; color: #16265c; margin-bottom: 4px; }
+  .numgrid .nc span { font-size: 24px; line-height: 1.45; color: #3a3a55; }
+  .numgrid .nc .n { display: inline-block; background: #9a1c1c; color: #ffffff; font-size: 22px;
+                    font-weight: bold; width: 34px; height: 34px; line-height: 34px;
+                    text-align: center; border-radius: 50%; margin-right: 8px; }
+
+</style>
+</head>
+<body class="compact">
+  <div class="header">
+    <h1>সামাজিক পরিবর্তন (ইউনিট-১৪)</h1>
+    <p>SSC-2681 • বাংলাদেশ ও বিশ্বপরিচয়</p>
+  </div>
+
+  <div class="wrap">
+
+    <div class="row">
+      <div class="banner" style="flex:1; background: linear-gradient(120deg, #5c2d91, #0f5f8a);">
+        <div class="ico">🔄</div>
+        <div>
+          <h2>সামাজিক পরিবর্তন কাকে বলে?</h2>
+          <p>সমাজ স্থির থাকে না; সময়ের সঙ্গে সমাজের কাঠামো, মূল্যবোধ, আচরণ ও জীবনযাত্রায় পরিবর্তন আসে — একেই সামাজিক পরিবর্তন বলে। পরিবর্তনকে বুঝে সঠিক দিকে পরিচালিত করা জরুরি।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1.5">
+        <h2>⚙️ পরিবর্তনের ৬ কারণ</h2>
+        <div class="chips">
+          <span class="chip">📚 শিক্ষা</span>
+          <span class="chip">💻 প্রযুক্তি</span>
+          <span class="chip">🏙️ নগরায়ণ</span>
+          <span class="chip">🏭 শিল্পায়ন</span>
+          <span class="chip">📡 যোগাযোগ</span>
+          <span class="chip">💹 অর্থনৈতিক উন্নয়ন</span>
+        </div>
+        <p style="margin-top:12px;"><b>নগরায়ণ:</b> গ্রাম থেকে শহরে মানুষের আগমন ও শহরের বিস্তার।</p>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <h2>🎓 প্রধান চালিকাশক্তি</h2>
+        <p><b>শিক্ষা</b> — শিক্ষার প্রসারই পরিবর্তনের প্রধান চালিকাশক্তি হিসেবে কাজ করে।</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>✅ ইতিবাচক পরিবর্তন</h2>
+        <div class="chips">
+          <span class="chip">শিক্ষার প্রসার</span>
+          <span class="chip">নারীশিক্ষা</span>
+          <span class="chip">স্বাস্থ্যসেবার উন্নতি</span>
+        </div>
+      </div>
+      <div class="card c-red" style="flex:1">
+        <h2>⚠️ নেতিবাচক দিক</h2>
+        <div class="chips">
+          <span class="chip">যৌথ পরিবার ভেঙে যাওয়া</span>
+          <span class="chip">পরিবেশ দূষণ</span>
+          <span class="chip">সামাজিক বন্ধন দুর্বল হওয়া</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার টিপস:</b> সব পরিবর্তনকে ভালো মনে করা ভুল — পরিবর্তনের ইতিবাচক ও নেতিবাচক দুই দিকই লিখতে হয়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2681 বই (পৃ. ২২১–২৩০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

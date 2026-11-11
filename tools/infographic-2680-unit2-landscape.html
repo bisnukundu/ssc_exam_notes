@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #3730a3, #6d28d9); border-radius: 24px;
+            padding: 16px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 26px; line-height: 1.45; color: #ede9fe; }
+  .card { border-radius: 24px; padding: 16px 30px; }
+  .card h2 { font-size: 36px; margin-bottom: 10px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-indigo { background: #eef2ff; } .c-indigo h2 { color: #3730a3; }
+  .c-amber { background: #fffbeb; } .c-amber h2 { color: #92400e; }
+  .formulas { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .f { background: #f4f6fb; border-radius: 16px; padding: 10px 16px; text-align: center; }
+  .f b { display: block; font-size: 28px; color: #3730a3; margin-bottom: 4px; }
+  .f span { font-size: 25px; color: #3a3a55; }
+  .f.wide { grid-column: span 1; }
+  .methods { display: flex; gap: 16px; }
+  .m { flex: 1; background: #ffffff; border-radius: 16px; padding: 10px 18px; }
+  .m b { display: block; font-size: 30px; color: #3730a3; margin-bottom: 6px; }
+  .m span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .theorem { background: #fffbeb; border: 2px solid #f5c542; border-radius: 16px;
+             padding: 13px 22px; text-align: center; }
+  .theorem b { display: block; font-size: 32px; color: #92400e; margin-bottom: 6px; }
+  .theorem span { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>বীজগাণিতিক রাশি (ইউনিট-০২)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🧮</div>
+        <div>
+          <h2>বহুপদ কী?</h2>
+          <p>যে রাশিতে শুধু x-এর পূর্ণসংখ্যা ঘাত থাকে, তাকে বহুপদ বলে। বহুপদের মাত্রা = চলকের সর্বোচ্চ ঘাত। যেমন 3x<sup>3</sup> + 2x-এর মাত্রা 3। উৎপাদকে বিশ্লেষণ মানে রাশিকে গুণনীয়কের গুণফল আকারে লেখা — x<sup>2</sup> − 9 = (x − 3)(x + 3)।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>📐 গুরুত্বপূর্ণ সূত্র</h2>
+        <div class="formulas">
+          <div class="f"><b>(a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></b><span>বর্গের সূত্র</span></div>
+          <div class="f"><b>(a − b)<sup>2</sup> = a<sup>2</sup> − 2ab + b<sup>2</sup></b><span>বর্গের সূত্র</span></div>
+          <div class="f"><b>a<sup>2</sup> − b<sup>2</sup> = (a − b)(a + b)</b><span>বর্গের অন্তর</span></div>
+          <div class="f"><b>a<sup>3</sup> + b<sup>3</sup> = (a + b)(a<sup>2</sup> − ab + b<sup>2</sup>)</b><span>ঘনের যোগফল</span></div>
+          <div class="f"><b>a<sup>3</sup> − b<sup>3</sup> = (a − b)(a<sup>2</sup> + ab + b<sup>2</sup>)</b><span>ঘনের অন্তর</span></div>
+          <div class="f"><b>x<sup>2</sup> + 5x + 6 = (x + 2)(x + 3)</b><span>মধ্যপদ বিভাজন</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-indigo" style="flex:1.35">
+        <h2>🔧 উৎপাদকে বিশ্লেষণের পদ্ধতি</h2>
+        <div class="methods">
+          <div class="m"><b>১. সাধারণ উৎপাদক</b><span>সব পদে থাকা উৎপাদক বের করা</span></div>
+          <div class="m"><b>২. সূত্র প্রয়োগ</b><span>উপরের সূত্রগুলো দিয়ে ভাঙা</span></div>
+          <div class="m"><b>৩. মধ্যপদ বিভাজন</b><span>মাঝের পদকে দুই ভাগে ভাগ করা</span></div>
+        </div>
+      </div>
+      <div class="card c-amber" style="flex:1">
+        <h2>📜 ভাগশেষ উপপাদ্য</h2>
+        <div class="theorem"><b>f(x)-কে (x − a) দিয়ে ভাগ করলে ভাগশেষ f(a)</b><span>f(a) = 0 হলে (x − a), f(x)-এর একটি উৎপাদক।</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>সাধারণ ভুল:</b> (a − b)<sup>2</sup>-এর সূত্রে মাঝের চিহ্ন বিয়োগ হয় — এটাই সবচেয়ে বেশি ভুল হয়। উৎপাদক ঠিক হয়েছে কি না গুণ করে যাচাই করবে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ৩১–৫৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

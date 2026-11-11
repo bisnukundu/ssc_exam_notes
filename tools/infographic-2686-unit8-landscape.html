@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 58px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #7e22ce, #4c1d95); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #f3e8ff; }
+  .card { border-radius: 24px; padding: 20px 26px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-pink { background: #fdf2f8; } .c-pink h2 { color: #9d174d; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .card .ico { font-size: 56px; }
+  .card ul { list-style: none; }
+  .card li { font-size: 26px; line-height: 1.65; color: #3a3a55; padding-left: 30px; position: relative; }
+  .card li::before { content: "✓"; position: absolute; left: 0; font-weight: bold; }
+  .c-green li::before { color: #2e6b41; }
+  .c-pink li::before { color: #9d174d; }
+  .c-orange li::before { color: #9a6208; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 8px 18px; font-size: 25px; font-weight: bold; }
+  .tipcard { border-radius: 20px; padding: 20px 24px; }
+  .tipcard b { display: block; font-size: 30px; margin-bottom: 6px; }
+  .tipcard p { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .t1 { background: #e8f4ec; } .t1 b { color: #2e6b41; }
+  .t2 { background: #fdf3e0; } .t2 b { color: #9a6208; }
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 28px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>কৃষিজ উৎপাদন: সবজি, ফুল, ফল চাষ (ইউনিট-০৮)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌻</div>
+        <div>
+          <h2>উদ্যান ফসল চাষ কী?</h2>
+          <p>সবজি, ফুল ও ফল চাষকে একসঙ্গে উদ্যান ফসল চাষ বলে। বাড়ির আঙিনায় সবজি চাষ করলে পরিবারের পুষ্টি মেটে ও খরচ বাঁচে।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <div class="ico">🥬</div>
+        <h2>সবজি চাষ</h2>
+        <ul>
+          <li>বেড তৈরি ও বীজতলা</li>
+          <li>চারা রোপণ</li>
+          <li>মাচা, সেচ ও আগাছা দমন</li>
+        </ul>
+        <div class="chips" style="margin-top:12px;">
+          <span class="chip">বেগুন</span><span class="chip">টমেটো</span><span class="chip">লাউ</span><span class="chip">ঢেঁড়স</span>
+        </div>
+      </div>
+      <div class="card c-pink" style="flex:1">
+        <div class="ico">🌹</div>
+        <h2>ফুল চাষ</h2>
+        <ul>
+          <li>সৌন্দর্য ও আয়ের উৎস</li>
+          <li>বাণিজ্যিকভাবে লাভজনক</li>
+        </ul>
+        <div class="chips" style="margin-top:12px;">
+          <span class="chip">গাঁদা</span><span class="chip">গোলাপ</span><span class="chip">রজনীগন্ধা</span>
+        </div>
+      </div>
+      <div class="card c-orange" style="flex:1">
+        <div class="ico">🥭</div>
+        <h2>ফল চাষ</h2>
+        <ul>
+          <li>গর্ত তৈরি ও চারা রোপণ</li>
+          <li>ছাঁটাই ও সার প্রয়োগ</li>
+          <li>ফল সংগ্রহ</li>
+        </ul>
+        <div class="chips" style="margin-top:12px;">
+          <span class="chip">আম</span><span class="chip">কলা</span><span class="chip">পেঁপে</span><span class="chip">লিচু</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tipcard t1" style="flex:1">
+        <b>🎋 মাচা কেন দরকার?</b>
+        <p>লাউ, শিম, করলার মতো লতানো সবজির জন্য মাচা দরকার।</p>
+      </div>
+      <div class="tipcard t2" style="flex:1">
+        <b>✂️ ছাঁটাইয়ের উপকার</b>
+        <p>ফল গাছের অপ্রয়োজনীয় ডাল কেটে দিলে আলো-বাতাস বাড়ে ও ফলন ভালো হয়।</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> বীজতলায় বেশি ঘন করে বীজ বুনবে না — এতে চারা দুর্বল হয়। ফল গাছ রোপণের পর যত্ন নিতে হয়।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ১৩৭–১৬৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

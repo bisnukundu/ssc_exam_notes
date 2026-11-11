@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #312e81, #1e3a8a); border-radius: 24px;
+            padding: 24px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #dbeafe; }
+  .method { flex: 1; border-radius: 24px; padding: 26px 28px; }
+  .method .ico { font-size: 54px; }
+  .method h3 { font-size: 35px; margin: 8px 0; }
+  .method p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .method .rule { margin-top: 14px; border-radius: 14px; padding: 12px 16px;
+                  font-size: 26px; font-weight: bold; line-height: 1.45; }
+  .m1 { background: #e8eef8; } .m1 h3 { color: #2d4a8a; } .m1 .rule { background: #ffffff; color: #2d4a8a; }
+  .m2 { background: #e8f4ec; } .m2 h3 { color: #2e6b41; } .m2 .rule { background: #ffffff; color: #2e6b41; }
+  .m3 { background: #fdf3e0; } .m3 h3 { color: #9a6208; } .m3 .rule { background: #ffffff; color: #9a6208; }
+  .example { background: #16265c; border-radius: 24px; padding: 22px 32px;
+             display: flex; align-items: center; gap: 22px; }
+  .example .ico { font-size: 52px; }
+  .example p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .example b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>মূলধন আয়-ব্যয় প্রাক্কলন (ইউনিট-০৫)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🏗️</div>
+        <div>
+          <h2>মূলধন বাজেটিং কাকে বলে?</h2>
+          <p>দীর্ঘমেয়াদি বিনিয়োগের সিদ্ধান্ত — যেমন নতুন যন্ত্রপাতি কেনা বা কারখানা স্থাপন। সিদ্ধান্তের আগে ভবিষ্যতের নগদ আগমনের প্রাক্কলন করা হয়।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="method m1">
+        <div class="ico">⏱️</div>
+        <h3>পে-ব্যাক সময়</h3>
+        <p>বিনিয়োগের টাকা ফেরত পেতে কত বছর লাগবে। যত কম, তত ভালো।</p>
+        <div class="rule">পে-ব্যাক = প্রাথমিক বিনিয়োগ ÷ বার্ষিক নগদ আগমন</div>
+      </div>
+      <div class="method m2">
+        <div class="ico">📈</div>
+        <h3>NPV — নিট বর্তমান মূল্য</h3>
+        <p>ভবিষ্যতের নগদ আগমনের বর্তমান মূল্য থেকে প্রাথমিক বিনিয়োগ বাদ দিলে যা থাকে।</p>
+        <div class="rule">NPV ধনাত্মক হলে গ্রহণ ✅ • ঋণাত্মক হলে বর্জন ❌</div>
+      </div>
+      <div class="method m3">
+        <div class="ico">🎯</div>
+        <h3>IRR — অভ্যন্তরীণ আয়ের হার</h3>
+        <p>যে হারে NPV শূন্য হয়।</p>
+        <div class="rule">IRR &gt; মূলধন ব্যয় হলে প্রকল্প গ্রহণযোগ্য</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="example" style="flex:1">
+        <div class="ico">🧮</div>
+        <p><b>উদাহরণ:</b> বিনিয়োগ ১,০০,০০০ টাকা, বার্ষিক আগমন ২৫,০০০ টাকা হলে পে-ব্যাক = <b>৪ বছর</b>। মনে রাখবে: নগদ আগমন মানে নগদে পাওয়া অর্থ — হিসাবের মুনাফা নয়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ৫৫–৭০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #166534, #15803d); border-radius: 24px;
+            padding: 24px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #dcfce7; }
+  .dep { flex: 1; border-radius: 24px; padding: 26px 28px; }
+  .dep .ico { font-size: 56px; }
+  .dep h3 { font-size: 35px; margin: 8px 0; }
+  .dep p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .dep .tag { display: inline-block; margin-top: 12px; border-radius: 999px; padding: 7px 18px;
+              font-size: 25px; font-weight: bold; background: #ffffff; }
+  .d1 { background: #e8eef8; } .d1 h3 { color: #2d4a8a; } .d1 .tag { color: #2d4a8a; }
+  .d2 { background: #fdf3e0; } .d2 h3 { color: #9a6208; } .d2 .tag { color: #9a6208; }
+  .d3 { background: #e8f4ec; } .d3 h3 { color: #2e6b41; } .d3 .tag { color: #2e6b41; }
+  .ladder { flex: 1; background: #16265c; border-radius: 24px; padding: 22px 32px; }
+  .ladder h2 { font-size: 32px; color: #f5c542; margin-bottom: 14px; }
+  .bars { display: flex; align-items: flex-end; gap: 24px; height: 130px; }
+  .bar { flex: 1; border-radius: 14px 14px 0 0; text-align: center; padding-top: 12px; }
+  .bar b { font-size: 29px; color: #16265c; display: block; }
+  .bar span { font-size: 24px; color: #3a3a55; }
+  .b1 { background: #fde68a; height: 70px; }
+  .b2 { background: #fbbf24; height: 100px; }
+  .b3 { background: #f59e0b; height: 130px; }
+  .barwrap { flex: 1; }
+  .barwrap .lbl { text-align: center; font-size: 25px; color: #ffffff; margin-top: 8px; font-weight: bold; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ব্যাংকে আমানত (ইউনিট-১১)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">💰</div>
+        <div>
+          <h2>আমানত কাকে বলে?</h2>
+          <p>ব্যাংকে টাকা জমা রাখাকে আমানত বলে। আমানতের টাকা দিয়েই ব্যাংক ঋণ দেয় ও মুনাফা করে — তাই আমানত ব্যাংকের জন্য খুব গুরুত্বপূর্ণ।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="dep d1">
+        <div class="ico">🏪</div>
+        <h3>চলতি আমানত</h3>
+        <p>ব্যবসায়ীদের জন্য। যেকোনো সময় যতবার খুশি জমা ও তোলা যায়, তবে সাধারণত সুদ দেওয়া হয় না।</p>
+        <span class="tag">সুদ: সাধারণত নেই</span>
+      </div>
+      <div class="dep d2">
+        <div class="ico">🐖</div>
+        <h3>সঞ্চয়ী আমানত</h3>
+        <p>সাধারণ মানুষের ছোট ছোট সঞ্চয়ের জন্য। সুদ পাওয়া যায়, উত্তোলনে কিছু সীমা থাকতে পারে।</p>
+        <span class="tag">সুদ: মাঝারি</span>
+      </div>
+      <div class="dep d3">
+        <div class="ico">🔒</div>
+        <h3>স্থায়ী / মেয়াদি আমানত</h3>
+        <p>নির্দিষ্ট মেয়াদের (১ বছর, ৩ বছর) জন্য জমা। মেয়াদ শেষে আসলসহ সুদ ফেরত পাওয়া যায়।</p>
+        <span class="tag">সুদ: সবচেয়ে বেশি</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ladder">
+        <h2>📊 সুদের হারের ক্রম — কম থেকে বেশি</h2>
+        <div class="bars">
+          <div class="barwrap"><div class="bar b1"><b>সুদ নেই</b></div><div class="lbl">চলতি</div></div>
+          <div class="barwrap"><div class="bar b2"><b>মাঝারি</b></div><div class="lbl">সঞ্চয়ী</div></div>
+          <div class="barwrap"><div class="bar b3"><b>সবচেয়ে বেশি</b></div><div class="lbl">স্থায়ী</div></div>
+        </div>
+        <p style="font-size:25px; color:#dbeafe; margin-top:14px">মেয়াদের আগে স্থায়ী আমানত ভাঙালে সুদ কম পাওয়া যায়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ১২১–১৩২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

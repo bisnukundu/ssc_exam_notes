@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 14px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .scale { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 18px 30px; }
+  .scale h2 { font-size: 36px; color: #16265c; margin-bottom: 12px; }
+  .bar { height: 48px; border-radius: 999px;
+         background: linear-gradient(90deg, #dc2626, #f59e0b 30%, #22c55e 50%, #3b82f6 75%, #1d4ed8); }
+  .labels { display: flex; justify-content: space-between; margin-top: 10px; font-size: 26px; font-weight: bold; }
+  .labels .l1 { color: #dc2626; } .labels .l2 { color: #16a34a; } .labels .l3 { color: #1d4ed8; }
+  .mid { text-align: center; margin-top: 10px; font-size: 27px; color: #3a3a55; }
+  .mid b { color: #16265c; font-size: 30px; }
+
+  .vs { flex: 1; border-radius: 24px; padding: 18px 28px; }
+  .vs h2 { font-size: 36px; margin-bottom: 10px; }
+  .vs p { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .vs p b { color: #1a1a2e; }
+  .v-acid { background: #fee2e2; } .v-acid h2 { color: #991b1b; }
+  .v-base { background: #dbeafe; } .v-base h2 { color: #1e40af; }
+
+  .eq { background: linear-gradient(120deg, #9f1239, #7c2d12); border-radius: 24px;
+        padding: 16px 32px; display: flex; align-items: center; gap: 24px; }
+  .eq .ico { font-size: 56px; }
+  .eq h2 { font-size: 36px; color: #ffffff; }
+  .eq .f { margin-left: auto; background: #ffffff; color: #9f1239; font-size: 32px; font-weight: bold;
+           border-radius: 16px; padding: 12px 24px; white-space: nowrap; }
+
+  .card { border-radius: 24px; padding: 18px 30px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #f4f6fb; border: 2px solid #e0dbd0; border-radius: 999px;
+          padding: 10px 22px; font-size: 26px; font-weight: bold; color: #1a1a2e; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>অম্ল, ক্ষারক, লবণ (ইউনিট-০৭)</h1>
+    <p>SSC-2673 • বিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="scale" style="flex:1">
+        <h2>📏 pH স্কেল — দ্রবণ অম্লীয় না ক্ষারীয়, তা মাপা হয়</h2>
+        <div class="bar"></div>
+        <div class="labels"><span class="l1">← ৭-এর কম: অম্লীয়</span><span class="l2">pH ৭: প্রশম</span><span class="l3">৭-এর বেশি: ক্ষারীয় →</span></div>
+        <div class="mid"><b>pH ৭ মানে প্রশম</b> — যেমন বিশুদ্ধ পানি।</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="vs v-acid">
+        <h2>🍋 অম্ল</h2>
+        <p>পানিতে হাইড্রোজেন আয়ন দেয়, <b>টক স্বাদ</b>। নীল লিটমাসকে <b>লাল</b> করে।<br>যেমন: লেবুর সাইট্রিক এসিড, ভিনেগারের অ্যাসিটিক এসিড।</p>
+      </div>
+      <div class="vs v-base">
+        <h2>🧼 ক্ষারক</h2>
+        <p>অম্লের বিপরীত — <b>তিক্ত স্বাদ</b>, পিচ্ছিল অনুভূতি। লাল লিটমাসকে <b>নীল</b> করে।<br>যেমন: সাবান, চুনের পানি।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="eq" style="flex:1">
+        <div class="ico">⚗️</div>
+        <h2>প্রশমন বিক্রিয়া</h2>
+        <div class="f">অম্ল + ক্ষারক → লবণ + পানি</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🏠 দৈনন্দিন জীবনে ব্যবহার</h2>
+        <div class="chips">
+          <span class="chip">অ্যান্টাসিড — পাকস্থলীর অম্ল কমায়</span>
+          <span class="chip">সাবান — ক্ষারক দিয়ে তৈরি</span>
+          <span class="chip">চুন — চাষের জমির অম্লতা কমায়</span>
+          <span class="chip">খাবার লবণ — সোডিয়াম ক্লোরাইড</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার টিপস:</b> পার্থক্যের প্রশ্নে ছক ব্যবহার করবে — স্বাদ, লিটমাসের রঙ, উদাহরণ। pH ৭-এর কম মানে অম্লীয় — ক্ষারীয় বলবে না।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2673 বই (পৃ. ১১৪–১৩১) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

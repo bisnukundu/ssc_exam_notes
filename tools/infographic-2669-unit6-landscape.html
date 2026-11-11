@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 20px 60px 18px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 62px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #8e1616, #4a0e0e); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 64px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 4px; }
+  .banner p { font-size: 27px; line-height: 1.45; color: #ffebee; }
+
+  .card { border-radius: 24px; padding: 20px 28px; }
+  .card h2 { font-size: 36px; margin-bottom: 10px; }
+  .c-red { background: #fde8e8; } .c-red h2 { color: #8e1616; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #1b6b3a; }
+
+  .harm { border-radius: 16px; background: #ffffff; padding: 12px 20px; margin-top: 10px; }
+  .harm b { display: block; font-size: 29px; color: #8e1616; margin-bottom: 2px; }
+  .harm span { font-size: 25px; line-height: 1.45; color: #3a3a55; }
+
+  .yn { display: flex; flex-direction: column; gap: 10px; }
+  .yn .y { border-radius: 16px; padding: 12px 20px; }
+  .yn .y b { display: block; font-size: 29px; margin-bottom: 2px; }
+  .yn .y span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .y-yes { background: #e8f4ec; } .y-yes b { color: #1b6b3a; }
+  .y-no { background: #fce4ec; } .y-no b { color: #880e4f; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 8px 18px; font-size: 26px; font-weight: bold; }
+  .note { font-size: 25px; line-height: 1.5; color: #3a3a55; margin-top: 10px; }
+  .note b { color: #1b6b3a; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 16px 0 14px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>মাদকাসক্তি ও এইডস (ইউনিট-০৬)</h1>
+    <p>SSC-2669 • শারীরিক শিক্ষা, স্বাস্থ্য বিজ্ঞান ও খেলাধুলা</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🚫</div>
+        <div>
+          <h2>মাদক ও এইডস কী?</h2>
+          <p>মাদকদ্রব্য: ইয়াবা, গাঁজা, হেরোইন, মদ, ধূমপান — খেলে নেশা হয়, শরীর ও মনের ক্ষতি হয়। এইডস: এইচআইভি ভাইরাসে শরীরের রোগ প্রতিরোধ ক্ষমতা নষ্ট হওয়ার রোগ।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-red" style="flex:1">
+        <h2>💥 মাদকাসক্তির ক্ষতি</h2>
+        <div class="harm"><b>শরীরের ক্ষতি</b><span>লিভার, ফুসফুস, মস্তিষ্ক</span></div>
+        <div class="harm"><b>মনের ক্ষতি</b><span>স্মৃতিশক্তি কমা, মানসিক অস্থিরতা</span></div>
+        <div class="harm"><b>পরিবার ও সমাজের ক্ষতি</b><span>অর্থনৈতিক সংকট, অপরাধ</span></div>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <h2>🦠 এইডস কীভাবে ছড়ায়?</h2>
+        <div class="yn">
+          <div class="y y-yes"><b>✅ ছড়ায়</b><span>সংক্রমিত রক্ত, অনিরাপদ যৌন সম্পর্ক, সংক্রমিত সুচ, মা থেকে শিশুতে</span></div>
+          <div class="y y-no"><b>❌ ছড়ায় না</b><span>হাত মেলানো, একসঙ্গে খাওয়া, মশার কামড়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>🛡️ বিরত থাকার উপায়</h2>
+        <div class="chips">
+          <span class="chip">কুফল সম্পর্কে সচেতনতা</span>
+          <span class="chip">সৎসঙ্গ</span>
+          <span class="chip">খেলাধুলা ও সৃজনশীল কাজ</span>
+          <span class="chip">পরিবারের স্নেহ ও নজরদারি</span>
+        </div>
+        <p class="note"><b>অটিজম:</b> স্নায়বিক বিকাশজনিত অবস্থা — আক্রান্ত শিশুর প্রতি সহানুভূতিশীল ও সহায়তামূলক আচরণ করা উচিত।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2669 বই (পৃ. ৫০–৬৮) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #1e40af, #1d4ed8); border-radius: 24px;
+            padding: 24px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #dbeafe; }
+  .col { flex: 1; border-radius: 24px; padding: 26px 28px; }
+  .col h2 { font-size: 36px; margin-bottom: 12px; }
+  .col ul { list-style: none; }
+  .col li { font-size: 26px; line-height: 1.5; color: #3a3a55; padding: 8px 0 8px 34px; position: relative; }
+  .col li::before { content: "✓"; position: absolute; left: 0; font-weight: bold; }
+  .c-main { background: #e8eef8; } .c-main h2 { color: #2d4a8a; } .c-main li::before { color: #2d4a8a; }
+  .c-agent { background: #e8f4ec; } .c-agent h2 { color: #2e6b41; } .c-agent li::before { color: #2e6b41; }
+  .c-svc { background: #fdf3e0; } .c-svc h2 { color: #9a6208; } .c-svc li::before { color: #9a6208; }
+  .strip { flex: 1; border-radius: 24px; padding: 22px 32px; background: #f4f6fb;
+           display: flex; align-items: center; gap: 18px; }
+  .strip b { font-size: 30px; color: #16265c; white-space: nowrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 26px; font-weight: bold; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>বাণিজ্যিক ব্যাংক ও তার পরিচিতি (ইউনিট-১০)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🏢</div>
+        <div>
+          <h2>বাণিজ্যিক ব্যাংক কাকে বলে?</h2>
+          <p>মুনাফা অর্জনের উদ্দেশ্যে জনগণের কাছ থেকে আমানত গ্রহণ করে এবং ব্যবসায়ী ও ব্যক্তিদের ঋণ দেয় — এমন ব্যাংক। কেন্দ্রীয় ব্যাংকের লক্ষ্য মুনাফা নয়, দেশের অর্থনৈতিক স্থিতি রক্ষা করা।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col c-main">
+        <h2>🥇 প্রধান কাজ</h2>
+        <ul>
+          <li>আমানত গ্রহণ</li>
+          <li>ঋণদান</li>
+        </ul>
+      </div>
+      <div class="col c-agent">
+        <h2>🤝 এজেন্সি কাজ</h2>
+        <ul>
+          <li>চেক ও বিলের টাকা আদায়</li>
+          <li>অর্থ স্থানান্তর</li>
+          <li>শেয়ার ক্রয়-বিক্রয়ে সাহায্য</li>
+          <li>বিদ্যুৎ বিল জমা নেওয়া</li>
+        </ul>
+      </div>
+      <div class="col c-svc">
+        <h2>🛎️ সাধারণ সেবা</h2>
+        <ul>
+          <li>লকার সুবিধা</li>
+          <li>ব্যাংক ড্রাফট</li>
+          <li>পে-অর্ডার</li>
+          <li>বৈদেশিক মুদ্রা বিনিময়</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="strip">
+        <b>🏦 উদাহরণ:</b>
+        <div class="chips">
+          <span class="chip">সোনালী ব্যাংক</span>
+          <span class="chip">জনতা ব্যাংক</span>
+          <span class="chip">অগ্রণী ব্যাংক</span>
+          <span class="chip">ডাচ-বাংলা ব্যাংক</span>
+          <span class="chip">ইসলামী ব্যাংক</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ১১১–১২০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

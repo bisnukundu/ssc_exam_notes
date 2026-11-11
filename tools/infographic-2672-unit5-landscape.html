@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #7f1d1d, #991b1b); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #fee2e2; }
+  .date { flex: 1; border-radius: 24px; padding: 26px 30px; text-align: center; }
+  .date b { display: block; font-size: 46px; margin-bottom: 6px; }
+  .date span { font-size: 28px; color: #3a3a55; }
+  .d-red { background: #fee2e2; } .d-red b { color: #991b1b; }
+  .d-green { background: #dcfce7; } .d-green b { color: #166534; }
+  .arrow { align-self: center; font-size: 56px; color: #16265c; }
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-purple { background: #f8e8f0; } .c-purple h2 { color: #8b2252; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 9px 20px; font-size: 27px; font-weight: bold; }
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>সংবিধান (ইউনিট-০৫)</h1>
+    <p>SSC-2672 • পৌরনীতি ও নাগরিকতা</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">📜</div>
+        <div>
+          <h2>সংবিধান কাকে বলে?</h2>
+          <p>রাষ্ট্রের সর্বোচ্চ আইন — রাষ্ট্র কীভাবে চলবে, সরকারের ক্ষমতা কতটুকু, নাগরিকের অধিকার কী — এসব লেখা থাকে সংবিধানে।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="date d-red">
+        <b>৪ নভেম্বর ১৯৭২</b>
+        <span>বাংলাদেশের সংবিধান গৃহীত হয়</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="date d-green">
+        <b>১৬ ডিসেম্বর ১৯৭২</b>
+        <span>সংবিধান কার্যকর হয়</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>⭐ মূলনীতি ৪টি</h2>
+        <div class="chips">
+          <span class="chip">জাতীয়তাবাদ</span>
+          <span class="chip">সমাজতন্ত্র</span>
+          <span class="chip">গণতন্ত্র</span>
+          <span class="chip">ধর্মনিরপেক্ষতা</span>
+        </div>
+      </div>
+      <div class="card c-green" style="flex:1">
+        <h2>⚖️ মৌলিক অধিকার</h2>
+        <div class="chips">
+          <span class="chip">সমতা</span>
+          <span class="chip">মত প্রকাশ</span>
+          <span class="chip">ধর্ম পালন</span>
+          <span class="chip">শিক্ষা</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-orange" style="flex:1">
+        <h2>📖 লিখিত সংবিধান</h2>
+        <div class="chips">
+          <span class="chip">বাংলাদেশ</span>
+          <span class="chip">ভারত</span>
+          <span class="chip">যুক্তরাষ্ট্র</span>
+        </div>
+      </div>
+      <div class="card c-purple" style="flex:1">
+        <h2>📚 অলিখিত সংবিধান</h2>
+        <div class="chips">
+          <span class="chip">ব্রিটেন</span>
+          <span class="chip">বিভিন্ন আইন, প্রথা ও রীতিতে ছড়িয়ে আছে</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার টিপস:</b> তারিখের প্রশ্নে ৪ নভেম্বর (গৃহীত) ও ১৬ ডিসেম্বর (কার্যকর) গুলিয়ে ফেলবে না। মৌলিক অধিকার আদালতের মাধ্যমে আদায় করা যায়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2672 বই (পৃ. ৬৫–৭৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

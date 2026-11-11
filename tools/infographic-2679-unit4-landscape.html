@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+
+  .eq { flex: 1; border-radius: 24px; padding: 20px 26px; text-align: center; }
+  .eq .ico { font-size: 52px; }
+  .eq h2 { font-size: 36px; margin: 6px 0 8px; }
+  .eq .formula { font-family: 'DejaVu Sans', sans-serif; font-size: 30px; font-weight: bold;
+                 background: #ffffff; border-radius: 14px; padding: 12px 16px;
+                 display: block; margin: 10px 0; }
+  .eq p { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .eq-photo { background: #e8f4ec; } .eq-photo h2 { color: #2e6b41; }
+  .eq-resp { background: #fdf3e0; } .eq-resp h2 { color: #9a6208; }
+  .vs-arrow { align-self: center; text-align: center; flex-shrink: 0; }
+  .vs-arrow .ar { font-size: 56px; color: #16265c; display: block; }
+  .vs-arrow span { font-size: 24px; font-weight: bold; color: #16265c; }
+
+  .stat { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 16px 14px; text-align: center; }
+  .stat b { display: block; font-size: 36px; color: #16265c; margin-bottom: 4px; }
+  .stat span { font-size: 24px; line-height: 1.4; color: #4a4a6a; }
+
+  .vs2 { display: flex; gap: 16px; }
+  .vs2 .v { flex: 1; border-radius: 16px; padding: 16px 20px; }
+  .vs2 .v b { display: block; font-size: 29px; margin-bottom: 4px; }
+  .vs2 .v span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .v-aer { background: #e8f4ec; } .v-aer b { color: #2e6b41; }
+  .v-ana { background: #fdf3e0; } .v-ana b { color: #9a6208; }
+
+  .atp { background: #16265c; border-radius: 24px; padding: 16px 30px;
+         display: flex; align-items: center; gap: 22px; }
+  .atp .ico { font-size: 48px; }
+  .atp p { font-size: 27px; line-height: 1.5; color: #ffffff; }
+  .atp b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জীবনীশক্তি (ইউনিট-০৪)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="eq eq-photo">
+        <div class="ico">☀️</div>
+        <h2>সালোকসংশ্লেষণ</h2>
+        <span class="formula">6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</span>
+        <p>সবুজ উদ্ভিদ সূর্যের আলোকশক্তি দিয়ে কার্বন ডাই-অক্সাইড ও পানি থেকে গ্লুকোজ তৈরি করে, অক্সিজেন ছেড়ে দেয়। ক্লোরোপ্লাস্টের ক্লোরোফিলে ঘটে।</p>
+      </div>
+      <div class="vs-arrow">
+        <span class="ar">⇄</span>
+        <span>পরস্পর<br>বিপরীত</span>
+      </div>
+      <div class="eq eq-resp">
+        <div class="ico">🔥</div>
+        <h2>শ্বসন</h2>
+        <span class="formula">C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + শক্তি</span>
+        <p>গ্লুকোজ ভেঙে শক্তি নির্গত হয়। মাইটোকন্ড্রিয়ায় ঘটে। শ্বসন দিনে-রাতে সবসময় চলে — উদ্ভিদেও রাতে শ্বসন হয়।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🫧 সবাত বনাম অবাত শ্বসন</h2>
+        <div class="vs2">
+          <div class="v v-aer"><b>সবাত শ্বসন</b><span>অক্সিজেন দিয়ে হয়, মাইটোকন্ড্রিয়ায় ঘটে, বেশি শক্তি (ATP) দেয়।</span></div>
+          <div class="v v-ana"><b>অবাত শ্বসন</b><span>অক্সিজেন ছাড়া হয় — যেমন গাঁজনে গ্লুকোজ থেকে ইথানল ও কার্বন ডাই-অক্সাইড তৈরি হয়। শক্তি কম পাওয়া যায়।</span></div>
+        </div>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <h2>⚡ সালোকসংশ্লেষণের জন্য যা লাগে</h2>
+        <div style="display:flex; gap:14px">
+          <div class="stat"><b>আলো</b><span>সূর্যের আলোকশক্তি</span></div>
+          <div class="stat"><b>পানি</b><span>মূল দিয়ে শোষণ</span></div>
+          <div class="stat"><b>CO₂</b><span>বাতাস থেকে</span></div>
+          <div class="stat"><b>ক্লোরোফিল</b><span>ক্লোরোপ্লাস্টে</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="atp" style="flex:1">
+        <div class="ico">🪙</div>
+        <p><b>ATP = জীবদেহের শক্তির মুদ্রা।</b> শক্তি ATP অণুতে জমা থাকে; প্রয়োজনের সময় ATP ভেঙে ADP ও শক্তি পাওয়া যায়। সালোকসংশ্লেষণে O₂ নির্গত হয়, শ্বসনে O₂ ব্যবহৃত হয়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ৪৪–৫২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 14px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 20px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .hero { background: linear-gradient(120deg, #92400e, #b45309); border-radius: 24px;
+          padding: 18px 36px; display: flex; align-items: center; gap: 30px; }
+  .hero .ico { font-size: 64px; }
+  .hero h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .hero p { font-size: 27px; line-height: 1.5; color: #fef3c7; }
+  .ohm { margin-left: auto; background: #f5c542; color: #16265c; border-radius: 18px;
+         padding: 16px 28px; text-align: center; white-space: nowrap; }
+  .ohm b { display: block; font-size: 44px; }
+  .ohm span { font-size: 25px; }
+
+  .mini { flex: 1; border-radius: 20px; padding: 18px 20px; text-align: center; }
+  .mini b { display: block; font-size: 32px; margin-bottom: 4px; }
+  .mini span { font-size: 25px; line-height: 1.45; color: #3a3a55; }
+  .m1 { background: #fef3c7; } .m1 b { color: #92400e; }
+  .m2 { background: #dbeafe; } .m2 b { color: #1e40af; }
+  .m3 { background: #fee2e2; } .m3 b { color: #991b1b; }
+
+  .vs { flex: 1; border-radius: 24px; padding: 20px 28px; }
+  .vs h2 { font-size: 34px; margin-bottom: 8px; }
+  .vs p { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .v-s { background: #e0e7ff; } .v-s h2 { color: #3730a3; }
+  .v-p { background: #dcfce7; } .v-p h2 { color: #166534; }
+
+  .card { border-radius: 24px; padding: 18px 30px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #f4f6fb; border: 2px solid #e0dbd0; border-radius: 999px;
+          padding: 10px 22px; font-size: 26px; font-weight: bold; color: #1a1a2e; }
+  .chip-red { background: #fee2e2; border: 2px solid #fca5a5; border-radius: 999px;
+          padding: 10px 22px; font-size: 26px; font-weight: bold; color: #991b1b; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>আমাদের জীবনে তড়িৎ (ইউনিট-১২)</h1>
+    <p>SSC-2673 • বিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="hero" style="flex:1">
+        <div class="ico">⚡</div>
+        <div>
+          <h2>তড়িৎ ছাড়া আধুনিক জীবন অচল</h2>
+          <p>বাতি, পাখা, টিভি, মোবাইল, ফ্রিজ — সবকিছু তড়িৎ দিয়ে চলে। তড়িৎ প্রবাহ হলো তারের ভেতর দিয়ে ইলেকট্রনের প্রবাহ।</p>
+        </div>
+        <div class="ohm"><b>V = IR</b><span>ওহমের সূত্র</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="mini m1"><b>🔋 ভোল্টেজ</b><span>তড়িৎ প্রবাহের চাপ।</span></div>
+      <div class="mini m2"><b>〰️ প্রবাহ</b><span>ইলেকট্রনের প্রবাহ।</span></div>
+      <div class="mini m3"><b>🧱 রোধ</b><span>প্রবাহের বাধা।</span></div>
+    </div>
+
+    <div class="row">
+      <div class="vs v-s">
+        <h2>🔗 সিরিজ বর্তনী</h2>
+        <p>সব বাতি এক লাইনে থাকে — একটি নষ্ট হলে সব নিভে যায়।</p>
+      </div>
+      <div class="vs v-p">
+        <h2>🔀 সমান্তরাল বর্তনী</h2>
+        <p>প্রতিটি বাতি আলাদা লাইনে থাকে — একটি নষ্ট হলেও অন্যগুলো জ্বলে। বাড়িতে এই বর্তনী ব্যবহার করা হয়।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🛡️ নিরাপত্তা ও সাশ্রয়</h2>
+        <div class="chips">
+          <span class="chip">অযথা বাতি জ্বালিয়ে না রাখা</span>
+          <span class="chip">এনার্জি সাশ্রয়ী বাতি ব্যবহার</span>
+          <span class="chip-red">ভেজা হাতে সুইচ নয়</span>
+          <span class="chip-red">ছেঁড়া তার ব্যবহার নয়</span>
+          <span class="chip">ফিউজের কাজ বোঝা</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার টিপস:</b> অঙ্কের প্রশ্নে V = IR সূত্র লিখে এককসহ হিসাব দেখাবে। বাড়িতে সমান্তরাল বর্তনী ব্যবহার করা হয় — কারণ একটি বাতি নষ্ট হলেও অন্যগুলো জ্বলে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2673 বই (পৃ. ১৯৭–২১১) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

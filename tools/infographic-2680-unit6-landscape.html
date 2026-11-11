@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .bridge { display: flex; gap: 22px; align-items: stretch; }
+  .side { flex: 1; border-radius: 24px; padding: 18px 30px; text-align: center; }
+  .side .ico { font-size: 56px; }
+  .side h2 { font-size: 36px; margin: 6px 0; }
+  .side p { font-size: 26px; line-height: 1.45; }
+  .side .big { display: block; font-size: 40px; font-weight: bold; margin-top: 10px; }
+  .s-amber { background: #fef3c7; } .s-amber h2 { color: #92400e; } .s-amber .big { color: #92400e; } .s-amber p { color: #78350f; }
+  .s-green { background: #dcfce7; } .s-green h2 { color: #166534; } .s-green .big { color: #166534; } .s-green p { color: #14532d; }
+  .mid { flex: 0 0 260px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; }
+  .mid .arr { font-size: 52px; color: #16265c; line-height: 1; }
+  .mid span { font-size: 26px; font-weight: bold; color: #16265c; text-align: center; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 36px; margin-bottom: 10px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .rules { display: flex; flex-direction: column; gap: 10px; }
+  .rule { background: #f4f6fb; border-radius: 14px; padding: 9px 18px;
+          font-size: 27px; text-align: center; font-weight: bold; color: #1a1a2e; }
+  .rule span { color: #6b21a8; }
+  .base { display: flex; gap: 16px; }
+  .base .b { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 13px 14px; text-align: center; }
+  .base .b b { display: block; font-size: 30px; color: #92400e; margin-bottom: 4px; }
+  .base .b span { font-size: 25px; color: #3a3a55; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>সূচকীয় ও লগারিদমীয় ফাংশন (ইউনিট-০৬)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="bridge" style="flex:1">
+        <div class="side s-amber">
+          <div class="ico">📈</div>
+          <h2>সূচকীয় ফাংশন</h2>
+          <p>সূচক মানে ঘাত, যেমন 2<sup>3</sup> = 8-এ 3 হলো 2-এর সূচক। আকার: f(x) = a<sup>x</sup></p>
+          <span class="big">2<sup>3</sup> = 8</span>
+        </div>
+        <div class="mid">
+          <div class="arr">⟷</div>
+          <span>একে অপরের<br>বিপরীত প্রক্রিয়া</span>
+          <div class="arr">⟷</div>
+        </div>
+        <div class="side s-green">
+          <div class="ico">📉</div>
+          <h2>লগারিদম</h2>
+          <p>log দিয়ে জানা যায় কোন ঘাতে নিলে b পাওয়া যায়: a<sup>x</sup> = b হলে x = log<sub>a</sub> b</p>
+          <span class="big">log<sub>2</sub> 8 = 3</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1.25">
+        <h2>📐 সূচকের নিয়ম</h2>
+        <div class="rules">
+          <div class="rule">a<sup>m</sup> × a<sup>n</sup> = <span>a<sup>m+n</sup></span> &nbsp;•&nbsp; a<sup>m</sup> / a<sup>n</sup> = <span>a<sup>m−n</sup></span></div>
+          <div class="rule">(a<sup>m</sup>)<sup>n</sup> = <span>a<sup>mn</sup></span> &nbsp;•&nbsp; a<sup>0</sup> = <span>1</span> &nbsp;•&nbsp; a<sup>−n</sup> = <span>1/a<sup>n</sup></span></div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1.25">
+        <h2>📐 লগের নিয়ম</h2>
+        <div class="rules">
+          <div class="rule">log(ab) = <span>log a + log b</span> &nbsp;•&nbsp; log(a/b) = <span>log a − log b</span></div>
+          <div class="rule">log(a<sup>n</sup>) = <span>n log a</span> &nbsp;•&nbsp; log<sub>a</sub> a = <span>1</span> &nbsp;•&nbsp; log 1 = <span>0</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🔢 ভিত্তি</h2>
+        <div class="base">
+          <div class="b"><b>সাধারণ লগ</b><span>ভিত্তি 10</span></div>
+          <div class="b"><b>স্বাভাবিক লগ</b><span>ভিত্তি e</span></div>
+          <div class="b"><b>ভিত্তি পরিবর্তন</b><span>log<sub>a</sub> b = log b / log a</span></div>
+        </div>
+      </div>
+      <div class="tip" style="flex:1.4">
+        <div class="ico">💡</div>
+        <p><b>সাধারণ ভুল:</b> log(ab) = log a + log b, কিন্তু log(a + b)-এর কোনো সরল সূত্র নেই। a<sup>0</sup> = 1, কিন্তু 0<sup>0</sup> অনির্ণীত।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ১০৭–১২৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

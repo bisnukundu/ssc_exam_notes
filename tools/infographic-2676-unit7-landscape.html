@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .table { flex: 1; background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; overflow: hidden; }
+  .trow { display: flex; border-bottom: 2px solid #e8e4da; }
+  .trow:last-child { border-bottom: none; }
+  .cell { flex: 1; padding: 18px 24px; font-size: 27px; line-height: 1.45; }
+  .cell:first-child { flex: 0.85; font-weight: bold; font-size: 29px; color: #16265c;
+                      background: #f4f6fb; border-right: 2px solid #e8e4da; }
+  .thead { background: #16265c; }
+  .thead .cell { color: #ffffff; font-size: 31px; font-weight: bold; text-align: center; background: transparent; border-right: 2px solid #2d4a8a; }
+  .thead .cell:first-child { text-align: left; }
+  .thead .cell:last-child { border-right: none; }
+  .order { flex: 1; background: linear-gradient(90deg, #1e3a8a, #0f766e, #2e6b41); border-radius: 24px;
+           padding: 22px 32px; display: flex; align-items: center; gap: 20px; }
+  .order h3 { font-size: 32px; color: #f5c542; white-space: nowrap; }
+  .order .flow { display: flex; align-items: center; gap: 12px; flex: 1; }
+  .order .st { background: #ffffff; border-radius: 999px; padding: 10px 20px; font-size: 26px; font-weight: bold; color: #16265c; }
+  .order .ar { font-size: 34px; color: #ffffff; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>শেয়ার, বন্ড ও ডিবেঞ্চার (ইউনিট-০৭)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="table">
+        <div class="trow thead">
+          <div class="cell">বিষয়</div>
+          <div class="cell">📜 সাধারণ শেয়ার</div>
+          <div class="cell">⭐ অগ্রাধিকার শেয়ার</div>
+          <div class="cell">🧾 বন্ড / ডিবেঞ্চার</div>
+        </div>
+        <div class="trow">
+          <div class="cell">পরিচয়</div>
+          <div class="cell">মালিকানা — ক্রেতা কোম্পানির মালিক</div>
+          <div class="cell">মালিকানা, তবে বিশেষ সুবিধাসহ</div>
+          <div class="cell">ঋণপত্র — ক্রেতা ঋণদাতা</div>
+        </div>
+        <div class="trow">
+          <div class="cell">ভোটাধিকার</div>
+          <div class="cell">✅ আছে</div>
+          <div class="cell">❌ সাধারণত নেই</div>
+          <div class="cell">❌ নেই</div>
+        </div>
+        <div class="trow">
+          <div class="cell">আয়</div>
+          <div class="cell">অনির্দিষ্ট লভ্যাংশ — মুনাফা বেশি হলে বেশি</div>
+          <div class="cell">নির্দিষ্ট হারে লভ্যাংশ, আগে পায়</div>
+          <div class="cell">নির্দিষ্ট সুদ, মেয়াদ শেষে আসল ফেরত</div>
+        </div>
+        <div class="trow">
+          <div class="cell">বিলুপ্তিতে দাবি</div>
+          <div class="cell">সবার শেষে</div>
+          <div class="cell">সাধারণ শেয়ারের আগে</div>
+          <div class="cell">সবার আগে</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="order">
+        <h3>🏦 পরিশোধের ক্রম</h3>
+        <div class="flow">
+          <span class="st">১. বন্ড / ডিবেঞ্চার</span><span class="ar">➡</span>
+          <span class="st">২. অগ্রাধিকার শেয়ার</span><span class="ar">➡</span>
+          <span class="st">৩. সাধারণ শেয়ার</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div style="flex:1; background:#fdf3e0; border-radius:24px; padding:22px 32px">
+        <p style="font-size:28px; line-height:1.5; color:#3a3a55"><b style="color:#9a6208">💡 মনে রাখবে:</b> বন্ড মালিকানা নয় — বন্ড ঋণ। ডিবেঞ্চার সাধারণত জামানতবিহীন দীর্ঘমেয়াদি ঋণপত্র।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ৮১–৯৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

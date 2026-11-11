@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 14px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 20px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #7f1d1d, #9a3412); border-radius: 24px;
+            padding: 16px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 64px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 27px; line-height: 1.5; color: #fee2e2; }
+
+  .dgrid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 16px; margin-top: 14px; }
+  .d { border-radius: 20px; padding: 18px 16px; text-align: center; }
+  .d .ico { font-size: 52px; }
+  .d b { display: block; font-size: 30px; margin: 6px 0 4px; }
+  .d span { font-size: 23px; line-height: 1.45; color: #3a3a55; }
+  .d1 { background: #dbeafe; } .d1 b { color: #1e40af; }
+  .d2 { background: #fee2e2; } .d2 b { color: #991b1b; }
+  .d3 { background: #fef3c7; } .d3 b { color: #92400e; }
+  .d4 { background: #ffedd5; } .d4 b { color: #9a3412; }
+  .d5 { background: #e0e7ff; } .d5 b { color: #3730a3; }
+
+  .phase { flex: 1; border-radius: 24px; padding: 20px 26px; }
+  .phase h2 { font-size: 34px; margin-bottom: 10px; }
+  .phase p { font-size: 25px; line-height: 1.55; color: #3a3a55; }
+  .p1 { background: #dcfce7; } .p1 h2 { color: #166534; }
+  .p2 { background: #fef3c7; } .p2 h2 { color: #92400e; }
+  .p3 { background: #e0e7ff; } .p3 h2 { color: #3730a3; }
+  .arr { align-self: center; font-size: 48px; color: #7f1d1d; padding: 0 4px; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>দুর্যোগের সাথে বসবাস (ইউনিট-০৯)</h1>
+    <p>SSC-2673 • বিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌊</div>
+        <div>
+          <h2>বাংলাদেশ দুর্যোগপ্রবণ দেশ</h2>
+          <p>দুর্যোগ পুরোপুরি ঠেকানো যায় না, কিন্তু ক্ষতি কমানো যায় — একে দুর্যোগ ব্যবস্থাপনা বলে।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dgrid">
+      <div class="d d1"><div class="ico">🌧️</div><b>বন্যা</b><span>বর্ষায় অতিরিক্ত বৃষ্টি ও নদীর পানি বেড়ে গেলে হয়।</span></div>
+      <div class="d d2"><div class="ico">🌀</div><b>ঘূর্ণিঝড়</b><span>সমুদ্রে নিম্নচাপ থেকে হয়, উপকূলে বেশি ক্ষতি করে।</span></div>
+      <div class="d d3"><div class="ico">🌍</div><b>ভূমিকম্প</b><span>ভূগর্ভের শিলার নড়াচড়ায় হয়।</span></div>
+      <div class="d d4"><div class="ico">☀️</div><b>খরা</b><span>দীর্ঘদিন বৃষ্টি না হলে হয়।</span></div>
+      <div class="d d5"><div class="ico">🏞️</div><b>নদীভাঙন</b><span>নদীর তীর ভেঙে যায়।</span></div>
+    </div>
+
+    <div class="row">
+      <div class="phase p1">
+        <h2>🟢 আগে — পূর্বপ্রস্তুতি</h2>
+        <p>আবহাওয়ার খবর শোনা, শুকনো খাবার, পানি, ওষুধ, টর্চ তৈরি রাখা, আশ্রয়কেন্দ্রের খোঁজ রাখা।</p>
+      </div>
+      <div class="arr">→</div>
+      <div class="phase p2">
+        <h2>🟡 সময়ে — করণীয়</h2>
+        <p>নিরাপদ জায়গায় যাওয়া।</p>
+      </div>
+      <div class="arr">→</div>
+      <div class="phase p3">
+        <h2>🔵 পরে — করণীয়</h2>
+        <p>বিশুদ্ধ পানি পান করা, রোগ থেকে সাবধান থাকা, পুনর্বাসন।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>পরীক্ষার টিপস:</b> করণীয়ের প্রশ্নে আগে–সময়ে–পরে — এই তিন ধাপে লিখবে। দুর্যোগ ঠেকানো যায় মনে করবে না — ক্ষতি কমানো যায়।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2673 বই (পৃ. ১৪৬–১৬০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

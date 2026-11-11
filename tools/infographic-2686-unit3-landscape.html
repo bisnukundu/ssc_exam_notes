@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 58px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #b45309, #7c2d12); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fdf3e0; }
+  .card { border-radius: 24px; padding: 20px 26px; }
+  .card h2 { font-size: 36px; margin-bottom: 14px; }
+  .c-amber { background: #fdf3e0; } .c-amber h2 { color: #9a6208; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .quals { display: flex; gap: 14px; }
+  .qual { flex: 1; background: #ffffff; border-radius: 18px; padding: 20px 10px; text-align: center;
+          border-top: 8px solid #f5c542; }
+  .qual span { display: block; font-size: 46px; margin-bottom: 6px; }
+  .qual b { font-size: 27px; color: #1a1a2e; line-height: 1.35; }
+  .levels { display: flex; gap: 14px; }
+  .lvl { flex: 1; border-radius: 18px; padding: 18px 16px; text-align: center; }
+  .lvl .n { display: inline-block; color: #ffffff; font-size: 26px; font-weight: bold;
+            width: 44px; height: 44px; line-height: 44px; border-radius: 50%; margin-bottom: 8px; }
+  .lvl b { display: block; font-size: 29px; margin-bottom: 4px; }
+  .lvl span { font-size: 24px; line-height: 1.45; color: #3a3a55; }
+  .l1 { background: #fdf3e0; } .l1 .n { background: #b45309; } .l1 b { color: #9a6208; }
+  .l2 { background: #e8f4ec; } .l2 .n { background: #2e6b41; } .l2 b { color: #2e6b41; }
+  .l3 { background: #e8eef8; } .l3 .n { background: #2d4a8a; } .l3 b { color: #2d4a8a; }
+  .conds { display: flex; gap: 14px; }
+  .cond { flex: 1; background: #ffffff; border-radius: 16px; padding: 16px 12px; text-align: center; }
+  .cond span { display: block; font-size: 48px; margin-bottom: 6px; }
+  .cond b { font-size: 28px; color: #2d4a8a; }
+  .cond p { font-size: 23px; color: #4a4a6a; margin-top: 2px; }
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 28px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>কৃষি উপকরণ বীজ (ইউনিট-০৩)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌾</div>
+        <div>
+          <h2>বীজ — কৃষির সবচেয়ে গুরুত্বপূর্ণ উপকরণ</h2>
+          <p>ভালো বীজ ছাড়া ভালো ফসল হয় না। বপনের আগে বীজ শোধন করা হয়, যাতে বীজবাহিত রোগ দমন হয়।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-amber" style="flex:1">
+        <h2>⭐ ভালো বীজের ৫ গুণ</h2>
+        <div class="quals">
+          <div class="qual"><span>🌱</span><b>খাঁটি জাত</b></div>
+          <div class="qual"><span>✅</span><b>পরিপক্ব</b></div>
+          <div class="qual"><span>🛡️</span><b>রোগমুক্ত</b></div>
+          <div class="qual"><span>✨</span><b>পরিষ্কার</b></div>
+          <div class="qual"><span>📈</span><b>উচ্চ অঙ্কুরোদগম ক্ষমতা</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1.2">
+        <h2>🏷️ বীজের শ্রেণি ৩টি</h2>
+        <div class="levels">
+          <div class="lvl l1"><span class="n">১</span><b>ভিত্তি বীজ</b><span>প্রজননকারীর বীজ</span></div>
+          <div class="lvl l2"><span class="n">২</span><b>প্রত্যয়িত বীজ</b><span>সনদপ্রাপ্ত বীজ</span></div>
+          <div class="lvl l3"><span class="n">৩</span><b>মানঘোষিত বীজ</b><span>মান ঘোষণাকৃত বীজ</span></div>
+        </div>
+      </div>
+      <div class="card c-blue" style="flex:1">
+        <h2>💧 অঙ্কুরোদগমের ৩ শর্ত</h2>
+        <div class="conds">
+          <div class="cond"><span>💧</span><b>পানি</b><p>আর্দ্রতা</p></div>
+          <div class="cond"><span>🌬️</span><b>অক্সিজেন</b><p>বাতাস</p></div>
+          <div class="cond"><span>🌡️</span><b>তাপমাত্রা</b><p>উপযুক্ত তাপ</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">🧪</div>
+        <p><b>বীজ শোধন:</b> বপনের আগে ছত্রাকনাশক বা গরম পানি দিয়ে বীজের রোগজীবাণু দমন করা হয়। শোধন রোগ দমনের জন্য, পুষ্টির জন্য নয়।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ৩৫–৪৪) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

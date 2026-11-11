@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .formula { flex: 1.25; background: linear-gradient(120deg, #4b134f, #7c2d12); border-radius: 24px;
+             padding: 30px 36px; text-align: center; }
+  .formula h2 { font-size: 36px; color: #fde68a; margin-bottom: 12px; }
+  .formula .eq { font-family: 'DejaVu Sans', sans-serif; font-size: 64px; font-weight: bold; color: #ffffff; }
+  .formula .eq .fv { color: #f5c542; }
+  .formula p { font-size: 26px; line-height: 1.5; color: #f5d0fe; margin-top: 12px; }
+  .formula p b { color: #ffffff; }
+  .why { flex: 1; background: #f8e8f0; border-radius: 24px; padding: 26px 30px; }
+  .why h2 { font-size: 36px; color: #8b2252; margin-bottom: 12px; }
+  .why p { font-size: 27px; line-height: 1.55; color: #3a3a55; }
+  .card { flex: 1; border-radius: 24px; padding: 24px 28px; }
+  .card h3 { font-size: 34px; margin-bottom: 8px; }
+  .card p { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .c-blue { background: #e8eef8; } .c-blue h3 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h3 { color: #2e6b41; }
+  .c-orange { background: #fdf3e0; } .c-orange h3 { color: #9a6208; }
+  .example { background: #16265c; border-radius: 24px; padding: 22px 32px;
+             display: flex; align-items: center; gap: 22px; }
+  .example .ico { font-size: 52px; }
+  .example p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .example b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>অর্থের সময়মূল্য (ইউনিট-০৩)</h1>
+    <p>SSC-2676 • ফিন্যান্স ও ব্যাংকিং</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="formula">
+        <h2>📐 ভবিষ্যৎ মূল্যের সূত্র</h2>
+        <div class="eq"><span class="fv">FV</span> = PV × (1 + r)ⁿ</div>
+        <p><b>r</b> = সুদের হার &nbsp;•&nbsp; <b>n</b> = বছরের সংখ্যা<br>
+        PV = বর্তমান মূল্য &nbsp;•&nbsp; FV = ভবিষ্যৎ মূল্য</p>
+      </div>
+      <div class="why">
+        <h2>⏳ আজকের টাকা বেশি মূল্যবান কেন?</h2>
+        <p>আজকের টাকা ব্যাংকে রাখলে সুদ পাওয়া যায়, আর মুদ্রাস্ফীতিতে ভবিষ্যতের টাকার ক্রয়ক্ষমতা কমে যায়।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue">
+        <h3>💵 সরল বনাম চক্রবৃদ্ধি</h3>
+        <p>সরল সুদে শুধু আসলের ওপর সুদ; চক্রবৃদ্ধি সুদে সুদের ওপরও সুদ — তাই চক্রবৃদ্ধি সুদ বেশি হয়।</p>
+      </div>
+      <div class="card c-green">
+        <h3>🔁 অ্যানুইটি</h3>
+        <p>নির্দিষ্ট সময় পরপর সমান অর্থ — মাসিক কিস্তি, বীমার প্রিমিয়াম, অবসর ভাতা।</p>
+      </div>
+      <div class="card c-orange">
+        <h3>📉 সুদের হারের প্রভাব</h3>
+        <p>সুদের হার বাড়লে বর্তমান মূল্য কমে; সময় বাড়লে ভবিষ্যৎ মূল্য বাড়ে।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="example" style="flex:1">
+        <div class="ico">🧮</div>
+        <p><b>উদাহরণ:</b> ১০,০০০ টাকা ১০% চক্রবৃদ্ধি হারে ২ বছর পর FV = ১০,০০০ × (১.১০)² = <b>১২,১০০ টাকা</b></p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2676 বই (পৃ. ২৭–৪২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

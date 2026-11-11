@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #047857, #0d9488); border-radius: 24px;
+            padding: 16px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #d1fae5; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .scale { position: relative; height: 88px; margin: 6px 10px 0; }
+  .bar { position: absolute; left: 0; right: 0; top: 30px; height: 22px; border-radius: 11px;
+         background: linear-gradient(90deg, #dc2626, #f59e0b 50%, #16a34a); }
+  .mark { position: absolute; top: 14px; width: 6px; height: 40px; background: #16265c; }
+  .mark b { position: absolute; top: 42px; left: 50%; transform: translateX(-50%); font-size: 30px; color: #16265c; white-space: nowrap; }
+  .mark span { position: absolute; bottom: 44px; left: 50%; transform: translateX(-50%); font-size: 26px; font-weight: bold; color: #16265c; white-space: nowrap; }
+  .formula { background: #ecfdf5; border: 2px solid #6ee7b7; border-radius: 16px;
+             padding: 10px 22px; text-align: center; margin-top: 8px; }
+  .formula b { display: block; font-size: 34px; color: #047857; margin-bottom: 6px; }
+  .formula span { font-size: 26px; color: #3a3a55; }
+  .ex { flex: 1; border-radius: 20px; padding: 12px 20px; text-align: center; }
+  .ex .ico { font-size: 44px; }
+  .ex h3 { font-size: 32px; margin: 8px 0 10px; }
+  .ex p { font-size: 24px; line-height: 1.5; color: #3a3a55; }
+  .ex p b { color: #16265c; }
+  .e1 { background: #fef3c7; } .e1 h3 { color: #92400e; }
+  .e2 { background: #dbeafe; } .e2 h3 { color: #1e40af; }
+  .e3 { background: #ede9fe; } .e3 h3 { color: #6d28d9; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>সম্ভাবনা (ইউনিট-১৪)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🎲</div>
+        <div>
+          <h2>সম্ভাবনা কী?</h2>
+          <p>সম্ভাবনা হলো কোনো ঘটনা ঘটার সুযোগের সংখ্যাগত পরিমাপ। কোনো পরীক্ষার সম্ভাব্য সব ফলাফলকে নমুনা ক্ষেত্র বলে। মুদ্রা নিক্ষেপ, ছক্কা নিক্ষেপ ও তাসের প্যাকেট থেকে কার্ড তোলা — এসবের সম্ভাবনা বের করাই এই Unit-এর মূল কাজ।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1.4">
+        <h2>📊 সম্ভাবনার স্কেল</h2>
+        <div class="scale">
+          <div class="bar"></div>
+          <div class="mark" style="left:0%"><span>অসম্ভব ঘটনা</span><b>0</b></div>
+          <div class="mark" style="left:50%"><span>সম্ভাবনা সবসময় 0 থেকে 1-এর মধ্যে</span><b>1/2</b></div>
+          <div class="mark" style="left:100%"><span>নিশ্চিত ঘটনা</span><b>1</b></div>
+        </div>
+        <div class="formula"><b>P(E) = অনুকূল ফলাফলের সংখ্যা / মোট ফলাফলের সংখ্যা</b><span>পূরক ঘটনা: P(ঘটবে না) = 1 − P(ঘটবে)</span></div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>🔗 স্বাধীন ঘটনা</h2>
+        <p style="font-size:27px; line-height:1.6; color:#3a3a55">দুটি স্বাধীন ঘটনা একসঙ্গে ঘটার সম্ভাবনা = দুটির সম্ভাবনার <b style="color:#047857">গুণফল</b>।<br><br>যেমন দুটি মুদ্রায় দুটোতেই Head পাওয়ার সম্ভাবনা 1/2 × 1/2 = <b style="color:#047857">1/4</b>।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ex e1">
+        <div class="ico">🪙</div>
+        <h3>মুদ্রা নিক্ষেপ</h3>
+        <p>একটি মুদ্রায় মোট ফলাফল 2 (Head, Tail); Head পাওয়ার সম্ভাবনা <b>1/2</b>। দুটি মুদ্রায় মোট ফলাফল 4।</p>
+      </div>
+      <div class="ex e2">
+        <div class="ico">🎲</div>
+        <h3>ছক্কা নিক্ষেপ</h3>
+        <p>মোট ফলাফল 6 (1–6); 6 পাওয়ার সম্ভাবনা <b>1/6</b>; জোড় সংখ্যা (2, 4, 6) পাওয়ার সম্ভাবনা <b>3/6 = 1/2</b>।</p>
+      </div>
+      <div class="ex e3">
+        <div class="ico">🃏</div>
+        <h3>তাসের প্যাকেট</h3>
+        <p>তাসের প্যাকেট থেকে কার্ড তোলার সম্ভাবনাও একই নিয়মে — অনুকূল ফলাফল / মোট ফলাফল।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>সাধারণ ভুল:</b> সম্ভাবনা বের করার আগে মোট ফলাফল গুনে নেবে — ছক্কায় মোট 6, দুটি ছক্কায় মোট 36। সম্ভাবনা কখনো 1-এর বেশি বা ঋণাত্মক হতে পারে না।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ২৬৫–২৮০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 14px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 54px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 12px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 12px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #92400e, #451a03); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 60px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fdf3e0; }
+  .card { border-radius: 24px; padding: 20px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-brown { background: #fdf3e0; } .c-brown h2 { color: #92400e; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .check { list-style: none; }
+  .check li { font-size: 27px; line-height: 1.6; color: #3a3a55; padding-left: 40px; position: relative; }
+  .check li::before { content: "✓"; position: absolute; left: 0; color: #92400e; font-weight: bold; font-size: 30px; }
+  .foods { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .food { border-radius: 16px; padding: 16px 18px; }
+  .food b { display: block; font-size: 28px; margin-bottom: 4px; }
+  .food span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .f1 { background: #fdf3e0; } .f1 b { color: #92400e; }
+  .f2 { background: #e8f4ec; } .f2 b { color: #2e6b41; }
+  .f3 { background: #f8e8f0; } .f3 b { color: #8b2252; }
+  .f4 { background: #e8eef8; } .f4 b { color: #2d4a8a; }
+  .def { background: #e8f4ec; border-radius: 16px; padding: 18px 22px; font-size: 27px; line-height: 1.55; color: #1d4d2b; }
+  .def b { color: #2e6b41; }
+  .water { display: flex; gap: 16px; }
+  .w { flex: 1; border-radius: 16px; padding: 16px 18px; text-align: center; }
+  .w span { display: block; font-size: 44px; margin-bottom: 4px; }
+  .w b { font-size: 27px; color: #16265c; }
+  .w p { font-size: 23px; color: #4a4a6a; margin-top: 2px; line-height: 1.4; }
+  .tip { background: #16265c; border-radius: 24px; padding: 12px 24px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 20px; color: #7a7a9a; padding: 8px 0 6px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>গৃহপালিত পশু-পাখির আবাসন ও খাদ্য (ইউনিট-০৫)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🏠</div>
+        <div>
+          <h2>ভালো আবাসন + সুষম খাদ্য = সুস্থ পশু-পাখি</h2>
+          <p>সুষম খাদ্য পেলে গাভি বেশি দুধ দেয়, মুরগি বেশি ডিম দেয় ও পশু দ্রুত বাড়ে।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-brown" style="flex:1">
+        <h2>🏡 ভালো আবাসনের ৫ বৈশিষ্ট্য</h2>
+        <ul class="check">
+          <li>শুষ্ক মেঝে</li>
+          <li>পর্যাপ্ত আলো-বাতাস</li>
+          <li>বৃষ্টি ও ঠান্ডা থেকে সুরক্ষা</li>
+          <li>সহজে পরিষ্কার করা যায়</li>
+          <li>পর্যাপ্ত জায়গা</li>
+        </ul>
+      </div>
+      <div class="card c-white" style="flex:1.15">
+        <h2>🍽️ পশুখাদ্যের ৪ শ্রেণি</h2>
+        <div class="foods">
+          <div class="food f1"><b>🌾 দানাদার</b><span>ভুট্টা, গমের ভুসি</span></div>
+          <div class="food f2"><b>🌿 আঁশজাতীয়</b><span>খড়, সবুজ ঘাস</span></div>
+          <div class="food f3"><b>🥜 আমিষজাতীয়</b><span>খৈল, মাছের গুঁড়া</span></div>
+          <div class="food f4"><b>💊 খনিজ-ভিটামিন</b><span>সম্পূরক খাদ্য</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-green" style="flex:1.4">
+        <h2>⚖️ সুষম খাদ্য কী?</h2>
+        <div class="def">পশুর <b>বয়স, ওজন ও উৎপাদন অনুযায়ী</b> প্রয়োজনীয় সব পুষ্টি উপাদানের সঠিক মিশ্রণ।</div>
+      </div>
+      <div class="card c-white" style="flex:1">
+        <h2>💧 পানীয় জল ও পরিচ্ছন্নতা</h2>
+        <div class="water">
+          <div class="w" style="background:#e0f2fe;"><span>💧</span><b>পরিষ্কার পানি</b><p>সবসময় পর্যাপ্ত পানি দিতে হয়</p></div>
+          <div class="w" style="background:#e8f4ec;"><span>🧹</span><b>পরিচ্ছন্নতা</b><p>নিয়মিত পরিষ্কার রাখলে রোগ কম হয়</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> শুধু খড় খাওয়ালেই পশু ভালো থাকে না — খড়ে আমিষ কম, তাই সুষম খাদ্য দরকার।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ৬৩–৮৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

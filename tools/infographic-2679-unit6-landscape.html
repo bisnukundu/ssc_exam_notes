@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-red { background: #fdecea; } .c-red h2 { color: #b03030; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+
+  .stats { display: flex; gap: 16px; }
+  .stat { flex: 1; background: #ffffff; border-radius: 16px; padding: 16px 10px; text-align: center; }
+  .stat b { display: block; font-size: 38px; color: #b03030; }
+  .stat span { font-size: 24px; color: #4a4a6a; }
+
+  .cells { display: flex; gap: 16px; }
+  .cell { flex: 1; border-radius: 16px; padding: 16px 18px; }
+  .cell .ico { font-size: 48px; }
+  .cell b { display: block; font-size: 30px; margin: 6px 0 4px; }
+  .cell span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .cell-red { background: #fdecea; } .cell-red b { color: #b03030; }
+  .cell-white { background: #f4f6fb; } .cell-white b { color: #16265c; }
+  .cell-plate { background: #fdf3e0; } .cell-plate b { color: #9a6208; }
+
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 16px 20px; }
+  .col b { display: block; font-size: 29px; color: #16265c; margin-bottom: 4px; }
+  .col span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জীবদেহে পরিবহন (ইউনিট-০৬)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-red" style="flex:1">
+        <h2>❤️ সংখ্যায় রক্ত সংবহন</h2>
+        <div class="stats">
+          <div class="stat"><b>৪ প্রকোষ্ঠ</b><span>হৃৎপিণ্ড — ২ অলিন্দ, ২ নিলয়</span></div>
+          <div class="stat"><b>১২০/৮০</b><span>রক্তচাপের স্বাভাবিক মান (মিমি পারদ)</span></div>
+          <div class="stat"><b>O গ্রুপ</b><span>সবার দাতা</span></div>
+          <div class="stat"><b>AB গ্রুপ</b><span>সবার গ্রহীতা</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🩸 রক্তের উপাদান</h2>
+        <div class="cells">
+          <div class="cell cell-red"><div class="ico">🔴</div><b>লোহিত রক্তকণিকা</b><span>অক্সিজেন বহন করে</span></div>
+          <div class="cell cell-white"><div class="ico">⚪</div><b>শ্বেত রক্তকণিকা</b><span>রোগ প্রতিরোধ করে</span></div>
+          <div class="cell cell-plate"><div class="ico">🟡</div><b>অণুচক্রিকা</b><span>রক্ত জমাট বাঁধায়</span></div>
+          <div class="cell cell-white"><div class="ico">💧</div><b>প্লাজমা</b><span>রক্তের তরল অংশ</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>🫀 রক্তনালি ও উদ্ভিদের পরিবহন</h2>
+        <div class="cols">
+          <div class="col"><b>ধমনি</b><span>হৃৎপিণ্ড থেকে রক্ত নিয়ে যায়</span></div>
+          <div class="col"><b>শিরা</b><span>রক্ত ফিরিয়ে আনে</span></div>
+          <div class="col"><b>কৈশিক নালি</b><span>পদার্থের আদান-প্রদান ঘটে</span></div>
+          <div class="col"><b>জাইলেম</b><span>উদ্ভিদে পানি ও খনিজ লবণ বহন করে</span></div>
+          <div class="col"><b>ফ্লোয়েম</b><span>উদ্ভিদে তৈরি খাদ্য বহন করে</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> ধমনি মানেই অক্সিজেনযুক্ত রক্ত নয় — ফুসফুসীয় ধমনি অক্সিজেনহীন রক্ত বহন করে। হৃৎপিণ্ডের ডান দিকে অক্সিজেনহীন ও বাম দিকে অক্সিজেনযুক্ত রক্ত থাকে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ৭৪–১০০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

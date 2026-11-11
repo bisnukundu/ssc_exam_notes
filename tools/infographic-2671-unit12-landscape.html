@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #365314, #1a2e05); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #ecfccb; }
+  .tax { flex: 1; border-radius: 24px; padding: 26px 30px; text-align: center; }
+  .tax h2 { font-size: 38px; margin-bottom: 10px; }
+  .tax p { font-size: 27px; line-height: 1.55; color: #3a3a55; }
+  .tax .ex { display: inline-block; margin-top: 12px; background: #ffffff; border-radius: 999px;
+             padding: 9px 22px; font-size: 27px; font-weight: bold; }
+  .t-blue { background: #e8eef8; } .t-blue h2 { color: #2d4a8a; }
+  .t-green { background: #e8f4ec; } .t-green h2 { color: #2e6b41; }
+  .budget { flex: 1; border-radius: 24px; padding: 24px 22px; text-align: center; }
+  .budget .sym { font-size: 44px; font-weight: bold; }
+  .budget h2 { font-size: 34px; margin: 6px 0 6px; }
+  .budget p { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .b-gold { background: #fdf3e0; } .b-gold h2 { color: #9a6208; }
+  .b-red { background: #fdecec; } .b-red h2 { color: #991b1b; }
+  .b-blue { background: #e8eef8; } .b-blue h2 { color: #2d4a8a; }
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .cols { display: flex; gap: 16px; }
+  .col { flex: 1; border-radius: 16px; padding: 18px 20px; }
+  .col b { display: block; font-size: 32px; margin-bottom: 4px; }
+  .col span { font-size: 26px; line-height: 1.5; color: #3a3a55; }
+  .col-a { background: #e8f4ec; } .col-a b { color: #2e6b41; }
+  .col-b { background: #fdf3e0; } .col-b b { color: #9a6208; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>সরকারি অর্থব্যবস্থা (ইউনিট-১২)</h1>
+    <p>SSC-2671 • অর্থনীতি</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🏛️</div>
+        <div>
+          <h2>সরকারি অর্থব্যবস্থা কী?</h2>
+          <p>সরকারের আয়-ব্যয়ের হিসাব। সরকারের আয়ের প্রধান উৎস কর। সরকার প্রতি বছর বাজেট পেশ করে — আয় ও ব্যয়ের হিসাব, যা জাতীয় সংসদে অনুমোদিত হয়।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tax t-blue">
+        <h2>💳 প্রত্যক্ষ কর</h2>
+        <p>সরাসরি ব্যক্তির ওপর ধার্য হয়, অন্যের ওপর চাপানো যায় না।</p>
+        <span class="ex">যেমন: আয়কর</span>
+      </div>
+      <div class="tax t-green">
+        <h2>🧾 পরোক্ষ কর</h2>
+        <p>দ্রব্যের দামের সঙ্গে যুক্ত থাকে, শেষ পর্যন্ত ভোক্তা দেয়।</p>
+        <span class="ex">যেমন: ভ্যাট, শুল্ক</span>
+      </div>
+      <div class="card c-white" style="flex:1.1">
+        <h2>💸 সরকারি ব্যয় ২ ধরনের</h2>
+        <div class="cols">
+          <div class="col col-a"><b>উন্নয়ন ব্যয়</b><span>রাস্তা, স্কুল, হাসপাতাল তৈরি</span></div>
+          <div class="col col-b"><b>অনুন্নয়ন ব্যয়</b><span>বেতন, প্রশাসন চালানো</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="budget b-gold">
+        <div class="sym">▲</div>
+        <h2>উদ্বৃত্ত বাজেট</h2>
+        <p>আয় &gt; ব্যয়</p>
+      </div>
+      <div class="budget b-red">
+        <div class="sym">▼</div>
+        <h2>ঘাটতি বাজেট</h2>
+        <p>ব্যয় &gt; আয় — ঘাটতি মেটাতে ঋণ নেয়</p>
+      </div>
+      <div class="budget b-blue">
+        <div class="sym">＝</div>
+        <h2>ভারসাম্য বাজেট</h2>
+        <p>আয় = ব্যয়</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2671 বই (পৃ. ১৬৯–১৮৩) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

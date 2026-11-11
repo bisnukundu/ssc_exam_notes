@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #00695c, #004d40); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #e0f2f1; }
+  .badge { margin-left: auto; background: #f5c542; color: #16265c; border-radius: 999px;
+           padding: 14px 26px; font-size: 28px; font-weight: bold; white-space: nowrap; }
+
+  .timeline { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px;
+              padding: 26px 36px 22px; }
+  .timeline h2 { font-size: 36px; color: #16265c; margin-bottom: 18px; }
+  .tl { display: flex; align-items: flex-start; }
+  .tl .node { flex: 1; text-align: center; position: relative; }
+  .tl .node::before { content: ""; position: absolute; top: 22px; left: 0; right: 0;
+                      height: 6px; background: #b2dfdb; z-index: 0; }
+  .tl .node:first-child::before { left: 50%; }
+  .tl .node:last-child::before { right: 50%; }
+  .tl .dot { position: relative; z-index: 1; width: 50px; height: 50px; margin: 0 auto;
+             background: #00695c; color: #ffffff; border-radius: 50%;
+             font-size: 26px; font-weight: bold; line-height: 50px; }
+  .tl .node b { display: block; font-size: 29px; color: #16265c; margin-top: 10px; }
+  .tl .node span { font-size: 24px; color: #4a4a6a; }
+
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 36px; margin-bottom: 12px; }
+  .card p { font-size: 27px; line-height: 1.6; color: #3a3a55; }
+  .card p b { color: #16265c; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-purple { background: #f8e8f0; } .c-purple h2 { color: #8b2252; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #1b6b3a; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>বয়ঃসন্ধিকাল ও প্রজনন স্বাস্থ্য (ইউনিট-০৭)</h1>
+    <p>SSC-2669 • শারীরিক শিক্ষা, স্বাস্থ্য বিজ্ঞান ও খেলাধুলা</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🌱</div>
+        <div>
+          <h2>বয়ঃসন্ধিকাল কী?</h2>
+          <p>শৈশব থেকে যৌবনে পৌঁছানোর সময়। এই সময়ের পরিবর্তনগুলো স্বাভাবিক — লজ্জা পাওয়ার কিছু নেই।</p>
+        </div>
+        <div class="badge">সাধারণত ১০–১৯ বছর</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="timeline" style="flex:1">
+        <h2>🗓️ এই সময়ে যা ঘটে</h2>
+        <div class="tl">
+          <div class="node"><div class="dot">১০</div><b>শুরু</b><span>বয়ঃসন্ধির সূচনা</span></div>
+          <div class="node"><div class="dot">↗</div><b>দ্রুত বৃদ্ধি</b><span>উচ্চতা ও ওজন বাড়ে</span></div>
+          <div class="node"><div class="dot">♪</div><b>কণ্ঠস্বর বদল</b><span>শরীরের গঠনে পরিবর্তন</span></div>
+          <div class="node"><div class="dot">১৯</div><b>যৌবন</b><span>পরিবর্তন সম্পূর্ণ হয়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1">
+        <h2>🧍 শারীরিক পরিবর্তন</h2>
+        <p>দ্রুত <b>উচ্চতা ও ওজন বৃদ্ধি</b>, <b>কণ্ঠস্বরের পরিবর্তন</b>, শরীরের <b>গঠনে পরিবর্তন</b>।</p>
+      </div>
+      <div class="card c-purple" style="flex:1">
+        <h2>💭 মানসিক পরিবর্তন</h2>
+        <p><b>আবেগের ওঠানামা</b>, নিজেকে নিয়ে ভাবনা, <b>বন্ধুদের প্রভাব</b> বেশি অনুভব করা।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>🤝 মানসিক চাপ কমাতে</h2>
+        <p>পরিবারের সঙ্গে <b>কথা বলা</b>, <b>খেলাধুলা</b> ও সৃজনশীল কাজে অংশ নেওয়া, <b>পর্যাপ্ত ঘুম</b>।</p>
+      </div>
+      <div class="card c-orange" style="flex:1">
+        <h2>🥗 পুষ্টি ও স্বাস্থ্যবিধি</h2>
+        <p>দ্রুত বৃদ্ধির জন্য <b>বেশি আমিষ, ভিটামিন ও খনিজ</b> দরকার। প্রজনন স্বাস্থ্যবিধি: <b>পরিষ্কার-পরিচ্ছন্নতা ও সচেতনতা</b>।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2669 বই (পৃ. ৬৯–৭৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

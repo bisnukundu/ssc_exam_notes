@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #065f46, #1d4ed8); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #d1fae5; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .plane { position: relative; height: 330px; background: #f8fafc; border: 2px solid #e2e8f0;
+           border-radius: 20px; overflow: hidden; }
+  .gridline { position: absolute; background: #e2e8f0; }
+  .axis { position: absolute; background: #16265c; }
+  .axis-x { left: 0; right: 0; top: 50%; height: 4px; }
+  .axis-y { top: 0; bottom: 0; left: 50%; width: 4px; }
+  .axis-lab { position: absolute; font-size: 26px; font-weight: bold; color: #16265c; }
+  .pt { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #dc2626;
+        border: 3px solid #ffffff; transform: translate(-50%, -50%); }
+  .pt-lab { position: absolute; font-size: 26px; font-weight: bold; color: #dc2626; }
+  .origin { position: absolute; left: 50%; top: 50%; transform: translate(12px, 8px);
+            font-size: 26px; font-weight: bold; color: #16265c; }
+  .quad { position: absolute; font-size: 24px; color: #94a3b8; font-weight: bold; }
+  .formulas { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .f { background: #f4f6fb; border-radius: 16px; padding: 16px 18px; }
+  .f b { display: block; font-size: 30px; color: #065f46; margin-bottom: 4px; }
+  .f span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>স্থানাংক জ্যামিতি (ইউনিট-১০)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🗺️</div>
+        <div>
+          <h2>কার্তেসীয় স্থানাংক</h2>
+          <p>সমতলের প্রতিটি বিন্দুকে দুটি সংখ্যা (x, y) দিয়ে প্রকাশ করা হয়। x-অক্ষ ও y-অক্ষের ছেদবিন্দু মূলবিন্দু (0, 0)। প্রথম স্থানাংককে ভুজ ও দ্বিতীয়টিকে কোটি বলে।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>📍 স্থানাংক সমতল</h2>
+        <div class="plane">
+          <div class="gridline" style="left:0; right:0; top:25%; height:2px"></div>
+          <div class="gridline" style="left:0; right:0; top:75%; height:2px"></div>
+          <div class="gridline" style="top:0; bottom:0; left:25%; width:2px"></div>
+          <div class="gridline" style="top:0; bottom:0; left:75%; width:2px"></div>
+          <div class="axis axis-x"></div>
+          <div class="axis axis-y"></div>
+          <div class="axis-lab" style="right:12px; top:52%">x-অক্ষ</div>
+          <div class="axis-lab" style="left:52%; top:8px">y-অক্ষ</div>
+          <div class="quad" style="right:24px; top:16px">১ম চতুর্ভাগ</div>
+          <div class="pt" style="left:72%; top:28%"></div>
+          <div class="pt-lab" style="left:74%; top:20%">(x<sub>2</sub>, y<sub>2</sub>)</div>
+          <div class="pt" style="left:30%; top:64%"></div>
+          <div class="pt-lab" style="left:14%; top:68%">(x<sub>1</sub>, y<sub>1</sub>)</div>
+          <div class="origin">মূলবিন্দু (0, 0)</div>
+        </div>
+      </div>
+      <div class="card c-white" style="flex:1.25">
+        <h2>📐 মূল সূত্র</h2>
+        <div class="formulas">
+          <div class="f"><b>দূরত্ব = √{(x<sub>2</sub>−x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub>−y<sub>1</sub>)<sup>2</sup>}</b><span>দুই বিন্দুর মধ্যবর্তী দূরত্ব</span></div>
+          <div class="f"><b>মধ্যবিন্দু = ((x<sub>1</sub>+x<sub>2</sub>)/2, (y<sub>1</sub>+y<sub>2</sub>)/2)</b><span>দুই বিন্দুর ঠিক মাঝের বিন্দু</span></div>
+          <div class="f"><b>ঢাল m = (y<sub>2</sub>−y<sub>1</sub>) / (x<sub>2</sub>−x<sub>1</sub>)</b><span>রেখার হেলানো ভাব বোঝায়</span></div>
+          <div class="f"><b>সরলরেখা: y = mx + c</b><span>m ঢাল, c হলো y-অক্ষের ছেদাংশ</span></div>
+        </div>
+        <p style="font-size:26px; margin-top:16px; color:#3a3a55">দুটি সমান্তরাল রেখার ঢাল সমান; লম্ব রেখার ঢালদ্বয়ের গুণফল −1।</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>সাধারণ ভুল:</b> ঢাল বের করার সময় y-এর পার্থক্যকে x-এর পার্থক্য দিয়ে ভাগ করবে, উল্টো নয়। y = mx + c আকারে সাজিয়ে ঢাল ও ছেদাংশ চিনবে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ১৫৭–১৮৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

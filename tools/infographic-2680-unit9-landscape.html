@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 16px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #92400e, #b45309); border-radius: 24px;
+            padding: 20px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #fef3c7; }
+  .steps { display: flex; gap: 0; align-items: stretch; }
+  .step { flex: 1; border-radius: 20px; padding: 16px 20px; text-align: center; position: relative; }
+  .step .num { width: 54px; height: 54px; border-radius: 50%; background: #92400e; color: #ffffff;
+               font-size: 28px; font-weight: bold; display: flex; align-items: center;
+               justify-content: center; margin: 0 auto 12px; }
+  .step h3 { font-size: 31px; color: #92400e; margin-bottom: 8px; }
+  .step p { font-size: 25px; line-height: 1.55; color: #3a3a55; }
+  .s1 { background: #fef3c7; } .s2 { background: #ffedd5; } .s3 { background: #fef9c3; } .s4 { background: #fef3c7; }
+  .arrow { display: flex; align-items: center; justify-content: center; flex: 0 0 54px;
+           font-size: 44px; color: #92400e; }
+  .card { border-radius: 24px; padding: 20px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .rules { display: flex; gap: 16px; }
+  .rule { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 13px 20px; }
+  .rule b { display: block; font-size: 30px; color: #92400e; margin-bottom: 6px; }
+  .rule span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+  .tip { background: #16265c; border-radius: 24px; padding: 17px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জ্যামিতিক অঙ্কন (ইউনিট-০৯)</h1>
+    <p>SSC-2680 • উচ্চতর গণিত</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🧭</div>
+        <div>
+          <h2>জ্যামিতিক অঙ্কন কী?</h2>
+          <p>কম্পাস ও স্কেল দিয়ে নিখুঁত চিত্র আঁকার কৌশল। প্রমাণের ধাপগুলো অনুসরণ করে নির্দিষ্ট দৈর্ঘ্য, কোণ ও আকৃতি আঁকা যায়। চাপ দুটির ছেদবিন্দুই অঙ্কনের মূল ভিত্তি।</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="steps" style="flex:1">
+        <div class="step s1"><div class="num">১</div><h3>লম্বদ্বিখণ্ডক</h3><p>দুই প্রান্তকে কেন্দ্র করে সমান ব্যাসার্ধে দুটি চাপ; ছেদবিন্দুর সংযোগ রেখাই লম্বদ্বিখণ্ডক</p></div>
+        <div class="arrow">→</div>
+        <div class="step s2"><div class="num">২</div><h3>কোণ সমদ্বিখণ্ডক</h3><p>শীর্ষকে কেন্দ্র করে চাপ, তারপর দুই ছেদবিন্দু থেকে আবার চাপ — কোণ দুই সমান ভাগে ভাগ হয়</p></div>
+        <div class="arrow">→</div>
+        <div class="step s3"><div class="num">৩</div><h3>60° কোণ</h3><p>কম্পাসের ব্যাসার্ধ রেখাংশের সমান রেখে চাপ আঁকলে 60° কোণ পাওয়া যায়</p></div>
+        <div class="arrow">→</div>
+        <div class="step s4"><div class="num">৪</div><h3>ত্রিভুজ অঙ্কন</h3><p>তিন বাহু, বা দুই বাহু ও অন্তর্ভুক্ত কোণ, বা এক বাহু ও দুই সংলগ্ন কোণ জানা থাকলে আঁকা যায়</p></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>📏 অঙ্কনের নিয়ম</h2>
+        <div class="rules">
+          <div class="rule"><b>ব্যাসার্ধ একই রাখবে</b><span>লম্বদ্বিখণ্ডকে দুটি চাপের ব্যাসার্ধ সমান রাখতে হয় — মাঝখানে বদলাবে না</span></div>
+          <div class="rule"><b>ধাপ লিখবে</b><span>অঙ্কনের ধাপ নম্বর দিয়ে লিখবে এবং চিত্রে প্রদত্ত তথ্য লিখে দেবে</span></div>
+          <div class="rule"><b>বিবরণও লিখতে হয়</b><span>শুধু চিত্র আঁকলেই হবে না, অঙ্কনের বিবরণও লিখতে হয়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>সতর্কতা:</b> চাপ আঁকার সময় কাঁটা সরে গেলে ছেদবিন্দু ভুল জায়গায় পড়ে — চাপ আঁকার আগে কাঁটার অবস্থান যাচাই করবে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2680 বই (পৃ. ১৪৯–১৫৬) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

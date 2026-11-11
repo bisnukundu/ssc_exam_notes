@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+  .header { background: #16265c; padding: 20px 60px 16px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 58px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+  .wrap { padding: 16px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+  .banner { background: linear-gradient(120deg, #0369a1, #0c4a6e); border-radius: 24px;
+            padding: 18px 32px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e0f2fe; }
+  .card { border-radius: 24px; padding: 20px 26px; }
+  .card h2 { font-size: 36px; margin-bottom: 14px; }
+  .c-sky { background: #e0f2fe; } .c-sky h2 { color: #0369a1; }
+  .c-teal { background: #e6f7f4; } .c-teal h2 { color: #0f766e; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .vs { display: flex; gap: 16px; align-items: stretch; }
+  .vs .v { flex: 1; border-radius: 18px; padding: 18px 20px; }
+  .vs .v b { display: block; font-size: 31px; margin-bottom: 6px; }
+  .vs .v span { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .v-a { background: #e0f2fe; } .v-a b { color: #0369a1; }
+  .v-b { background: #e6f7f4; } .v-b b { color: #0f766e; }
+  .vsbadge { align-self: center; background: #16265c; color: #f5c542; font-size: 30px; font-weight: bold;
+             width: 64px; height: 64px; line-height: 64px; text-align: center; border-radius: 50%; flex: 0 0 64px; }
+  .quals { display: flex; gap: 14px; }
+  .qual { flex: 1; background: #ffffff; border-radius: 16px; padding: 16px 8px; text-align: center; }
+  .qual span { display: block; font-size: 44px; margin-bottom: 4px; }
+  .qual b { font-size: 26px; color: #0c4a6e; line-height: 1.3; }
+  .qual p { font-size: 22px; color: #4a4a6a; margin-top: 2px; }
+  .alert { background: #fef2f2; border: 2px solid #f0c9c9; border-radius: 16px; padding: 18px 22px;
+           font-size: 27px; line-height: 1.55; color: #7f1d1d; }
+  .alert b { color: #b3261e; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #b9d9e8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+  .tip { background: #16265c; border-radius: 24px; padding: 16px 28px;
+         display: flex; align-items: center; gap: 18px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>মাছের আবাসস্থল (ইউনিট-০৪)</h1>
+    <p>SSC-2686 • কৃষি শিক্ষা</p>
+  </div>
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">🐟</div>
+        <div>
+          <h2>আবাসস্থল কী?</h2>
+          <p>মাছ যে পরিবেশে বাস করে, খায় ও বংশবৃদ্ধি করে। মাছ ভালোভাবে বাঁচতে হলে পরিষ্কার পানি, পর্যাপ্ত অক্সিজেন ও উপযুক্ত তাপমাত্রা দরকার।</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🏞️ আবাসস্থল ২ ধরনের</h2>
+        <div class="vs">
+          <div class="v v-a"><b>🌊 প্রাকৃতিক</b><span>নদী, হাওর, বিল, প্লাবনভূমি ও সমুদ্র</span></div>
+          <div class="vsbadge">VS</div>
+          <div class="v v-b"><b>🏠 কৃত্রিম</b><span>পুকুর, ঘের ও খাঁচা</span></div>
+        </div>
+      </div>
+      <div class="card c-sky" style="flex:1.35">
+        <h2>💧 পানির গুণাগুণ ৫টি</h2>
+        <div class="quals">
+          <div class="qual"><span>🫧</span><b>দ্রবীভূত অক্সিজেন</b></div>
+          <div class="qual"><span>🌡️</span><b>তাপমাত্রা</b></div>
+          <div class="qual"><span>⚖️</span><b>অম্লত্ব (পিএইচ)</b></div>
+          <div class="qual"><span>🔍</span><b>স্বচ্ছতা</b></div>
+          <div class="qual"><span>🧂</span><b>লবণাক্ততা</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🛠️ পুকুর ব্যবস্থাপনা</h2>
+        <div class="chips">
+          <span class="chip">আগাছা পরিষ্কার</span>
+          <span class="chip">চুন প্রয়োগ</span>
+          <span class="chip">সার প্রয়োগ</span>
+          <span class="chip">পানি পরিবর্তন</span>
+        </div>
+      </div>
+      <div style="flex:1.15">
+        <div class="alert">⚠️ <b>অক্সিজেন কমার লক্ষণ:</b> মাছ পানির উপরে ভেসে মুখ হাঁ করে শ্বাস নেয় — তখন খাওয়া বন্ধ করে ও মারা যেতে পারে।</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">🍽️</div>
+        <p><b>মাছের খাদ্য:</b> প্রাকৃতিক খাদ্য (প্ল্যাংকটন, শৈবাল, ছোট জলজ প্রাণী) ও সম্পূরক খাদ্য। পুকুরে বেশি মাছ ছাড়লেই বেশি উৎপাদন হয় না — ঘনত্ব বেশি হলে অক্সিজেন কমে ও রোগ বাড়ে।</p>
+      </div>
+    </div>
+    <div class="footer">তথ্য: BOU SSC-2686 বই (পৃ. ৪৫–৬২) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

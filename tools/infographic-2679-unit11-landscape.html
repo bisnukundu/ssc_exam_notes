@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-pink { background: #fdeef5; } .c-pink h2 { color: #8b2252; }
+
+  .vs { display: flex; gap: 18px; align-items: stretch; }
+  .vs .side { flex: 1; border-radius: 16px; padding: 18px 22px; }
+  .vs .side b { display: block; font-size: 32px; margin-bottom: 6px; }
+  .vs .side p { font-size: 26px; line-height: 1.55; color: #3a3a55; }
+  .v-asex { background: #e8eef8; } .v-asex b { color: #2d4a8a; }
+  .v-sex { background: #e8f4ec; } .v-sex b { color: #2e6b41; }
+  .vs-badge { align-self: center; background: #16265c; color: #f5c542; font-size: 30px;
+              font-weight: bold; border-radius: 50%; width: 76px; height: 76px;
+              line-height: 76px; text-align: center; flex-shrink: 0; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+
+  .flow { display: flex; align-items: center; gap: 10px; }
+  .flow .step { flex: 1; background: #f4f6fb; border-radius: 16px; padding: 16px 12px; text-align: center; }
+  .flow .step b { display: block; font-size: 29px; color: #16265c; margin-bottom: 2px; }
+  .flow .step span { font-size: 24px; line-height: 1.45; color: #4a4a6a; }
+  .flow .arr { font-size: 40px; color: #2d4a8a; flex-shrink: 0; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জীবে প্রজনন (ইউনিট-১১)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>🌱 প্রজনন — ২ প্রকার</h2>
+        <div class="vs">
+          <div class="side v-asex">
+            <b>অযৌন প্রজনন</b>
+            <p>একজন জনকই যথেষ্ট। সন্তান জনকের হুবহু অনুলিপি হয় — বৈচিত্র্য হয় না। যেমন: অ্যামিবার বিভাজন, হাইড্রার কুঁড়ি, উদ্ভিদের অঙ্গজ প্রজনন (কলম, ডাল, কন্দ)।</p>
+          </div>
+          <div class="vs-badge">VS</div>
+          <div class="side v-sex">
+            <b>যৌন প্রজনন</b>
+            <p>শুক্রাণু ও ডিম্বাণুর মিলনে নিষেক ঘটে। সন্তানে বৈচিত্র্য সৃষ্টি হয়। মানুষে নিষেক ডিম্বনালিতে ঘটে; ভ্রূণ জরায়ুতে বড় হয়।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-pink" style="flex:1">
+        <h2>🌸 ফুলের অংশ</h2>
+        <div class="chips">
+          <span class="chip">বৃতি</span>
+          <span class="chip">পাপড়ি</span>
+          <span class="chip">পুংকেশর (পরাগধানীসহ)</span>
+          <span class="chip">স্ত্রীকেশর (গর্ভমুণ্ড, গর্ভদণ্ড, ডিম্বাশয়)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-green" style="flex:1">
+        <h2>🐝 পরাগায়ণ থেকে ফল</h2>
+        <div class="flow">
+          <div class="step"><b>পরাগায়ণ</b><span>পরাগরেণু গর্ভমুণ্ডে পৌঁছায়</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>নিষেক</b><span>শুক্রাণু + ডিম্বাণুর মিলন</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>ডিম্বক → বীজ</b><span>নিষেকের পর তৈরি হয়</span></div>
+          <div class="arr">→</div>
+          <div class="step"><b>ডিম্বাশয় → ফল</b><span>নিষেকের পর তৈরি হয়</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> পরাগায়ণ ও নিষেক এক নয় — পরাগায়ণ হলো পরাগরেণু গর্ভমুণ্ডে পৌঁছানো, নিষেক হলো শুক্রাণু ও ডিম্বাণুর মিলন। স্বপরাগায়ণ একই ফুলে, পরপরাগায়ণ ভিন্ন ফুলে ঘটে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ১৫১–১৭১) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

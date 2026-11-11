@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #0369a1, #0e7490); border-radius: 24px;
+            padding: 24px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 72px; }
+  .banner h2 { font-size: 38px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 28px; line-height: 1.5; color: #e0f2fe; }
+  .stat { margin-left: auto; background: rgba(255,255,255,0.16); border-radius: 18px;
+          padding: 16px 24px; text-align: center; white-space: nowrap; }
+  .stat b { display: block; font-size: 40px; color: #f5c542; }
+  .stat span { font-size: 24px; color: #ffffff; }
+
+  .tile { flex: 1; border-radius: 24px; padding: 24px 26px; }
+  .tile .ico { font-size: 56px; }
+  .tile h2 { font-size: 34px; margin: 8px 0 8px; }
+  .tile p { font-size: 25px; line-height: 1.55; color: #3a3a55; }
+  .t-blue { background: #e0f2fe; } .t-blue h2 { color: #075985; }
+  .t-cyan { background: #cffafe; } .t-cyan h2 { color: #155e75; }
+  .t-green { background: #dcfce7; } .t-green h2 { color: #166534; }
+  .t-indigo { background: #e0e7ff; } .t-indigo h2 { color: #3730a3; }
+
+  .card { border-radius: 24px; padding: 26px 30px; }
+  .card h2 { font-size: 38px; margin-bottom: 14px; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+  .c-red { background: #fee2e2; } .c-red h2 { color: #991b1b; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #fecaca; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; color: #991b1b; }
+  .chip2 { background: #ffffff; border: 2px solid #bae6fd; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; color: #075985; }
+
+  .steps { display: flex; gap: 0; align-items: stretch; }
+  .step { flex: 1; background: #f0f9ff; border-radius: 18px; padding: 20px 18px; text-align: center; }
+  .step b { display: block; font-size: 30px; color: #075985; margin-bottom: 4px; }
+  .step span { font-size: 24px; color: #3a3a55; }
+  .arr { align-self: center; font-size: 44px; color: #0369a1; padding: 0 10px; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জীবনের জন্য পানি (ইউনিট-০২)</h1>
+    <p>SSC-2673 • বিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">💧</div>
+        <div>
+          <h2>পানি ছাড়া জীবন অসম্ভব</h2>
+          <p>বিশুদ্ধ পানি মানে রোগজীবাণু ও ক্ষতিকর পদার্থমুক্ত পানি। গাছপালা সালোকসংশ্লেষণের জন্য পানি ব্যবহার করে।</p>
+        </div>
+        <div class="stat"><b>দুই-তৃতীয়াংশ</b><span>শরীরেরই পানি</span></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tile t-blue"><div class="ico">🍽️</div><h2>পরিপাকে সাহায্য</h2><p>খাবার হজম করতে সাহায্য করে।</p></div>
+      <div class="tile t-cyan"><div class="ico">🚚</div><h2>পুষ্টি পরিবহন</h2><p>পুষ্টি শরীরের সব জায়গায় পৌঁছে দেয়।</p></div>
+      <div class="tile t-green"><div class="ico">🌡️</div><h2>তাপমাত্রা নিয়ন্ত্রণ</h2><p>শরীরের তাপমাত্রা ঠিক রাখে।</p></div>
+      <div class="tile t-indigo"><div class="ico">🚿</div><h2>বর্জ্য নিষ্কাশন</h2><p>বর্জ্য শরীর থেকে বের করে দেয়।</p></div>
+    </div>
+
+    <div class="row">
+      <div class="card c-red" style="flex:1">
+        <h2>🦠 পানিবাহিত রোগ</h2>
+        <div class="chips">
+          <span class="chip">কলেরা</span>
+          <span class="chip">টাইফয়েড</span>
+          <span class="chip">আমাশয়</span>
+          <span class="chip">জন্ডিস</span>
+        </div>
+        <p style="font-size:26px; margin-top:16px; color:#3a3a55;">⚠️ মনে রাখবে: ম্যালেরিয়া মশাবাহিত রোগ — পানিবাহিত নয়।</p>
+      </div>
+      <div class="card c-white" style="flex:1.35">
+        <h2>🔬 পানি বিশুদ্ধ করার উপায়</h2>
+        <div class="steps">
+          <div class="step"><b>ফুটানো</b></div>
+          <div class="arr">→</div>
+          <div class="step"><b>ফিল্টার করা</b></div>
+          <div class="arr">→</div>
+          <div class="step"><b>ক্লোরিন দেওয়া</b></div>
+          <div class="arr">→</div>
+          <div class="step"><b>সূর্যের আলোতে রাখা</b></div>
+        </div>
+        <p style="font-size:26px; margin-top:16px; color:#3a3a55;">দূষণের কারণ: ময়লা, কারখানার বর্জ্য, রাসায়নিক সার ও কীটনাশক।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2673 বই (পৃ. ৩৫–৪৮) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

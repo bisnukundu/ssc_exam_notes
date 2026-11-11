@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 66px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .banner { background: linear-gradient(120deg, #1b7a43, #0d3b1e); border-radius: 24px;
+            padding: 26px 36px; display: flex; align-items: center; gap: 30px; }
+  .banner .ico { font-size: 76px; }
+  .banner h2 { font-size: 40px; color: #ffffff; margin-bottom: 6px; }
+  .banner p { font-size: 29px; line-height: 1.5; color: #e8f4ec; }
+  .badge { margin-left: auto; background: #f5c542; color: #16265c; border-radius: 999px;
+           padding: 14px 26px; font-size: 28px; font-weight: bold; white-space: nowrap; }
+
+  .sport { flex: 1; border-radius: 24px; padding: 24px 18px; text-align: center; }
+  .sport .ico { font-size: 62px; }
+  .sport h2 { font-size: 33px; margin: 10px 0 8px; }
+  .sport p { font-size: 25px; line-height: 1.55; color: #3a3a55; }
+  .sport p b { color: #16265c; }
+  .s-blue { background: #e8eef8; } .s-blue h2 { color: #2d4a8a; }
+  .s-green { background: #e8f4ec; } .s-green h2 { color: #1b6b3a; }
+  .s-red { background: #fde8e8; border: 3px solid #c62828; } .s-red h2 { color: #8e1616; }
+  .s-orange { background: #fdf3e0; } .s-orange h2 { color: #9a6208; }
+  .s-teal { background: #e0f2f1; } .s-teal h2 { color: #00695c; }
+  .tag { display: inline-block; background: #c62828; color: #ffffff; border-radius: 999px;
+         padding: 4px 14px; font-size: 22px; font-weight: bold; margin-top: 8px; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 22px 32px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 52px; }
+  .tip p { font-size: 28px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>খেলাধুলা (ইউনিট-০৮)</h1>
+    <p>SSC-2669 • শারীরিক শিক্ষা, স্বাস্থ্য বিজ্ঞান ও খেলাধুলা</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="banner" style="flex:1">
+        <div class="ico">⚽</div>
+        <div>
+          <h2>খেলাধুলা কেন?</h2>
+          <p>শারীরিক শিক্ষার সবচেয়ে আনন্দদায়ক অংশ। শরীরের ব্যায়াম হয়, মন প্রফুল্ল থাকে, শৃঙ্খলা, দলগত মনোভাব ও নেতৃত্বের গুণ তৈরি হয়।</p>
+        </div>
+        <div class="badge">সর্বোচ্চ ৪ সপ্তাহ</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="sport s-blue">
+        <div class="ico">⚽</div>
+        <h2>ফুটবল</h2>
+        <p>এক দলে <b>১১ জন</b>, খেলার সময় <b>৯০ মিনিট</b>, গোল করে জেতা হয়</p>
+      </div>
+      <div class="sport s-green">
+        <div class="ico">🏏</div>
+        <h2>ক্রিকেট</h2>
+        <p>ব্যাট ও বলের খেলা, এক দলে <b>১১ জন</b>, রান করে জেতা হয়</p>
+      </div>
+      <div class="sport s-red">
+        <div class="ico">🤼</div>
+        <h2>কাবাডি</h2>
+        <p>শ্বাস ধরে বিপক্ষ দলে গিয়ে ছুঁয়ে আসা</p>
+        <span class="tag">বাংলাদেশের জাতীয় খেলা</span>
+      </div>
+      <div class="sport s-orange">
+        <div class="ico">🏃</div>
+        <h2>অ্যাথলেটিকস</h2>
+        <p><b>দৌড়, লাফ</b> (লং জাম্প, হাই জাম্প) ও <b>নিক্ষেপ</b> (গোলক, বর্শা)</p>
+      </div>
+      <div class="sport s-teal">
+        <div class="ico">🏊</div>
+        <h2>সাঁতার</h2>
+        <p>সারা শরীরের ব্যায়াম, <b>দম ও শক্তি</b> বাড়ায়</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> ফুটবল ও ক্রিকেট — দুটিতেই ১১ জন খেলোয়াড়, গুলিয়ে ফেলবে না। কাবাডি বাংলাদেশের জাতীয় খেলা — পরীক্ষায় প্রায়ই আসে।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2669 বই (পৃ. ৭৭–১০৯) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

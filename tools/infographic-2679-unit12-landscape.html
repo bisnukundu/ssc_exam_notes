@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 16px 60px 12px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 60px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 24px; color: #ffffff; margin-top: 2px; }
+
+  .wrap { padding: 14px 48px 0; }
+  .row { display: flex; gap: 18px; margin-top: 14px; }
+  .row:first-child { margin-top: 0; }
+
+  .card { border-radius: 24px; padding: 18px 26px; }
+  .card h2 { font-size: 34px; margin-bottom: 10px; }
+  .c-blue { background: #e8eef8; } .c-blue h2 { color: #2d4a8a; }
+  .c-green { background: #e8f4ec; } .c-green h2 { color: #2e6b41; }
+  .c-orange { background: #fdf3e0; } .c-orange h2 { color: #9a6208; }
+  .c-white { background: #ffffff; border: 2px solid #e0dbd0; }
+  .c-white h2 { color: #16265c; }
+
+  .tl { display: flex; align-items: stretch; gap: 10px; }
+  .tl .ev { flex: 1; border-radius: 16px; padding: 16px 18px; text-align: center;
+            border-top: 8px solid #2d4a8a; background: #f4f6fb; }
+  .tl .ev b { display: block; font-size: 30px; color: #16265c; margin-bottom: 4px; }
+  .tl .ev span { font-size: 24px; line-height: 1.45; color: #4a4a6a; }
+  .tl .ev.gold { border-top-color: #f5c542; background: #fdf3e0; }
+  .tl .arr { font-size: 40px; color: #2d4a8a; align-self: center; flex-shrink: 0; }
+
+  .laws { display: flex; gap: 16px; }
+  .law { flex: 1; border-radius: 16px; padding: 16px 20px; background: #ffffff; }
+  .law b { display: block; font-size: 29px; color: #2d4a8a; margin-bottom: 4px; }
+  .law span { font-size: 25px; line-height: 1.5; color: #3a3a55; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #ffffff; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; }
+
+  .stat { flex: 1; background: #ffffff; border-radius: 16px; padding: 16px 14px; text-align: center; }
+  .stat b { display: block; font-size: 40px; color: #2e6b41; }
+  .stat span { font-size: 24px; color: #4a4a6a; }
+
+  .tip { background: #16265c; border-radius: 24px; padding: 14px 28px;
+         display: flex; align-items: center; gap: 22px; }
+  .tip .ico { font-size: 48px; }
+  .tip p { font-size: 26px; line-height: 1.5; color: #ffffff; }
+  .tip b { color: #f5c542; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 14px 0 12px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>জীবের বংশগতি ও বিবর্তন (ইউনিট-১২)</h1>
+    <p>SSC-2679 • জীববিজ্ঞান</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="card c-white" style="flex:1">
+        <h2>📜 দুই জনক — দুই তত্ত্ব</h2>
+        <div class="tl">
+          <div class="ev"><b>গ্রেগর মেন্ডেল</b><span>বংশগতিবিদ্যার জনক — মটর গাছের পরীক্ষা থেকে বংশগতির সূত্র আবিষ্কার করেন</span></div>
+          <div class="arr">→</div>
+          <div class="ev gold"><b>চার্লস ডারউইন</b><span>প্রাকৃতিক নির্বাচন তত্ত্ব — পরিবেশের সঙ্গে মানিয়ে নেওয়া জীব টিকে থাকে ও বংশবৃদ্ধি করে</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-blue" style="flex:1.4">
+        <h2>🧬 মেন্ডেলের ২ সূত্র</h2>
+        <div class="laws">
+          <div class="law"><b>পৃথকীকরণ সূত্র</b><span>জননকোষ তৈরির সময় অ্যালিল জোড়া আলাদা হয়ে যায়</span></div>
+          <div class="law"><b>স্বাধীন বিন্যাস সূত্র</b><span>ভিন্ন বৈশিষ্ট্যের অ্যালিল স্বাধীনভাবে সঞ্চারিত হয়</span></div>
+        </div>
+      </div>
+      <div class="card c-green" style="flex:1">
+        <h2>🔢 মনোহাইব্রিড ক্রস</h2>
+        <div style="display:flex; gap:14px">
+          <div class="stat"><b>৩ : ১</b><span>F2 প্রজন্মের অনুপাত</span></div>
+          <div class="stat"><b>জিন</b><span>বংশগতির একক (DNA-তে)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card c-orange" style="flex:1">
+        <h2>🦴 বিবর্তনের প্রমাণ</h2>
+        <div class="chips">
+          <span class="chip">জীবাশ্ম</span>
+          <span class="chip">সমসংস্থ অঙ্গ (মানুষের হাত ও তিমির পাখনা)</span>
+          <span class="chip">ভ্রূণতত্ত্ব</span>
+          <span class="chip">মিউটেশন ও প্রাকৃতিক নির্বাচন — বিবর্তনের চালিকাশক্তি</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tip" style="flex:1">
+        <div class="ico">💡</div>
+        <p><b>মনে রাখবে:</b> জিন ও ক্রোমোজোম এক নয় — জিন DNA-র একটি অংশ যা একটি বৈশিষ্ট্য নিয়ন্ত্রণ করে, ক্রোমোজোম জিন বহনকারী গঠন। অর্জিত বৈশিষ্ট্য (যেমন ব্যায়ামে পেশি বাড়া) বংশগতিতে যায় না।</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2679 বই (পৃ. ১৭২–১৯০) • Under Teacher Review</div>
+  </div>
+</body>
+</html>

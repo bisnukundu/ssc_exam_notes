@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1920px; background: #fdfcf9;
+         font-family: 'DejaVu Sans', 'Noto Sans Bengali', sans-serif; color: #1a1a2e; }
+
+  .header { background: #16265c; padding: 26px 60px 22px; text-align: center; }
+  .header h1 { font-family: 'DejaVu Serif', serif; font-size: 64px; color: #f5c542; line-height: 1.1; }
+  .header p { font-size: 26px; color: #ffffff; margin-top: 4px; }
+
+  .wrap { padding: 22px 48px 0; }
+  .row { display: flex; gap: 22px; margin-top: 20px; }
+  .row:first-child { margin-top: 0; }
+
+  .tbl { flex: 1; border-radius: 24px; padding: 24px 30px; }
+  .tbl h2 { font-size: 36px; margin-bottom: 14px; }
+  .tbl .trow { display: flex; gap: 14px; margin-bottom: 12px; }
+  .tbl .trow:last-child { margin-bottom: 0; }
+  .tbl .prep { width: 110px; flex-shrink: 0; border-radius: 14px; background: #ffffff;
+              display: flex; align-items: center; justify-content: center;
+              font-size: 34px; font-weight: bold; }
+  .tbl .use { flex: 1; background: #ffffff; border-radius: 14px; padding: 12px 18px; }
+  .tbl .use b { display: block; font-size: 26px; color: #16265c; }
+  .tbl .use span { font-size: 24px; color: #3a3a55; }
+  .tbl .use span i { color: #6b6b85; }
+  .t-blue { background: #e8eef8; } .t-blue h2 { color: #2d4a8a; } .t-blue .prep { color: #2d4a8a; }
+  .t-green { background: #e8f4ec; } .t-green h2 { color: #2e6b41; } .t-green .prep { color: #2e6b41; }
+
+  .fixed { background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px; padding: 22px 30px; }
+  .fixed h2 { font-size: 32px; color: #16265c; margin-bottom: 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; }
+  .chip { background: #f4f6fb; border: 2px solid #d5dce8; border-radius: 999px;
+          padding: 10px 22px; font-size: 27px; font-weight: bold; color: #16265c; }
+
+  .warn { background: #fdf3e0; border: 2px solid #f5c542; border-radius: 24px; padding: 20px 32px;
+          display: flex; align-items: center; gap: 22px; }
+  .warn .ico { font-size: 48px; }
+  .warn p { font-size: 27px; line-height: 1.5; color: #4a3a08; }
+  .warn b { color: #9a6208; }
+  .warn .cross { color: #b3261e; text-decoration: line-through; }
+  .warn .ok { color: #2e6b41; }
+
+  .footer { text-align: center; font-size: 22px; color: #7a7a9a; padding: 22px 0 20px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Preposition (Unit-11)</h1>
+    <p>SSC-2652 • English Second Paper</p>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="tbl t-blue">
+        <h2>🕒 Prepositions of Time</h2>
+        <div class="trow"><div class="prep">at</div><div class="use"><b>A point of time</b><span><i>'at 5 o'clock'</i></span></div></div>
+        <div class="trow"><div class="prep">on</div><div class="use"><b>Days and dates</b><span><i>'on Monday', 'on 1 January'</i></span></div></div>
+        <div class="trow"><div class="prep">in</div><div class="use"><b>Months, years, long periods</b><span><i>'in 2005', 'in the morning'</i></span></div></div>
+      </div>
+      <div class="tbl t-green">
+        <h2>📍 Prepositions of Place</h2>
+        <div class="trow"><div class="prep">at</div><div class="use"><b>A point</b><span><i>'at the door'</i></span></div></div>
+        <div class="trow"><div class="prep">in</div><div class="use"><b>An enclosed place</b><span><i>'in the room'</i></span></div></div>
+        <div class="trow"><div class="prep">on</div><div class="use"><b>A surface</b><span><i>'on the table'</i></span></div></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="fixed" style="flex:1">
+        <h2>📌 Fixed phrases — learn by heart</h2>
+        <div class="chips">
+          <span class="chip">good at English</span>
+          <span class="chip">fond of reading</span>
+          <span class="chip">afraid of dogs</span>
+          <span class="chip">interested in music</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="warn" style="flex:1">
+        <div class="ico">⚠️</div>
+        <p><span class="cross">'in Monday'</span> → <span class="ok"><b>'on Monday'</b></span> &nbsp;•&nbsp; <span class="cross">'good in English'</span> → <span class="ok"><b>'good at English'</b></span></p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2652 বই (p. 111–124) • Under Teacher Review</div>
+  </div>
+</body>
+</html>
