@@ -2065,10 +2065,11 @@ body {
     max-width: 560px;
     max-height: 88vh;
     overflow-y: auto;
-    background: var(--bg-color);
-    border: 1px solid var(--border-color);
+    background: #ffffff;
+    border: 1px solid #e0dbd0;
     border-radius: 18px;
     padding: 22px;
+    color: #1a1a2e;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 }
 .close-choice-modal {
@@ -2078,9 +2079,9 @@ body {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border: 1px solid var(--border-color);
-    background: var(--secondary-color);
-    color: var(--text-color);
+    border: 1px solid #e0dbd0;
+    background: #f0ece3;
+    color: #1a1a2e;
     font-size: 15px;
     cursor: pointer;
 }
@@ -2092,7 +2093,7 @@ body {
 .choice-modal-meta {
     margin: 0 0 16px;
     font-size: 13px;
-    color: var(--text-muted);
+    color: #4a4a6a;
 }
 .choice-buttons {
     display: grid;
@@ -2118,7 +2119,7 @@ body {
     margin: 0 0 14px;
     font-size: 13.5px;
     line-height: 1.6;
-    color: var(--text-muted);
+    color: #4a4a6a;
 }
 .choice-units-label {
     font-weight: 700;
@@ -2127,13 +2128,13 @@ body {
 }
 .choice-unit-row {
     padding: 8px 10px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #e0dbd0;
     border-radius: 10px;
     margin-bottom: 6px;
     font-size: 13.5px;
     line-height: 1.5;
 }
-.choice-unit-row span { color: var(--text-muted); font-size: 12.5px; }
+.choice-unit-row span { color: #4a4a6a; font-size: 12.5px; }
 @media (max-width: 520px) {
     .choice-buttons { grid-template-columns: 1fr; }
     .choice-modal-card { padding: 18px; }
