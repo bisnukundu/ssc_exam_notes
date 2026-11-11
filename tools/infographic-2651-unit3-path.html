@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1440px; background: #fdfcf9;
+         font-family: 'Noto Sans Bengali', 'DejaVu Sans', sans-serif; color: #1a1a2e; }
+
+  /* header */
+  .header { background: #16265c; padding: 52px 60px 46px; text-align: center; }
+  .header h1 { font-family: 'Noto Serif Bengali', serif; font-size: 88px; color: #f5c542; line-height: 1.15; }
+  .header p { font-size: 30px; color: #ffffff; margin-top: 10px; }
+
+  .wrap { padding: 44px 56px 0; }
+
+  /* intro banner */
+  .banner { background: linear-gradient(120deg, #0e7a6e, #16265c); border-radius: 28px;
+            padding: 42px 48px; display: flex; align-items: center; gap: 36px; }
+  .banner .ico { font-size: 96px; }
+  .banner h2 { font-size: 46px; color: #ffffff; margin-bottom: 10px; }
+  .banner p { font-size: 33px; line-height: 1.55; color: #e6f4f2; }
+  .chips { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 16px; }
+  .chip { background: rgba(255,255,255,0.16); border: 2px solid rgba(255,255,255,0.55);
+          border-radius: 999px; padding: 10px 24px; font-size: 30px; font-weight: bold; color: #ffffff; }
+
+  /* section headings */
+  .sec-title { font-size: 48px; color: #16265c; text-align: center; margin: 46px 0 8px; }
+  .sec-sub { font-size: 32px; color: #4a4a6a; text-align: center; margin-bottom: 30px; line-height: 1.5; }
+
+  /* zigzag steps */
+  .steps { position: relative; padding: 6px 0; }
+  .steps .line { position: absolute; left: 50%; top: 20px; bottom: 20px; width: 0;
+                 border-left: 5px dashed #c47b1a; }
+  .step { display: flex; align-items: center; margin-bottom: 26px; position: relative; }
+  .step .card { flex: 1; background: #ffffff; border-radius: 22px; padding: 26px 34px;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.07); border-left: 12px solid; }
+  .step .card h3 { font-size: 42px; margin-bottom: 4px; }
+  .step .card p { font-size: 32px; color: #4a4a6a; }
+  .step .node { width: 78px; height: 78px; border-radius: 50%; color: #ffffff; font-size: 40px;
+                font-weight: bold; display: flex; align-items: center; justify-content: center;
+                flex: none; margin: 0 30px; border: 5px solid #ffffff;
+                box-shadow: 0 4px 14px rgba(0,0,0,0.18); z-index: 1; }
+  .step .spacer { flex: 1; }
+  .s1 .card, .s1 .node { border-color: #0e9a8b; background: #0e9a8b; }
+  .s1 .card { background: #ffffff; } .s1 h3 { color: #0e7a6e; }
+  .s2 .node { background: #7cb342; } .s2 .card { border-color: #7cb342; } .s2 h3 { color: #5a8f2a; }
+  .s3 .node { background: #e0a408; } .s3 .card { border-color: #e0a408; } .s3 h3 { color: #9a6208; }
+  .s4 .node { background: #d63384; } .s4 .card { border-color: #d63384; } .s4 h3 { color: #c2185b; }
+  .s5 .node { background: #9b59b6; } .s5 .card { border-color: #9b59b6; } .s5 h3 { color: #6b3fa0; }
+  .s6 .node { background: #4a90d9; } .s6 .card { border-color: #4a90d9; } .s6 h3 { color: #2d4a8a; }
+
+  /* split: উপসর্গ vs প্রত্যয় */
+  .split { display: flex; gap: 24px; align-items: stretch; margin-top: 10px; }
+  .split .half { flex: 1; border-radius: 28px; padding: 38px 40px; }
+  .split .half h3 { font-size: 44px; margin-bottom: 12px; }
+  .split .half p { font-size: 32px; line-height: 1.6; color: #33334a; }
+  .split .half p b { color: #1a1a2e; }
+  .half-blue { background: #e8eef8; } .half-blue h3 { color: #2d4a8a; }
+  .half-green { background: #e8f4ec; } .half-green h3 { color: #2e6b41; }
+  .vs { width: 92px; height: 92px; border-radius: 50%; background: #16265c; color: #f5c542;
+        font-size: 30px; font-weight: bold; display: flex; align-items: center; justify-content: center;
+        flex: none; align-self: center; }
+
+  /* bottom cards */
+  .cards { display: flex; gap: 28px; }
+  .card { flex: 1; background: #ffffff; border: 2px solid #e0dbd0; border-radius: 24px;
+          padding: 32px 26px; text-align: center; }
+  .card .ico { font-size: 84px; }
+  .card h3 { font-size: 40px; margin: 12px 0 10px; }
+  .card p { font-size: 31px; line-height: 1.5; color: #4a4a6a; }
+  .c-blue h3 { color: #4a90d9; } .c-green h3 { color: #7cb342; } .c-orange h3 { color: #e67e22; }
+
+  .footer { text-align: center; font-size: 26px; color: #7a7a9a; padding: 40px 0 44px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>শব্দ প্রকরণ (ইউনিট-০৩)</h1>
+    <p>SSC-2651 • বাংলা দ্বিতীয় পত্র</p>
+  </div>
+
+  <div class="wrap">
+    <div class="banner">
+      <div class="ico">🔤</div>
+      <div>
+        <h2>শব্দ প্রকরণ কী?</h2>
+        <p>শব্দ কীভাবে গঠিত হয়, তার রূপ কীভাবে বদলায় — এই Unit-এর বিষয় তাই।</p>
+        <div class="chips">
+          <span class="chip">গঠনমূলক</span>
+          <span class="chip">অর্থমূলক</span>
+          <span class="chip">উৎসগত</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="sec-title">সমাসের ৬ প্রকার</h2>
+    <p class="sec-sub">সমাস মানে পরস্পর অর্থসঙ্গতিপূর্ণ দুই বা ততোধিক পদের এক পদে পরিণত হওয়া।</p>
+
+    <div class="steps">
+      <div class="line"></div>
+      <div class="step s1">
+        <div class="card"><h3>১. দ্বন্দ্ব</h3><p>যেমন: মা-বাবা</p></div>
+        <div class="node">১</div><div class="spacer"></div>
+      </div>
+      <div class="step s2">
+        <div class="spacer"></div><div class="node">২</div>
+        <div class="card"><h3>২. কর্মধারয়</h3><p>যেমন: নীলপদ্ম</p></div>
+      </div>
+      <div class="step s3">
+        <div class="card"><h3>৩. তৎপুরুষ</h3><p>যেমন: রাজপুত্র</p></div>
+        <div class="node">৩</div><div class="spacer"></div>
+      </div>
+      <div class="step s4">
+        <div class="spacer"></div><div class="node">৪</div>
+        <div class="card"><h3>৪. বহুব্রীহি</h3><p>যেমন: দশানন</p></div>
+      </div>
+      <div class="step s5">
+        <div class="card"><h3>৫. দ্বিগু</h3><p>যেমন: ত্রিফলা</p></div>
+        <div class="node">৫</div><div class="spacer"></div>
+      </div>
+      <div class="step s6">
+        <div class="spacer"></div><div class="node">৬</div>
+        <div class="card"><h3>৬. অব্যয়ীভাব</h3><p>যেমন: যথাসাধ্য</p></div>
+      </div>
+    </div>
+
+    <h2 class="sec-title">উপসর্গ বনাম প্রত্যয়</h2>
+    <div class="split">
+      <div class="half half-blue">
+        <h3>⬅️ উপসর্গ</h3>
+        <p>শব্দের <b>আগে</b> বসে নতুন শব্দ তৈরি করে।<br>বাংলা উপসর্গ <b>২০টি</b>, সংস্কৃত উপসর্গ <b>২০টি</b> — বিদেশি উপসর্গও আছে।</p>
+      </div>
+      <div class="vs">বনাম</div>
+      <div class="half half-green">
+        <h3>প্রত্যয় ➡️</h3>
+        <p><b>কৃৎ</b> — ধাতুর পরে: কৃ + তব্য = <b>কর্তব্য</b><br><b>তদ্ধিত</b> — শব্দের পরে: মানব + তা = <b>মানবতা</b></p>
+      </div>
+    </div>
+
+    <h2 class="sec-title">আরও যা শিখবে</h2>
+    <div class="cards">
+      <div class="card c-blue">
+        <div class="ico">📊</div>
+        <h3>বচন</h3>
+        <p>একবচন ও বহুবচন</p>
+      </div>
+      <div class="card c-green">
+        <div class="ico">🏷️</div>
+        <h3>পদাশ্রিত নির্দেশক</h3>
+        <p>টা, টি, খানা, গুলো, গুলি</p>
+      </div>
+      <div class="card c-orange">
+        <div class="ico">🔁</div>
+        <h3>দ্বিরুক্ত শব্দ</h3>
+        <p>একই শব্দ দুবার<br>ধীরে ধীরে, টপটপ</p>
+      </div>
+    </div>
+
+    <div class="footer">তথ্য: BOU SSC-2651 বই (পৃ. ৩৭–৯৭) • Under Teacher Review</div>
+  </div>
+</body>
+</html>
