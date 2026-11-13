@@ -96,7 +96,7 @@ function loadBooks() {
                 const bgStyle = book.gradient ? `background: ${book.gradient};` : '';
                 const bookIcon = book.icon ? `<div class="book-icon">${book.icon}</div>` : '';
                 
-            card.innerHTML = `
+                card.innerHTML = `
                     <div class="book-cover" style="${bgStyle}">
                          <div class="book-spine"></div>
                          ${bookIcon}
@@ -447,24 +447,6 @@ function renderData(data) {
               </div>`;
             }
 
-            // Audio narration HTML
-            let audioHtml = '';
-            if (item.audio) {
-                audioHtml = `
-              <div class="audio-player ${meta.colorClass}">
-                <div class="audio-player-head">
-                  <span class="audio-player-icon">🎧</span>
-                  <div style="flex:1;">
-                    <div class="audio-player-title">শুনে শিখি — ভয়েস নোট</div>
-                    <div class="audio-player-sub">Unit-টির নোট পড়ে বুঝিয়ে দেওয়া হয়েছে — চাপ দিলেই চলবে।</div>
-                  </div>
-                  ${item.audio_duration ? `<span class="audio-duration">${item.audio_duration}</span>` : ''}
-                </div>
-                <audio controls preload="none" src="${item.audio}" class="audio-control"></audio>
-                <div class="audio-player-note">${item.audio_note || 'Under Teacher Review'}</div>
-              </div>`;
-            }
-
             card.innerHTML = `
             <div class="card-header ${meta.colorClass}">
               <div class="card-num">${displayNum}</div>
@@ -479,7 +461,6 @@ function renderData(data) {
                 <div class="box-label ${meta.colorClass}">📋 সারসংক্ষেপ</div>
                 <p class="summary-text">${item.summary || 'কোনো সারসংক্ষেপ নেই।'}</p>
               </div>
-              ${audioHtml}
               ${item.infographic ? `<div class="infographic-wrap"><img class="unit-infographic" src="${item.infographic}" alt="${item.infographic_alt || 'ইনফোগ্রাফিক'}" loading="lazy"><div class="infographic-caption">📊 ইনফোগ্রাফিক — এক নজরে Unit-টি</div></div>` : ''}
               ${creativeHtml}
               ${mqHtml}
