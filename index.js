@@ -283,8 +283,32 @@ function scrollToPendingUnit() {
     if (!target && cards[no - 1]) target = cards[no - 1]; // fallback: Nth card = Unit N
     if (!target) { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
     target.classList.add('unit-flash');
-    setTimeout(() => target.classList.remove('unit-flash'), 2700);
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(() => target.classList.remove('unit-flash'), 3400);
+    const jump = () => target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    jump();
+    // Late-loading images above the target (unit infographics, profile photo)
+    // expand after the first jump and push the target down — re-assert the
+    // scroll while the page settles, unless the user scrolls manually.
+    const until = Date.now() + 4500;
+    let userScrolled = false;
+    const stopOnUserScroll = () => { userScrolled = true; };
+    window.addEventListener('wheel', stopOnUserScroll, { once: true, passive: true });
+    window.addEventListener('touchmove', stopOnUserScroll, { once: true, passive: true });
+    const reassert = () => {
+        if (userScrolled || Date.now() >= until) return;
+        if (target.getBoundingClientRect().top > 220) jump();
+    };
+    const imgs = document.querySelectorAll('#notes-view img');
+    const onImg = () => reassert();
+    imgs.forEach(im => { im.addEventListener('load', onImg); im.addEventListener('error', onImg); });
+    const timer1 = setTimeout(reassert, 900);
+    const timer2 = setTimeout(reassert, 2000);
+    setTimeout(() => {
+        imgs.forEach(im => { im.removeEventListener('load', onImg); im.removeEventListener('error', onImg); });
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+        if (!userScrolled && target.getBoundingClientRect().top > 220) jump();
+    }, 4600);
 }
 
 document.getElementById('choiceNotesBtn').addEventListener('click', openSubjectNotes);

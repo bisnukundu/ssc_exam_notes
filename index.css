@@ -1056,6 +1056,7 @@ body {
     max-width: 260px;
     flex-shrink: 0;
     background: var(--bg3);
+    aspect-ratio: 3 / 4; /* reserve photo space so late image load can't shift the page */
 }
 .profile-img {
     width: 100%;
