@@ -71,7 +71,10 @@
           }
         },
         "infographic": "db/images/2651-unit1-bhasha-infographic.png",
-        "infographic_alt": "ভাষা — Unit 1 ইনফোগ্রাফিক (Bands ডিজাইন): সংজ্ঞা, ৫টি বৈশিষ্ট্য, সংখ্যায় বাংলা, ভাষার রূপ, ব্যাকরণের ৪ বিষয়, মাইলফলক"
+        "infographic_alt": "ভাষা — Unit 1 ইনফোগ্রাফিক (Bands ডিজাইন): সংজ্ঞা, ৫টি বৈশিষ্ট্য, সংখ্যায় বাংলা, ভাষার রূপ, ব্যাকরণের ৪ বিষয়, মাইলফলক",
+        "audio": "db/audio/2651-unit1-bhasha.mp3",
+        "audio_duration": "৫ মিনিট ৪৫ সেকেন্ড",
+        "audio_note": "ভয়েস: Google TTS (কৃত্রিম কণ্ঠ) • Under Teacher Review"
       },
       {
         "id": 2,
