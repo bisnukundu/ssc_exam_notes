@@ -190,6 +190,7 @@ const NOTES_FILES = {
 };
 
 let currentChoiceSubject = null;
+let pendingUnit = null; // { no } — modal unit click waits for notes render, then jumps to that unit
 
 function openSubjectChoice(code) {
     const s = secondYearSubjects.find(x => x.code === code);
@@ -218,9 +219,9 @@ function openSubjectChoice(code) {
     noteEl.innerText = note;
     const unitsEl = document.getElementById('choice-modal-units');
     if (s.units && s.units.length > 0) {
-        unitsEl.innerHTML = '<div class="choice-units-label">📚 Unit তালিকা</div>' + s.units.map(u => {
+        unitsEl.innerHTML = '<div class="choice-units-label">📚 Unit তালিকা</div><div class="choice-units-hint">👆 যেকোনো Unit-এ চাপ দিলে সরাসরি সেই Unit-এর নোট খুলবে</div>' + s.units.map(u => {
             const meta = [u.pages || '', u.marks ? `${u.marks} নম্বর` : ''].filter(Boolean).join(' • ');
-            return `<div class="choice-unit-row"><strong>Unit ${u.no} — ${u.title_bn}</strong>${meta ? `<span> ${meta}</span>` : ''}</div>`;
+            return `<div class="choice-unit-row" role="button" tabindex="0" data-unit-no="${u.no}"><strong>Unit ${u.no} — ${u.title_bn}</strong>${meta ? `<span> ${meta}</span>` : ''}<span class="choice-unit-go">›</span></div>`;
         }).join('');
     } else {
         unitsEl.innerHTML = s.unit_note ? `<div class="choice-units-label">📚 Unit তালিকা</div><p class="units-panel-note">${s.unit_note}</p>` : '';
@@ -255,7 +256,47 @@ function openSubjectBook() {
     openBook(s.book_pdf, s.title_bn);
 }
 
+// Modal → Unit deep-link: open the subject's notes, then jump to that unit
+function openSubjectUnit(unitNo) {
+    if (!currentChoiceSubject) return;
+    const file = NOTES_FILES[currentChoiceSubject.code];
+    if (!file) return;
+    pendingUnit = { no: Number(unitNo) };
+    closeSubjectChoice();
+    showNotesView();
+    const sel = document.getElementById('subjectSelect');
+    if (sel) sel.value = file;
+    loadSubject(file);
+}
+
+function scrollToPendingUnit() {
+    if (!pendingUnit) return;
+    const no = pendingUnit.no;
+    pendingUnit = null;
+    const cards = document.querySelectorAll('#dynamic-content .card');
+    let target = null;
+    const re = new RegExp('^Unit\\s+' + no + '\\s*[\u2014\u2013-]');
+    cards.forEach(c => {
+        const t = c.querySelector('.card-title');
+        if (t && re.test(t.textContent.trim())) target = c;
+    });
+    if (!target && cards[no - 1]) target = cards[no - 1]; // fallback: Nth card = Unit N
+    if (!target) { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    target.classList.add('unit-flash');
+    setTimeout(() => target.classList.remove('unit-flash'), 2700);
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 document.getElementById('choiceNotesBtn').addEventListener('click', openSubjectNotes);
+document.getElementById('choice-modal-units').addEventListener('click', (e) => {
+    const row = e.target.closest('.choice-unit-row');
+    if (row && row.dataset.unitNo) openSubjectUnit(row.dataset.unitNo);
+});
+document.getElementById('choice-modal-units').addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const row = e.target.closest('.choice-unit-row');
+    if (row && row.dataset.unitNo) { e.preventDefault(); openSubjectUnit(row.dataset.unitNo); }
+});
 document.getElementById('choiceBookBtn').addEventListener('click', openSubjectBook);
 document.getElementById('closeChoiceModal').addEventListener('click', closeSubjectChoice);
 document.getElementById('choiceModalBackdrop').addEventListener('click', closeSubjectChoice);
@@ -293,6 +334,7 @@ function loadSubject(url) {
         .then(res => res.json())
         .then(data => renderData(normalizeData(data, url)))
         .catch(err => {
+            pendingUnit = null;
             console.error("Error loading JSON: ", err);
             document.getElementById('dynamic-content').innerHTML = '<p style="text-align:center; padding: 40px; color: var(--text3);">ডাটা লোড করতে সমস্যা হয়েছে বা ডাটা পাওয়া যায়নি।</p>';
         });
@@ -475,6 +517,7 @@ function renderData(data) {
 
     // Initialize scrolling interactions manually after DOM is updated
     initDynamicInteractions();
+    scrollToPendingUnit();
 }
 
 function initDynamicInteractions() {
