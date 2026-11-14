@@ -67,7 +67,7 @@ tools/
   (পৃ. ২) থেকে। বাকি সব MCQ ও সৃজনশীল **অনুশীলনী (Practice)** — বইয়ের নিজস্ব
   প্রশ্ন নয়, Unit-এর বিষয়বস্তুর উপর তৈরি; প্রতিটি নোট ফাইলের `practice_note`-এ
   তা স্পষ্ট লেখা আছে। বইয়ের প্রশ্ন বলে কিছু বানানো হয়নি।
-- সব নোট **Under Teacher Review** — শিক্ষক অনুমোদন ছাড়া কোনো পাঠ Published নয়।
+- সব নোট শিক্ষক অনুমোদন সাপেক্ষে — অনুমোদন ছাড়া কোনো পাঠ Published নয়।
 
 ## Subject Choice Popup — "নোট নাকি বই?"
 
@@ -87,7 +87,7 @@ tools/
   Unit 2–11-এর MCQ ও সৃজনশীল অনুশীলনী (Practice), `tools/add-2651-mcq-creative.py` দিয়ে যোগ করা।
 - সৃজনশীল ৬০-এর মধ্যে প্রতিবেদন প্রণয়ন ১০ নম্বর বইয়ের মানবণ্টনে আছে;
   সূচিপত্রের ১১ Unit-এর মধ্যে প্রতিবেদনের আলাদা Unit নেই — নোটে তা স্পষ্ট লেখা আছে।
-- স্থিতি: **Under Teacher Review** — শিক্ষক অনুমোদন ছাড়া কোনো পাঠ Published নয়।
+- স্থিতি: শিক্ষক অনুমোদন সাপেক্ষে — অনুমোদন ছাড়া কোনো পাঠ Published নয়।
 
 ## Database Mapping (Laravel Backend)
 
@@ -112,7 +112,7 @@ Backend: `bou-ssc-laravel-backend/` (এই রিপোতে নেই, আল
 2. `tools/generate-second-year-data.py` বা `tools/generate-notes-2651.py`-তে যুক্ত করে
    JSON regenerate করো — হাতে JSON সম্পাদনা নয়।
 3. যাচাই হয়নি এমন কিছু `null` + "Not Yet Verified" রাখো; অনুমান করে লিখো না।
-4. নতুন পাঠ সবসময় Under Teacher Review — শিক্ষক অনুমোদন ছাড়া Published নয়।
+4. নতুন পাঠ সবসময় শিক্ষক অনুমোদন সাপেক্ষে — অনুমোদন ছাড়া Published নয়।
 
 ## Test Checklist (Push-এর আগে)
 

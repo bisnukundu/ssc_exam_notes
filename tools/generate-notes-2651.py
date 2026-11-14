@@ -12,7 +12,7 @@ Sources (verified 11 Nov 2026):
 Book MCQs are included ONLY for Unit 1 Lesson 1.1, where the book's own
 post-lesson evaluation (p. 2) was verified. No other book MCQ is invented.
 Unit 2-11 summaries explain the verified lesson titles/pages + standard
-Bengali grammar for those topics; each lesson is marked Under Teacher Review.
+Bengali grammar for those topics.
 """
 import json, pathlib
 
@@ -118,7 +118,6 @@ DATA = {
             "mcq": "MCQ ৪০ নম্বর (৪০×১) — ব্যাকরণ অংশ ও নির্মিতির বাগধারা, বাক্য সংকোচন, প্রবচন-প্রবাদ থেকে",
         },
         "source": "BOU SSC-2651 বই (ISBN 984-34-3000-x, পরিমার্জিত সংস্করণ জানুয়ারি ২০২৬), সর্বোচ্চ ৩২ সপ্তাহ। নমুনা প্রশ্ন পৃ. ২৮৫।",
-        "review_status": "Under Teacher Review — শিক্ষক অনুমোদন ছাড়া Published নয়।",
     },
     "contents": {"grammar": GRAMMAR, "composition": COMPOSITION},
 }

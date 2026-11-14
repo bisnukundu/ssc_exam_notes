@@ -195,7 +195,6 @@ EXTRA_CSS = """
 .static-hero h1{font-family:'Noto Serif Bengali',serif;font-size:32px;line-height:1.4;margin:12px 0 10px}
 .static-hero p{color:rgba(255,255,255,.85);line-height:1.8;margin:0 0 8px}
 .static-hero .pill{display:inline-block;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.45);color:#fcd34d;border-radius:20px;padding:6px 14px;font-size:13px;font-weight:700}
-.static-hero .review{display:inline-block;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.88);border-radius:20px;padding:6px 14px;font-size:12.5px;font-weight:600;margin-left:8px}
 .static-stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
 .static-stats span{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:8px 14px;font-size:13.5px;font-weight:600}
 .static-stats b{color:#fcd34d}
@@ -237,7 +236,7 @@ TOPBAR = """
 """
 
 FOOTER = """
-<footer class="static-footer">© 2026 Bisnu SSC Notes | Designed &amp; Developed by <a href="https://bisnukundu.netlify.app/">Bishnu Kundu</a><br>তথ্য: BOU SSC বই • নোটগুলো Under Teacher Review — শিক্ষক অনুমোদন ছাড়া Published নয়।</footer>
+<footer class="static-footer">© 2026 Bisnu SSC Notes | Designed &amp; Developed by <a href="https://bisnukundu.netlify.app/">Bishnu Kundu</a><br>তথ্য: BOU SSC বই।</footer>
 """
 
 CREATOR_STRIP = """
@@ -412,7 +411,7 @@ def subject_page(code, paths=None):
         + '<div class="static-wrap">'
         + crumbs([("🏠 হোম", "/"), (name, None)])
         + '<div class="static-hero"><span class="pill">🎓 BOU • SSC ২য় বর্ষ — নতুন ভার্সন</span>'
-        f'<span class="review">🛡️ Under Teacher Review</span><h1>{esc(name)} — সম্পূর্ণ নোট</h1>'
+        f'<h1>{esc(name)} — সম্পূর্ণ নোট</h1>'
         f'<p>{esc(sub["title_en"])} • BOU SSC ২য় বর্ষ • নতুন ভার্সন</p>'
         f"{marks_line}"
         f'<div class="static-stats"><span><b>{bn_digits(n)}</b>টি Unit</span>'

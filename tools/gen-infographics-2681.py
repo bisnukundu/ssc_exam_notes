@@ -944,7 +944,7 @@ def main():
             "    <p>SSC-2681 • বাংলাদেশ ও বিশ্বপরিচয়</p>\n"
             "  </div>\n\n"
             "  <div class=\"wrap\">\n" + u["body"] +
-            "\n    <div class=\"footer\">তথ্য: BOU SSC-2681 বই (" + u["pages"] + ") • Under Teacher Review</div>\n"
+            "\n    <div class=\"footer\">তথ্য: BOU SSC-2681 বই (" + u["pages"] + ")</div>\n"
             "  </div>\n</body>\n</html>\n"
         )
         path = os.path.join(OUT_DIR, "infographic-2681-unit%d-landscape.html" % u["n"])

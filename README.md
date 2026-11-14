@@ -48,4 +48,4 @@ tools/                              — JSON ডেটা তৈরির Python
 ## নিয়ম
 
 - যাচাই হয়নি এমন Unit/নম্বর অনুমান করে লেখা হয় না — `Not Yet Verified` হিসেবে থাকে।
-- AI কনটেন্ট শিক্ষক অনুমোদন ছাড়া Published নয় (Under Teacher Review)।
+- AI কনটেন্ট শিক্ষক অনুমোদন ছাড়া Published নয়।

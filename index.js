@@ -171,7 +171,7 @@ function renderSecondYearCards() {
     secondYearSubjects.forEach(s => {
         const unitCount = s.units ? s.units.length : (s.unit_count || '—');
         const unitLabel = s.verification_status === 'partial' ? 'আংশিক Unit' : unitCount + ' Unit';
-        const marks = s.marks && s.marks.total ? `${s.marks.total} নম্বর` : 'নম্বর: যাচাই হয়নি';
+        const marks = s.marks && s.marks.total ? `${s.marks.total} নম্বর` : '';
         const card = document.createElement('div');
         card.className = 'subject-card';
         card.onclick = () => openSubjectChoice(s.code);
@@ -187,7 +187,7 @@ function renderSecondYearCards() {
                 <div class="subject-meta">
                     ${verificationBadge(s)}
                     <span class="subject-badge">${unitLabel}</span>
-                    <span class="subject-badge">${marks}</span>
+                    ${marks ? `<span class="subject-badge">${marks}</span>` : ''}
                     ${s.book_status === 'pdf_pending' ? '<span class="subject-badge pdf-pending">বই PDF শীঘ্রই আসছে</span>' : ''}
                 </div>
                 <button class="subject-card-btn">📖 Unit / Chapter দেখুন</button>
@@ -216,8 +216,8 @@ function openSubjectChoice(code) {
     document.getElementById('choice-modal-title').innerText = `SSC-${s.code} — ${s.title_bn}`;
     const unitCount = s.units ? s.units.length : (s.unit_count || '—');
     const unitLabel = s.verification_status === 'partial' ? 'আংশিক Unit যাচাইকৃত' : unitCount + ' Unit';
-    const marks = s.marks && s.marks.total ? `মোট ${s.marks.total} নম্বর` : 'নম্বর: যাচাই হয়নি';
-    document.getElementById('choice-modal-meta').innerText = `${s.title_en} • ${unitLabel} • ${marks}`;
+    const marks = s.marks && s.marks.total ? `মোট ${s.marks.total} নম্বর` : '';
+    document.getElementById('choice-modal-meta').innerText = [s.title_en, unitLabel, marks].filter(Boolean).join(' • ');
     const notesBtn = document.getElementById('choiceNotesBtn');
     const bookBtn = document.getElementById('choiceBookBtn');
     const noteEl = document.getElementById('choice-modal-note');

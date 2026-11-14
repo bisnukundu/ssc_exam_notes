@@ -408,18 +408,6 @@ body {
     font-weight: 700;
 }
 
-.hero-review-pill {
-    display: inline-flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    color: rgba(255, 255, 255, 0.85);
-    border-radius: 20px;
-    padding: 6px 14px;
-    font-size: 12.5px;
-    font-weight: 600;
-}
-
 .hero h1 {
     font-family: 'Noto Serif Bengali', serif;
     font-size: 44px;
