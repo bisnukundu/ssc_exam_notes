@@ -342,8 +342,17 @@ subjectSelect.addEventListener('change', (e) => {
     loadSubject(e.target.value);
 });
 
-// Load default subject initially
-loadSubject(subjectSelect.value);
+// Deep-link: index.html#s=2651 or #s=2651&u=5 (used by the static SEO pages)
+const deepLink = location.hash.match(/s=(\d{4})(?:&u=(\d+))?/);
+if (deepLink && NOTES_FILES[deepLink[1]]) {
+    if (deepLink[2]) pendingUnit = { no: Number(deepLink[2]) };
+    showNotesView();
+    subjectSelect.value = NOTES_FILES[deepLink[1]];
+    loadSubject(NOTES_FILES[deepLink[1]]);
+} else {
+    // Load default subject initially
+    loadSubject(subjectSelect.value);
+}
 
 function loadSubject(url) {
     // Clear old contents
