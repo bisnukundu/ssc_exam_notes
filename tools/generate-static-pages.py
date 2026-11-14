@@ -211,6 +211,19 @@ a.choice-unit-row{text-decoration:none;color:inherit}
 .static-footer{max-width:960px;margin:0 auto;padding:0 20px 48px;text-align:center;color:var(--text3);font-size:13.5px;line-height:1.9}
 .static-footer a{color:var(--accent);text-decoration:none;font-weight:600}
 .topbar .topbar-logo a{text-decoration:none;color:inherit}
+.creator-strip{background:linear-gradient(115deg,#0b1e33 0%,#14335e 48%,#1d4e89 100%);border-radius:22px;padding:24px 26px;margin:36px 0 8px;display:flex;align-items:center;gap:22px;color:#fff;box-shadow:0 16px 40px rgba(11,30,51,.3);position:relative;overflow:hidden}
+.creator-strip::before{content:'';position:absolute;right:-50px;top:-50px;width:170px;height:170px;background:radial-gradient(circle,rgba(251,191,36,.22),transparent 70%)}
+.creator-strip img{width:88px;height:118px;object-fit:cover;border-radius:14px;border:3px solid rgba(251,191,36,.7);box-shadow:0 8px 20px rgba(0,0,0,.35);flex-shrink:0;position:relative;z-index:1}
+.creator-strip .cs-info{flex:1;position:relative;z-index:1}
+.creator-strip .cs-label{display:inline-block;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.45);color:#fcd34d;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;margin-bottom:8px}
+.creator-strip .cs-name{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:23px;font-weight:800;color:#fff;line-height:1.2}
+.creator-strip .cs-role{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13.5px;color:#fcd34d;font-weight:700;margin-top:3px}
+.creator-strip .cs-desc{font-size:13px;color:rgba(255,255,255,.85);line-height:1.8;margin-top:6px}
+.creator-strip .cs-links{display:flex;flex-direction:column;gap:8px;flex-shrink:0;position:relative;z-index:1}
+.creator-strip .cs-link{display:inline-block;text-decoration:none;text-align:center;font-weight:700;font-size:13px;border-radius:12px;padding:9px 16px}
+.creator-strip .cs-link.fb{background:#1877f2;color:#fff}
+.creator-strip .cs-link.web{background:#f59e0b;color:#1a1a1a}
+@media (max-width:640px){.creator-strip{flex-direction:column;text-align:center;padding:26px 20px}.creator-strip .cs-links{flex-direction:row;flex-wrap:wrap;justify-content:center}}
 """
 
 TOPBAR = """
@@ -222,6 +235,22 @@ TOPBAR = """
 
 FOOTER = """
 <footer class="static-footer">© 2026 Bisnu SSC Notes | Designed &amp; Developed by <a href="https://bisnukundu.netlify.app/">Bishnu Kundu</a><br>তথ্য: BOU SSC বই • নোটগুলো Under Teacher Review — শিক্ষক অনুমোদন ছাড়া Published নয়।</footer>
+"""
+
+CREATOR_STRIP = """
+<div class="creator-strip">
+  <img src="/bisnu-hero.webp" alt="Bishnu Kundu — এই প্ল্যাটফর্মের নির্মাতা" loading="lazy">
+  <div class="cs-info">
+    <span class="cs-label">✦ নির্মাতা</span>
+    <div class="cs-name">Bishnu Kundu</div>
+    <div class="cs-role">Web Developer &amp; Freelancer</div>
+    <div class="cs-desc">এই নোটসগুলো তৈরি করেছেন বিষ্ণু কুন্ডু — BOU SSC ২য় বর্ষের পরীক্ষার্থীদের জন্য।</div>
+  </div>
+  <div class="cs-links">
+    <a class="cs-link fb" href="https://facebook.com/freelancerbisnu" target="_blank" rel="noopener">📘 Facebook</a>
+    <a class="cs-link web" href="https://bisnukundu.netlify.app/" target="_blank" rel="noopener">🌐 Portfolio</a>
+  </div>
+</div>
 """
 
 
@@ -391,6 +420,7 @@ def subject_page(code, paths=None):
         f'<h2 class="unit-list-title">📚 সব Unit — এক নজরে</h2>'
         + "".join(rows)
         + f'<p class="practice-note">{esc(practice_note_note(code))}</p>'
+        + CREATOR_STRIP
         + "</div>" + FOOTER + "\n</body>\n</html>\n"
     )
     return path, body
@@ -454,6 +484,7 @@ def unit_page(code, section_key, item, idx, prev_u, next_u, paths=None):
         + f'<a class="app-cta" href="/#s={code}&amp;u={idx}">📱 অ্যাপে এই Unit পড়ুন →</a>'
         + '<nav class="prev-next">' + "".join(nav) + "</nav>"
         + f'<p class="practice-note">{esc(practice_note(code, idx))}</p>'
+        + CREATOR_STRIP
         + "</div>" + FOOTER + "\n</body>\n</html>\n"
     )
     return path, body
