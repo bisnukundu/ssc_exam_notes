@@ -1072,15 +1072,13 @@ a.sig-name:hover {
 }
 
 .creator-name a,
-.hero-creator-name a,
-.profile-name a {
+.hero-creator-name a {
     color: inherit;
     text-decoration: none;
 }
 
 .creator-name a:hover,
-.hero-creator-name a:hover,
-.profile-name a:hover {
+.hero-creator-name a:hover {
     text-decoration: underline;
 }
 
@@ -1090,16 +1088,9 @@ a.sig-name:hover {
     display: block;
 }
 
-.profile-img-box a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 /* Button icons (inline SVG) */
 .creator-link svg,
 .hero-creator-links a svg,
-.profile-btn svg,
 .sig-link svg {
     width: 16px;
     height: 16px;
@@ -1174,121 +1165,6 @@ a.sig-name:hover {
 /* ══════════════════════════════════════
    PROFILE CARD
 ══════════════════════════════════════ */
-.profile-card {
-    display: flex;
-    align-items: stretch;
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    margin-bottom: 50px;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    overflow: hidden;
-}
-.profile-card:hover {
-    box-shadow: 0 12px 30px -10px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
-}
-.profile-img-box {
-    width: 35%;
-    min-width: 200px;
-    max-width: 260px;
-    flex-shrink: 0;
-    background: var(--bg3);
-    aspect-ratio: 3 / 4; /* reserve photo space so late image load can't shift the page */
-}
-.profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.profile-info {
-    flex-grow: 1;
-    padding: 40px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.profile-name {
-    font-size: 34px;
-    font-family: 'Noto Serif Bengali', serif;
-    font-weight: 800;
-    margin-bottom: 12px;
-    background: linear-gradient(135deg, var(--text), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-}
-.profile-title {
-    font-size: 15px;
-    color: var(--accent);
-    font-weight: 600;
-    margin-bottom: 28px;
-    background: var(--bg3);
-    border: 1px solid var(--border);
-    padding: 6px 18px;
-    border-radius: 20px;
-    display: inline-block;
-    width: fit-content;
-    box-shadow: var(--shadow2);
-    letter-spacing: 0.5px;
-}
-.profile-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 28px;
-}
-.skill-badge {
-    background: transparent;
-    color: var(--text2);
-    font-size: 13px;
-    font-weight: 600;
-    padding: 6px 14px;
-    border-radius: 20px;
-    border: 1px solid var(--border);
-    transition: var(--transition);
-}
-.skill-badge:hover {
-    background: var(--accent-light);
-    border-color: var(--accent);
-    color: var(--accent);
-}
-.profile-links {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-}
-.profile-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 24px;
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: var(--transition);
-    color: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-}
-.fb-btn {
-    background: linear-gradient(135deg, #1877F2, #145dbf);
-}
-.fb-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4);
-}
-.web-btn {
-    background: linear-gradient(135deg, var(--accent3), #69173c);
-}
-.web-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(139, 34, 82, 0.4);
-}
-
 /* ══════════════════════════════════════
    QUICK LINKS
 ══════════════════════════════════════ */
@@ -1343,23 +1219,6 @@ a.sig-name:hover {
     font-weight: 600;
 }
 
-@media (max-width: 600px) {
-    .profile-card {
-        flex-direction: column;
-        text-align: center;
-    }
-    .profile-img-box {
-        width: 100%;
-        max-width: none;
-        height: 280px;
-    }
-    .profile-info {
-        padding: 30px 20px;
-        align-items: center;
-    }
-    .profile-skills, .profile-links {
-        justify-content: center;
-    }
     .quick-links {
         grid-template-columns: 1fr;
     }
