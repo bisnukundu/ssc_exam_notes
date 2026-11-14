@@ -1254,6 +1254,67 @@ a.sig-name:hover {
     pointer-events: all;
 }
 
+/* WhatsApp floating button (back-to-top বোতামের বাঁয়ে) */
+.wa-float {
+    position: fixed;
+    bottom: 28px;
+    right: 92px;
+    z-index: 900;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+    text-decoration: none;
+    transition: var(--transition);
+}
+.wa-float:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 10px 26px rgba(37, 211, 102, 0.55);
+}
+.wa-float svg {
+    width: 30px;
+    height: 30px;
+}
+.wa-float::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(37, 211, 102, 0.6);
+    animation: wa-pulse 2.4s ease-out infinite;
+}
+@keyframes wa-pulse {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.55); opacity: 0; }
+}
+.wa-tip {
+    position: fixed;
+    bottom: 42px;
+    right: 164px;
+    z-index: 900;
+    background: var(--text);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+}
+.wa-float:hover + .wa-tip {
+    opacity: 1;
+}
+@media (max-width: 600px) {
+    .wa-tip { display: none; }
+}
+
 .back-top:hover {
     transform: translateY(-3px);
     background: var(--accent3);
