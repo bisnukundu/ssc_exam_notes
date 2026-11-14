@@ -44,7 +44,7 @@ index.js     — loadSecondYearSubjects(), openSubjectChoice() — Subject-এ �
 db/
   ssc-2nd-year-new-version.json  — ১৩ বিষয়ের একমাত্র উৎস (canonical data, notes_file-সহ)
   notes-<code>.json              — ১৩ বিষয়ের সম্পূর্ণ নোট (নিচে দেখো)
-  books.json                     — ১৩টি বই (আগের ৯টি অপরিবর্তিত + ৪টি নতুন, pdf_pending)
+  books.json                     — ২৭টি বই (২য় বর্ষ ১৩ + ১ম বর্ষ ১৪, সবগুলো BOU অফিসিয়াল লিংক)
   bangla_note.json               — আগের মতো (১৬৫১ বাংলা ১ম পত্র)
   vugol.json                     — আগের মতো
 tools/
@@ -117,7 +117,7 @@ Backend: `bou-ssc-laravel-backend/` (এই রিপোতে নেই, আল
 ## Test Checklist (Push-এর আগে)
 
 - [x] `db/ssc-2nd-year-new-version.json`: ঠিক ১৩টি বিষয়, code unique, ১ম বর্ষের code নেই
-- [x] `db/books.json`: ১৩টি এন্ট্রি, সবগুলো BOU অফিসিয়াল সাইটের লিংক (স্থানীয় PDF সরানো — AdSense নিরাপত্তা), কোনো duplicate নেই
+- [x] `db/books.json`: ২৭টি এন্ট্রি (২য় বর্ষ ১৩ + ১ম বর্ষ ১৪), সবগুলো BOU অফিসিয়াল সাইটের লিংক (স্থানীয় PDF সরানো — AdSense নিরাপত্তা), কোনো duplicate নেই
 - [x] ১৩টি নোট ফাইল: মোট ১৬৬ Unit, প্রতিটিতে ৪ অংশের summary + ৪ MCQ + ১ সৃজনশীল
       (মোট ৬৬৪ MCQ + ১৬৬ সৃজনশীল); Unit শিরোনাম canonical তালিকার সঙ্গে হুবহু মিলেছে
 - [x] `node --check index.js` পাস; JS-এ উল্লেখিত সব id HTML-এ আছে; পুরোনো scroll প্যানেল সরানো

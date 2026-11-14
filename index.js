@@ -79,46 +79,62 @@ siteLogo.addEventListener('click', () => {
     window.scrollTo({top:0, behavior:'smooth'});
 });
 
-// Load Books from db/books.json
+// Load Books from db/books.json (2nd year + 1st year, grouped)
 function loadBooks() {
     fetch('db/books.json')
         .then(res => res.json())
         .then(books => {
             const booksGrid = document.getElementById('books-grid');
             booksGrid.innerHTML = ''; // clear loading state
-            
-            books.forEach(book => {
-                const card = document.createElement('div');
-                card.className = 'book-card' + (book.official_url ? '' : ' no-pdf');
-                card.onclick = () => book.official_url ? window.open(book.official_url, '_blank', 'noopener') : openSubjectChoice(book.code);
-                
-                // We use dynamic style for background if gradient is provided
-                const bgStyle = book.gradient ? `background: ${book.gradient};` : '';
-                const bookIcon = book.icon ? `<div class="book-icon">${book.icon}</div>` : '';
-                
-                card.innerHTML = `
-                    <div class="book-cover" style="${bgStyle}">
-                         <div class="book-spine"></div>
-                         ${bookIcon}
-                         <div class="book-title-overlay">${book.short_title}</div>
-                         <div class="book-pages-edge"></div>
-                    </div>
-                    <div class="book-info">
-                        ${book.code ? `<span class="book-code-badge">SSC-${book.code} • ২য় বর্ষ (নতুন)</span>` : ''}
-                        <h3>${book.title}</h3>
-                        <button class="read-btn">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px; margin-top: -2px;"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                            ${book.official_url ? 'বই পড়ুন ↗' : 'ইউনিট দেখুন'}
-                        </button>
-                    </div>
-                `;
-                booksGrid.appendChild(card);
+
+            const groups = [
+                { year: 'second', title: '২য় বর্ষের পাঠ্যবই', count: '১৩টি বই' },
+                { year: 'first', title: '১ম বর্ষের পাঠ্যবই', count: '১৪টি বই' },
+            ];
+            groups.forEach(g => {
+                const groupBooks = books.filter(b => b.year === g.year);
+                if (!groupBooks.length) return;
+                const header = document.createElement('div');
+                header.className = 'books-group-title';
+                header.innerHTML = `<h3>${g.title}</h3><span>${g.count}</span>`;
+                booksGrid.appendChild(header);
+                groupBooks.forEach(book => booksGrid.appendChild(buildBookCard(book)));
             });
         })
         .catch(err => {
             console.error("Error loading books:", err);
             document.getElementById('books-grid').innerHTML = '<p style="text-align:center;width:100%;">বই লোড করা যায়নি।</p>';
         });
+}
+
+function buildBookCard(book) {
+    const card = document.createElement('div');
+    card.className = 'book-card' + (book.official_url ? '' : ' no-pdf');
+    card.onclick = () => book.official_url ? window.open(book.official_url, '_blank', 'noopener') : openSubjectChoice(book.code);
+
+    // We use dynamic style for background if gradient is provided
+    const bgStyle = book.gradient ? `background: ${book.gradient};` : '';
+    const bookIcon = book.svg ? `<div class="book-icon">${book.svg}</div>` : (book.icon ? `<div class="book-icon book-icon-emoji">${book.icon}</div>` : '');
+    const yearLabel = book.year === 'first' ? '১ম বর্ষ (নতুন)' : '২য় বর্ষ (নতুন)';
+
+    card.innerHTML = `
+        <div class="book-cover" style="${bgStyle}">
+             <div class="book-spine"></div>
+             <div class="book-cover-top">BOU • SSC</div>
+             ${bookIcon}
+             <div class="book-title-overlay">${book.short_title}</div>
+             <div class="book-pages-edge"></div>
+        </div>
+        <div class="book-info">
+            ${book.code ? `<span class="book-code-badge">SSC-${book.code} • ${yearLabel}</span>` : ''}
+            <h3>${book.title}</h3>
+            <button class="read-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px; margin-top: -2px;"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                ${book.official_url ? 'বই পড়ুন ↗' : 'ইউনিট দেখুন'}
+            </button>
+        </div>
+    `;
+    return card;
 }
 
 // ══════════════════════════════════════
