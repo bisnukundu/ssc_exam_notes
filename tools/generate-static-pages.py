@@ -200,7 +200,7 @@ EXTRA_CSS = """
 .static-stats span{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:8px 14px;font-size:13.5px;font-weight:600}
 .static-stats b{color:#fcd34d}
 a.choice-unit-row{text-decoration:none;color:inherit}
-.unit-list-title{font-size:22px;font-weight:800;margin:6px 0 16px;color:var(--text1)}
+.unit-list-title{font-size:22px;font-weight:800;margin:6px 0 16px;color:var(--text)}
 .app-cta{display:inline-block;background:var(--amber,#f59e0b);color:#1a1a1a;font-weight:800;text-decoration:none;border-radius:14px;padding:12px 22px;margin-top:18px;box-shadow:0 8px 20px rgba(245,158,11,.35)}
 .app-cta:hover{filter:brightness(1.05)}
 .prev-next{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:36px}
@@ -213,10 +213,13 @@ a.choice-unit-row{text-decoration:none;color:inherit}
 .topbar .topbar-logo a{text-decoration:none;color:inherit}
 .creator-strip{background:linear-gradient(115deg,#0b1e33 0%,#14335e 48%,#1d4e89 100%);border-radius:22px;padding:24px 26px;margin:36px 0 8px;display:flex;align-items:center;gap:22px;color:#fff;box-shadow:0 16px 40px rgba(11,30,51,.3);position:relative;overflow:hidden}
 .creator-strip::before{content:'';position:absolute;right:-50px;top:-50px;width:170px;height:170px;background:radial-gradient(circle,rgba(251,191,36,.22),transparent 70%)}
-.creator-strip img{width:88px;height:118px;object-fit:cover;border-radius:14px;border:3px solid rgba(251,191,36,.7);box-shadow:0 8px 20px rgba(0,0,0,.35);flex-shrink:0;position:relative;z-index:1}
+.creator-strip img{width:96px;height:96px;object-fit:cover;border-radius:16px;border:3px solid rgba(251,191,36,.7);box-shadow:0 8px 20px rgba(0,0,0,.35);flex-shrink:0;position:relative;z-index:1}
+.creator-strip .cs-photo-link{display:block;flex-shrink:0;position:relative;z-index:1;line-height:0}
 .creator-strip .cs-info{flex:1;position:relative;z-index:1}
 .creator-strip .cs-label{display:inline-block;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.45);color:#fcd34d;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;margin-bottom:8px}
-.creator-strip .cs-name{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:23px;font-weight:800;color:#fff;line-height:1.2}
+.creator-strip .cs-name{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:23px;font-weight:800;color:#fff;line-height:1.2;text-decoration:none}
+.creator-strip a.cs-name:hover{text-decoration:underline}
+.creator-strip .cs-link svg{width:15px;height:15px;vertical-align:-2px;margin-right:6px}
 .creator-strip .cs-role{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13.5px;color:#fcd34d;font-weight:700;margin-top:3px}
 .creator-strip .cs-desc{font-size:13px;color:rgba(255,255,255,.85);line-height:1.8;margin-top:6px}
 .creator-strip .cs-links{display:flex;flex-direction:column;gap:8px;flex-shrink:0;position:relative;z-index:1}
@@ -239,16 +242,16 @@ FOOTER = """
 
 CREATOR_STRIP = """
 <div class="creator-strip">
-  <img src="/bisnu-hero.webp" alt="Bishnu Kundu — এই প্ল্যাটফর্মের নির্মাতা" loading="lazy">
+  <a class="cs-photo-link" href="https://bisnukundu.netlify.app/" target="_blank" rel="noopener" title="Bishnu Kundu — Portfolio"><img src="/bisnu-avatar.webp" alt="Bishnu Kundu — এই প্ল্যাটফর্মের নির্মাতা" loading="lazy"></a>
   <div class="cs-info">
     <span class="cs-label">✦ নির্মাতা</span>
-    <div class="cs-name">Bishnu Kundu</div>
+    <a class="cs-name" href="https://bisnukundu.netlify.app/" target="_blank" rel="noopener">Bishnu Kundu</a>
     <div class="cs-role">Web Developer &amp; Freelancer</div>
     <div class="cs-desc">এই নোটসগুলো তৈরি করেছেন বিষ্ণু কুন্ডু — BOU SSC ২য় বর্ষের পরীক্ষার্থীদের জন্য।</div>
   </div>
   <div class="cs-links">
-    <a class="cs-link fb" href="https://facebook.com/freelancerbisnu" target="_blank" rel="noopener">📘 Facebook</a>
-    <a class="cs-link web" href="https://bisnukundu.netlify.app/" target="_blank" rel="noopener">🌐 Portfolio</a>
+    <a class="cs-link fb" href="https://facebook.com/freelancerbisnu" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</a>
+    <a class="cs-link web" href="https://bisnukundu.netlify.app/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Portfolio</a>
   </div>
 </div>
 """

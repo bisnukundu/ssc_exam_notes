@@ -968,10 +968,10 @@ body {
 }
 
 .sig-photo {
-    width: 104px;
-    height: 138px;
+    width: 112px;
+    height: 112px;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 18px;
     border: 3px solid rgba(251, 191, 36, .7);
     box-shadow: 0 10px 24px rgba(0, 0, 0, .35);
     flex-shrink: 0;
@@ -1060,6 +1060,118 @@ body {
 .sig-link.web {
     background: #f59e0b;
     color: #1a1a1a;
+}
+
+/* Creator name/photo link to Portfolio */
+.sig-photo-link {
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    line-height: 0;
+    display: block;
+}
+
+a.sig-name {
+    text-decoration: none;
+}
+
+a.sig-name:hover {
+    text-decoration: underline;
+}
+
+.creator-photo-link {
+    display: block;
+}
+
+.creator-name a,
+.hero-creator-name a,
+.profile-name a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.creator-name a:hover,
+.hero-creator-name a:hover,
+.profile-name a:hover {
+    text-decoration: underline;
+}
+
+.hero-creator-photo-link {
+    flex-shrink: 0;
+    line-height: 0;
+    display: block;
+}
+
+.profile-img-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Button icons (inline SVG) */
+.creator-link svg,
+.hero-creator-links a svg,
+.profile-btn svg,
+.sig-link svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: -3px;
+    margin-right: 6px;
+}
+
+/* SEO subject-page links (home) */
+.seo-links {
+    margin: 56px 0 8px;
+}
+
+.seo-links h2 {
+    font-family: 'Noto Serif Bengali', serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.seo-links p {
+    color: var(--text3);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.seo-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 10px;
+}
+
+.seo-links-grid a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 13px 16px;
+    text-decoration: none;
+    color: var(--text2);
+    font-weight: 700;
+    font-size: 14.5px;
+    transition: border-color var(--transition), transform var(--transition);
+}
+
+.seo-links-grid a:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    color: var(--accent);
+}
+
+.seo-links-grid a span {
+    font-size: 12px;
+    color: var(--text3);
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 .copyright {
@@ -1350,7 +1462,7 @@ body {
 
     .sig-photo {
         width: 120px;
-        height: 160px;
+        height: 120px;
     }
 
     .ref-table {
