@@ -1,4 +1,6 @@
-# SSC Exam Notes — ssc_exam_notes
+# Bisnu SSC Notes
+
+🌐 **লাইভ সাইট: https://bisnu-ssc-notes.vercel.app/**
 
 বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় (BOU) SSC পরীক্ষার্থীদের জন্য ই-বুক লাইব্রেরি ও শর্ট নোটস।
 তৈরি করেছেন: **বিষ্ণু কুন্ডু (Bisnu Kundu)** — Web Developer & Freelancer.
