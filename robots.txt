@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bisnu-ssc-notes.vercel.app/sitemap.xml
