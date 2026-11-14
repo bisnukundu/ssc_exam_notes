@@ -39,9 +39,8 @@ index.html / index.css / index.js   — ওয়েবসাইট (ই-বু�
 db/
   ssc-2nd-year-new-version.json     — ২য় বর্ষ নতুন ভার্সনের ১৩ বিষয়ের তথ্য
   notes-2651.json                   — ২৬৫১-এর সম্পূর্ণ নোট
-  books.json                        — ১৩টি বইয়ের তালিকা (৯টি PDF আছে, ৪টি শীঘ্রই আসছে)
+  books.json                        — ১৩টি বইয়ের তালিকা (সবগুলো BOU অফিসিয়াল সাইটের লিংক)
   bangla_note.json / vugol.json     — আগের নোটস (১৬৫১ বাংলা ১ম পত্র, ভূগোল)
-  books/                            — বইয়ের PDF ফাইল
 docs/SECOND-YEAR-NEW-VERSION.md    — যাচাই, নিয়ম ও Database Mapping
 tools/                              — JSON ডেটা তৈরির Python স্ক্রিপ্ট
 ```

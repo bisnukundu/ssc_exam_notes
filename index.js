@@ -89,8 +89,8 @@ function loadBooks() {
             
             books.forEach(book => {
                 const card = document.createElement('div');
-                card.className = 'book-card' + (book.pdf ? '' : ' no-pdf');
-                card.onclick = () => book.pdf ? openBook(book.pdf, book.title) : openSubjectChoice(book.code);
+                card.className = 'book-card' + (book.official_url ? '' : ' no-pdf');
+                card.onclick = () => book.official_url ? window.open(book.official_url, '_blank', 'noopener') : openSubjectChoice(book.code);
                 
                 // We use dynamic style for background if gradient is provided
                 const bgStyle = book.gradient ? `background: ${book.gradient};` : '';
@@ -108,7 +108,7 @@ function loadBooks() {
                         <h3>${book.title}</h3>
                         <button class="read-btn">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 5px; margin-top: -2px;"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                            ${book.pdf ? 'পড়ুন' : 'ইউনিট দেখুন'}
+                            ${book.official_url ? 'বই পড়ুন ↗' : 'ইউনিট দেখুন'}
                         </button>
                     </div>
                 `;
@@ -207,14 +207,15 @@ function openSubjectChoice(code) {
     const noteEl = document.getElementById('choice-modal-note');
     notesBtn.disabled = false;
     notesBtn.innerText = '📝 নোট পড়ুন';
-    if (s.book_pdf) {
+    if (s.official_url) {
         bookBtn.disabled = false;
-        bookBtn.innerText = '📕 বই পড়ুন';
+        bookBtn.innerText = '📕 বই পড়ুন ↗';
     } else {
         bookBtn.disabled = true;
         bookBtn.innerText = '📕 বই শীঘ্রই আসছে';
     }
     let note = 'কী পড়তে চাও? নোটে আছে সহজ ব্যাখ্যা, MCQ ও সৃজনশীল প্রশ্নোত্তর। বইয়ে আছে মূল পাঠ্যবই।';
+    if (s.official_url) note += ' বই পড়তে চাপ দিলে BOU-র অফিসিয়াল সাইটে খুলবে।';
     if (s.verification_status === 'partial') note += ' (এই বিষয়ের কিছু Unit এখনো যাচাই হয়নি।)';
     noteEl.innerText = note;
     const unitsEl = document.getElementById('choice-modal-units');
@@ -250,10 +251,10 @@ function openSubjectNotes() {
 }
 
 function openSubjectBook() {
-    if (!currentChoiceSubject || !currentChoiceSubject.book_pdf) return;
-    const s = currentChoiceSubject;
+    if (!currentChoiceSubject || !currentChoiceSubject.official_url) return;
+    const url = currentChoiceSubject.official_url;
     closeSubjectChoice();
-    openBook(s.book_pdf, s.title_bn);
+    window.open(url, '_blank', 'noopener');
 }
 
 // Modal → Unit deep-link: open the subject's notes, then jump to that unit
@@ -589,55 +590,7 @@ function initDynamicInteractions() {
     cards.forEach(c => activeCardObserver.observe(c));
 }
 
-// ══════════════════════════════════════
-//   BOOK READER (dFlip)
-// ══════════════════════════════════════
-let currentFlipBook = null;
-
-function openBook(pdfUrl, title) {
-    document.getElementById('bookModalTitle').innerText = title;
-    const modal = document.getElementById('bookReaderModal');
-    modal.classList.add('active');
-    
-    // Lock body scroll
-    document.body.style.overflow = 'hidden';
-    
-    const container = document.getElementById('flipbookContainer');
-    container.innerHTML = '<div id="df_book_viewer"></div>';
-    
-    // Initialize dFlip
-    if (window.jQuery && window.DFLIP) {
-        // dFlip config options
-        const options = {
-            webgl: true,
-            height: '100%',
-            backgroundColor: "transparent",
-            duration: 800
-        };
-        
-        currentFlipBook = $('#df_book_viewer').flipBook(pdfUrl, options);
-    } else {
-        container.innerHTML = '<p style="color:white;text-align:center;">বই লোড করতে সমস্যা হচ্ছে। দয়া করে পেজটি রিলোড দিন।</p>';
-    }
-}
-
-function closeBook() {
-    const modal = document.getElementById('bookReaderModal');
-    modal.classList.remove('active');
-    
-    // Unlock body scroll
-    document.body.style.overflow = '';
-    
-    if (currentFlipBook && typeof currentFlipBook.dispose === 'function') {
-        currentFlipBook.dispose();
-    }
-    document.getElementById('flipbookContainer').innerHTML = '';
-}
-
 // Close modal on Escape key
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && document.getElementById('bookReaderModal').classList.contains('active')) {
-        closeBook();
-    }
     if (e.key === 'Escape') closeSubjectChoice();
 });

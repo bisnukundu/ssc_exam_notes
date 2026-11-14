@@ -58,11 +58,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
-    <!-- dFlip Flipbook CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/css/dflip.min.css"
-        rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/css/themify-icons.min.css"
-        rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -300,17 +295,6 @@
     <!-- Back to top -->
     <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-    <!-- Modal for Book Reader -->
-    <div id="bookReaderModal" class="book-modal">
-        <div class="book-modal-header">
-            <h3 id="bookModalTitle">বই পড়া হচ্ছে...</h3>
-            <button class="close-book-modal" onclick="closeBook()" title="বন্ধ করুন">✖</button>
-        </div>
-        <div class="book-modal-body">
-            <div id="flipbookContainer"></div>
-        </div>
-    </div>
-
     <!-- Subject choice modal: 'নোট নাকি বই?' popup (no page scroll needed) -->
     <div class="choice-modal" id="subject-choice-modal" style="display:none;" role="dialog" aria-modal="true">
         <div class="choice-modal-backdrop" id="choiceModalBackdrop"></div>
@@ -328,8 +312,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@dearhive/dearflip-jquery-flipbook/dflip/js/dflip.min.js"></script>
     <script src="index.js"></script>
 </body>
 

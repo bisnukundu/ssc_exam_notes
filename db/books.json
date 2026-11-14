@@ -3,169 +3,169 @@
     "id": "bangla",
     "title": "বাংলা দ্বিতীয় পত্র",
     "short_title": "বাংলা",
-    "pdf": "db/books/Bangla.pdf",
+    "official_url": "https://www.ebookbou.edu.bd/Books/Text/OS/SSC/ssc_2651_2026.pdf",
     "gradient": "linear-gradient(135deg, #c94b4b 0%, #4b134f 100%)",
     "icon": "✍️",
     "code": "2651",
     "year": "second",
     "version": "new",
     "title_en": "Bangla Second Paper",
-    "book_status": "available"
+    "book_status": "official"
   },
   {
     "id": "english",
     "title": "English 2nd Paper",
     "short_title": "English",
-    "pdf": "db/books/English2nd.pdf",
+    "official_url": "https://www.ebookbou.edu.bd/Books/Text/OS/SSC/ssc_2652_2022.pdf",
     "gradient": "linear-gradient(135deg, #005C97 0%, #363795 100%)",
     "icon": "🇬🇧",
     "code": "2652",
     "year": "second",
     "version": "new",
     "title_en": "English Two",
-    "book_status": "available"
+    "book_status": "official"
   },
   {
     "id": "saririk",
     "title": "শারীরিক শিক্ষা",
     "short_title": "শারীরিক",
-    "pdf": "db/books/saririk.pdf",
+    "official_url": "https://www.ebookbou.edu.bd/wp/OS/ssc4_1.php#ssc2669",
     "gradient": "linear-gradient(135deg, #f953c6 0%, #b91d73 100%)",
     "icon": "🎽",
     "code": "2669",
     "year": "second",
     "version": "new",
     "title_en": "Physical Education, Health Science and Sports",
-    "book_status": "available"
+    "book_status": "official"
   },
   {
     "id": "orthoniti",
     "title": "অর্থনীতি",
     "short_title": "অর্থনীতি",
-    "pdf": "db/books/orthoniti.pdf",
+    "official_url": "https://www.ebookbou.edu.bd/Books/Text/OS/SSC/ssc_2671_2022.pdf",
     "gradient": "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
     "icon": "💰",
     "code": "2671",
     "year": "second",
     "version": "new",
     "title_en": "Economics",
-    "book_status": "available"
+    "book_status": "official"
   },
   {
     "id": "nagorikota",
     "title": "পৌরনীতি ও নাগরিকতা",
     "short_title": "পৌরনীতি",
-    "pdf": "db/books/nagorikota.pdf",
+    "official_url": "https://www.ebookbou.edu.bd/Books/Text/OS/SSC/ssc_2672_2025.pdf",
     "gradient": "linear-gradient(135deg, #134E5E 0%, #71B280 100%)",
     "icon": "🏛️",
     "code": "2672",
     "year": "second",
     "version": "new",
     "title_en": "Civics and Citizenship",
-    "book_status": "available"
+    "book_status": "official"
   },
   {
     "id": "biggan",
     "title": "বিজ্ঞান",
     "short_title": "বিজ্ঞান",
-    "pdf": "db/books/biggan.pdf",
+    "official_url": "https://www.ebookbou.edu.bd/wp/OS/ssc4_2.php#ssc2673",
     "gradient": "linear-gradient(135deg, #00b4db 0%, #0083b0 100%)",
     "icon": "⚛️",
     "code": "2673",
     "year": "second",
     "version": "new",
     "title_en": "Science",
-    "book_status": "available"
+    "book_status": "official"
   },
   {
     "id": "2676",
     "title": "ফিন্যান্স ও ব্যাংকিং",
     "short_title": "ফিন্যান্স ও ব্যাংকিং",
-    "pdf": null,
+    "official_url": "https://www.ebookbou.edu.bd/wp/OS/ssc4_2.php#ssc2676",
     "gradient": "linear-gradient(135deg, #0f2027 0%, #2c5364 100%)",
     "icon": "🏦",
     "code": "2676",
     "year": "second",
     "version": "new",
     "title_en": "Finance and Banking",
-    "book_status": "pdf_pending"
+    "book_status": "official"
   },
   {
     "id": "2679",
     "title": "জীববিজ্ঞান",
     "short_title": "জীববিজ্ঞান",
-    "pdf": null,
+    "official_url": "https://www.ebookbou.edu.bd/wp/OS/ssc4_2.php#ssc2679",
     "gradient": "linear-gradient(135deg, #1a6b3c 0%, #3da35d 100%)",
     "icon": "🧬",
     "code": "2679",
     "year": "second",
     "version": "new",
     "title_en": "Biology",
-    "book_status": "pdf_pending"
+    "book_status": "official"
   },
   {
     "id": "2680",
     "title": "উচ্চতর গণিত",
     "short_title": "উচ্চতর গণিত",
-    "pdf": null,
+    "official_url": "https://www.ebookbou.edu.bd/wp/OS/ssc4_3.php#ssc2680",
     "gradient": "linear-gradient(135deg, #141e30 0%, #355c7d 100%)",
     "icon": "📐",
     "code": "2680",
     "year": "second",
     "version": "new",
     "title_en": "Higher Mathematics",
-    "book_status": "pdf_pending"
+    "book_status": "official"
   },
   {
     "id": "bangladesh_bisoporichoy",
     "title": "বাংলাদেশ ও বিশ্বপরিচয়",
     "short_title": "বিশ্বপরিচয়",
-    "pdf": "db/books/bangladesh_bisoporichoy.pdf",
+    "official_url": "https://www.ebookbou.edu.bd/Books/Text/OS/SSC/ssc_2681_2025.pdf",
     "gradient": "linear-gradient(135deg, #1a6b3c 0%, #3da35d 100%)",
     "icon": "🌏",
     "code": "2681",
     "year": "second",
     "version": "new",
     "title_en": "Bangladesh and Global Studies",
-    "book_status": "available"
+    "book_status": "official"
   },
   {
     "id": "2685",
     "title": "গার্হস্থ্য বিজ্ঞান",
     "short_title": "গার্হস্থ্য বিজ্ঞান",
-    "pdf": null,
+    "official_url": "https://www.ebookbou.edu.bd/wp/OS/ssc4_3.php#ssc2685",
     "gradient": "linear-gradient(135deg, #bc4b1f 0%, #e07b39 100%)",
     "icon": "🏠",
     "code": "2685",
     "year": "second",
     "version": "new",
     "title_en": "Home Economics",
-    "book_status": "pdf_pending"
+    "book_status": "official"
   },
   {
     "id": "krisi",
     "title": "কৃষি শিক্ষা",
     "short_title": "কৃষিশিক্ষা",
-    "pdf": "db/books/krisi.pdf",
+    "official_url": "https://www.ebookbou.edu.bd/wp/OS/ssc4_3.php#ssc2686",
     "gradient": "linear-gradient(135deg, #56ab2f 0%, #a8e063 100%)",
     "icon": "🌾",
     "code": "2686",
     "year": "second",
     "version": "new",
     "title_en": "Agricultural Education",
-    "book_status": "available"
+    "book_status": "official"
   },
   {
     "id": "carriar",
     "title": "ক্যারিয়ার শিক্ষা",
     "short_title": "ক্যারিয়ার",
-    "pdf": "db/books/carriar.pdf",
+    "official_url": "https://www.ebookbou.edu.bd/wp/OS/ssc4_1.php#ssc2358",
     "gradient": "linear-gradient(135deg, #eab4a4 0%, #d51616 100%)",
     "icon": "💼",
     "code": "2358",
     "year": "second",
     "version": "new",
     "title_en": "Career Education",
-    "book_status": "available"
+    "book_status": "official"
   }
 ]

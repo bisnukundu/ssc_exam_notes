@@ -117,10 +117,10 @@ Backend: `bou-ssc-laravel-backend/` (এই রিপোতে নেই, আল
 ## Test Checklist (Push-এর আগে)
 
 - [x] `db/ssc-2nd-year-new-version.json`: ঠিক ১৩টি বিষয়, code unique, ১ম বর্ষের code নেই
-- [x] `db/books.json`: ১৩টি এন্ট্রি, আগের ৯টি PDF অপরিবর্তিত, কোনো duplicate নেই
+- [x] `db/books.json`: ১৩টি এন্ট্রি, সবগুলো BOU অফিসিয়াল সাইটের লিংক (স্থানীয় PDF সরানো — AdSense নিরাপত্তা), কোনো duplicate নেই
 - [x] ১৩টি নোট ফাইল: মোট ১৬৬ Unit, প্রতিটিতে ৪ অংশের summary + ৪ MCQ + ১ সৃজনশীল
       (মোট ৬৬৪ MCQ + ১৬৬ সৃজনশীল); Unit শিরোনাম canonical তালিকার সঙ্গে হুবহু মিলেছে
 - [x] `node --check index.js` পাস; JS-এ উল্লেখিত সব id HTML-এ আছে; পুরোনো scroll প্যানেল সরানো
 - [x] স্থানীয় HTTP সার্ভারে ১৮/১৮ URL 200 (index + CSS + JS + canonical + books + ১৩ নোট)
-- [x] পুরোনো ভিউ (ই-বুক, নোটস, ১৬৫১, ভূগোল, থিম, বই রিডার) অপরিবর্তিত
+- [x] পুরোনো ভিউ (ই-বুক, নোটস, ১৬৫১, ভূগোল, থিম) অপরিবর্তিত; বই রিডার (dFlip) সরিয়ে অফিসিয়াল লিংক করা হয়েছে
 - [x] রিপোতে কোনো token/password নেই (grep যাচাই)
